@@ -1,48 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vision Language Model Articles</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="A collection of the latest research and articles on Vision Language Models (VLMs), updated weekly.">
 </head>
 <body>
     <header>
         <div class="container">
             <h1><i class="fas fa-brain"></i> Vision Language Model Articles</h1>
             <p>A collection of the latest research and articles on Vision Language Models (VLMs)</p>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
     </header>
 
     <main class="container">
+        <section class="dashboard-section">
+            <h2>Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <i class="fas fa-newspaper"></i>
+                    <h3>Total Articles</h3>
+                    <p id="total-articles">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Unique Keywords</h3>
+                    <p id="unique-keywords">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Sources</h3>
+                    <p id="unique-sources">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Last Added</h3>
+                    <p id="last-added-date">Loading...</p>
+                </div>
+            </div>
+        </section>
+
         <section class="search-section">
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Search articles by title, author, or keyword...">
                 <button id="search-button"><i class="fas fa-search"></i></button>
             </div>
-            <div class="filter-container">
-                <label for="source-filter">Source:</label>
-                <select id="source-filter">
-                    <option value="all">All Sources</option>
-                    <option value="arXiv">arXiv</option>
-                    <option value="Google AI Blog">Google AI Blog</option>
-                    <option value="OpenAI Blog">OpenAI Blog</option>
-                </select>
+            
+            <div class="filter-sorting-container">
+                <div class="filter-container">
+                    <label for="source-filter">Source:</label>
+                    <select id="source-filter">
+                        <option value="all">All Sources</option>
+                        <option value="arXiv">arXiv</option>
+                        <option value="Google AI Blog">Google AI Blog</option>
+                        <option value="OpenAI Blog">OpenAI Blog</option>
+                        <option value="Meta AI Research">Meta AI Research</option>
+                        <option value="Microsoft Research">Microsoft Research</option>
+                        <option value="HuggingFace Blog">HuggingFace Blog</option>
+                        <option value="Papers With Code">Papers With Code</option>
+                    </select>
+                    
+                    <label for="date-filter">Date:</label>
+                    <select id="date-filter">
+                        <option value="all">All Time</option>
+                        <option value="week">Past Week</option>
+                        <option value="month">Past Month</option>
+                        <option value="year">Past Year</option>
+                    </select>
+                    
+                    <label for="keyword-filter">Keyword:</label>
+                    <select id="keyword-filter">
+                        <option value="all">All Keywords</option>
+                        <!-- Keywords will be populated by JavaScript -->
+                    </select>
+                </div>
                 
-                <label for="date-filter">Date:</label>
-                <select id="date-filter">
-                    <option value="all">All Time</option>
-                    <option value="week">Past Week</option>
-                    <option value="month">Past Month</option>
-                    <option value="year">Past Year</option>
-                </select>
-                
-                <label for="keyword-filter">Keyword:</label>
-                <select id="keyword-filter">
-                    <option value="all">All Keywords</option>
-                    <!-- Keywords will be populated by JavaScript -->
-                </select>
+                <div class="sorting-container">
+                    <label for="sort-option">Sort By:</label>
+                    <select id="sort-option">
+                        <option value="date-desc">Date (Newest First)</option>
+                        <option value="date-asc">Date (Oldest First)</option>
+                        <option value="title-asc">Title (A-Z)</option>
+                        <option value="title-desc">Title (Z-A)</option>
+                        <option value="source">Source</option>
+                    </select>
+                </div>
             </div>
         </section>
 
@@ -54,6 +105,9 @@
             <div id="articles-container"></div>
             <div id="no-results" class="hidden">
                 <p>No articles found matching your search criteria.</p>
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination controls will be added by JavaScript -->
             </div>
         </section>
     </main>
