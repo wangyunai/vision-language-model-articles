@@ -61,7 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchArticles() {
         try {
             const response = await fetch('articles/index.json');
+            if (!response.ok) {
+                throw new Error(`Failed to fetch articles: ${response.status} ${response.statusText}`);
+            }
             const data = await response.json();
+            console.log(`Fetched ${data.length} articles`);
             return data;
         } catch (error) {
             console.error('Error fetching articles:', error);
@@ -71,15 +75,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize the page
     async function init() {
-        loadingSpinner.classList.remove('hidden');
-        
         // Initialize dark/light mode
         initializeTheme();
         
         // Fetch the articles (needed for basic stats)
         allArticles = await fetchArticles();
         
-        // Update dashboard statistics
+        // Extract keywords and sources (need to be done once, not per tab)
+        console.log("Extracting keywords and sources...");
+        allArticles.forEach(article => {
+            // Extract keywords
+            if (article.keywords && Array.isArray(article.keywords)) {
+                article.keywords.forEach(keyword => allKeywords.add(keyword));
+            }
+            
+            // Extract sources
+            if (article.source) {
+                allSources.add(article.source);
+            }
+        });
+        
+        console.log(`Found ${allKeywords.size} unique keywords and ${allSources.size} sources`);
+        
+        // Update dashboard statistics now that we have all the data
         updateDashboardStats();
         
         // Set last updated date
@@ -327,6 +345,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display articles
     function displayArticles(articles) {
         articlesContainer.innerHTML = '';
+        
+        // Hide loading spinner
+        loadingSpinner.classList.add('hidden');
         
         if (articles.length === 0) {
             noResults.classList.remove('hidden');
@@ -1479,24 +1500,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Prepare articles for display
         filteredArticles = [...allArticles];
+        console.log(`Displaying ${filteredArticles.length} articles`);
         
         // Calculate total pages
         updatePagination();
         
-        // Extract all unique keywords and sources
-        allArticles.forEach(article => {
-            // Extract keywords
-            if (article.keywords && Array.isArray(article.keywords)) {
-                article.keywords.forEach(keyword => allKeywords.add(keyword));
-            }
-            
-            // Extract sources
-            if (article.source) {
-                allSources.add(article.source);
-            }
-        });
-        
-        // Populate keyword filter
+        // Populate keyword filter (already have the data from init)
         populateKeywordFilter();
         
         // Set up event listeners for article search and filters
