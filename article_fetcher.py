@@ -122,8 +122,13 @@ class ArticleFetcher:
         ]
         category_query = " OR ".join([f"cat:{cat}" for cat in categories])
         
+        # Add date range for the last 30 days
+        thirty_days_ago = (datetime.datetime.now() - datetime.timedelta(days=30)).strftime("%Y%m%d")
+        today = datetime.datetime.now().strftime("%Y%m%d")
+        date_query = f"submittedDate:[{thirty_days_ago}000000 TO {today}235959]"
+        
         # Combine queries
-        full_query = f"({search_query}) AND ({category_query})"
+        full_query = f"({search_query}) AND ({category_query}) AND ({date_query})"
         
         # Set up the API request parameters
         params = {
@@ -133,6 +138,7 @@ class ArticleFetcher:
             "max_results": max_results
         }
         
+        logger.info(f"arXiv query: {full_query}")
         response = requests.get(ARXIV_API_URL, params=params)
         
         if response.status_code != 200:
@@ -141,6 +147,7 @@ class ArticleFetcher:
         
         # Parse the response using feedparser
         feed = feedparser.parse(response.text)
+        logger.info(f"arXiv returned {len(feed.entries)} entries")
         
         for entry in feed.entries:
             # Skip if we've seen this article already
@@ -1240,24 +1247,25 @@ class ArticleFetcher:
         self.fetch_semantic_scholar_conferences()
         
         # Spread article dates for better trend visualization, except for conference papers
-        # which already have more meaningful dates
+        # and arXiv papers which already have meaningful dates
         if self.articles:
             # Get current date
             today = datetime.datetime.now()
             current_month = f"{today.year}-{today.month:02d}"
             
-            # Keep track of conference papers which should keep their original dates
-            conference_papers = []
+            # Keep track of papers that should keep their original dates
+            papers_with_real_dates = []
             other_papers = []
             
-            # Separate conference papers from other sources
+            # Separate papers with meaningful dates from other sources
             for article in self.articles:
-                if article.get('source', '').endswith('Conference'):
-                    conference_papers.append(article)
+                # Keep original dates for conference papers and arXiv papers
+                if article.get('source', '').endswith('Conference') or article.get('source') == 'arXiv':
+                    papers_with_real_dates.append(article)
                 else:
                     other_papers.append(article)
             
-            # Spread dates for non-conference papers
+            # Spread dates for papers without meaningful dates
             for i, article in enumerate(other_papers):
                 # Cycle through days 1-28 of the current month
                 day = (i % 28) + 1
