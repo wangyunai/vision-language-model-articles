@@ -685,70 +685,129 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Process data for article volume trend
     function getArticleVolumeData(articles) {
-        // Group articles by month
-        const monthlyData = {};
+        // Group articles by day instead of month for better granularity
+        const dailyData = {};
         
         articles.forEach(article => {
             const date = new Date(article.date);
             if (!isNaN(date.getTime())) {
-                const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-                monthlyData[yearMonth] = (monthlyData[yearMonth] || 0) + 1;
+                const yearMonthDay = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                dailyData[yearMonthDay] = (dailyData[yearMonthDay] || 0) + 1;
             }
         });
         
-        // Sort months chronologically
-        const sortedMonths = Object.keys(monthlyData).sort();
+        // Sort days chronologically
+        const sortedDays = Object.keys(dailyData).sort();
         
-        return {
-            labels: sortedMonths.map(ym => {
-                const [year, month] = ym.split('-');
-                return `${getMonthName(parseInt(month) - 1)} ${year}`;
-            }),
-            datasets: [{
-                label: 'Number of Articles',
-                data: sortedMonths.map(ym => monthlyData[ym]),
-                backgroundColor: colorPalette[0],
-                borderColor: colorPalette[0],
-                borderWidth: 2,
-                fill: false
-            }]
-        };
+        // If all data is from the same month, use daily granularity
+        // Otherwise fall back to monthly granularity
+        const allSameMonth = sortedDays.length > 0 && 
+            sortedDays.every(day => day.substring(0, 7) === sortedDays[0].substring(0, 7));
+            
+        if (allSameMonth && sortedDays.length > 1) {
+            // Use daily granularity
+            return {
+                labels: sortedDays.map(ymd => {
+                    const date = new Date(ymd);
+                    return `${date.getDate()} ${getMonthName(date.getMonth())}`;
+                }),
+                datasets: [{
+                    label: 'Number of Articles',
+                    data: sortedDays.map(ymd => dailyData[ymd]),
+                    backgroundColor: colorPalette[0],
+                    borderColor: colorPalette[0],
+                    borderWidth: 2,
+                    fill: false
+                }]
+            };
+        } else {
+            // Fall back to monthly granularity
+            const monthlyData = {};
+            
+            articles.forEach(article => {
+                const date = new Date(article.date);
+                if (!isNaN(date.getTime())) {
+                    const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                    monthlyData[yearMonth] = (monthlyData[yearMonth] || 0) + 1;
+                }
+            });
+            
+            // Sort months chronologically
+            const sortedMonths = Object.keys(monthlyData).sort();
+            
+            return {
+                labels: sortedMonths.map(ym => {
+                    const [year, month] = ym.split('-');
+                    return `${getMonthName(parseInt(month) - 1)} ${year}`;
+                }),
+                datasets: [{
+                    label: 'Number of Articles',
+                    data: sortedMonths.map(ym => monthlyData[ym]),
+                    backgroundColor: colorPalette[0],
+                    borderColor: colorPalette[0],
+                    borderWidth: 2,
+                    fill: false
+                }]
+            };
+        }
     }
     
     // Process data for keyword trends
     function getKeywordTrendData(articles, keywords) {
-        // First, group articles by month
-        const monthlyKeywordData = {};
+        // Check if all articles are from the same month
+        const months = new Set();
+        articles.forEach(article => {
+            if (article.date) {
+                const date = new Date(article.date);
+                if (!isNaN(date.getTime())) {
+                    months.add(`${date.getFullYear()}-${date.getMonth() + 1}`);
+                }
+            }
+        });
+        
+        // If all articles are from the same month, use daily granularity
+        const useDailyGranularity = months.size <= 1 && articles.length > 1;
+        
+        // Group articles by appropriate time unit
+        const timeKeywordData = {};
         
         articles.forEach(article => {
             const date = new Date(article.date);
             if (!isNaN(date.getTime())) {
-                const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                let timeKey;
                 
-                if (!monthlyKeywordData[yearMonth]) {
-                    monthlyKeywordData[yearMonth] = {};
-                    keywords.forEach(kw => monthlyKeywordData[yearMonth][kw] = 0);
+                if (useDailyGranularity) {
+                    // Use day granularity
+                    timeKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                } else {
+                    // Use month granularity
+                    timeKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                }
+                
+                if (!timeKeywordData[timeKey]) {
+                    timeKeywordData[timeKey] = {};
+                    keywords.forEach(kw => timeKeywordData[timeKey][kw] = 0);
                 }
                 
                 // Check for each keyword in the article
                 if (article.keywords && Array.isArray(article.keywords)) {
                     article.keywords.forEach(kw => {
                         if (keywords.includes(kw)) {
-                            monthlyKeywordData[yearMonth][kw]++;
+                            timeKeywordData[timeKey][kw]++;
                         }
                     });
                 }
             }
         });
         
-        // Sort months chronologically
-        const sortedMonths = Object.keys(monthlyKeywordData).sort();
+        // Sort time units chronologically
+        const sortedTimeKeys = Object.keys(timeKeywordData).sort();
         
         // Prepare dataset for each keyword
         const datasets = keywords.map((keyword, index) => {
             return {
                 label: keyword,
-                data: sortedMonths.map(ym => monthlyKeywordData[ym][keyword]),
+                data: sortedTimeKeys.map(tk => timeKeywordData[tk][keyword]),
                 backgroundColor: colorPalette[index % colorPalette.length],
                 borderColor: colorPalette[index % colorPalette.length],
                 borderWidth: 2,
@@ -756,39 +815,104 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         });
         
-        return {
-            labels: sortedMonths.map(ym => {
-                const [year, month] = ym.split('-');
+        // Format labels based on granularity
+        let labels;
+        if (useDailyGranularity) {
+            labels = sortedTimeKeys.map(tk => {
+                const date = new Date(tk);
+                return `${date.getDate()} ${getMonthName(date.getMonth())}`;
+            });
+        } else {
+            labels = sortedTimeKeys.map(tk => {
+                const [year, month] = tk.split('-');
                 return `${getMonthName(parseInt(month) - 1)} ${year}`;
-            }),
+            });
+        }
+        
+        return {
+            labels: labels,
             datasets: datasets
         };
     }
     
     // Process data for source activity
     function getSourceActivityData(articles) {
-        // Count articles per source
-        const sourceData = {};
-        
+        // Check if all articles are from the same month
+        const months = new Set();
         articles.forEach(article => {
-            if (article.source) {
-                sourceData[article.source] = (sourceData[article.source] || 0) + 1;
+            if (article.date) {
+                const date = new Date(article.date);
+                if (!isNaN(date.getTime())) {
+                    months.add(`${date.getFullYear()}-${date.getMonth() + 1}`);
+                }
             }
         });
         
-        // Sort sources by article count (descending)
-        const sortedSources = Object.entries(sourceData)
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 10); // Top 10 sources
+        // If all articles are from the same month, use daily granularity
+        const useDailyGranularity = months.size <= 1 && articles.length > 1;
+        
+        // Get all unique sources
+        const sources = Array.from(new Set(articles.map(article => article.source).filter(Boolean)));
+        
+        // Group articles by time unit and source
+        const timeSourceData = {};
+        
+        articles.forEach(article => {
+            if (!article.source) return;
+            
+            const date = new Date(article.date);
+            if (!isNaN(date.getTime())) {
+                let timeKey;
+                
+                if (useDailyGranularity) {
+                    // Use day granularity
+                    timeKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                } else {
+                    // Use month granularity
+                    timeKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                }
+                
+                if (!timeSourceData[timeKey]) {
+                    timeSourceData[timeKey] = {};
+                    sources.forEach(source => timeSourceData[timeKey][source] = 0);
+                }
+                
+                timeSourceData[timeKey][article.source]++;
+            }
+        });
+        
+        // Sort time units chronologically
+        const sortedTimeKeys = Object.keys(timeSourceData).sort();
+        
+        // Prepare dataset for each source
+        const datasets = sources.map((source, index) => {
+            return {
+                label: source,
+                data: sortedTimeKeys.map(tk => timeSourceData[tk][source]),
+                backgroundColor: colorPalette[index % colorPalette.length],
+                borderColor: colorPalette[index % colorPalette.length],
+                borderWidth: 2,
+                fill: false
+            };
+        });
+        
+        // Format labels based on granularity
+        let labels;
+        if (useDailyGranularity) {
+            labels = sortedTimeKeys.map(tk => {
+                const date = new Date(tk);
+                return `${date.getDate()} ${getMonthName(date.getMonth())}`;
+            });
+        } else {
+            labels = sortedTimeKeys.map(tk => {
+                const [year, month] = tk.split('-');
+                return `${getMonthName(parseInt(month) - 1)} ${year}`;
+            });
+        }
         
         return {
-            labels: sortedSources.map(entry => entry[0]),
-            datasets: [{
-                label: 'Number of Articles',
-                data: sortedSources.map(entry => entry[1]),
-                backgroundColor: sortedSources.map((_, i) => colorPalette[i % colorPalette.length]),
-                borderWidth: 1
-            }]
+            labels: labels,
+            datasets: datasets
         };
     }
     
@@ -938,59 +1062,65 @@ document.addEventListener('DOMContentLoaded', () => {
     function createTrendChart(chartData, chartType) {
         const ctx = document.getElementById('trend-chart').getContext('2d');
         
-        // Destroy previous chart if it exists
-        if (trendChart) {
-            trendChart.destroy();
+        // Destroy existing chart if any
+        if (window.trendChart) {
+            window.trendChart.destroy();
         }
         
-        // Determine chart type based on data
-        const chartStyle = chartType === 'sources' ? 'bar' : 'line';
-        
-        // Get text color based on current theme
-        const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
-        const borderColor = getComputedStyle(document.documentElement).getPropertyValue('--border-color');
-        
-        // Create new chart
-        trendChart = new Chart(ctx, {
-            type: chartStyle,
-            data: chartData,
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: {
-                            color: textColor
-                        },
-                        grid: {
-                            color: borderColor
-                        }
-                    },
-                    x: {
-                        ticks: {
-                            color: textColor
-                        },
-                        grid: {
-                            color: borderColor
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: textColor
-                        }
-                    },
-                    tooltip: {
-                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                        titleColor: '#fff',
-                        bodyColor: '#fff',
-                        borderColor: 'rgba(255, 255, 255, 0.2)',
-                        borderWidth: 1
-                    }
+        // Adjust chart options based on type
+        let chartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
                 }
             }
+        };
+        
+        // Determine if we're dealing with daily data (all dates in same month)
+        const isUsingDailyData = chartData.labels && 
+            chartData.labels.length > 1 && 
+            !chartData.labels[0].includes(',') && 
+            !chartData.labels[0].includes('20'); // Simple check if labels don't include year
+            
+        // Set chart type based on data
+        let type = 'line';
+        
+        if (chartType === 'sources' && !isUsingDailyData) {
+            type = 'bar';
+            chartOptions.indexAxis = 'y'; // Horizontal bar chart
+        } else if (isUsingDailyData) {
+            // Add specific options for daily data
+            chartOptions.scales.x = {
+                title: {
+                    display: true,
+                    text: 'Day of Month'
+                }
+            };
+            
+            // Connect null values with dotted lines for daily data
+            chartOptions.elements = {
+                line: {
+                    tension: 0.2  // Smooth the line a bit
+                },
+                point: {
+                    radius: 4,    // Slightly larger points
+                    hoverRadius: 6
+                }
+            };
+        }
+        
+        // Create the chart
+        window.trendChart = new Chart(ctx, {
+            type: type,
+            data: chartData,
+            options: chartOptions
         });
     }
     
