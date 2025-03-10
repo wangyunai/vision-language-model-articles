@@ -146,9 +146,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Populate the source filter dropdown
     function populateSourceFilter() {
-        if (!sourceFilter) return;
+        if (!sourceFilter) {
+            console.error("Source filter element not found!");
+            return;
+        }
         
-        console.log("Populating source filter with options:", Array.from(allSources));
+        // Get all unique sources
+        const sources = new Set();
+        allArticles.forEach(article => {
+            if (article.source) {
+                sources.add(article.source);
+            }
+        });
+        
+        console.log("Found these unique sources:", Array.from(sources));
         
         // Clear existing options except "All Sources"
         while (sourceFilter.options.length > 1) {
@@ -156,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         // Sort sources alphabetically
-        const sortedSources = Array.from(allSources).sort();
+        const sortedSources = Array.from(sources).sort();
         
         // Add sources to the dropdown
         sortedSources.forEach(source => {
@@ -165,6 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
             option.textContent = source;
             sourceFilter.appendChild(option);
         });
+        
+        console.log("Source filter populated with options:", Array.from(sourceFilter.options).map(opt => opt.value));
+        
+        // Force a change event to update the UI
+        sourceFilter.dispatchEvent(new Event('change'));
     }
     
     // Update dashboard statistics
@@ -616,6 +632,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedKeyword = keywordFilter ? keywordFilter.value : 'all';
         
         console.log("Filter values:", { searchTerm, selectedSource, selectedDate, selectedKeyword });
+        console.log("Available sources in dropdown:", Array.from(sourceFilter.options).map(opt => opt.value));
+        
+        // IMPORTANT: Log the first few articles to see their source values
+        console.log("Sample article sources:", allArticles.slice(0, 5).map(a => a.source));
         
         // Filter articles
         filteredArticles = allArticles.filter(article => {
@@ -631,9 +651,17 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const searchMatch = titleMatch || summaryMatch || authorMatch || keywordMatch || searchTerm === '';
             
-            // Source filter
-            const sourceMatch = selectedSource === 'all' || 
-                (article.source && article.source === selectedSource);
+            // Source filter - with extra debugging
+            let sourceMatch = false;
+            if (selectedSource === 'all') {
+                sourceMatch = true;
+            } else if (article.source) {
+                sourceMatch = article.source === selectedSource;
+                // Debug specific source matching
+                if (article.source === selectedSource) {
+                    console.log(`Source match found: "${article.title}" has source "${article.source}"`);
+                }
+            }
             
             // Date filter
             let dateMatch = true;
@@ -660,9 +688,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const keywordFilterMatch = selectedKeyword === 'all' || 
                 (article.keywords && article.keywords.includes(selectedKeyword));
             
-            // Debug source matching
-            if (selectedSource !== 'all' && article.source === selectedSource) {
-                console.log("Source match found:", article.title, article.source);
+            // Log filter results for debugging
+            if (!sourceMatch && selectedSource !== 'all') {
+                console.log(`Source mismatch: Article "${article.title}" has source "${article.source}" but filter is "${selectedSource}"`);
             }
             
             return searchMatch && sourceMatch && dateMatch && keywordFilterMatch;
@@ -796,7 +824,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         // Filters
-        if (sourceFilter) sourceFilter.addEventListener('change', filterArticles);
+        if (sourceFilter) {
+            sourceFilter.addEventListener('change', function() {
+                console.log("Source filter changed to:", this.value);
+                filterArticles();
+            });
+        }
         if (dateFilter) dateFilter.addEventListener('change', filterArticles);
         if (keywordFilter) keywordFilter.addEventListener('change', filterArticles);
         if (sortOption) sortOption.addEventListener('change', filterArticles);
