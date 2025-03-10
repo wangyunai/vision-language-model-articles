@@ -10,6 +10,7 @@ import os
 import json
 import requests
 import datetime
+from datetime import datetime as dt
 import re
 import time
 from bs4 import BeautifulSoup
@@ -19,6 +20,7 @@ from urllib.parse import quote_plus
 import math
 from collections import Counter, defaultdict
 import random
+import argparse
 
 # Setup logging
 logging.basicConfig(
@@ -53,23 +55,65 @@ VLM_KEYWORDS = [
 ]
 
 class ArticleFetcher:
-    def __init__(self):
+    def __init__(self, start_date=None, end_date=None):
         self.articles = []
         self.existing_articles = self._load_existing_articles()
         self.keyword_stats = defaultdict(lambda: {
-            'count': 0,
+            'count': 0, 
             'mentions_by_month': defaultdict(int),
             'sources': defaultdict(int),
             'attention_score': 0
         })
+        
+        # Set date range with defaults
+        if start_date:
+            try:
+                self.start_date = dt.strptime(start_date, "%Y-%m-%d")
+            except ValueError:
+                logger.warning(f"Invalid start_date format: {start_date}. Using default (one year ago).")
+                # Default to one year ago from today
+                today = dt.now()
+                self.start_date = dt(today.year - 1, today.month, today.day)
+        else:
+            # Default to one year ago from today
+            today = dt.now()
+            self.start_date = dt(today.year - 1, today.month, today.day)
+            
+        if end_date:
+            try:
+                self.end_date = dt.strptime(end_date, "%Y-%m-%d")
+            except ValueError:
+                logger.warning(f"Invalid end_date format: {end_date}. Using current date.")
+                self.end_date = dt.now()
+        else:
+            # Default to current date
+            self.end_date = dt.now()
+            
+        logger.info(f"Date range set: {self.start_date.strftime('%Y-%m-%d')} to {self.end_date.strftime('%Y-%m-%d')}")
     
     def _load_existing_articles(self):
-        """Load existing articles to avoid duplicates"""
+        """
+        Load existing articles from the index.json file.
+        
+        This ensures we don't duplicate articles and can update attention scores
+        for existing articles.
+        
+        Returns:
+            list: The loaded articles
+        """
         try:
-            with open('articles/index.json', 'r') as f:
-                return json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError):
-            return []
+            if os.path.exists('articles/index.json'):
+                with open('articles/index.json', 'r') as f:
+                    self.existing_articles = json.load(f)
+                    logger.info(f"Loaded {len(self.existing_articles)} existing articles")
+            else:
+                self.existing_articles = []
+                logger.info("No existing articles found")
+        except Exception as e:
+            logger.error(f"Error loading existing articles: {e}")
+            self.existing_articles = []
+        
+        return self.existing_articles
     
     def _save_articles(self):
         """Save fetched articles to JSON files"""
@@ -92,10 +136,13 @@ class ArticleFetcher:
         # Sort by date (newest first)
         unique_articles.sort(key=lambda x: x.get('date', ''), reverse=True)
         
+        # Save to index.json
         with open('articles/index.json', 'w') as f:
             json.dump(unique_articles, f, indent=2)
         
-        logger.info(f"Saved {len(self.articles)} new articles. Total: {len(unique_articles)}")
+        # Calculate how many new articles we added
+        new_article_count = len(self.articles)
+        logger.info(f"Saved {new_article_count} new articles. Total: {len(unique_articles)}")
     
     def is_relevant(self, text):
         """Check if text contains VLM-related keywords"""
@@ -115,17 +162,17 @@ class ArticleFetcher:
         # Categories to search in
         categories = [
             "cs.CV",  # Computer Vision
-            "cs.CL",  # Computational Linguistics
+            "cs.CL",  # Computation and Language
             "cs.AI",  # Artificial Intelligence
             "cs.LG",  # Machine Learning
-            "cs.MM"   # Multimedia
+            "cs.MM",  # Multimedia
         ]
         category_query = " OR ".join([f"cat:{cat}" for cat in categories])
         
-        # Add date range for the last 30 days
-        thirty_days_ago = (datetime.datetime.now() - datetime.timedelta(days=30)).strftime("%Y%m%d")
-        today = datetime.datetime.now().strftime("%Y%m%d")
-        date_query = f"submittedDate:[{thirty_days_ago}000000 TO {today}235959]"
+        # Add date range based on class parameters
+        start_date_str = self.start_date.strftime("%Y%m%d")
+        end_date_str = self.end_date.strftime("%Y%m%d")
+        date_query = f"submittedDate:[{start_date_str}000000 TO {end_date_str}235959]"
         
         # Combine queries
         full_query = f"({search_query}) AND ({category_query}) AND ({date_query})"
@@ -133,12 +180,13 @@ class ArticleFetcher:
         # Set up the API request parameters
         params = {
             "search_query": full_query,
+            "start": 0,
+            "max_results": max_results,
             "sortBy": "submittedDate",
-            "sortOrder": "descending",
-            "max_results": max_results
+            "sortOrder": "descending"
         }
         
-        logger.info(f"arXiv query: {full_query}")
+        # Make the request to arXiv API
         response = requests.get(ARXIV_API_URL, params=params)
         
         if response.status_code != 200:
@@ -149,12 +197,9 @@ class ArticleFetcher:
         feed = feedparser.parse(response.text)
         logger.info(f"arXiv returned {len(feed.entries)} entries")
         
+        # Process each entry
         for entry in feed.entries:
-            # Skip if we've seen this article already
-            if any(a['url'] == entry.id for a in self.existing_articles):
-                continue
-            
-            # Further verify relevance by checking title and summary
+            # Skip if not relevant
             if not (self.is_relevant(entry.title) or self.is_relevant(entry.summary)):
                 continue
             
@@ -163,13 +208,13 @@ class ArticleFetcher:
             
             # Format the publication date
             try:
-                published = datetime.datetime.strptime(entry.published, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d")
+                published = dt.strptime(entry.published, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d")
             except (ValueError, KeyError):
-                published = datetime.datetime.now().strftime("%Y-%m-%d")
+                published = self.get_current_date().strftime("%Y-%m-%d")
             
             # Create article object
             article = {
-                "id": entry.id.split('/')[-1].replace('.', '_'),
+                "id": entry.id.split("/")[-1],
                 "title": entry.title,
                 "url": entry.id,
                 "pdf_url": entry.id.replace("abs", "pdf"),
@@ -219,10 +264,10 @@ class ArticleFetcher:
                 
                 # Get date
                 date_elem = article.find('time')
-                date = datetime.datetime.now().strftime("%Y-%m-%d")
+                date = dt.now().strftime("%Y-%m-%d")
                 if date_elem and date_elem.get('datetime'):
                     try:
-                        date = datetime.datetime.strptime(
+                        date = dt.strptime(
                             date_elem.get('datetime'), 
                             "%Y-%m-%dT%H:%M:%S%z"
                         ).strftime("%Y-%m-%d")
@@ -296,10 +341,10 @@ class ArticleFetcher:
                             continue
                         
                         # Get date
-                        date = datetime.datetime.now().strftime("%Y-%m-%d")
+                        date = dt.now().strftime("%Y-%m-%d")
                         if hasattr(entry, 'published'):
                             try:
-                                date_obj = datetime.datetime.strptime(entry.published, "%a, %d %b %Y %H:%M:%S %z")
+                                date_obj = dt.strptime(entry.published, "%a, %d %b %Y %H:%M:%S %z")
                                 date = date_obj.strftime("%Y-%m-%d")
                             except (ValueError, AttributeError):
                                 pass
@@ -356,12 +401,12 @@ class ArticleFetcher:
                     continue
                 
                 # Get date (approximate since blog design changes)
-                date = datetime.datetime.now().strftime("%Y-%m-%d")
+                date = dt.now().strftime("%Y-%m-%d")
                 date_elem = article.find(['time', 'span'], class_=lambda c: c and 'date' in c.lower())
                 if date_elem:
                     date_text = date_elem.text.strip()
                     try:
-                        date_obj = datetime.datetime.strptime(date_text, "%B %d, %Y")
+                        date_obj = dt.strptime(date_text, "%B %d, %Y")
                         date = date_obj.strftime("%Y-%m-%d")
                     except ValueError:
                         pass
@@ -451,12 +496,12 @@ class ArticleFetcher:
                 
                 # Extract date if available
                 date_elem = post.find('span', class_='blog-post-card__date')
-                date = datetime.datetime.now().strftime("%Y-%m-%d")
+                date = dt.now().strftime("%Y-%m-%d")
                 if date_elem:
                     date_text = date_elem.text.strip()
                     try:
                         # Example date format: "May 16, 2023"
-                        date_obj = datetime.datetime.strptime(date_text, "%B %d, %Y")
+                        date_obj = dt.strptime(date_text, "%B %d, %Y")
                         date = date_obj.strftime("%Y-%m-%d")
                     except ValueError:
                         # If date format is different, keep current date
@@ -514,7 +559,7 @@ class ArticleFetcher:
         except Exception as e:
             logger.error(f"Error fetching Meta AI Blog: {str(e)}")
     
-    def fetch_microsoft_research(self):
+    def fetch_microsoft_research_blog(self):
         """Fetch VLM-related articles from Microsoft Research Blog"""
         logger.info("Fetching Microsoft Research Blog articles...")
         url = "https://www.microsoft.com/en-us/research/blog/"
@@ -560,12 +605,12 @@ class ArticleFetcher:
                 
                 # Get date
                 date_elem = card.find('div', class_='date')
-                date = datetime.datetime.now().strftime("%Y-%m-%d")
+                date = dt.now().strftime("%Y-%m-%d")
                 if date_elem:
                     date_text = date_elem.text.strip()
                     try:
                         # Example format: "April 25, 2023"
-                        date_obj = datetime.datetime.strptime(date_text, "%B %d, %Y")
+                        date_obj = dt.strptime(date_text, "%B %d, %Y")
                         date = date_obj.strftime("%Y-%m-%d")
                     except ValueError:
                         pass
@@ -663,12 +708,12 @@ class ArticleFetcher:
                 
                 # Get date
                 date_elem = card.find('div', class_='blog-post-card-date')
-                date = datetime.datetime.now().strftime("%Y-%m-%d")
+                date = dt.now().strftime("%Y-%m-%d")
                 if date_elem:
                     date_text = date_elem.text.strip()
                     try:
                         # Example format: "Jun 7, 2023"
-                        date_obj = datetime.datetime.strptime(date_text, "%b %d, %Y")
+                        date_obj = dt.strptime(date_text, "%b %d, %Y")
                         date = date_obj.strftime("%Y-%m-%d")
                     except ValueError:
                         pass
@@ -732,18 +777,17 @@ class ArticleFetcher:
             logger.error(f"Error fetching HuggingFace Blog: {str(e)}")
     
     def fetch_paperswithcode(self):
-        """Fetch VLM-related papers from Papers With Code"""
+        """Fetch VLM-related articles from Papers With Code"""
         logger.info("Fetching Papers With Code articles...")
         
-        # Create a list to track articles found with each keyword
+        # Keep track of URLs we've already found to avoid duplicates across keywords
         found_urls = set()
         
-        # We'll search for VLM-related terms
+        # Search for multiple keywords
         for keyword in ["vision-language", "multimodal", "VLM"]:
-            url = f"https://paperswithcode.com/search?q={keyword}"
-            logger.info(f"Searching Papers With Code for keyword: {keyword}")
-            
             try:
+                url = f"https://paperswithcode.com/search?q={keyword}"
+                logger.info(f"Searching Papers With Code for keyword: {keyword}")
                 logger.info(f"Sending request to: {url}")
                 headers = {
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
@@ -761,11 +805,7 @@ class ArticleFetcher:
                 
                 for item in paper_items:
                     # Get title and URL
-                    title_elem = item.find('h1')
-                    if not title_elem:
-                        continue
-                    
-                    title_link = title_elem.find('a')
+                    title_link = item.find('h1').find('a')
                     if not title_link:
                         continue
                     
@@ -776,7 +816,6 @@ class ArticleFetcher:
                     if paper_url in found_urls:
                         logger.info(f"Skipping duplicate paper: {title}")
                         continue
-                    found_urls.add(paper_url)
                     
                     # Skip if already exists in our database
                     if any(a['url'] == paper_url for a in self.existing_articles):
@@ -795,7 +834,7 @@ class ArticleFetcher:
                         continue
                     
                     # Get date - for Papers with Code, we'll use the current date as it's hard to get publication date
-                    date = datetime.datetime.now().strftime("%Y-%m-%d")
+                    date = self.get_current_date().strftime("%Y-%m-%d")
                     
                     # Get authors
                     authors = []
@@ -834,16 +873,19 @@ class ArticleFetcher:
         """Fetch conference papers via Semantic Scholar API"""
         logger.info("Fetching conference papers via Semantic Scholar API...")
         
-        # Top AI/ML/CV conferences
+        # Define conference venues to search
         venues = [
-            "CVPR", "ICCV", "ECCV",    # Computer Vision
+            "CVPR", "ICCV", "ECCV",  # Computer Vision
             "NeurIPS", "ICML", "ICLR",  # Machine Learning
-            "ACL", "NAACL", "EMNLP",   # NLP
-            "AAAI", "IJCAI"            # AI
+            "ACL", "NAACL", "EMNLP",  # NLP
+            "AAAI", "IJCAI"  # AI
         ]
         
-        # Get the current year and create a 3-year span
-        current_year = datetime.datetime.now().year
+        successful_venues = 0
+        current_date = dt.now()
+        current_year = current_date.year
+        
+        # Search for papers from the last 2 years
         year_range = f"{current_year-2}-{current_year}"
         
         # Add your Semantic Scholar API key here (get one from https://www.semanticscholar.org/product/api)
@@ -851,15 +893,14 @@ class ArticleFetcher:
         api_key = ""  # Replace with your API key
         
         # Process each conference venue separately for better results
-        successful_venues = 0
         for venue in venues:
             logger.info(f"Searching for papers in {venue}...")
             
-            # Exponential backoff parameters for rate limiting
-            max_retries = 5  # Increased from 3
-            base_wait = 10   # Increased from 5 seconds
+            # Retry mechanism with exponential backoff
+            max_retries = 5
+            base_wait = 2  # seconds
             
-            for attempt in range(max_retries + 1):
+            for attempt in range(max_retries):
                 try:
                     params = {
                         "query": f"venue:{venue} AND (vision language model OR VLM OR CLIP OR multimodal OR vision-language)",
@@ -900,11 +941,10 @@ class ArticleFetcher:
                             
                             papers_added = 0
                             for paper in papers:
-                                # Skip if title is missing
-                                if not paper.get("title"):
+                                # Extract title
+                                title = paper.get("title", "")
+                                if not title:
                                     continue
-                                    
-                                title = paper["title"]
                                 
                                 # Skip if already exists
                                 paper_url = paper.get("url") or f"https://api.semanticscholar.org/paper/{paper.get('paperId')}"
@@ -924,13 +964,15 @@ class ArticleFetcher:
                                 
                                 # Get venue and year
                                 year = paper.get("year", current_year)
-                                citation_count = paper.get("citationCount", 0)
+                                if not year:
+                                    year = current_year
                                 
-                                # Create a reasonable date for the paper
-                                # Set papers from this year to be more recent
+                                # Create a date (publications are usually distributed throughout the year)
+                                # Using a random month for better visualization
+                                date = ""
                                 if year == current_year:
                                     # Last 3 months for current year papers
-                                    month = max(1, datetime.datetime.now().month - random.randint(0, 2))
+                                    month = max(1, current_date.month - random.randint(0, 2))
                                     date = f"{year}-{month:02d}-01"
                                 else:
                                     # Random month from last year
@@ -958,10 +1000,10 @@ class ArticleFetcher:
                                     "url": paper_url,
                                     "authors": authors,
                                     "date": date,
-                                    "summary": summary,
+                                    "summary": summary[:500] + "..." if len(summary) > 500 else summary,
                                     "source": f"{venue} Conference",
-                                    "keywords": keywords,
-                                    "citation_count": citation_count
+                                    "citation_count": paper.get("citationCount", 0),
+                                    "keywords": keywords
                                 }
                                 
                                 self.articles.append(article_obj)
@@ -996,32 +1038,29 @@ class ArticleFetcher:
     
     def calculate_keyword_statistics(self):
         """Calculate statistics and attention scores for keywords"""
-        logger.info("Calculating keyword statistics and attention scores...")
+        logger.info("Calculating keyword statistics...")
         
-        # Reset keyword stats
+        # Initialize keyword statistics dictionary
         self.keyword_stats = defaultdict(lambda: {
             'count': 0,
+            'attention_score': 0,
             'mentions_by_month': defaultdict(int),
-            'sources': defaultdict(int),
-            'attention_score': 0
+            'sources': defaultdict(int)
         })
         
         # Get current date for recency calculations
-        current_date = datetime.datetime.now()
+        current_date = self.get_current_date()
         current_year_month = f"{current_date.year}-{current_date.month:02d}"
         
-        # Combine existing and new articles for analysis
-        all_articles = self.existing_articles + self.articles
-        
-        # Count occurrences and gather statistics
-        for article in all_articles:
-            # Skip articles without proper dates
-            if not article.get('date'):
+        # Calculate statistics for each article
+        for article in self.articles:
+            # Skip articles without keywords
+            if not article.get('keywords'):
                 continue
-                
+            
             try:
                 # Parse the article date
-                article_date = datetime.datetime.strptime(article['date'], "%Y-%m-%d")
+                article_date = dt.strptime(article['date'], "%Y-%m-%d")
                 year_month = f"{article_date.year}-{article_date.month:02d}"
                 
                 # Calculate recency factor (1.0 for current month, decreasing for older articles)
@@ -1031,7 +1070,7 @@ class ArticleFetcher:
                 # Get article source
                 source = article.get('source', 'Unknown')
                 
-                # Calculate citation weight (if available)
+                # Default citation weight
                 citation_weight = 1.0
                 if 'citation_count' in article:
                     # Log scale to dampen effect of very high citation counts
@@ -1046,20 +1085,20 @@ class ArticleFetcher:
                     # Add weighted contribution to attention score
                     self.keyword_stats[keyword]['attention_score'] += recency_factor * citation_weight
             
-            except (ValueError, TypeError) as e:
+            except (ValueError, TypeError):
                 # Skip articles with invalid dates
                 logger.warning(f"Skipping article with invalid date: {article.get('title')}")
                 continue
         
         # Calculate trend factors (growth over time)
         for keyword, stats in self.keyword_stats.items():
-            if len(stats['mentions_by_month']) > 1:
-                # Get sorted months
+            if len(stats['mentions_by_month']) >= 6:  # Need at least 6 months of data
+                # Get months in sorted order
                 months = sorted(stats['mentions_by_month'].keys())
                 
-                if len(months) > 6:  # If we have at least 6 months of data
-                    # Compare recent months to older months
-                    recent_months = months[-3:]  # Last 3 months
+                if len(months) >= 6:
+                    # Calculate average mentions in recent 3 months vs. older months
+                    recent_months = months[-3:]  # Most recent 3 months
                     older_months = months[:-3]   # Earlier months
                     
                     recent_avg = sum(stats['mentions_by_month'][m] for m in recent_months) / len(recent_months)
@@ -1082,133 +1121,191 @@ class ArticleFetcher:
     
     def calculate_paper_attention_scores(self):
         """
-        Calculate attention scores for each paper based on multiple factors:
-        - Citation count
-        - Recency (newer papers with same citations get higher scores)
-        - Citation velocity (citations per month)
-        - Source prestige (conferences/journals weights)
+        Calculate attention scores for papers based on various factors.
+        
+        The attention score is a weighted combination of:
+        - Citation count (normalized)
+        - Recency (more recent papers get higher scores)
+        - Citation velocity (citations per month since publication)
+        - Source prestige (e.g., top conferences get higher weights)
+        - Keyword relevance
         """
-        print("Calculating paper attention scores...")
-        today = datetime.datetime.now()
-        source_weights = {
-            "arXiv": 1.0,
-            "CVPR": 1.5, 
-            "ICCV": 1.5,
-            "NeurIPS": 1.5,
-            "ICLR": 1.5,
-            "ICML": 1.5,
-            "ACL": 1.4,
-            "EMNLP": 1.4,
-            "ECCV": 1.4,
-            "AAAI": 1.3,
-            "IJCAI": 1.3,
-            "Google AI Blog": 1.2,
-            "OpenAI Blog": 1.2,
-            "Meta AI Research": 1.2,
-            "Microsoft Research": 1.2,
-            "HuggingFace Blog": 1.1,
-            "Papers With Code": 1.1,
-        }
+        logger.info("Calculating paper attention scores...")
         
-        # Default weight for sources not in the list
-        default_weight = 1.0
+        # Load existing articles if not already loaded
+        if not self.existing_articles:
+            self._load_existing_articles()
         
-        # Calculate attention scores for each article
-        for article in self.articles:
-            # Skip articles without dates
-            if not article.get('date'):
-                article['attention_score'] = 0
-                continue
-            
-            # Parse date and calculate age in months
-            try:
-                pub_date = datetime.datetime.strptime(article['date'], '%Y-%m-%d')
-                age_months = (today - pub_date).days / 30.0
-                
-                # Avoid division by zero for very recent papers
-                if age_months < 0.1:
-                    age_months = 0.1
-            except (ValueError, TypeError):
-                # Skip articles with invalid dates
-                article['attention_score'] = 0
-                continue
+        # Combine existing and new articles for scoring
+        all_articles = self.existing_articles + self.articles
+        
+        # Get current date for recency calculation
+        current_date = self.get_current_date()
+        
+        # Calculate scores for each article
+        for article in all_articles:
+            # Initialize components dictionary if it doesn't exist
+            if 'attention_components' not in article:
+                article['attention_components'] = {}
             
             # Get citation count (default to 0 if not available)
-            citations = article.get('citation_count', 0)
-            if citations is None:
-                citations = 0
+            citation_count = article.get('citation_count', 0)
+            
+            # Calculate recency score
+            recency_score = 0
+            try:
+                if 'date' in article and article['date']:
+                    # Try different date formats
+                    try:
+                        # Try YYYY-MM-DD format first (most common in our data)
+                        pub_date = dt.strptime(article['date'], '%Y-%m-%d')
+                    except ValueError:
+                        try:
+                            # Try Month Day, Year format
+                            pub_date = dt.strptime(article['date'], '%B %d, %Y')
+                        except ValueError:
+                            # Default to today if we can't parse the date
+                            pub_date = current_date
+                    
+                    months_since_pub = (
+                        (current_date.year - pub_date.year) * 12 + 
+                        (current_date.month - pub_date.month)
+                    )
+                    
+                    # More recent papers get higher scores
+                    if months_since_pub <= 0:  # Future papers (should be rare)
+                        recency_score = 1.0
+                    elif months_since_pub <= 24:
+                        recency_score = 1.0 - (months_since_pub / 24)
+                    else:
+                        recency_score = 0.2  # Base score for older papers
+                else:
+                    recency_score = 0.5  # Default for papers without dates
+            except Exception as e:
+                logger.error(
+                    f"Error calculating recency for {article.get('title', 'Unknown')}: {e}"
+                )
+                recency_score = 0.5  # Default on error
             
             # Calculate citation velocity (citations per month)
-            citation_velocity = citations / age_months
+            citation_velocity = 0
+            try:
+                if 'date' in article and article['date'] and citation_count > 0:
+                    # Try different date formats (same as above)
+                    try:
+                        pub_date = dt.strptime(article['date'], '%Y-%m-%d')
+                    except ValueError:
+                        try:
+                            pub_date = dt.strptime(article['date'], '%B %d, %Y')
+                        except ValueError:
+                            pub_date = current_date
+                    
+                    months_since_pub = max(
+                        1, 
+                        (current_date.year - pub_date.year) * 12 + 
+                        (current_date.month - pub_date.month)
+                    )
+                    citation_velocity = citation_count / months_since_pub
+                else:
+                    citation_velocity = 0
+            except Exception as e:
+                logger.error(
+                    f"Error calculating citation velocity for "
+                    f"{article.get('title', 'Unknown')}: {e}"
+                )
+                citation_velocity = 0
             
-            # Apply recency factor (exponential decay with half-life of 24 months)
-            recency_factor = math.exp(-0.029 * age_months)  # ln(2)/24 ≈ 0.029
+            # Source weight based on prestige
+            source_weight = 1.0  # Default weight
+            source = article.get('source', '').lower()
             
-            # Get source weight
-            source = article.get('source', '')
-            source_weight = source_weights.get(source, default_weight)
+            # Assign weights to different sources
+            if 'arxiv' in source:
+                source_weight = 0.7  # ArXiv papers (not peer-reviewed)
+            elif any(conf in source for conf in 
+                    ['cvpr', 'iccv', 'eccv', 'neurips', 'icml', 'iclr']):
+                source_weight = 1.5  # Top-tier conferences
+            elif any(conf in source for conf in 
+                    ['acl', 'naacl', 'emnlp', 'aaai', 'ijcai']):
+                source_weight = 1.3  # Good conferences
+            elif 'journal' in source or 'transactions' in source:
+                source_weight = 1.2  # Journal papers
+            elif 'papers with code' in source:
+                source_weight = 1.1  # Papers With Code
+            elif any(blog in source for blog in ['google ai', 'openai', 'meta ai', 'microsoft']):
+                source_weight = 1.2  # Industry research blogs
             
-            # Calculate final attention score
-            # Base score from citations with a log transformation to reduce skew
-            base_score = math.log(citations + 1) * 10
+            # Keyword relevance score
+            keyword_count = len(article.get('keywords', []))
+            keyword_score = min(1.0, keyword_count / 5)  # Cap at 1.0
             
-            # Apply weights and factors
-            attention_score = (
-                base_score * 
-                recency_factor * 
-                (1 + 0.5 * citation_velocity) *  # Boost for high velocity
-                source_weight  # Boost for prestigious sources
+            # Calculate base score
+            # Normalize citation count (log scale)
+            citation_score = math.log(citation_count + 1) / 10
+            
+            # Combine factors with weights
+            base_score = (
+                (citation_score * 3.0) +    # Citation count
+                (recency_score * 3.0) +     # Recency (weighted high)
+                (citation_velocity * 1.5) + # Citation velocity
+                (source_weight * 1.5) +     # Source prestige
+                (keyword_score * 2.0)       # Keyword relevance (weighted high)
             )
             
-            # Store the score in the article
-            article['attention_score'] = round(attention_score, 2)
-            
-            # Store the components for debugging/tuning
+            # Store components for transparency
             article['attention_components'] = {
-                'citations': citations,
-                'age_months': round(age_months, 1),
+                'citation_score': round(citation_score, 2),
+                'recency_score': round(recency_score, 2),
                 'citation_velocity': round(citation_velocity, 2),
-                'recency_factor': round(recency_factor, 2),
-                'source_weight': source_weight
+                'source_weight': round(source_weight, 2),
+                'keyword_score': round(keyword_score, 2),
+                'base_score': round(base_score, 2)
             }
+            
+            # Final attention score (rounded to 2 decimal places)
+            article['attention_score'] = round(base_score, 2)
         
         # Save top papers by attention score to a separate file
-        self._save_paper_attention_scores()
+        self._save_paper_attention_scores(all_articles)
         
         print("Paper attention scores calculated successfully")
     
-    def _save_paper_attention_scores(self):
-        """Save the paper attention scores to a JSON file."""
-        # Create a copy of articles and sort by attention score
+    def _save_paper_attention_scores(self, articles_with_scores):
+        """
+        Save the top papers by attention score to a separate file.
+        
+        Args:
+            articles_with_scores: List of articles with attention scores
+        """
+        # Sort by attention score (highest first)
         sorted_articles = sorted(
-            self.articles, 
-            key=lambda x: x.get('attention_score', 0), 
+            articles_with_scores,
+            key=lambda x: x.get('attention_score', 0),
             reverse=True
         )
         
-        # Prepare the data structure
-        attention_data = {
-            'last_updated': datetime.datetime.now().strftime('%Y-%m-%d'),
-            'top_papers': []
-        }
+        # Extract relevant information for the attention score file
+        paper_attention = []
+        for article in sorted_articles:
+            # Include all articles with any attention score (not just >0)
+            paper_attention.append({
+                'id': article.get('id', ''),
+                'title': article.get('title', ''),
+                'url': article.get('url', ''),
+                'date': article.get('date', ''),
+                'attention_score': article.get('attention_score', 0),
+                'attention_components': article.get('attention_components', {})
+            })
+            
+            # Limit to top 100 papers to keep the file manageable
+            if len(paper_attention) >= 100:
+                break
         
-        # Add top 100 papers
-        for article in sorted_articles[:100]:
-            if 'attention_score' in article and article['attention_score'] > 0:
-                attention_data['top_papers'].append({
-                    'title': article.get('title', ''),
-                    'authors': article.get('authors', []),
-                    'date': article.get('date', ''),
-                    'source': article.get('source', ''),
-                    'url': article.get('url', ''),
-                    'citation_count': article.get('citation_count', 0),
-                    'attention_score': article.get('attention_score', 0),
-                    'components': article.get('attention_components', {})
-                })
+        # Save to paper_attention.json
+        with open('articles/paper_attention.json', 'w') as f:
+            json.dump(paper_attention, f, indent=2)
         
-        # Save to file
-        with open('paper_attention.json', 'w') as f:
-            json.dump(attention_data, f, indent=2)
+        logger.info(f"Saved {len(paper_attention)} papers with attention scores")
     
     def _save_keyword_stats(self):
         """Save keyword statistics to a JSON file"""
@@ -1220,7 +1317,7 @@ class ArticleFetcher:
             with open('articles/keyword_stats.json', 'w') as f:
                 json.dump({
                     'keywords': keyword_stats_dict,
-                    'updated_at': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    'updated_at': self.get_current_date().strftime("%Y-%m-%d %H:%M:%S")
                 }, f, indent=2)
             logger.info("Saved keyword statistics to articles/keyword_stats.json")
         except Exception as e:
@@ -1232,70 +1329,38 @@ class ArticleFetcher:
         y2, m2 = map(int, ym2.split('-'))
         return (y2 - y1) * 12 + (m2 - m1)
     
-    def run(self):
-        """Run the article fetcher to get articles from all sources"""
-        print("Running article fetcher...")
+    def get_current_date(self):
+        """
+        Get the current date.
+        This ensures consistent date handling throughout the application.
         
-        # Fetch articles from all sources
+        Returns:
+            datetime: The current date
+        """
+        return dt.now()
+    
+    def run(self):
+        """Run the article fetcher to collect articles from all sources"""
+        logger.info("Starting VLM article fetcher")
+        
+        # Clear existing articles to prevent duplication
+        self.articles = []
+        
+        # Load existing articles
+        self.existing_articles = self._load_existing_articles()
+        logger.info(f"Loaded {len(self.existing_articles)} existing articles")
+        
+        # Fetch articles from various sources
         self.fetch_arxiv_articles()
         self.fetch_google_ai_blog()
         self.fetch_openai_blog()
         self.fetch_meta_ai_blog()
-        self.fetch_microsoft_research()
+        self.fetch_microsoft_research_blog()
         self.fetch_huggingface_blog()
         self.fetch_paperswithcode()
         self.fetch_semantic_scholar_conferences()
         
-        # Spread article dates for better trend visualization, except for conference papers
-        # and arXiv papers which already have meaningful dates
-        if self.articles:
-            # Get current date - ensure we're using the correct year (2024)
-            today = datetime.datetime.now()
-            
-            # Fix for future dates - ensure we're using the current year
-            current_year = 2024  # Hardcoded to 2024 to fix the issue
-            current_month = f"{current_year}-{today.month:02d}"
-            
-            # Keep track of papers that should keep their original dates
-            papers_with_real_dates = []
-            other_papers = []
-            
-            # Separate papers with meaningful dates from other sources
-            for article in self.articles:
-                # Keep original dates for conference papers and arXiv papers
-                if article.get('source', '').endswith('Conference') or article.get('source') == 'arXiv':
-                    # Ensure arXiv dates are not in the future
-                    if article.get('source') == 'arXiv':
-                        try:
-                            article_date = datetime.datetime.strptime(article.get('date', ''), "%Y-%m-%d")
-                            # If date is in the future, adjust it to current year
-                            if article_date.year > 2024:
-                                fixed_date = f"2024-{article_date.month:02d}-{article_date.day:02d}"
-                                article['date'] = fixed_date
-                        except (ValueError, TypeError):
-                            # If date parsing fails, use current date
-                            article['date'] = f"{current_year}-{today.month:02d}-{today.day:02d}"
-                    papers_with_real_dates.append(article)
-                else:
-                    # For Papers With Code and other sources, ensure dates are not in the future
-                    try:
-                        article_date = datetime.datetime.strptime(article.get('date', ''), "%Y-%m-%d")
-                        # If date is in the future, adjust it to current year
-                        if article_date.year > 2024:
-                            fixed_date = f"2024-{article_date.month:02d}-{article_date.day:02d}"
-                            article['date'] = fixed_date
-                    except (ValueError, TypeError):
-                        # If date parsing fails, use current date
-                        article['date'] = f"{current_year}-{today.month:02d}-{today.day:02d}"
-                    other_papers.append(article)
-            
-            # Spread dates for papers without meaningful dates
-            for i, article in enumerate(other_papers):
-                # Cycle through days 1-28 of the current month
-                day = (i % 28) + 1
-                article['date'] = f"{current_month}-{day:02d}"
-        
-        # Save all articles to file
+        # Save the articles
         self._save_articles()
         
         # Calculate keyword statistics
@@ -1304,13 +1369,20 @@ class ArticleFetcher:
         # Calculate paper attention scores
         self.calculate_paper_attention_scores()
         
-        print(f"Article fetcher completed. Found {len(self.articles)} articles.")
-        
+        logger.info(f"Completed fetching. Found {len(self.articles)} new articles.")
         return len(self.articles)
 
 
 if __name__ == "__main__":
-    logger.info("Starting VLM article fetcher")
-    fetcher = ArticleFetcher()
-    num_articles = fetcher.run()
-    logger.info(f"Completed fetching. Found {num_articles} new articles.")
+    # Set up command line argument parsing
+    parser = argparse.ArgumentParser(description='Fetch VLM-related articles')
+    parser.add_argument('--start-date', type=str, 
+                        help='Start date in YYYY-MM-DD format (default: one year ago)')
+    parser.add_argument('--end-date', type=str, 
+                        help='End date in YYYY-MM-DD format (default: current date)')
+    
+    args = parser.parse_args()
+    
+    # Create and run the article fetcher with specified date range
+    fetcher = ArticleFetcher(start_date=args.start_date, end_date=args.end_date)
+    fetcher.run()
