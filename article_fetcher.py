@@ -16,6 +16,8 @@ from bs4 import BeautifulSoup
 import feedparser
 import logging
 from urllib.parse import quote_plus
+import math
+from collections import Counter, defaultdict
 
 # Setup logging
 logging.basicConfig(
@@ -33,6 +35,7 @@ os.makedirs('articles', exist_ok=True)
 
 # Constants
 ARXIV_API_URL = "http://export.arxiv.org/api/query"
+SEMANTIC_SCHOLAR_API_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 VLM_KEYWORDS = [
     "vision language model", "VLM", "multimodal", "vision-language", 
     "image-text", "visual-textual", "CLIP", "DALL-E", "Stable Diffusion",
@@ -52,6 +55,12 @@ class ArticleFetcher:
     def __init__(self):
         self.articles = []
         self.existing_articles = self._load_existing_articles()
+        self.keyword_stats = defaultdict(lambda: {
+            'count': 0,
+            'mentions_by_month': defaultdict(int),
+            'sources': defaultdict(int),
+            'attention_score': 0
+        })
     
     def _load_existing_articles(self):
         """Load existing articles to avoid duplicates"""
@@ -246,12 +255,76 @@ class ArticleFetcher:
         url = "https://openai.com/blog"
         
         try:
-            response = requests.get(url)
+            logger.info(f"Sending request to: {url}")
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml",
+                "Accept-Language": "en-US,en;q=0.9"
+            }
+            response = requests.get(url, headers=headers, timeout=15)
+            logger.info(f"OpenAI Blog response status: {response.status_code}")
+            
+            # Try using their API url instead if we get blocked
+            if response.status_code == 403:
+                logger.info("Trying OpenAI Blog RSS feed instead...")
+                rss_url = "https://openai.com/index.xml"
+                response = requests.get(rss_url, headers=headers, timeout=15)
+                logger.info(f"OpenAI RSS feed response status: {response.status_code}")
+                
+                if response.status_code == 200:
+                    # Parse RSS feed
+                    feed = feedparser.parse(response.text)
+                    logger.info(f"Found {len(feed.entries)} entries in the OpenAI RSS feed")
+                    
+                    for entry in feed.entries:
+                        title = entry.title
+                        article_url = entry.link
+                        
+                        # Skip if not relevant or already exists
+                        if not self.is_relevant(title):
+                            continue
+                            
+                        if any(a['url'] == article_url for a in self.existing_articles):
+                            continue
+                        
+                        # Get date
+                        date = datetime.datetime.now().strftime("%Y-%m-%d")
+                        if hasattr(entry, 'published'):
+                            try:
+                                date_obj = datetime.datetime.strptime(entry.published, "%a, %d %b %Y %H:%M:%S %z")
+                                date = date_obj.strftime("%Y-%m-%d")
+                            except (ValueError, AttributeError):
+                                pass
+                        
+                        # Get summary
+                        summary = ""
+                        if hasattr(entry, 'summary'):
+                            summary = entry.summary
+                        
+                        # Create article object
+                        article_id = f"openai_{re.sub(r'[^a-zA-Z0-9]', '_', title)[:50]}"
+                        article_obj = {
+                            "id": article_id,
+                            "title": title,
+                            "url": article_url,
+                            "authors": ["OpenAI"],
+                            "date": date,
+                            "summary": summary[:500] + "..." if len(summary) > 500 else summary,
+                            "source": "OpenAI Blog",
+                            "keywords": [k for k in VLM_KEYWORDS if k.lower() in (title + summary).lower()]
+                        }
+                        
+                        self.articles.append(article_obj)
+                        logger.info(f"Found new article: {article_obj['title']}")
+                    
+                    return
+            
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             
             # Find all blog post articles
             articles = soup.find_all('article')
+            logger.info(f"Found {len(articles)} articles on OpenAI Blog")
             
             for article in articles:
                 # Get title and URL
@@ -331,12 +404,20 @@ class ArticleFetcher:
         url = "https://ai.meta.com/blog/"
         
         try:
-            response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+            logger.info(f"Sending request to: {url}")
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml",
+                "Accept-Language": "en-US,en;q=0.9"
+            }
+            response = requests.get(url, headers=headers, timeout=15)
+            logger.info(f"Meta AI Blog response status: {response.status_code}")
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             
             # Find all blog post entries
             blog_posts = soup.find_all('div', class_='blog-post-card')
+            logger.info(f"Found {len(blog_posts)} blog posts on Meta AI Blog")
             
             for post in blog_posts:
                 # Get title
@@ -431,12 +512,20 @@ class ArticleFetcher:
         url = "https://www.microsoft.com/en-us/research/blog/"
         
         try:
-            response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+            logger.info(f"Sending request to: {url}")
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml",
+                "Accept-Language": "en-US,en;q=0.9"
+            }
+            response = requests.get(url, headers=headers, timeout=15)
+            logger.info(f"Microsoft Research Blog response status: {response.status_code}")
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             
             # Find all article cards
             article_cards = soup.find_all('div', class_='card')
+            logger.info(f"Found {len(article_cards)} article cards on Microsoft Research Blog")
             
             for card in article_cards:
                 # Get title and URL
@@ -531,12 +620,20 @@ class ArticleFetcher:
         url = "https://huggingface.co/blog"
         
         try:
-            response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+            logger.info(f"Sending request to: {url}")
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml",
+                "Accept-Language": "en-US,en;q=0.9"
+            }
+            response = requests.get(url, headers=headers, timeout=15)
+            logger.info(f"HuggingFace Blog response status: {response.status_code}")
             response.raise_for_status()
             soup = BeautifulSoup(response.text, 'html.parser')
             
             # Find all blog post cards
             blog_cards = soup.find_all('a', class_='blog-post-card')
+            logger.info(f"Found {len(blog_cards)} blog cards on HuggingFace Blog")
             
             for card in blog_cards:
                 # Get title
@@ -630,17 +727,29 @@ class ArticleFetcher:
         """Fetch VLM-related papers from Papers With Code"""
         logger.info("Fetching Papers With Code articles...")
         
+        # Create a list to track articles found with each keyword
+        found_urls = set()
+        
         # We'll search for VLM-related terms
         for keyword in ["vision-language", "multimodal", "VLM"]:
             url = f"https://paperswithcode.com/search?q={keyword}"
+            logger.info(f"Searching Papers With Code for keyword: {keyword}")
             
             try:
-                response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+                logger.info(f"Sending request to: {url}")
+                headers = {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml",
+                    "Accept-Language": "en-US,en;q=0.9"
+                }
+                response = requests.get(url, headers=headers, timeout=15)
+                logger.info(f"Papers With Code response status for '{keyword}': {response.status_code}")
                 response.raise_for_status()
                 soup = BeautifulSoup(response.text, 'html.parser')
                 
                 # Find all paper cards
                 paper_items = soup.find_all('div', class_='paper-card')
+                logger.info(f"Found {len(paper_items)} paper cards for keyword '{keyword}'")
                 
                 for item in paper_items:
                     # Get title and URL
@@ -655,8 +764,15 @@ class ArticleFetcher:
                     title = title_link.text.strip()
                     paper_url = "https://paperswithcode.com" + title_link.get('href')
                     
-                    # Skip if already exists
+                    # Skip if already found with another keyword
+                    if paper_url in found_urls:
+                        logger.info(f"Skipping duplicate paper: {title}")
+                        continue
+                    found_urls.add(paper_url)
+                    
+                    # Skip if already exists in our database
                     if any(a['url'] == paper_url for a in self.existing_articles):
+                        logger.info(f"Skipping existing paper: {title}")
                         continue
                     
                     # Get abstract
@@ -667,6 +783,7 @@ class ArticleFetcher:
                     
                     # Skip if not relevant
                     if not (self.is_relevant(title) or self.is_relevant(summary)):
+                        logger.info(f"Skipping irrelevant paper: {title}")
                         continue
                     
                     # Get date - for Papers with Code, we'll use the current date as it's hard to get publication date
@@ -702,11 +819,364 @@ class ArticleFetcher:
                     logger.info(f"Found new article: {article_obj['title']}")
                 
             except Exception as e:
-                logger.error(f"Error fetching Papers With Code for keyword '{keyword}': {str(e)}")
+                logger.error(f"Error fetching Papers With Code for keyword '{keyword}': {str(e)}", exc_info=True)
                 continue
+    
+    def fetch_semantic_scholar_conferences(self):
+        """Fetch conference papers via Semantic Scholar API"""
+        logger.info("Fetching conference papers via Semantic Scholar API...")
+        
+        # Top AI/ML/CV conferences
+        venues = [
+            "CVPR", "ICCV", "ECCV",    # Computer Vision
+            "NeurIPS", "ICML", "ICLR",  # Machine Learning
+            "ACL", "NAACL", "EMNLP",   # NLP
+            "AAAI", "IJCAI"            # AI
+        ]
+        venue_str = " OR ".join([f"venue:{v}" for v in venues])
+        
+        # Search for VLM-related papers from conferences in the last 2 years
+        for keyword in ["vision language model", "VLM", "CLIP", "multimodal", "vision-language"]:
+            logger.info(f"Searching Semantic Scholar for '{keyword}' in conferences...")
+            
+            try:
+                params = {
+                    "query": f"{keyword} ({venue_str})",
+                    "limit": 100,
+                    "fields": "title,authors,venue,year,abstract,url,citationCount",
+                    "year": "2021-2023"  # Papers from last 3 years
+                }
+                
+                headers = {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                }
+                
+                response = requests.get(SEMANTIC_SCHOLAR_API_URL, params=params, headers=headers)
+                logger.info(f"Semantic Scholar API response status: {response.status_code}")
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    
+                    if "data" in data:
+                        papers = data["data"]
+                        logger.info(f"Found {len(papers)} papers for keyword '{keyword}'")
+                        
+                        for paper in papers:
+                            # Skip if title is missing
+                            if not paper.get("title"):
+                                continue
+                                
+                            title = paper["title"]
+                            
+                            # Skip if already exists
+                            paper_url = paper.get("url") or f"https://api.semanticscholar.org/paper/{paper.get('paperId')}"
+                            if any(a['url'] == paper_url for a in self.existing_articles):
+                                logger.info(f"Skipping existing paper: {title}")
+                                continue
+                            
+                            # Skip if not relevant (double check)
+                            if not self.is_relevant(title) and (not paper.get("abstract") or not self.is_relevant(paper["abstract"])):
+                                logger.info(f"Skipping irrelevant paper: {title}")
+                                continue
+                            
+                            # Get authors
+                            authors = []
+                            if "authors" in paper:
+                                authors = [author.get("name", "") for author in paper["authors"] if author.get("name")]
+                            
+                            # Get venue and year
+                            venue = paper.get("venue", "Unknown Conference")
+                            year = paper.get("year", datetime.datetime.now().year)
+                            citation_count = paper.get("citationCount", 0)
+                            
+                            # Create a publication date (approximate)
+                            # Most conferences happen in specific months, but we don't have that data
+                            # so we'll use January 1st of the conference year
+                            date = f"{year}-01-01"
+                            
+                            # Get abstract
+                            summary = paper.get("abstract", f"Conference paper from {venue}")
+                            
+                            # Create a unique ID
+                            paper_id = paper.get("paperId", "")
+                            if paper_id:
+                                article_id = f"semantic_scholar_{paper_id}"
+                            else:
+                                article_id = f"conf_{re.sub(r'[^a-zA-Z0-9]', '_', title)[:50]}"
+                            
+                            # Extract keywords from title and abstract
+                            content = title + " " + summary
+                            keywords = [k for k in VLM_KEYWORDS if k.lower() in content.lower()]
+                            
+                            # Create article object
+                            article_obj = {
+                                "id": article_id,
+                                "title": title,
+                                "url": paper_url,
+                                "authors": authors,
+                                "date": date,
+                                "summary": summary,
+                                "source": f"{venue} Conference",
+                                "keywords": keywords,
+                                "citation_count": citation_count
+                            }
+                            
+                            self.articles.append(article_obj)
+                            logger.info(f"Found new conference paper: {title}")
+                    else:
+                        logger.warning(f"No data found in Semantic Scholar response for '{keyword}'")
+                else:
+                    logger.error(f"Error from Semantic Scholar API: {response.status_code}")
+                    
+                # Be nice to the API
+                time.sleep(1)
+                
+            except Exception as e:
+                logger.error(f"Error fetching from Semantic Scholar for '{keyword}': {str(e)}", exc_info=True)
+    
+    def calculate_keyword_statistics(self):
+        """Calculate statistics and attention scores for keywords"""
+        logger.info("Calculating keyword statistics and attention scores...")
+        
+        # Reset keyword stats
+        self.keyword_stats = defaultdict(lambda: {
+            'count': 0,
+            'mentions_by_month': defaultdict(int),
+            'sources': defaultdict(int),
+            'attention_score': 0
+        })
+        
+        # Get current date for recency calculations
+        current_date = datetime.datetime.now()
+        current_year_month = f"{current_date.year}-{current_date.month:02d}"
+        
+        # Combine existing and new articles for analysis
+        all_articles = self.existing_articles + self.articles
+        
+        # Count occurrences and gather statistics
+        for article in all_articles:
+            # Skip articles without proper dates
+            if not article.get('date'):
+                continue
+                
+            try:
+                # Parse the article date
+                article_date = datetime.datetime.strptime(article['date'], "%Y-%m-%d")
+                year_month = f"{article_date.year}-{article_date.month:02d}"
+                
+                # Calculate recency factor (1.0 for current month, decreasing for older articles)
+                months_ago = self._months_between(year_month, current_year_month)
+                recency_factor = math.exp(-0.1 * months_ago)  # Exponential decay
+                
+                # Get article source
+                source = article.get('source', 'Unknown')
+                
+                # Calculate citation weight (if available)
+                citation_weight = 1.0
+                if 'citation_count' in article:
+                    # Log scale to dampen effect of very high citation counts
+                    citation_weight = 1.0 + math.log(article['citation_count'] + 1)
+                
+                # Update stats for each keyword
+                for keyword in article.get('keywords', []):
+                    self.keyword_stats[keyword]['count'] += 1
+                    self.keyword_stats[keyword]['mentions_by_month'][year_month] += 1
+                    self.keyword_stats[keyword]['sources'][source] += 1
+                    
+                    # Add weighted contribution to attention score
+                    self.keyword_stats[keyword]['attention_score'] += recency_factor * citation_weight
+            
+            except (ValueError, TypeError) as e:
+                # Skip articles with invalid dates
+                logger.warning(f"Skipping article with invalid date: {article.get('title')}")
+                continue
+        
+        # Calculate trend factors (growth over time)
+        for keyword, stats in self.keyword_stats.items():
+            if len(stats['mentions_by_month']) > 1:
+                # Get sorted months
+                months = sorted(stats['mentions_by_month'].keys())
+                
+                if len(months) > 6:  # If we have at least 6 months of data
+                    # Compare recent months to older months
+                    recent_months = months[-3:]  # Last 3 months
+                    older_months = months[:-3]   # Earlier months
+                    
+                    recent_avg = sum(stats['mentions_by_month'][m] for m in recent_months) / len(recent_months)
+                    older_avg = sum(stats['mentions_by_month'][m] for m in older_months) / len(older_months)
+                    
+                    # Calculate growth factor
+                    if older_avg > 0:
+                        growth_factor = recent_avg / older_avg
+                        # Apply growth bonus to attention score
+                        stats['attention_score'] *= min(3.0, growth_factor)  # Cap at 3x boost
+        
+        # Log top keywords by attention score
+        top_keywords = sorted(self.keyword_stats.items(), key=lambda x: x[1]['attention_score'], reverse=True)
+        logger.info("Top keywords by attention score:")
+        for keyword, stats in top_keywords[:10]:  # Top 10
+            logger.info(f"  {keyword}: score={stats['attention_score']:.2f}, count={stats['count']}")
+        
+        # Save keyword stats to a JSON file
+        self._save_keyword_stats()
+    
+    def calculate_paper_attention_scores(self):
+        """
+        Calculate attention scores for each paper based on multiple factors:
+        - Citation count
+        - Recency (newer papers with same citations get higher scores)
+        - Citation velocity (citations per month)
+        - Source prestige (conferences/journals weights)
+        """
+        print("Calculating paper attention scores...")
+        today = datetime.datetime.now()
+        source_weights = {
+            "arXiv": 1.0,
+            "CVPR": 1.5, 
+            "ICCV": 1.5,
+            "NeurIPS": 1.5,
+            "ICLR": 1.5,
+            "ICML": 1.5,
+            "ACL": 1.4,
+            "EMNLP": 1.4,
+            "ECCV": 1.4,
+            "AAAI": 1.3,
+            "IJCAI": 1.3,
+            "Google AI Blog": 1.2,
+            "OpenAI Blog": 1.2,
+            "Meta AI Research": 1.2,
+            "Microsoft Research": 1.2,
+            "HuggingFace Blog": 1.1,
+            "Papers With Code": 1.1,
+        }
+        
+        # Default weight for sources not in the list
+        default_weight = 1.0
+        
+        # Calculate attention scores for each article
+        for article in self.articles:
+            # Skip articles without dates
+            if not article.get('date'):
+                article['attention_score'] = 0
+                continue
+            
+            # Parse date and calculate age in months
+            try:
+                pub_date = datetime.datetime.strptime(article['date'], '%Y-%m-%d')
+                age_months = (today - pub_date).days / 30.0
+                
+                # Avoid division by zero for very recent papers
+                if age_months < 0.1:
+                    age_months = 0.1
+            except (ValueError, TypeError):
+                # Skip articles with invalid dates
+                article['attention_score'] = 0
+                continue
+            
+            # Get citation count (default to 0 if not available)
+            citations = article.get('citation_count', 0)
+            if citations is None:
+                citations = 0
+            
+            # Calculate citation velocity (citations per month)
+            citation_velocity = citations / age_months
+            
+            # Apply recency factor (exponential decay with half-life of 24 months)
+            recency_factor = math.exp(-0.029 * age_months)  # ln(2)/24 ≈ 0.029
+            
+            # Get source weight
+            source = article.get('source', '')
+            source_weight = source_weights.get(source, default_weight)
+            
+            # Calculate final attention score
+            # Base score from citations with a log transformation to reduce skew
+            base_score = math.log(citations + 1) * 10
+            
+            # Apply weights and factors
+            attention_score = (
+                base_score * 
+                recency_factor * 
+                (1 + 0.5 * citation_velocity) *  # Boost for high velocity
+                source_weight  # Boost for prestigious sources
+            )
+            
+            # Store the score in the article
+            article['attention_score'] = round(attention_score, 2)
+            
+            # Store the components for debugging/tuning
+            article['attention_components'] = {
+                'citations': citations,
+                'age_months': round(age_months, 1),
+                'citation_velocity': round(citation_velocity, 2),
+                'recency_factor': round(recency_factor, 2),
+                'source_weight': source_weight
+            }
+        
+        # Save top papers by attention score to a separate file
+        self._save_paper_attention_scores()
+        
+        print("Paper attention scores calculated successfully")
+    
+    def _save_paper_attention_scores(self):
+        """Save the paper attention scores to a JSON file."""
+        # Create a copy of articles and sort by attention score
+        sorted_articles = sorted(
+            self.articles, 
+            key=lambda x: x.get('attention_score', 0), 
+            reverse=True
+        )
+        
+        # Prepare the data structure
+        attention_data = {
+            'last_updated': datetime.datetime.now().strftime('%Y-%m-%d'),
+            'top_papers': []
+        }
+        
+        # Add top 100 papers
+        for article in sorted_articles[:100]:
+            if 'attention_score' in article and article['attention_score'] > 0:
+                attention_data['top_papers'].append({
+                    'title': article.get('title', ''),
+                    'authors': article.get('authors', []),
+                    'date': article.get('date', ''),
+                    'source': article.get('source', ''),
+                    'url': article.get('url', ''),
+                    'citation_count': article.get('citation_count', 0),
+                    'attention_score': article.get('attention_score', 0),
+                    'components': article.get('attention_components', {})
+                })
+        
+        # Save to file
+        with open('paper_attention.json', 'w') as f:
+            json.dump(attention_data, f, indent=2)
+    
+    def _save_keyword_stats(self):
+        """Save keyword statistics to a JSON file"""
+        # Convert defaultdict to regular dict for JSON serialization
+        keyword_stats_dict = {k: dict(v) for k, v in self.keyword_stats.items()}
+        
+        # Save to file
+        try:
+            with open('articles/keyword_stats.json', 'w') as f:
+                json.dump({
+                    'keywords': keyword_stats_dict,
+                    'updated_at': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                }, f, indent=2)
+            logger.info("Saved keyword statistics to articles/keyword_stats.json")
+        except Exception as e:
+            logger.error(f"Error saving keyword stats: {str(e)}")
+    
+    def _months_between(self, ym1, ym2):
+        """Calculate months between two year-month strings (format: YYYY-MM)"""
+        y1, m1 = map(int, ym1.split('-'))
+        y2, m2 = map(int, ym2.split('-'))
+        return (y2 - y1) * 12 + (m2 - m1)
     
     def run(self):
         """Run the article fetcher to get articles from all sources"""
+        print("Running article fetcher...")
+        
+        # Fetch articles from all sources
         self.fetch_arxiv_articles()
         self.fetch_google_ai_blog()
         self.fetch_openai_blog()
@@ -714,9 +1184,18 @@ class ArticleFetcher:
         self.fetch_microsoft_research()
         self.fetch_huggingface_blog()
         self.fetch_paperswithcode()
+        self.fetch_semantic_scholar_conferences()
         
-        # Save all fetched articles
+        # Save all articles to file
         self._save_articles()
+        
+        # Calculate keyword statistics
+        self.calculate_keyword_statistics()
+        
+        # Calculate paper attention scores
+        self.calculate_paper_attention_scores()
+        
+        print(f"Article fetcher completed. Found {len(self.articles)} articles.")
         
         return len(self.articles)
 

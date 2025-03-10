@@ -104,6 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initialize trend analysis
         initTrendAnalysis();
         
+        // Load and display trends
+        loadTrendsData();
+        
+        // Load and display paper attention data
+        loadPaperAttentionData();
+        
         // Hide loading spinner
         loadingSpinner.classList.add('hidden');
         
@@ -1012,6 +1018,296 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Theme toggle
         themeToggleBtn.addEventListener('click', toggleTheme);
+        
+        // Trend filter event listeners
+        const timeRangeSelect = document.getElementById('time-range');
+        const trendTypeSelect = document.getElementById('trend-type');
+        
+        if (timeRangeSelect) {
+            timeRangeSelect.addEventListener('change', updateTrendChart);
+        }
+        
+        if (trendTypeSelect) {
+            trendTypeSelect.addEventListener('change', function() {
+                const keywordSelector = document.getElementById('keyword-trend-selector');
+                if (this.value === 'keywords') {
+                    keywordSelector.classList.remove('hidden');
+                } else {
+                    keywordSelector.classList.add('hidden');
+                }
+                updateTrendChart();
+            });
+        }
+        
+        // Attention view controls
+        const attentionView = document.getElementById('attention-view');
+        const attentionCount = document.getElementById('attention-count');
+        
+        if (attentionView) {
+            attentionView.addEventListener('change', loadPaperAttentionData);
+        }
+        
+        if (attentionCount) {
+            attentionCount.addEventListener('change', loadPaperAttentionData);
+        }
+    }
+
+    // Load paper attention data and display trending papers
+    function loadPaperAttentionData() {
+        fetch('paper_attention.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                displayPaperAttention(data);
+                createAttentionChart(data);
+            })
+            .catch(error => {
+                console.error('Error fetching paper attention data:', error);
+                document.getElementById('paper-ranking-list').innerHTML = 
+                    '<div class="error-message">Failed to load paper attention data. Please try again later.</div>';
+            });
+    }
+
+    // Display paper attention rankings
+    function displayPaperAttention(data) {
+        const container = document.getElementById('paper-ranking-list');
+        const attentionView = document.getElementById('attention-view').value;
+        const attentionCount = parseInt(document.getElementById('attention-count').value);
+        
+        // Clear loading spinner
+        container.innerHTML = '';
+        
+        if (!data.top_papers || data.top_papers.length === 0) {
+            container.innerHTML = '<div class="error-message">No paper data available.</div>';
+            return;
+        }
+        
+        // Sort papers based on selected view
+        let papers = [...data.top_papers];
+        switch(attentionView) {
+            case 'recent':
+                // Sort by attention score but prioritize papers from last 6 months
+                papers.sort((a, b) => {
+                    const dateA = new Date(a.date);
+                    const dateB = new Date(b.date);
+                    const sixMonthsAgo = new Date();
+                    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+                    
+                    const aIsRecent = dateA >= sixMonthsAgo;
+                    const bIsRecent = dateB >= sixMonthsAgo;
+                    
+                    if (aIsRecent && !bIsRecent) return -1;
+                    if (!aIsRecent && bIsRecent) return 1;
+                    return b.attention_score - a.attention_score;
+                });
+                break;
+            case 'velocity':
+                // Sort by citation velocity (citations per month)
+                papers.sort((a, b) => {
+                    const velocityA = a.components?.citation_velocity || 0;
+                    const velocityB = b.components?.citation_velocity || 0;
+                    return velocityB - velocityA;
+                });
+                break;
+            default: // 'attention'
+                // Already sorted by attention score
+                break;
+        }
+        
+        // Limit to requested count
+        papers = papers.slice(0, attentionCount);
+        
+        // Create elements for each paper
+        papers.forEach((paper, index) => {
+            const paperElement = document.createElement('div');
+            paperElement.className = 'paper-attention-item';
+            
+            const rankClass = index < 3 ? 'paper-rank top-3' : 'paper-rank';
+            
+            // Format citation count with commas for thousands
+            const citations = paper.citation_count.toLocaleString();
+            
+            // Format authors: show first author + et al if more than one
+            let authorText = '';
+            if (paper.authors && paper.authors.length > 0) {
+                authorText = paper.authors.length > 1 
+                    ? `${paper.authors[0]} et al.` 
+                    : paper.authors[0];
+            }
+            
+            // Create abbreviated source name
+            let sourceText = paper.source;
+            if (paper.source && paper.source.length > 15) {
+                // If source is too long, abbreviate
+                const words = paper.source.split(' ');
+                if (words.length > 1) {
+                    sourceText = words.map(word => word.charAt(0)).join('').toUpperCase();
+                }
+            }
+            
+            paperElement.innerHTML = `
+                <div class="${rankClass}">${index + 1}</div>
+                <div class="paper-info">
+                    <div class="paper-title">
+                        <a href="${paper.url}" target="_blank" title="${paper.title}">${paper.title}</a>
+                    </div>
+                    <div class="paper-meta">
+                        <span>${authorText}</span>
+                        <span>${paper.date}</span>
+                        <span>${sourceText}</span>
+                        <span>${citations} ${citations === '1' ? 'citation' : 'citations'}</span>
+                    </div>
+                </div>
+                <div class="paper-score">
+                    <span>${paper.attention_score.toFixed(1)}</span>
+                    <span class="paper-score-label">Impact</span>
+                </div>
+            `;
+            
+            container.appendChild(paperElement);
+        });
+    }
+
+    // Create a chart for attention visualization
+    function createAttentionChart(data) {
+        const ctx = document.getElementById('attention-chart').getContext('2d');
+        const attentionView = document.getElementById('attention-view').value;
+        const attentionCount = parseInt(document.getElementById('attention-count').value);
+        
+        if (!data.top_papers || data.top_papers.length === 0) {
+            return;
+        }
+        
+        // Sort and limit papers based on current view (similar to displayPaperAttention)
+        let papers = [...data.top_papers];
+        switch(attentionView) {
+            case 'recent':
+                papers.sort((a, b) => {
+                    const dateA = new Date(a.date);
+                    const dateB = new Date(b.date);
+                    const sixMonthsAgo = new Date();
+                    sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+                    
+                    const aIsRecent = dateA >= sixMonthsAgo;
+                    const bIsRecent = dateB >= sixMonthsAgo;
+                    
+                    if (aIsRecent && !bIsRecent) return -1;
+                    if (!aIsRecent && bIsRecent) return 1;
+                    return b.attention_score - a.attention_score;
+                });
+                break;
+            case 'velocity':
+                papers.sort((a, b) => {
+                    const velocityA = a.components?.citation_velocity || 0;
+                    const velocityB = b.components?.citation_velocity || 0;
+                    return velocityB - velocityA;
+                });
+                break;
+            default: // 'attention'
+                // Already sorted
+                break;
+        }
+        
+        // Take top papers according to selected count
+        papers = papers.slice(0, attentionCount);
+        
+        // Prepare chart data
+        const labels = papers.map(paper => {
+            // Create shortened title
+            let shortTitle = paper.title;
+            if (shortTitle.length > 30) {
+                shortTitle = shortTitle.substring(0, 30) + '...';
+            }
+            return shortTitle;
+        });
+        
+        // Decide what value to chart based on view type
+        let dataValues;
+        let chartTitle;
+        switch(attentionView) {
+            case 'recent':
+                dataValues = papers.map(paper => paper.attention_score);
+                chartTitle = 'Recent Papers by Impact Score';
+                break;
+            case 'velocity':
+                dataValues = papers.map(paper => paper.components?.citation_velocity || 0);
+                chartTitle = 'Papers by Citation Velocity (citations/month)';
+                break;
+            default: // 'attention'
+                dataValues = papers.map(paper => paper.attention_score);
+                chartTitle = 'Papers by Impact Score';
+                break;
+        }
+        
+        // Destroy existing chart if any
+        if (window.attentionChart) {
+            window.attentionChart.destroy();
+        }
+        
+        // Create horizontal bar chart
+        window.attentionChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: chartTitle,
+                    data: dataValues,
+                    backgroundColor: papers.map((_, index) => 
+                        index < 3 ? 'rgba(255, 87, 34, 0.8)' : 'rgba(33, 150, 243, 0.6)'),
+                    borderColor: papers.map((_, index) => 
+                        index < 3 ? 'rgb(255, 87, 34)' : 'rgb(33, 150, 243)'),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                // Show full title on hover
+                                const index = tooltipItems[0].dataIndex;
+                                return papers[index].title;
+                            },
+                            afterTitle: function(tooltipItems) {
+                                const index = tooltipItems[0].dataIndex;
+                                const paper = papers[index];
+                                return paper.authors && paper.authors.length > 0 
+                                    ? 'by ' + paper.authors.join(', ')
+                                    : '';
+                            },
+                            footer: function(tooltipItems) {
+                                const index = tooltipItems[0].dataIndex;
+                                const paper = papers[index];
+                                return [
+                                    `Source: ${paper.source}`,
+                                    `Date: ${paper.date}`,
+                                    `Citations: ${paper.citation_count}`
+                                ];
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: function(value, index) {
+                                return index + 1 + '. ' + this.getLabelForValue(value);
+                            }
+                        }
+                    }
+                }
+            }
+        });
     }
 
     // Initialize the page

@@ -587,4 +587,184 @@ footer a:hover {
     #theme-toggle-btn {
         margin: 0 auto;
     }
+}
+
+/* Attention section styling */
+.attention-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.attention-section h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.attention-section h2 i {
+    margin-right: 10px;
+    color: #ff5722;
+}
+
+.attention-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.view-selector, .count-selector {
+    margin-bottom: 10px;
+}
+
+.attention-controls label {
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.attention-controls select {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.attention-visualization {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.keyword-ranking {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.keyword-ranking h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.keyword-ranking-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.paper-attention-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.paper-attention-item:last-child {
+    border-bottom: none;
+}
+
+.paper-attention-item:hover {
+    background-color: #f5f5f5;
+}
+
+.paper-rank {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    min-width: 30px;
+    color: #666;
+}
+
+.paper-rank.top-3 {
+    color: #ff5722;
+    font-size: 1.3rem;
+}
+
+.paper-info {
+    flex: 1;
+}
+
+.paper-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.paper-title a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.paper-title a:hover {
+    text-decoration: underline;
+}
+
+.paper-meta {
+    font-size: 0.85rem;
+    color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.paper-score {
+    margin-left: 15px;
+    font-weight: bold;
+    color: #ff5722;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paper-score-label {
+    font-size: 0.75rem;
+    color: #888;
+    font-weight: normal;
+}
+
+[data-theme="dark"] .attention-section {
+    background-color: #333;
+}
+
+[data-theme="dark"] .attention-section h2,
+[data-theme="dark"] .attention-section h3 {
+    color: #eee;
+}
+
+[data-theme="dark"] .attention-controls select {
+    background-color: #444;
+    border-color: #555;
+    color: #eee;
+}
+
+[data-theme="dark"] .keyword-ranking {
+    background-color: #3a3a3a;
+}
+
+[data-theme="dark"] .paper-attention-item:hover {
+    background-color: #444;
+}
+
+[data-theme="dark"] .paper-title a {
+    color: #77aaff;
+}
+
+[data-theme="dark"] .paper-meta {
+    color: #bbb;
+}
+
+@media (max-width: 768px) {
+    .attention-controls {
+        flex-direction: column;
+    }
+    
+    .view-selector, .count-selector {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 } 
