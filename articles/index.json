@@ -1,5 +1,700 @@
 [
   {
+    "id": "paperswithcode_ArtVLM__Attribute_Recognition_Through_Vision_Based",
+    "title": "ArtVLM: Attribute Recognition Through Vision-Based Prefix Language Modeling",
+    "url": "https://paperswithcode.com/paper/artvlm-attribute-recognition-through-vision",
+    "authors": [],
+    "date": "2025-03-28",
+    "summary": "Recognizing and disentangling visual attributes from objects is a foundation to many computer vision applications.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "paperswithcode_ViLT__Vision_and_Language_Transformer_Without_Conv",
+    "title": "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision",
+    "url": "https://paperswithcode.com/paper/vilt-vision-and-language-transformer-without",
+    "authors": [],
+    "date": "2025-03-27",
+    "summary": "Vision-and-Language Pre-training (VLP) has improved performance on various joint vision-and-language downstream tasks.",
+    "source": "Papers With Code",
+    "keywords": [
+      "vision-and-language"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "paperswithcode_BLIP__Bootstrapping_Language_Image_Pre_training_fo",
+    "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
+    "url": "https://paperswithcode.com/paper/blip-bootstrapping-language-image-pre",
+    "authors": [],
+    "date": "2025-03-26",
+    "summary": "Furthermore, performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision.",
+    "source": "Papers With Code",
+    "keywords": [
+      "vision-language",
+      "image-text",
+      "BLIP"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05093v1",
+    "title": "Visual Cues of Gender and Race are Associated with Stereotyping in\n  Vision-Language Models",
+    "url": "http://arxiv.org/abs/2503.05093v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05093v1",
+    "authors": [
+      "Messi H. J. Lee",
+      "Soyeon Jeon",
+      "Jacob M. Montgomery",
+      "Calvin K. Lai"
+    ],
+    "date": "2025-03-25",
+    "summary": "Current research on bias in Vision Language Models (VLMs) has important\nlimitations: it is focused exclusively on trait associations while ignoring\nother forms of stereotyping, it examines specific contexts where biases are\nexpected to appear, and it conceptualizes social categories like race and\ngender as binary, ignoring the multifaceted nature of these identities. Using\nstandardized facial images that vary in prototypicality, we test four VLMs for\nboth trait associations and homogeneity bias in open-ended contexts. We find\nthat VLMs consistently generate more uniform stories for women compared to men,\nwith people who are more gender prototypical in appearance being represented\nmore uniformly. By contrast, VLMs represent White Americans more uniformly than\nBlack Americans. Unlike with gender prototypicality, race prototypicality was\nnot related to stronger uniformity. In terms of trait associations, we find\nlimited evidence of stereotyping-Black Americans were consistently linked with\nbasketball across all models, while other racial associations (i.e., art,\nhealthcare, appearance) varied by specific VLM. These findings demonstrate that\nVLM stereotyping manifests in ways that go beyond simple group membership,\nsuggesting that conventional bias mitigation strategies may be insufficient to\naddress VLM stereotyping and that homogeneity bias persists even when trait\nassociations are less apparent in model outputs.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "vision language model",
+      "VLM",
+      "vision-language"
+    ]
+  },
+  {
+    "id": "2503_05132v1",
+    "title": "R1-Zero's \"Aha Moment\" in Visual Reasoning on a 2B Non-SFT Model",
+    "url": "http://arxiv.org/abs/2503.05132v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05132v1",
+    "authors": [
+      "Hengguang Zhou",
+      "Xirui Li",
+      "Ruochen Wang",
+      "Minhao Cheng",
+      "Tianyi Zhou",
+      "Cho-Jui Hsieh"
+    ],
+    "date": "2025-03-24",
+    "summary": "Recently DeepSeek R1 demonstrated how reinforcement learning with simple\nrule-based incentives can enable autonomous development of complex reasoning in\nlarge language models, characterized by the \"aha moment\", in which the model\nmanifest self-reflection and increased response length during training.\nHowever, attempts to extend this success to multimodal reasoning often failed\nto reproduce these key characteristics. In this report, we present the first\nsuccessful replication of these emergent characteristics for multimodal\nreasoning on only a non-SFT 2B model. Starting with Qwen2-VL-2B and applying\nreinforcement learning directly on the SAT dataset, our model achieves 59.47%\naccuracy on CVBench, outperforming the base model by approximately ~30% and\nexceeding both SFT setting by ~2%. In addition, we share our failed attempts\nand insights in attempting to achieve R1-like reasoning using RL with instruct\nmodels. aiming to shed light on the challenges involved. Our key observations\ninclude: (1) applying RL on instruct model often results in trivial reasoning\ntrajectories, and (2) naive length reward are ineffective in eliciting\nreasoning capabilities. The project code is available at\nhttps://github.com/turningpoint-ai/VisualThinker-R1-Zero",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal",
+      "visual reasoning"
+    ]
+  },
+  {
+    "id": "2503_05149v1",
+    "title": "Development and Enhancement of Text-to-Image Diffusion Models",
+    "url": "http://arxiv.org/abs/2503.05149v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05149v1",
+    "authors": [
+      "Rajdeep Roshan Sahu"
+    ],
+    "date": "2025-03-23",
+    "summary": "This research focuses on the development and enhancement of text-to-image\ndenoising diffusion models, addressing key challenges such as limited sample\ndiversity and training instability. By incorporating Classifier-Free Guidance\n(CFG) and Exponential Moving Average (EMA) techniques, this study significantly\nimproves image quality, diversity, and stability. Utilizing Hugging Face's\nstate-of-the-art text-to-image generation model, the proposed enhancements\nestablish new benchmarks in generative AI. This work explores the underlying\nprinciples of diffusion models, implements advanced strategies to overcome\nexisting limitations, and presents a comprehensive evaluation of the\nimprovements achieved. Results demonstrate substantial progress in generating\nstable, diverse, and high-quality images from textual descriptions, advancing\nthe field of generative artificial intelligence and providing new foundations\nfor future applications.\n  Keywords: Text-to-image, Diffusion model, Classifier-free guidance,\nExponential moving average, Image generation.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "text-to-image",
+      "image generation"
+    ]
+  },
+  {
+    "id": "paperswithcode_LlavaGuard__An_Open_VLM_based_Framework_for_Safegu",
+    "title": "LlavaGuard: An Open VLM-based Framework for Safeguarding Vision Datasets and Models",
+    "url": "https://paperswithcode.com/paper/llavaguard-vlm-based-safeguards-for-vision",
+    "authors": [],
+    "date": "2025-03-23",
+    "summary": "This paper introduces LlavaGuard, a suite of VLM-based vision safeguards that address the critical need for reliable guardrails in the era of large-scale data and models.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05179v1",
+    "title": "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive\n  Cognitive-Inspired Sketching",
+    "url": "http://arxiv.org/abs/2503.05179v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05179v1",
+    "authors": [
+      "Simon A. Aytes",
+      "Jinheon Baek",
+      "Sung Ju Hwang"
+    ],
+    "date": "2025-03-22",
+    "summary": "Recent advances in large language models have demonstrated remarkable\nreasoning capabilities through Chain of Thought (CoT) prompting, but often at\nthe cost of excessive verbosity in their intermediate outputs, which increases\ncomputational overhead. We introduce Sketch-of-Thought (SoT), a novel prompting\nframework that combines cognitive-inspired reasoning paradigms with linguistic\nconstraints to minimize token usage while preserving reasoning accuracy. SoT is\ndesigned as a flexible framework that can incorporate any custom reasoning\nparadigms based on cognitive science, and we instantiate it with three such\nparadigms - Conceptual Chaining, Chunked Symbolism, and Expert Lexicons - each\ntailored to different reasoning tasks and selected dynamically via a\nlightweight routing model. Through comprehensive evaluation across 15 reasoning\ndatasets with multiple languages and multimodal scenarios, we demonstrate that\nSoT achieves token reductions of 76% with negligible accuracy impact. In\ncertain domains like mathematical and multi-hop reasoning, it even improves\naccuracy while using significantly fewer tokens. Our code is publicly\navailable: https://www.github.com/SimonAytes/SoT.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_Open6DOR__Benchmarking_Open_instruction_6_DoF_Obje",
+    "title": "Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach",
+    "url": "https://paperswithcode.com/paper/open6dor-benchmarking-open-instruction-6-dof",
+    "authors": [],
+    "date": "2025-03-22",
+    "summary": "In this work, we propel the pioneer construction of the benchmark and approach for table-top Open-instruction 6-DoF Object Rearrangement (Open6DOR).",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05186v1",
+    "title": "Narrating the Video: Boosting Text-Video Retrieval via Comprehensive\n  Utilization of Frame-Level Captions",
+    "url": "http://arxiv.org/abs/2503.05186v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05186v1",
+    "authors": [
+      "Chan hur",
+      "Jeong-hun Hong",
+      "Dong-hun Lee",
+      "Dabin Kang",
+      "Semin Myeong",
+      "Sang-hyo Park",
+      "Hyeyoung Park"
+    ],
+    "date": "2025-03-21",
+    "summary": "In recent text-video retrieval, the use of additional captions from\nvision-language models has shown promising effects on the performance. However,\nexisting models using additional captions often have struggled to capture the\nrich semantics, including temporal changes, inherent in the video. In addition,\nincorrect information caused by generative models can lead to inaccurate\nretrieval. To address these issues, we propose a new framework, Narrating the\nVideo (NarVid), which strategically leverages the comprehensive information\navailable from frame-level captions, the narration. The proposed NarVid\nexploits narration in multiple ways: 1) feature enhancement through cross-modal\ninteractions between narration and video, 2) query-aware adaptive filtering to\nsuppress irrelevant or incorrect information, 3) dual-modal matching score by\nadding query-video similarity and query-narration similarity, and 4)\nhard-negative loss to learn discriminative features from multiple perspectives\nusing the two similarities from different views. Experimental results\ndemonstrate that NarVid achieves state-of-the-art performance on various\nbenchmark datasets.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "vision-language"
+    ]
+  },
+  {
+    "id": "paperswithcode_RL_VLM_F__Reinforcement_Learning_from_Vision_Langu",
+    "title": "RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback",
+    "url": "https://paperswithcode.com/paper/rl-vlm-f-reinforcement-learning-from-vision",
+    "authors": [],
+    "date": "2025-03-21",
+    "summary": "Reward engineering has long been a challenge in Reinforcement Learning (RL) research, as it often requires extensive human effort and iterative processes of trial-and-error to design effective reward functions.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05204v1",
+    "title": "Data-Efficient Generalization for Zero-shot Composed Image Retrieval",
+    "url": "http://arxiv.org/abs/2503.05204v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05204v1",
+    "authors": [
+      "Zining Chen",
+      "Zhicheng Zhao",
+      "Fei Su",
+      "Xiaoqin Zhang",
+      "Shijian Lu"
+    ],
+    "date": "2025-03-20",
+    "summary": "Zero-shot Composed Image Retrieval (ZS-CIR) aims to retrieve the target image\nbased on a reference image and a text description without requiring\nin-distribution triplets for training. One prevalent approach follows the\nvision-language pretraining paradigm that employs a mapping network to transfer\nthe image embedding to a pseudo-word token in the text embedding space.\nHowever, this approach tends to impede network generalization due to modality\ndiscrepancy and distribution shift between training and inference. To this end,\nwe propose a Data-efficient Generalization (DeG) framework, including two novel\ndesigns, namely, Textual Supplement (TS) module and Semantic-Set (S-Set). The\nTS module exploits compositional textual semantics during training, enhancing\nthe pseudo-word token with more linguistic semantics and thus mitigating the\nmodality discrepancy effectively. The S-Set exploits the zero-shot capability\nof pretrained Vision-Language Models (VLMs), alleviating the distribution shift\nand mitigating the overfitting issue from the redundancy of the large-scale\nimage-text data. Extensive experiments over four ZS-CIR benchmarks show that\nDeG outperforms the state-of-the-art (SOTA) methods with much less training\ndata, and saves substantial training and inference time for practical usage.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "vision-language",
+      "image-text"
+    ]
+  },
+  {
+    "id": "paperswithcode_An_Image_Grid_Can_Be_Worth_a_Video__Zero_shot_Vide",
+    "title": "An Image Grid Can Be Worth a Video: Zero-shot Video Question Answering Using a VLM",
+    "url": "https://paperswithcode.com/paper/an-image-grid-can-be-worth-a-video-zero-shot",
+    "authors": [],
+    "date": "2025-03-20",
+    "summary": "Recently, an alternative strategy has surfaced, employing readily available foundation models, such as VideoLMs and LLMs, across multiple stages for modality bridging.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05214v1",
+    "title": "Gaussian Random Fields as an Abstract Representation of Patient Metadata\n  for Multimodal Medical Image Segmentation",
+    "url": "http://arxiv.org/abs/2503.05214v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05214v1",
+    "authors": [
+      "Bill Cassidy",
+      "Christian McBride",
+      "Connah Kendrick",
+      "Neil D. Reeves",
+      "Joseph M. Pappachan",
+      "Shaghayegh Raad",
+      "Moi Hoon Yap"
+    ],
+    "date": "2025-03-19",
+    "summary": "The growing rate of chronic wound occurrence, especially in patients with\ndiabetes, has become a concerning trend in recent years. Chronic wounds are\ndifficult and costly to treat, and have become a serious burden on health care\nsystems worldwide. Chronic wounds can have devastating consequences for the\npatient, with infection often leading to reduced quality of life and increased\nmortality risk. Innovative deep learning methods for the detection and\nmonitoring of such wounds have the potential to reduce the impact to both\npatient and clinician. We present a novel multimodal segmentation method which\nallows for the introduction of patient metadata into the training workflow\nwhereby the patient data are expressed as Gaussian random fields. Our results\nindicate that the proposed method improved performance when utilising multiple\nmodels, each trained on different metadata categories. Using the Diabetic Foot\nUlcer Challenge 2022 test set, when compared to the baseline results\n(intersection over union = 0.4670, Dice similarity coefficient = 0.5908) we\ndemonstrate improvements of +0.0220 and +0.0229 for intersection over union and\nDice similarity coefficient respectively. This paper presents the first study\nto focus on integrating patient data into a chronic wound segmentation\nworkflow. Our results show significant performance gains when training\nindividual models using specific metadata categories, followed by average\nmerging of prediction masks using distance transforms. All source code for this\nstudy is available at:\nhttps://github.com/mmu-dermatology-research/multimodal-grf",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_G_LLaVA__Solving_Geometric_Problem_with_Multi_Moda",
+    "title": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+    "url": "https://paperswithcode.com/paper/g-llava-solving-geometric-problem-with-multi",
+    "authors": [],
+    "date": "2025-03-19",
+    "summary": "We first analyze the limitations of current Multimodal Large Language Models (MLLMs) in this area: they struggle to accurately comprehending basic geometric elements and their relationships.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal",
+      "MLLM",
+      "MLLMs"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05228v1",
+    "title": "RecipeGen: A Benchmark for Real-World Recipe Image Generation",
+    "url": "http://arxiv.org/abs/2503.05228v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05228v1",
+    "authors": [
+      "Ruoxuan Zhang",
+      "Hongxia Xie",
+      "Yi Yao",
+      "Jian-Yu Jiang-Lin",
+      "Bin Wen",
+      "Ling Lo",
+      "Hong-Han Shuai",
+      "Yung-Hui Li",
+      "Wen-Huang Cheng"
+    ],
+    "date": "2025-03-18",
+    "summary": "Recipe image generation is an important challenge in food computing, with\napplications from culinary education to interactive recipe platforms. However,\nthere is currently no real-world dataset that comprehensively connects recipe\ngoals, sequential steps, and corresponding images. To address this, we\nintroduce RecipeGen, the first real-world goal-step-image benchmark for recipe\ngeneration, featuring diverse ingredients, varied recipe steps, multiple\ncooking styles, and a broad collection of food categories. Data is in\nhttps://github.com/zhangdaxia22/RecipeGen.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "image generation"
+    ]
+  },
+  {
+    "id": "paperswithcode_ConceptLab__Creative_Concept_Generation_using_VLM_",
+    "title": "ConceptLab: Creative Concept Generation using VLM-Guided Diffusion Prior Constraints",
+    "url": "https://paperswithcode.com/paper/conceptlab-creative-generation-using",
+    "authors": [],
+    "date": "2025-03-18",
+    "summary": "Recent text-to-image generative models have enabled us to transform our words into vibrant, captivating imagery.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM",
+      "text-to-image"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05231v1",
+    "title": "Kaiwu: A Multimodal Manipulation Dataset and Framework for Robot\n  Learning and Human-Robot Interaction",
+    "url": "http://arxiv.org/abs/2503.05231v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05231v1",
+    "authors": [
+      "Shuo Jiang",
+      "Haonan Li",
+      "Ruochen Ren",
+      "Yanmin Zhou",
+      "Zhipeng Wang",
+      "Bin He"
+    ],
+    "date": "2025-03-17",
+    "summary": "Cutting-edge robot learning techniques including foundation models and\nimitation learning from humans all pose huge demands on large-scale and\nhigh-quality datasets which constitute one of the bottleneck in the general\nintelligent robot fields. This paper presents the Kaiwu multimodal dataset to\naddress the missing real-world synchronized multimodal data problems in the\nsophisticated assembling scenario,especially with dynamics information and its\nfine-grained labelling. The dataset first provides an integration of\nhuman,environment and robot data collection framework with 20 subjects and 30\ninteraction objects resulting in totally 11,664 instances of integrated\nactions. For each of the demonstration,hand motions,operation pressures,sounds\nof the assembling process,multi-view videos, high-precision motion capture\ninformation,eye gaze with first-person videos,electromyography signals are all\nrecorded. Fine-grained multi-level annotation based on absolute timestamp,and\nsemantic segmentation labelling are performed. Kaiwu dataset aims to facilitate\nrobot learning,dexterous manipulation,human intention investigation and\nhuman-robot collaboration research.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_X__2__VLM__All_In_One_Pre_trained_Model_For_Vision",
+    "title": "X$^2$-VLM: All-In-One Pre-trained Model For Vision-Language Tasks",
+    "url": "https://paperswithcode.com/paper/x-2-vlm-all-in-one-pre-trained-model-for",
+    "authors": [],
+    "date": "2025-03-17",
+    "summary": "Vision language pre-training aims to learn alignments between vision and language from a large amount of data.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM",
+      "vision-language"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05236v1",
+    "title": "Unified Reward Model for Multimodal Understanding and Generation",
+    "url": "http://arxiv.org/abs/2503.05236v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05236v1",
+    "authors": [
+      "Yibin Wang",
+      "Yuhang Zang",
+      "Hao Li",
+      "Cheng Jin",
+      "Jiaqi Wang"
+    ],
+    "date": "2025-03-16",
+    "summary": "Recent advances in human preference alignment have significantly enhanced\nmultimodal generation and understanding. A key approach is training reward\nmodels to guide preference optimization. However, existing models are often\ntask-specific, limiting their adaptability across diverse visual applications.\nWe also argue that jointly learning to assess multiple tasks may foster a\nsynergistic effect, where improved image understanding enhances image\ngeneration assessment, and refined image evaluation benefits video assessment\nthrough better frame analysis. To this end, this paper proposes UnifiedReward,\nthe first unified reward model for multimodal understanding and generation\nassessment, enabling both pairwise ranking and pointwise scoring, which can be\nemployed for vision model preference alignment. Specifically, (1) we first\ndevelop UnifiedReward on our constructed large-scale human preference dataset,\nincluding both image and video generation/understanding tasks. (2) Then, it is\nutilized to automatically construct high-quality preference pair data based on\nthe vision models, fine-gradually filtering their outputs through pair ranking\nand point sifting. (3) Finally, these data are used for their preference\nalignment through Direct Preference Optimization (DPO). Experimental results\ndemonstrate that joint learning to assess diverse visual tasks can lead to\nsubstantial mutual benefits and we apply our pipeline to both image and video\nunderstanding/generation tasks, significantly improving the performance in each\ndomain.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_PaliGemma__A_versatile_3B_VLM_for_transfer",
+    "title": "PaliGemma: A versatile 3B VLM for transfer",
+    "url": "https://paperswithcode.com/paper/paligemma-a-versatile-3b-vlm-for-transfer",
+    "authors": [],
+    "date": "2025-03-16",
+    "summary": "PaliGemma is an open Vision-Language Model (VLM) that is based on the SigLIP-So400m vision encoder and the Gemma-2B language model.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM",
+      "vision-language"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05255v1",
+    "title": "CMMCoT: Enhancing Complex Multi-Image Comprehension via Multi-Modal\n  Chain-of-Thought and Memory Augmentation",
+    "url": "http://arxiv.org/abs/2503.05255v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05255v1",
+    "authors": [
+      "Guanghao Zhang",
+      "Tao Zhong",
+      "Yan Xia",
+      "Zhelun Yu",
+      "Haoyuan Li",
+      "Wanggui He",
+      "Fangxun Shu",
+      "Mushui Liu",
+      "Dong She",
+      "Yi Wang",
+      "Hao Jiang"
+    ],
+    "date": "2025-03-15",
+    "summary": "While previous multimodal slow-thinking methods have demonstrated remarkable\nsuccess in single-image understanding scenarios, their effectiveness becomes\nfundamentally constrained when extended to more complex multi-image\ncomprehension tasks. This limitation stems from their predominant reliance on\ntext-based intermediate reasoning processes. While for human, when engaging in\nsophisticated multi-image analysis, they typically perform two complementary\ncognitive operations: (1) continuous cross-image visual comparison through\nregion-of-interest matching, and (2) dynamic memorization of critical visual\nconcepts throughout the reasoning chain. Motivated by these observations, we\npropose the Complex Multi-Modal Chain-of-Thought (CMMCoT) framework, a\nmulti-step reasoning framework that mimics human-like \"slow thinking\" for\nmulti-image understanding. Our approach incorporates two key innovations: 1.\nThe construction of interleaved multimodal multi-step reasoning chains, which\nutilize critical visual region tokens, extracted from intermediate reasoning\nsteps, as supervisory signals. This mechanism not only facilitates\ncomprehensive cross-modal understanding but also enhances model\ninterpretability. 2. The introduction of a test-time memory augmentation module\nthat expands the model reasoning capacity during inference while preserving\nparameter efficiency. Furthermore, to facilitate research in this direction, we\nhave curated a novel multi-image slow-thinking dataset. Extensive experiments\ndemonstrate the effectiveness of our model.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_VLM__Task_agnostic_Video_Language_Model_Pre_traini",
+    "title": "VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding",
+    "url": "https://paperswithcode.com/paper/vlm-task-agnostic-video-language-model-pre",
+    "authors": [],
+    "date": "2025-03-15",
+    "summary": "We present a simplified, task-agnostic multi-modal pre-training approach that can accept either video or text input, or both for a variety of end tasks.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05298v1",
+    "title": "Coreference as an indicator of context scope in multimodal narrative",
+    "url": "http://arxiv.org/abs/2503.05298v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05298v1",
+    "authors": [
+      "Nikolai Ilinykh",
+      "Shalom Lappin",
+      "Asad Sayeed",
+      "Sharid Lo\u00e1iciga"
+    ],
+    "date": "2025-03-14",
+    "summary": "We demonstrate that large multimodal language models differ substantially\nfrom humans in the distribution of coreferential expressions in a visual\nstorytelling task. We introduce a number of metrics to quantify the\ncharacteristics of coreferential patterns in both human- and machine-written\ntexts. Humans distribute coreferential expressions in a way that maintains\nconsistency across texts and images, interleaving references to different\nentities in a highly varied way. Machines are less able to track mixed\nreferences, despite achieving perceived improvements in generation quality.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_MME__A_Comprehensive_Evaluation_Benchmark_for_Mult",
+    "title": "MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models",
+    "url": "https://paperswithcode.com/paper/mme-a-comprehensive-evaluation-benchmark-for",
+    "authors": [],
+    "date": "2025-03-14",
+    "summary": "Multimodal Large Language Model (MLLM) relies on the powerful LLM to perform multimodal tasks, showing amazing emergent abilities in recent studies, such as writing poems based on an image.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal",
+      "MLLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05305v1",
+    "title": "Frequency Autoregressive Image Generation with Continuous Tokens",
+    "url": "http://arxiv.org/abs/2503.05305v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05305v1",
+    "authors": [
+      "Hu Yu",
+      "Hao Luo",
+      "Hangjie Yuan",
+      "Yu Rong",
+      "Feng Zhao"
+    ],
+    "date": "2025-03-13",
+    "summary": "Autoregressive (AR) models for image generation typically adopt a two-stage\nparadigm of vector quantization and raster-scan ``next-token prediction\",\ninspired by its great success in language modeling. However, due to the huge\nmodality gap, image autoregressive models may require a systematic reevaluation\nfrom two perspectives: tokenizer format and regression direction. In this\npaper, we introduce the frequency progressive autoregressive (\\textbf{FAR})\nparadigm and instantiate FAR with the continuous tokenizer. Specifically, we\nidentify spectral dependency as the desirable regression direction for FAR,\nwherein higher-frequency components build upon the lower one to progressively\nconstruct a complete image. This design seamlessly fits the causality\nrequirement for autoregressive models and preserves the unique spatial locality\nof image data. Besides, we delve into the integration of FAR and the continuous\ntokenizer, introducing a series of techniques to address optimization\nchallenges and improve the efficiency of training and inference processes. We\ndemonstrate the efficacy of FAR through comprehensive experiments on the\nImageNet dataset and verify its potential on text-to-image generation.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "text-to-image",
+      "image generation"
+    ]
+  },
+  {
+    "id": "paperswithcode_Kosmos_G__Generating_Images_in_Context_with_Multim",
+    "title": "Kosmos-G: Generating Images in Context with Multimodal Large Language Models",
+    "url": "https://paperswithcode.com/paper/kosmos-g-generating-images-in-context-with",
+    "authors": [],
+    "date": "2025-03-13",
+    "summary": "These limitations keep them far from the ultimate goal of \"image as a foreign language in image generation.\"",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal",
+      "image generation",
+      "Kosmos"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05319v1",
+    "title": "Robust Multimodal Learning for Ophthalmic Disease Grading via\n  Disentangled Representation",
+    "url": "http://arxiv.org/abs/2503.05319v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05319v1",
+    "authors": [
+      "Xinkun Wang",
+      "Yifang Wang",
+      "Senwei Liang",
+      "Feilong Tang",
+      "Chengzhi Liu",
+      "Ming Hu",
+      "Chao Hu",
+      "Junjun He",
+      "Zongyuan Ge",
+      "Imran Razzak"
+    ],
+    "date": "2025-03-12",
+    "summary": "This paper discusses how ophthalmologists often rely on multimodal data to\nimprove diagnostic accuracy. However, complete multimodal data is rare in\nreal-world applications due to a lack of medical equipment and concerns about\ndata privacy. Traditional deep learning methods typically address these issues\nby learning representations in latent space. However, the paper highlights two\nkey limitations of these approaches: (i) Task-irrelevant redundant information\n(e.g., numerous slices) in complex modalities leads to significant redundancy\nin latent space representations. (ii) Overlapping multimodal representations\nmake it difficult to extract unique features for each modality. To overcome\nthese challenges, the authors propose the Essence-Point and Disentangle\nRepresentation Learning (EDRL) strategy, which integrates a self-distillation\nmechanism into an end-to-end framework to enhance feature selection and\ndisentanglement for more robust multimodal learning. Specifically, the\nEssence-Point Representation Learning module selects discriminative features\nthat improve disease grading performance. The Disentangled Representation\nLearning module separates multimodal data into modality-common and\nmodality-unique representations, reducing feature entanglement and enhancing\nboth robustness and interpretability in ophthalmic disease diagnosis.\nExperiments on multimodal ophthalmology datasets show that the proposed EDRL\nstrategy significantly outperforms current state-of-the-art methods.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_VATT__Transformers_for_Multimodal_Self_Supervised_",
+    "title": "VATT: Transformers for Multimodal Self-Supervised Learning from Raw Video, Audio and Text",
+    "url": "https://paperswithcode.com/paper/vatt-transformers-for-multimodal-self",
+    "authors": [],
+    "date": "2025-03-12",
+    "summary": "We train VATT end-to-end from scratch using multimodal contrastive losses and evaluate its performance by the downstream tasks of video action recognition, audio event classification, image classification, and text-to-video retrieval.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal",
+      "text-to-video"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05335v1",
+    "title": "New multimodal similarity measure for image registration via modeling\n  local functional dependence with linear combination of learned basis\n  functions",
+    "url": "http://arxiv.org/abs/2503.05335v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05335v1",
+    "authors": [
+      "Joel Honkamaa",
+      "Pekka Marttinen"
+    ],
+    "date": "2025-03-11",
+    "summary": "The deformable registration of images of different modalities, essential in\nmany medical imaging applications, remains challenging. The main challenge is\ndeveloping a robust measure for image overlap despite the compared images\ncapturing different aspects of the underlying tissue. Here, we explore\nsimilarity metrics based on functional dependence between intensity values of\nregistered images. Although functional dependence is too restrictive on the\nglobal scale, earlier work has shown competitive performance in deformable\nregistration when such measures are applied over small enough contexts. We\nconfirm this finding and further develop the idea by modeling local functional\ndependence via the linear basis function model with the basis functions learned\njointly with the deformation. The measure can be implemented via convolutions,\nmaking it efficient to compute on GPUs. We release the method as an easy-to-use\ntool and show good performance on three datasets compared to well-established\nbaseline and earlier functional dependence-based methods.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_MME_Survey__A_Comprehensive_Survey_on_Evaluation_o",
+    "title": "MME-Survey: A Comprehensive Survey on Evaluation of Multimodal LLMs",
+    "url": "https://paperswithcode.com/paper/mme-survey-a-comprehensive-survey-on",
+    "authors": [],
+    "date": "2025-03-11",
+    "summary": "As a prominent direction of Artificial General Intelligence (AGI), Multimodal Large Language Models (MLLMs) have garnered increased attention from both industry and academia.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal",
+      "multimodal LLM",
+      "MLLM",
+      "MLLMs"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05379v1",
+    "title": "R1-Omni: Explainable Omni-Multimodal Emotion Recognition with\n  Reinforcing Learning",
+    "url": "http://arxiv.org/abs/2503.05379v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05379v1",
+    "authors": [
+      "Jiaxing Zhao",
+      "Xihan Wei",
+      "Liefeng Bo"
+    ],
+    "date": "2025-03-10",
+    "summary": "In this work, we present the first application of Reinforcement Learning with\nVerifiable Reward (RLVR) to an Omni-multimodal large language model in the\ncontext of emotion recognition, a task where both visual and audio modalities\nplay crucial roles. We leverage RLVR to optimize the Omni model, significantly\nenhancing its performance in three key aspects: reasoning capability, emotion\nrecognition accuracy, and generalization ability. The introduction of RLVR not\nonly improves the model's overall performance on in-distribution data but also\ndemonstrates superior robustness when evaluated on out-of-distribution\ndatasets. More importantly, the improved reasoning capability enables clear\nanalysis of the contributions of different modalities, particularly visual and\naudio information, in the emotion recognition process. This provides valuable\ninsights into the optimization of multimodal large language models.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_A_Survey_on_Multimodal_Large_Language_Models",
+    "title": "A Survey on Multimodal Large Language Models",
+    "url": "https://paperswithcode.com/paper/a-survey-on-multimodal-large-language-models",
+    "authors": [],
+    "date": "2025-03-10",
+    "summary": "Recently, Multimodal Large Language Model (MLLM) represented by GPT-4V has been a new rising research hotspot, which uses powerful Large Language Models (LLMs) as a brain to perform multimodal tasks.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal",
+      "GPT-4V",
+      "MLLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05383v1",
+    "title": "VLMs Play StarCraft II: A Benchmark and Multimodal Decision Method",
+    "url": "http://arxiv.org/abs/2503.05383v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05383v1",
+    "authors": [
+      "Weiyu Ma",
+      "Yuqian Fu",
+      "Zecheng Zhang",
+      "Guohao Li"
+    ],
+    "date": "2025-03-09",
+    "summary": "We introduce VLM-Attention, a multimodal StarCraft II environment that aligns\nartificial agent perception with the human gameplay experience. Traditional\nframeworks such as SMAC rely on abstract state representations that diverge\nsignificantly from human perception, limiting the ecological validity of agent\nbehavior. Our environment addresses this limitation by incorporating RGB visual\ninputs and natural language observations that more closely simulate human\ncognitive processes during gameplay. The VLM-Attention framework consists of\nthree integrated components: (1) a vision-language model enhanced with\nspecialized self-attention mechanisms for strategic unit targeting and\nbattlefield assessment, (2) a retrieval-augmented generation system that\nleverages domain-specific StarCraft II knowledge to inform tactical decisions,\nand (3) a dynamic role-based task distribution system that enables coordinated\nmulti-agent behavior. Our experimental evaluation across 21 custom scenarios\ndemonstrates that VLM-based agents powered by foundation models (specifically\nQwen-VL and GPT-4o) can execute complex tactical maneuvers without explicit\ntraining, achieving comparable performance to traditional MARL methods that\nrequire substantial training iterations. This work establishes a foundation for\ndeveloping human-aligned StarCraft II agents and advances the broader research\nagenda of multimodal game AI. Our implementation is available at\nhttps://github.com/camel-ai/VLM-Play-StarCraft2.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "multimodal",
+      "vision-language"
+    ]
+  },
+  {
+    "id": "paperswithcode_Screen2Words__Automatic_Mobile_UI_Summarization_wi",
+    "title": "Screen2Words: Automatic Mobile UI Summarization with Multimodal Learning",
+    "url": "https://paperswithcode.com/paper/screen2words-automatic-mobile-ui",
+    "authors": [],
+    "date": "2025-03-09",
+    "summary": "Mobile User Interface Summarization generates succinct language descriptions of mobile screens for conveying important contents and functionalities of the screen, which can be useful for many language-based application scenarios.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05424v1",
+    "title": "Towards Locally Explaining Prediction Behavior via Gradual Interventions\n  and Measuring Property Gradients",
+    "url": "http://arxiv.org/abs/2503.05424v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05424v1",
+    "authors": [
+      "Niklas Penzel",
+      "Joachim Denzler"
+    ],
+    "date": "2025-03-08",
+    "summary": "Deep learning models achieve high predictive performance but lack intrinsic\ninterpretability, hindering our understanding of the learned prediction\nbehavior. Existing local explainability methods focus on associations,\nneglecting the causal drivers of model predictions. Other approaches adopt a\ncausal perspective but primarily provide more general global explanations.\nHowever, for specific inputs, it's unclear whether globally identified factors\napply locally. To address this limitation, we introduce a novel framework for\nlocal interventional explanations by leveraging recent advances in\nimage-to-image editing models. Our approach performs gradual interventions on\nsemantic properties to quantify the corresponding impact on a model's\npredictions using a novel score, the expected property gradient magnitude. We\ndemonstrate the effectiveness of our approach through an extensive empirical\nevaluation on a wide range of architectures and tasks. First, we validate it in\na synthetic scenario and demonstrate its ability to locally identify biases.\nAfterward, we apply our approach to analyze network training dynamics,\ninvestigate medical skin lesion classifiers, and study a pre-trained CLIP model\nwith real-life interventional data. Our results highlight the potential of\ninterventional explanations on the property level to reveal new insights into\nthe behavior of deep models.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "CLIP"
+    ]
+  },
+  {
+    "id": "paperswithcode_Multimodal_Latent_Language_Modeling_with_Next_Toke",
+    "title": "Multimodal Latent Language Modeling with Next-Token Diffusion",
+    "url": "https://paperswithcode.com/paper/multimodal-latent-language-modeling-with-next",
+    "authors": [],
+    "date": "2025-03-08",
+    "summary": "In this work, we propose Latent Language Modeling (LatentLM), which seamlessly integrates continuous and discrete data using causal Transformers.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05534v1",
+    "title": "S4M: Segment Anything with 4 Extreme Points",
+    "url": "http://arxiv.org/abs/2503.05534v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05534v1",
+    "authors": [
+      "Adrien Meyer",
+      "Lorenzo Arboit",
+      "Giuseppe Massimiani",
+      "Francesco Brucchi",
+      "Luca Emanuele Amodio",
+      "Didier Mutter",
+      "Nicolas Padoy"
+    ],
+    "date": "2025-03-07",
+    "summary": "The Segment Anything Model (SAM) has revolutionized open-set interactive\nimage segmentation, inspiring numerous adapters for the medical domain.\nHowever, SAM primarily relies on sparse prompts such as point or bounding box,\nwhich may be suboptimal for fine-grained instance segmentation, particularly in\nendoscopic imagery, where precise localization is critical and existing prompts\nstruggle to capture object boundaries effectively. To address this, we\nintroduce S4M (Segment Anything with 4 Extreme Points), which augments SAM by\nleveraging extreme points -- the top-, bottom-, left-, and right-most points of\nan instance -- prompts. These points are intuitive to identify and provide a\nfaster, structured alternative to box prompts. However, a na\\\"ive use of\nextreme points degrades performance, due to SAM's inability to interpret their\nsemantic roles. To resolve this, we introduce dedicated learnable embeddings,\nenabling the model to distinguish extreme points from generic free-form points\nand better reason about their spatial relationships. We further propose an\nauxiliary training task through the Canvas module, which operates solely on\nprompts -- without vision input -- to predict a coarse instance mask. This\nencourages the model to internalize the relationship between extreme points and\nmask distributions, leading to more robust segmentation. S4M outperforms other\nSAM-based approaches on three endoscopic surgical datasets, demonstrating its\neffectiveness in complex scenarios. Finally, we validate our approach through a\nhuman annotation study on surgical endoscopic videos, confirming that extreme\npoints are faster to acquire than bounding boxes.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "Segment Anything"
+    ]
+  },
+  {
+    "id": "paperswithcode_Socratic_Models__Composing_Zero_Shot_Multimodal_Re",
+    "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+    "url": "https://paperswithcode.com/paper/socratic-models-composing-zero-shot",
+    "authors": [],
+    "date": "2025-03-07",
+    "summary": "Large pretrained (e. g., \"foundation\") models exhibit distinct capabilities depending on the domain of data they are trained on.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05064v1",
+    "title": "Perceiving, Reasoning, Adapting: A Dual-Layer Framework for VLM-Guided\n  Precision Robotic Manipulation",
+    "url": "http://arxiv.org/abs/2503.05064v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05064v1",
+    "authors": [
+      "Qingxuan Jia",
+      "Guoqin Tang",
+      "Zeyuan Huang",
+      "Zixuan Hao",
+      "Ning Ji",
+      "Shihang",
+      "Yin",
+      "Gang Chen"
+    ],
+    "date": "2025-03-07",
+    "summary": "Vision-Language Models (VLMs) demonstrate remarkable potential in robotic\nmanipulation, yet challenges persist in executing complex fine manipulation\ntasks with high speed and precision. While excelling at high-level planning,\nexisting VLM methods struggle to guide robots through precise sequences of fine\nmotor actions. To address this limitation, we introduce a progressive VLM\nplanning algorithm that empowers robots to perform fast, precise, and\nerror-correctable fine manipulation. Our method decomposes complex tasks into\nsub-actions and maintains three key data structures: task memory structure, 2D\ntopology graphs, and 3D spatial networks, achieving high-precision\nspatial-semantic fusion. These three components collectively accumulate and\nstore critical information throughout task execution, providing rich context\nfor our task-oriented VLM interaction mechanism. This enables VLMs to\ndynamically adjust guidance based on real-time feedback, generating precise\naction plans and facilitating step-wise error correction. Experimental\nvalidation on complex assembly tasks demonstrates that our algorithm\neffectively guides robots to rapidly and precisely accomplish fine manipulation\nin challenging scenarios, significantly advancing robot intelligence for\nprecision tasks.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "vision-language"
+    ]
+  },
+  {
     "id": "2503_04724v1",
     "title": "LLMVoX: Autoregressive Streaming Text-to-Speech Model for Any LLM",
     "url": "http://arxiv.org/abs/2503.04724v1",
@@ -885,6 +1580,365 @@
     ]
   },
   {
+    "id": "2503_05543v1",
+    "title": "Pi-GPS: Enhancing Geometry Problem Solving by Unleashing the Power of\n  Diagrammatic Information",
+    "url": "http://arxiv.org/abs/2503.05543v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05543v1",
+    "authors": [
+      "Junbo Zhao",
+      "Ting Zhang",
+      "Jiayu Sun",
+      "Mi Tian",
+      "Hua Huang"
+    ],
+    "date": "2025-03-06",
+    "summary": "Geometry problem solving has garnered increasing attention due to its\npotential applications in intelligent education field. Inspired by the\nobservation that text often introduces ambiguities that diagrams can clarify,\nthis paper presents Pi-GPS, a novel framework that unleashes the power of\ndiagrammatic information to resolve textual ambiguities, an aspect largely\noverlooked in prior research. Specifically, we design a micro module comprising\na rectifier and verifier: the rectifier employs MLLMs to disambiguate text\nbased on the diagrammatic context, while the verifier ensures the rectified\noutput adherence to geometric rules, mitigating model hallucinations.\nAdditionally, we explore the impact of LLMs in theorem predictor based on the\ndisambiguated formal language. Empirical results demonstrate that Pi-GPS\nsurpasses state-of-the-art models, achieving a nearly 10\\% improvement on\nGeometry3K over prior neural-symbolic approaches. We hope this work highlights\nthe significance of resolving textual ambiguity in multimodal mathematical\nreasoning, a crucial factor limiting performance.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal",
+      "MLLM",
+      "MLLMs"
+    ]
+  },
+  {
+    "id": "paperswithcode_Supervised_Multimodal_Bitransformers_for_Classifyi",
+    "title": "Supervised Multimodal Bitransformers for Classifying Images and Text",
+    "url": "https://paperswithcode.com/paper/supervised-multimodal-bitransformers-for",
+    "authors": [],
+    "date": "2025-03-06",
+    "summary": "Self-supervised bidirectional transformer models such as BERT have led to dramatic improvements in a wide variety of textual classification tasks.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_04982v1",
+    "title": "LVLM-Compress-Bench: Benchmarking the Broader Impact of Large\n  Vision-Language Model Compression",
+    "url": "http://arxiv.org/abs/2503.04982v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04982v1",
+    "authors": [
+      "Souvik Kundu",
+      "Anahita Bhiwandiwalla",
+      "Sungduk Yu",
+      "Phillip Howard",
+      "Tiep Le",
+      "Sharath Nittur Sridhar",
+      "David Cobbley",
+      "Hao Kang",
+      "Vasudev Lal"
+    ],
+    "date": "2025-03-06",
+    "summary": "Despite recent efforts in understanding the compression impact on large\nlanguage models (LLMs) in terms of their downstream task performance and\ntrustworthiness on relatively simpler uni-modal benchmarks (for example,\nquestion answering, common sense reasoning), their detailed study on\nmulti-modal Large Vision-Language Models (LVLMs) is yet to be unveiled. Towards\nmitigating this gap, we present LVLM-Compress-Bench, a framework to first\nthoroughly study the broad impact of compression on the generative performance\nof LVLMs with multi-modal input driven tasks. In specific, we consider two\nmajor classes of compression for autoregressive models, namely KV cache and\nweight compression, for the dynamically growing intermediate cache and static\nweights, respectively.\n  We use four LVLM variants of the popular LLaVA framework to present our\nanalysis via integrating various state-of-the-art KV and weight compression\nmethods including uniform, outlier-reduced, and group quantization for the KV\ncache and weights. With this framework we demonstrate on ten different\nmulti-modal datasets with different capabilities including recognition,\nknowledge, language generation, spatial awareness, visual reasoning,\nhallucination and visual illusion identification, toxicity, stereotypes and\nbias. In specific, our framework demonstrates the compression impact on both\ngeneral and ethically critical metrics leveraging a combination of real world\nand synthetic datasets to encompass diverse societal intersectional attributes.\nExtensive experimental evaluations yield diverse and intriguing observations on\nthe behavior of LVLMs at different quantization budget of KV and weights, in\nboth maintaining and losing performance as compared to the baseline model with\nFP16 data format.\n  Code will be open-sourced at\nhttps://github.com/opengear-project/LVLM-compress-bench.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "vision-language",
+      "visual reasoning"
+    ]
+  },
+  {
+    "id": "2503_04971v1",
+    "title": "Incentivizing Multi-Tenant Split Federated Learning for Foundation\n  Models at the Network Edge",
+    "url": "http://arxiv.org/abs/2503.04971v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04971v1",
+    "authors": [
+      "Songyuan Li",
+      "Jia Hu",
+      "Geyong Min",
+      "Haojun Huang"
+    ],
+    "date": "2025-03-06",
+    "summary": "Foundation models (FMs) such as GPT-4 exhibit exceptional generative\ncapabilities across diverse downstream tasks through fine-tuning. Split\nFederated Learning (SFL) facilitates privacy-preserving FM fine-tuning on\nresource-constrained local devices by offloading partial FM computations to\nedge servers, enabling device-edge synergistic fine-tuning. Practical edge\nnetworks often host multiple SFL tenants to support diversified downstream\ntasks. However, existing research primarily focuses on single-tenant SFL\nscenarios, and lacks tailored incentive mechanisms for multi-tenant settings,\nwhich are essential to effectively coordinate self-interested local devices for\nparticipation in various downstream tasks, ensuring that each SFL tenant's\ndistinct FM fine-tuning requirements (e.g., FM types, performance targets, and\nfine-tuning deadlines) are met. To address this gap, we propose a novel\nPrice-Incentive Mechanism (PRINCE) that guides multiple SFL tenants to offer\nstrategic price incentives, which solicit high-quality device participation for\nefficient FM fine-tuning. Specifically, we first develop a bias-resilient\nglobal SFL model aggregation scheme to eliminate model biases caused by\nindependent device participation. We then derive a rigorous SFL convergence\nbound to evaluate the contributions of heterogeneous devices to FM performance\nimprovements, guiding the incentive strategies of SFL tenants. Furthermore, we\nmodel inter-tenant device competition as a congestion game for Stackelberg\nequilibrium (SE) analysis, deriving each SFL tenant's optimal incentive\nstrategy. Extensive simulations involving four representative SFL tenant types\n(ViT, BERT, Whisper, and LLaMA) across diverse data modalities (text, images,\nand audio) demonstrate that PRINCE accelerates FM fine-tuning by up to 3.07x\ncompared to state-of-the-art approaches, while consistently meeting fine-tuning\nperformance targets.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "ViT"
+    ]
+  },
+  {
+    "id": "2503_04919v1",
+    "title": "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D\n  Object Placement",
+    "url": "http://arxiv.org/abs/2503.04919v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04919v1",
+    "authors": [
+      "Ian Huang",
+      "Yanan Bao",
+      "Karen Truong",
+      "Howard Zhou",
+      "Cordelia Schmid",
+      "Leonidas Guibas",
+      "Alireza Fathi"
+    ],
+    "date": "2025-03-06",
+    "summary": "Scene generation with 3D assets presents a complex challenge, requiring both\nhigh-level semantic understanding and low-level geometric reasoning. While\nMultimodal Large Language Models (MLLMs) excel at semantic tasks, their\napplication to 3D scene generation is hindered by their limited grounding on 3D\ngeometry. In this paper, we investigate how to best work with MLLMs in an\nobject placement task. Towards this goal, we introduce a novel framework,\nFirePlace, that applies existing MLLMs in (1) 3D geometric reasoning and the\nextraction of relevant geometric details from the 3D scene, (2) constructing\nand solving geometric constraints on the extracted low-level geometry, and (3)\npruning for final placements that conform to common sense. By combining\ngeometric reasoning with real-world understanding of MLLMs, our method can\npropose object placements that satisfy both geometric constraints as well as\nhigh-level semantic common-sense considerations. Our experiments show that\nthese capabilities allow our method to place objects more effectively in\ncomplex scenes with intricate geometry, surpassing the quality of prior work.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal",
+      "MLLM",
+      "MLLMs"
+    ]
+  },
+  {
+    "id": "2503_04918v1",
+    "title": "Fine-Tuning Florence2 for Enhanced Object Detection in Un-constructed\n  Environments: Vision-Language Model Approach",
+    "url": "http://arxiv.org/abs/2503.04918v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04918v1",
+    "authors": [
+      "Soumyadeep Ro",
+      "Sanapala Satwika",
+      "Pamarthi Yasoda Gayathri",
+      "Mohmmad Ghaith Balsha",
+      "Aysegul Ucar"
+    ],
+    "date": "2025-03-06",
+    "summary": "Artificial intelligence has progressed through the development of\nVision-Language Models (VLMs), which integrate text and visual inputs to\nachieve comprehensive understanding and interaction in various contexts.\nEnhancing the performance of these models such as the transformer based\nFlorence 2 on specialized tasks like object detection in complex and\nunstructured environments requires fine-tuning. The goal of this paper is to\nimprove the efficiency of the Florence 2 model in challenging environments by\nfinetuning it. We accomplished this by experimenting with different\nconfigurations, using various GPU types (T4, L4, A100) and optimizers such as\nAdamW and SGD. We also employed a range of learning rates and LoRA (Low Rank\nAdaptation) settings. Analyzing the performance metrics, such as Mean Average\nPrecision (mAP) scores,reveals that the finetuned Florence 2 models performed\ncomparably to YOLO models, including YOLOv8, YOLOv9, and YOLOv10. This\ndemonstrates how transformer based VLMs can be adapted for detailed object\ndetection tasks. The paper emphasizes the capability of optimized transformer\nbased VLMs to address specific challenges in object detection within\nunstructured environments, opening up promising avenues for practical\napplications in demanding and complex settings.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "vision-language"
+    ]
+  },
+  {
+    "id": "2503_04900v1",
+    "title": "Extracting Symbolic Sequences from Visual Representations via\n  Self-Supervised Learning",
+    "url": "http://arxiv.org/abs/2503.04900v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04900v1",
+    "authors": [
+      "Victor Sebastian Martinez Pozos",
+      "Ivan Vladimir Meza Ruiz"
+    ],
+    "date": "2025-03-06",
+    "summary": "This paper explores the potential of abstracting complex visual information\ninto discrete, structured symbolic sequences using self-supervised learning\n(SSL). Inspired by how language abstracts and organizes information to enable\nbetter reasoning and generalization, we propose a novel approach for generating\nsymbolic representations from visual data. To learn these sequences, we extend\nthe DINO framework to handle visual and symbolic information. Initial\nexperiments suggest that the generated symbolic sequences capture a meaningful\nlevel of abstraction, though further refinement is required. An advantage of\nour method is its interpretability: the sequences are produced by a decoder\ntransformer using cross-attention, allowing attention maps to be linked to\nspecific symbols and offering insight into how these representations correspond\nto image regions. This approach lays the foundation for creating interpretable\nsymbolic representations with potential applications in high-level scene\nunderstanding.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "DINO"
+    ]
+  },
+  {
+    "id": "2503_04606v1",
+    "title": "The Best of Both Worlds: Integrating Language Models and Diffusion\n  Models for Video Generation",
+    "url": "http://arxiv.org/abs/2503.04606v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04606v1",
+    "authors": [
+      "Aoxiong Yin",
+      "Kai Shen",
+      "Yichong Leng",
+      "Xu Tan",
+      "Xinyu Zhou",
+      "Juncheng Li",
+      "Siliang Tang"
+    ],
+    "date": "2025-03-06",
+    "summary": "Recent advancements in text-to-video (T2V) generation have been driven by two\ncompeting paradigms: autoregressive language models and diffusion models.\nHowever, each paradigm has intrinsic limitations: language models struggle with\nvisual quality and error accumulation, while diffusion models lack semantic\nunderstanding and causal modeling. In this work, we propose LanDiff, a hybrid\nframework that synergizes the strengths of both paradigms through\ncoarse-to-fine generation. Our architecture introduces three key innovations:\n(1) a semantic tokenizer that compresses 3D visual features into compact 1D\ndiscrete representations through efficient semantic compression, achieving a\n$\\sim$14,000$\\times$ compression ratio; (2) a language model that generates\nsemantic tokens with high-level semantic relationships; (3) a streaming\ndiffusion model that refines coarse semantics into high-fidelity videos.\nExperiments show that LanDiff, a 5B model, achieves a score of 85.43 on the\nVBench T2V benchmark, surpassing the state-of-the-art open-source models\nHunyuan Video (13B) and other commercial models such as Sora, Keling, and\nHailuo. Furthermore, our model also achieves state-of-the-art performance in\nlong video generation, surpassing other open-source models in this field. Our\ndemo can be viewed at https://landiff.github.io/.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "text-to-video",
+      "Sora"
+    ]
+  },
+  {
+    "id": "2503_04871v1",
+    "title": "Toward Lightweight and Fast Decoders for Diffusion Models in Image and\n  Video Generation",
+    "url": "http://arxiv.org/abs/2503.04871v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04871v1",
+    "authors": [
+      "Alexey Buzovkin",
+      "Evgeny Shilov"
+    ],
+    "date": "2025-03-06",
+    "summary": "We investigate methods to reduce inference time and memory footprint in\nstable diffusion models by introducing lightweight decoders for both image and\nvideo synthesis. Traditional latent diffusion pipelines rely on large\nVariational Autoencoder decoders that can slow down generation and consume\nconsiderable GPU memory. We propose custom-trained decoders using lightweight\nVision Transformer and Taming Transformer architectures. Experiments show up to\n15% overall speed-ups for image generation on COCO2017 and up to 20 times\nfaster decoding in the sub-module, with additional gains on UCF-101 for video\ntasks. Memory requirements are moderately reduced, and while there is a small\ndrop in perceptual quality compared to the default decoder, the improvements in\nspeed and scalability are crucial for large-scale inference scenarios such as\ngenerating 100K images. Our work is further contextualized by advances in\nefficient video generation, including dual masking strategies, illustrating a\nbroader effort to improve the scalability and efficiency of generative models.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "Stable Diffusion",
+      "vision transformer",
+      "image generation"
+    ]
+  },
+  {
+    "id": "2503_04308v1",
+    "title": "Shaken, Not Stirred: A Novel Dataset for Visual Understanding of Glasses\n  in Human-Robot Bartending Tasks",
+    "url": "http://arxiv.org/abs/2503.04308v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04308v1",
+    "authors": [
+      "Luk\u00e1\u0161 Gajdo\u0161ech",
+      "Hassan Ali",
+      "Jan-Gerrit Habekost",
+      "Martin Madaras",
+      "Matthias Kerzel",
+      "Stefan Wermter"
+    ],
+    "date": "2025-03-06",
+    "summary": "Datasets for object detection often do not account for enough variety of\nglasses, due to their transparent and reflective properties. Specifically,\nopen-vocabulary object detectors, widely used in embodied robotic agents, fail\nto distinguish subclasses of glasses. This scientific gap poses an issue to\nrobotic applications that suffer from accumulating errors between detection,\nplanning, and action execution. The paper introduces a novel method for the\nacquisition of real-world data from RGB-D sensors that minimizes human effort.\nWe propose an auto-labeling pipeline that generates labels for all the acquired\nframes based on the depth measurements. We provide a novel real-world glass\nobject dataset that was collected on the Neuro-Inspired COLlaborator (NICOL), a\nhumanoid robot platform. The data set consists of 7850 images recorded from\nfive different cameras. We show that our trained baseline model outperforms\nstate-of-the-art open-vocabulary approaches. In addition, we deploy our\nbaseline model in an embodied agent approach to the NICOL platform, on which it\nachieves a success rate of 81% in a human-robot bartending scenario.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "visual understanding"
+    ]
+  },
+  {
+    "id": "2503_04215v1",
+    "title": "Energy-Guided Optimization for Personalized Image Editing with\n  Pretrained Text-to-Image Diffusion Models",
+    "url": "http://arxiv.org/abs/2503.04215v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04215v1",
+    "authors": [
+      "Rui Jiang",
+      "Xinghe Fu",
+      "Guangcong Zheng",
+      "Teng Li",
+      "Taiping Yao",
+      "Xi Li"
+    ],
+    "date": "2025-03-06",
+    "summary": "The rapid advancement of pretrained text-driven diffusion models has\nsignificantly enriched applications in image generation and editing. However,\nas the demand for personalized content editing increases, new challenges emerge\nespecially when dealing with arbitrary objects and complex scenes. Existing\nmethods usually mistakes mask as the object shape prior, which struggle to\nachieve a seamless integration result. The mostly used inversion noise\ninitialization also hinders the identity consistency towards the target object.\nTo address these challenges, we propose a novel training-free framework that\nformulates personalized content editing as the optimization of edited images in\nthe latent space, using diffusion models as the energy function guidance\nconditioned by reference text-image pairs. A coarse-to-fine strategy is\nproposed that employs text energy guidance at the early stage to achieve a\nnatural transition toward the target class and uses point-to-point\nfeature-level image energy guidance to perform fine-grained appearance\nalignment with the target object. Additionally, we introduce the latent space\ncontent composition to enhance overall identity consistency with the target.\nExtensive experiments demonstrate that our method excels in object replacement\neven with a large domain gap, highlighting its potential for high-quality,\npersonalized image editing.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "text-to-image",
+      "image generation"
+    ]
+  },
+  {
+    "id": "2503_04858v1",
+    "title": "SHAPE : Self-Improved Visual Preference Alignment by Iteratively\n  Generating Holistic Winner",
+    "url": "http://arxiv.org/abs/2503.04858v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04858v1",
+    "authors": [
+      "Kejia Chen",
+      "Jiawen Zhang",
+      "Jiacong Hu",
+      "Jiazhen Yang",
+      "Jian Lou",
+      "Zunlei Feng",
+      "Mingli Song"
+    ],
+    "date": "2025-03-06",
+    "summary": "Large Visual Language Models (LVLMs) increasingly rely on preference\nalignment to ensure reliability, which steers the model behavior via preference\nfine-tuning on preference data structured as ``image - winner text - loser\ntext'' triplets. However, existing approaches often suffer from limited\ndiversity and high costs associated with human-annotated preference data,\nhindering LVLMs from fully achieving their intended alignment capabilities. We\npresent \\projectname, a self-supervised framework capable of transforming the\nalready abundant supervised text-image pairs into holistic preference triplets\nfor more effective and cheaper LVLM alignment, eliminating the need for human\npreference annotations. Our approach facilitates LVLMs in progressively\nenhancing alignment capabilities through iterative self-improvement. The key\ndesign rationale is to devise preference triplets where the winner text\nconsistently improves in holisticness and outperforms the loser response in\nquality, thereby pushing the model to ``strive to the utmost'' of alignment\nperformance through preference fine-tuning. For each given text-image pair,\nSHAPE introduces multiple visual augmentations and pairs them with a summarized\ntext to serve as the winner response, while designating the original text as\nthe loser response. Experiments across \\textbf{12} benchmarks on various model\narchitectures and sizes, including LLaVA and DeepSeek-VL, show that SHAPE\nachieves significant gains, for example, achieving +11.3\\% on MMVet\n(comprehensive evaluation), +1.4\\% on MMBench (general VQA), and +8.0\\% on POPE\n(hallucination robustness) over baselines in 7B models. Notably, qualitative\nanalyses confirm enhanced attention to visual details and better alignment with\nhuman preferences for holistic descriptions.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "VQA"
+    ]
+  },
+  {
+    "id": "2503_04170v1",
+    "title": "Towards Intelligent Transportation with Pedestrians and Vehicles\n  In-the-Loop: A Surveillance Video-Assisted Federated Digital Twin Framework",
+    "url": "http://arxiv.org/abs/2503.04170v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04170v1",
+    "authors": [
+      "Xiaolong Li",
+      "Jianhao Wei",
+      "Haidong Wang",
+      "Li Dong",
+      "Ruoyang Chen",
+      "Changyan Yi",
+      "Jun Cai",
+      "Dusit Niyato",
+      "Xuemin",
+      "Shen"
+    ],
+    "date": "2025-03-06",
+    "summary": "In intelligent transportation systems (ITSs), incorporating pedestrians and\nvehicles in-the-loop is crucial for developing realistic and safe traffic\nmanagement solutions. However, there is falls short of simulating complex\nreal-world ITS scenarios, primarily due to the lack of a digital twin\nimplementation framework for characterizing interactions between pedestrians\nand vehicles at different locations in different traffic environments. In this\narticle, we propose a surveillance video assisted federated digital twin\n(SV-FDT) framework to empower ITSs with pedestrians and vehicles in-the-loop.\nSpecifically, SVFDT builds comprehensive pedestrian-vehicle interaction models\nby leveraging multi-source traffic surveillance videos. Its architecture\nconsists of three layers: (i) the end layer, which collects traffic\nsurveillance videos from multiple sources; (ii) the edge layer, responsible for\nsemantic segmentation-based visual understanding, twin agent-based interaction\nmodeling, and local digital twin system (LDTS) creation in local regions; and\n(iii) the cloud layer, which integrates LDTSs across different regions to\nconstruct a global DT model in realtime. We analyze key design requirements and\nchallenges and present core guidelines for SVFDT's system implementation. A\ntestbed evaluation demonstrates its effectiveness in optimizing traffic\nmanagement. Comparisons with traditional terminal-server frameworks highlight\nSV-FDT's advantages in mirroring delays, recognition accuracy, and subjective\nevaluation. Finally, we identify some open challenges and discuss future\nresearch directions.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "visual understanding"
+    ]
+  },
+  {
+    "id": "2503_04154v1",
+    "title": "CA-W3D: Leveraging Context-Aware Knowledge for Weakly Supervised\n  Monocular 3D Detection",
+    "url": "http://arxiv.org/abs/2503.04154v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04154v1",
+    "authors": [
+      "Chupeng Liu",
+      "Runkai Zhao",
+      "Weidong Cai"
+    ],
+    "date": "2025-03-06",
+    "summary": "Weakly supervised monocular 3D detection, while less annotation-intensive,\noften struggles to capture the global context required for reliable 3D\nreasoning. Conventional label-efficient methods focus on object-centric\nfeatures, neglecting contextual semantic relationships that are critical in\ncomplex scenes. In this work, we propose a Context-Aware Weak Supervision for\nMonocular 3D object detection, namely CA-W3D, to address this limitation in a\ntwo-stage training paradigm. Specifically, we first introduce a pre-training\nstage employing Region-wise Object Contrastive Matching (ROCM), which aligns\nregional object embeddings derived from a trainable monocular 3D encoder and a\nfrozen open-vocabulary 2D visual grounding model. This alignment encourages the\nmonocular encoder to discriminate scene-specific attributes and acquire richer\ncontextual knowledge. In the second stage, we incorporate a pseudo-label\ntraining process with a Dual-to-One Distillation (D2OD) mechanism, which\neffectively transfers contextual priors into the monocular encoder while\npreserving spatial fidelity and maintaining computational efficiency during\ninference. Extensive experiments conducted on the public KITTI benchmark\ndemonstrate the effectiveness of our approach, surpassing the SoTA method over\nall metrics, highlighting the importance of contextual-aware knowledge in\nweakly-supervised monocular 3D detection.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "visual grounding"
+    ]
+  },
+  {
+    "id": "2503_04107v1",
+    "title": "Fractional Correspondence Framework in Detection Transformer",
+    "url": "http://arxiv.org/abs/2503.04107v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04107v1",
+    "authors": [
+      "Masoumeh Zareapoor",
+      "Pourya Shamsolmoali",
+      "Huiyu Zhou",
+      "Yue Lu",
+      "Salvador Garc\u00eda"
+    ],
+    "date": "2025-03-06",
+    "summary": "The Detection Transformer (DETR), by incorporating the Hungarian algorithm,\nhas significantly simplified the matching process in object detection tasks.\nThis algorithm facilitates optimal one-to-one matching of predicted bounding\nboxes to ground-truth annotations during training. While effective, this strict\nmatching process does not inherently account for the varying densities and\ndistributions of objects, leading to suboptimal correspondences such as failing\nto handle multiple detections of the same object or missing small objects. To\naddress this, we propose the Regularized Transport Plan (RTP). RTP introduces a\nflexible matching strategy that captures the cost of aligning predictions with\nground truths to find the most accurate correspondences between these sets. By\nutilizing the differentiable Sinkhorn algorithm, RTP allows for soft,\nfractional matching rather than strict one-to-one assignments. This approach\nenhances the model's capability to manage varying object densities and\ndistributions effectively. Our extensive evaluations on the MS-COCO and VOC\nbenchmarks demonstrate the effectiveness of our approach. RTP-DETR, surpassing\nthe performance of the Deform-DETR and the recently introduced DINO-DETR,\nachieving absolute gains in mAP of +3.8% and +1.7%, respectively.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "DINO"
+    ]
+  },
+  {
+    "id": "2503_04852v1",
+    "title": "CAUSAL3D: A Comprehensive Benchmark for Causal Learning from Visual Data",
+    "url": "http://arxiv.org/abs/2503.04852v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04852v1",
+    "authors": [
+      "Disheng Liu",
+      "Yiran Qiao",
+      "Wuche Liu",
+      "Yiren Lu",
+      "Yunlai Zhou",
+      "Tuo Liang",
+      "Yu Yin",
+      "Jing Ma"
+    ],
+    "date": "2025-03-06",
+    "summary": "True intelligence hinges on the ability to uncover and leverage hidden causal\nrelations. Despite significant progress in AI and computer vision (CV), there\nremains a lack of benchmarks for assessing models' abilities to infer latent\ncausality from complex visual data. In this paper, we introduce\n\\textsc{\\textbf{Causal3D}}, a novel and comprehensive benchmark that integrates\nstructured data (tables) with corresponding visual representations (images) to\nevaluate causal reasoning. Designed within a systematic framework, Causal3D\ncomprises 19 3D-scene datasets capturing diverse causal relations, views, and\nbackgrounds, enabling evaluations across scenes of varying complexity. We\nassess multiple state-of-the-art methods, including classical causal discovery,\ncausal representation learning, and large/vision-language models (LLMs/VLMs).\nOur experiments show that as causal structures grow more complex without prior\nknowledge, performance declines significantly, highlighting the challenges even\nadvanced methods face in complex causal scenarios. Causal3D serves as a vital\nresource for advancing causal reasoning in CV and fostering trustworthy AI in\ncritical domains.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "vision-language",
+      "ViT"
+    ]
+  },
+  {
+    "id": "2503_04050v1",
+    "title": "Underlying Semantic Diffusion for Effective and Efficient In-Context\n  Learning",
+    "url": "http://arxiv.org/abs/2503.04050v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04050v1",
+    "authors": [
+      "Zhong Ji",
+      "Weilong Cao",
+      "Yan Zhang",
+      "Yanwei Pang",
+      "Jungong Han",
+      "Xuelong Li"
+    ],
+    "date": "2025-03-06",
+    "summary": "Diffusion models has emerged as a powerful framework for tasks like image\ncontrollable generation and dense prediction. However, existing models often\nstruggle to capture underlying semantics (e.g., edges, textures, shapes) and\neffectively utilize in-context learning, limiting their contextual\nunderstanding and image generation quality. Additionally, high computational\ncosts and slow inference speeds hinder their real-time applicability. To\naddress these challenges, we propose Underlying Semantic Diffusion\n(US-Diffusion), an enhanced diffusion model that boosts underlying semantics\nlearning, computational efficiency, and in-context learning capabilities on\nmulti-task scenarios. We introduce Separate & Gather Adapter (SGA), which\ndecouples input conditions for different tasks while sharing the architecture,\nenabling better in-context learning and generalization across diverse visual\ndomains. We also present a Feedback-Aided Learning (FAL) framework, which\nleverages feedback signals to guide the model in capturing semantic details and\ndynamically adapting to task-specific contextual cues. Furthermore, we propose\na plug-and-play Efficient Sampling Strategy (ESS) for dense sampling at time\nsteps with high-noise levels, which aims at optimizing training and inference\nefficiency while maintaining strong in-context learning performance.\nExperimental results demonstrate that US-Diffusion outperforms the\nstate-of-the-art method, achieving an average reduction of 7.47 in FID on\nMap2Image tasks and an average reduction of 0.026 in RMSE on Image2Map tasks,\nwhile achieving approximately 9.45 times faster inference speed. Our method\nalso demonstrates superior training efficiency and in-context learning\ncapabilities, excelling in new datasets and tasks, highlighting its robustness\nand adaptability across diverse visual domains.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "image generation"
+    ]
+  },
+  {
     "id": "2503_03947v1",
     "title": "COARSE: Collaborative Pseudo-Labeling with Coarse Real Labels for\n  Off-Road Semantic Segmentation",
     "url": "http://arxiv.org/abs/2503.03947v1",
@@ -1552,6 +2606,78 @@
     ]
   },
   {
+    "id": "2503_05595v1",
+    "title": "Anti-Diffusion: Preventing Abuse of Modifications of Diffusion-Based\n  Models",
+    "url": "http://arxiv.org/abs/2503.05595v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05595v1",
+    "authors": [
+      "Zheng Li",
+      "Liangbin Xie",
+      "Jiantao Zhou",
+      "Xintao Wang",
+      "Haiwei Wu",
+      "Jinyu Tian"
+    ],
+    "date": "2025-03-05",
+    "summary": "Although diffusion-based techniques have shown remarkable success in image\ngeneration and editing tasks, their abuse can lead to severe negative social\nimpacts. Recently, some works have been proposed to provide defense against the\nabuse of diffusion-based methods. However, their protection may be limited in\nspecific scenarios by manually defined prompts or the stable diffusion (SD)\nversion. Furthermore, these methods solely focus on tuning methods, overlooking\nediting methods that could also pose a significant threat. In this work, we\npropose Anti-Diffusion, a privacy protection system designed for general\ndiffusion-based methods, applicable to both tuning and editing techniques. To\nmitigate the limitations of manually defined prompts on defense performance, we\nintroduce the prompt tuning (PT) strategy that enables precise expression of\noriginal images. To provide defense against both tuning and editing methods, we\npropose the semantic disturbance loss (SDL) to disrupt the semantic information\nof protected images. Given the limited research on the defense against editing\nmethods, we develop a dataset named Defense-Edit to assess the defense\nperformance of various methods. Experiments demonstrate that our Anti-Diffusion\nachieves superior defense performance across a wide range of diffusion-based\ntechniques in different scenarios.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "Stable Diffusion"
+    ]
+  },
+  {
+    "id": "paperswithcode_LayoutXLM__Multimodal_Pre_training_for_Multilingua",
+    "title": "LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding",
+    "url": "https://paperswithcode.com/paper/layoutxlm-multimodal-pre-training-for",
+    "authors": [],
+    "date": "2025-03-05",
+    "summary": "In this paper, we present LayoutXLM, a multimodal pre-trained model for multilingual document understanding, which aims to bridge the language barriers for visually-rich document understanding.",
+    "source": "Papers With Code",
+    "keywords": [
+      "multimodal"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_04842v1",
+    "title": "Replicating Human Social Perception in Generative AI: Evaluating the\n  Valence-Dominance Model",
+    "url": "http://arxiv.org/abs/2503.04842v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04842v1",
+    "authors": [
+      "Necdet Gurkan",
+      "Kimathi Njoki",
+      "Jordan W. Suchow"
+    ],
+    "date": "2025-03-05",
+    "summary": "As artificial intelligence (AI) continues to advance--particularly in\ngenerative models--an open question is whether these systems can replicate\nfoundational models of human social perception. A well-established framework in\nsocial cognition suggests that social judgments are organized along two primary\ndimensions: valence (e.g., trustworthiness, warmth) and dominance (e.g., power,\nassertiveness). This study examines whether multimodal generative AI systems\ncan reproduce this valence-dominance structure when evaluating facial images\nand how their representations align with those observed across world regions.\nThrough principal component analysis (PCA), we found that the extracted\ndimensions closely mirrored the theoretical structure of valence and dominance,\nwith trait loadings aligning with established definitions. However, many world\nregions and generative AI models also exhibited a third component, the nature\nand significance of which warrant further investigation. These findings\ndemonstrate that multimodal generative AI systems can replicate key aspects of\nhuman social perception, raising important questions about their implications\nfor AI-driven decision-making and human-AI interactions.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "2503_04839v1",
+    "title": "Advancing Multimodal In-Context Learning in Large Vision-Language Models\n  with Task-aware Demonstrations",
+    "url": "http://arxiv.org/abs/2503.04839v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.04839v1",
+    "authors": [
+      "Yanshu Li"
+    ],
+    "date": "2025-03-05",
+    "summary": "Multimodal in-context learning (ICL) has emerged as a key capability of Large\nVision-Language Models (LVLMs), driven by their increasing scale and\napplicability. Despite its promise, effective ICL in the multimodal setting\nremains challenging due to the inherent complexity of image-text inputs and the\nhigh sensitivity of ICL performance to input configurations. In this work, we\nshed light on the core mechanism underlying multimodal ICL, identifying task\nmapping as a crucial factor in configuring robust in-context demonstration\n(ICD) sequences. Building on these insights, we propose \\textit{SabER}, a\nlightweight yet powerful decoder-only transformer equipped with task-aware\nattention, which intelligently selects and arranges ICDs from a demonstration\nlibrary in an autoregressive fashion. This design enables fine-grained feature\nextraction and cross-modal reasoning, iteratively refining task mapping to\ngenerate high-quality ICD sequences. Through extensive experiments covering\nfive LVLMs and nine benchmark datasets, SabER not only demonstrates strong\nempirical performance, but also provides deeper understanding of how task\nsemantics interact with multimodal ICDs. Our findings highlight the importance\nof principled ICD sequence configuration and open new avenues to enhance\nmultimodal ICL in a wide range of real-world scenarios.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "VLM",
+      "multimodal",
+      "vision-language",
+      "image-text",
+      "ViT"
+    ]
+  },
+  {
     "id": "2503_02950v1",
     "title": "LiteWebAgent: The Open-Source Suite for VLM-Based Web-Agent Applications",
     "url": "http://arxiv.org/abs/2503.02950v1",
@@ -2143,5 +3269,142 @@
     "keywords": [
       "VQA"
     ]
+  },
+  {
+    "id": "2503_05626v1",
+    "title": "FMT:A Multimodal Pneumonia Detection Model Based on Stacking MOE\n  Framework",
+    "url": "http://arxiv.org/abs/2503.05626v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05626v1",
+    "authors": [
+      "Jingyu Xu",
+      "Yang Wang"
+    ],
+    "date": "2025-03-04",
+    "summary": "Artificial intelligence has shown the potential to improve diagnostic\naccuracy through medical image analysis for pneumonia diagnosis. However,\ntraditional multimodal approaches often fail to address real-world challenges\nsuch as incomplete data and modality loss. In this study, a Flexible Multimodal\nTransformer (FMT) was proposed, which uses ResNet-50 and BERT for joint\nrepresentation learning, followed by a dynamic masked attention strategy that\nsimulates clinical modality loss to improve robustness; finally, a sequential\nmixture of experts (MOE) architecture was used to achieve multi-level decision\nrefinement. After evaluation on a small multimodal pneumonia dataset, FMT\nachieved state-of-the-art performance with 94% accuracy, 95% recall, and 93% F1\nscore, outperforming single-modal baselines (ResNet: 89%; BERT: 79%) and the\nmedical benchmark CheXMed (90%), providing a scalable solution for multimodal\ndiagnosis of pneumonia in resource-constrained medical settings.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_MiniGPT_v2__large_language_model_as_a_unified_inte",
+    "title": "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning",
+    "url": "https://paperswithcode.com/paper/minigpt-v2-large-language-model-as-a-unified",
+    "authors": [],
+    "date": "2025-03-04",
+    "summary": "Motivated by this, we target to build a unified interface for completing many vision-language tasks including image description, visual question answering, and visual grounding, among others.",
+    "source": "Papers With Code",
+    "keywords": [
+      "vision-language",
+      "visual question answering",
+      "visual grounding"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05639v1",
+    "title": "VideoPainter: Any-length Video Inpainting and Editing with Plug-and-Play\n  Context Control",
+    "url": "http://arxiv.org/abs/2503.05639v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05639v1",
+    "authors": [
+      "Yuxuan Bian",
+      "Zhaoyang Zhang",
+      "Xuan Ju",
+      "Mingdeng Cao",
+      "Liangbin Xie",
+      "Ying Shan",
+      "Qiang Xu"
+    ],
+    "date": "2025-03-03",
+    "summary": "Video inpainting, which aims to restore corrupted video content, has\nexperienced substantial progress. Despite these advances, existing methods,\nwhether propagating unmasked region pixels through optical flow and receptive\nfield priors, or extending image-inpainting models temporally, face challenges\nin generating fully masked objects or balancing the competing objectives of\nbackground context preservation and foreground generation in one model,\nrespectively. To address these limitations, we propose a novel dual-stream\nparadigm VideoPainter that incorporates an efficient context encoder\n(comprising only 6% of the backbone parameters) to process masked videos and\ninject backbone-aware background contextual cues to any pre-trained video DiT,\nproducing semantically consistent content in a plug-and-play manner. This\narchitectural separation significantly reduces the model's learning complexity\nwhile enabling nuanced integration of crucial background context. We also\nintroduce a novel target region ID resampling technique that enables any-length\nvideo inpainting, greatly enhancing our practical applicability. Additionally,\nwe establish a scalable dataset pipeline leveraging current vision\nunderstanding models, contributing VPData and VPBench to facilitate\nsegmentation-based inpainting training and assessment, the largest video\ninpainting dataset and benchmark to date with over 390K diverse clips. Using\ninpainting as a pipeline basis, we also explore downstream applications\nincluding video editing and video editing pair data generation, demonstrating\ncompetitive performance and significant practical potential. Extensive\nexperiments demonstrate VideoPainter's superior performance in both any-length\nvideo inpainting and editing, across eight key metrics, including video\nquality, mask region preservation, and textual coherence.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "CLIP"
+    ]
+  },
+  {
+    "id": "paperswithcode_F_VLM__Open_Vocabulary_Object_Detection_upon_Froze",
+    "title": "F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language Models",
+    "url": "https://paperswithcode.com/paper/f-vlm-open-vocabulary-object-detection-upon",
+    "authors": [],
+    "date": "2025-03-03",
+    "summary": "We present F-VLM, a simple open-vocabulary object detection method built upon Frozen Vision and Language Models.",
+    "source": "Papers With Code",
+    "keywords": [
+      "VLM"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05684v1",
+    "title": "Fairness-Aware Low-Rank Adaptation Under Demographic Privacy Constraints",
+    "url": "http://arxiv.org/abs/2503.05684v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05684v1",
+    "authors": [
+      "Parameswaran Kamalaruban",
+      "Mark Anderson",
+      "Stuart Burrell",
+      "Maeve Madigan",
+      "Piotr Skalski",
+      "David Sutton"
+    ],
+    "date": "2025-03-02",
+    "summary": "Pre-trained foundation models can be adapted for specific tasks using\nLow-Rank Adaptation (LoRA). However, the fairness properties of these adapted\nclassifiers remain underexplored. Existing fairness-aware fine-tuning methods\nrely on direct access to sensitive attributes or their predictors, but in\npractice, these sensitive attributes are often held under strict consumer\nprivacy controls, and neither the attributes nor their predictors are available\nto model developers, hampering the development of fair models. To address this\nissue, we introduce a set of LoRA-based fine-tuning methods that can be trained\nin a distributed fashion, where model developers and fairness auditors\ncollaborate without sharing sensitive attributes or predictors. In this paper,\nwe evaluate three such methods - sensitive unlearning, adversarial training,\nand orthogonality loss - against a fairness-unaware baseline, using experiments\non the CelebA and UTK-Face datasets with an ImageNet pre-trained ViT-Base\nmodel. We find that orthogonality loss consistently reduces bias while\nmaintaining or improving utility, whereas adversarial training improves False\nPositive Rate Parity and Demographic Parity in some cases, and sensitive\nunlearning provides no clear benefit. In tasks where significant biases are\npresent, distributed fairness-aware fine-tuning methods can effectively\neliminate bias without compromising consumer privacy and, in most cases,\nimprove model utility.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "ViT"
+    ]
+  },
+  {
+    "id": "paperswithcode_VILA__Learning_Image_Aesthetics_from_User_Comments",
+    "title": "VILA: Learning Image Aesthetics from User Comments with Vision-Language Pretraining",
+    "url": "https://paperswithcode.com/paper/vila-learning-image-aesthetics-from-user",
+    "authors": [],
+    "date": "2025-03-02",
+    "summary": "Our results show that our pretrained aesthetic vision-language model outperforms prior works on image aesthetic captioning over the AVA-Captions dataset, and it has powerful zero-shot capability for aesthetic tasks such as zero-shot style classification and zero-shot IAA, surpassing many supervised baselines.",
+    "source": "Papers With Code",
+    "keywords": [
+      "vision-language"
+    ],
+    "code_url": null
+  },
+  {
+    "id": "2503_05689v1",
+    "title": "GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories\n  Generation in End-to-End Autonomous Driving",
+    "url": "http://arxiv.org/abs/2503.05689v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.05689v1",
+    "authors": [
+      "Zebin Xing",
+      "Xingyu Zhang",
+      "Yang Hu",
+      "Bo Jiang",
+      "Tong He",
+      "Qian Zhang",
+      "Xiaoxiao Long",
+      "Wei Yin"
+    ],
+    "date": "2025-03-01",
+    "summary": "We propose GoalFlow, an end-to-end autonomous driving method for generating\nhigh-quality multimodal trajectories. In autonomous driving scenarios, there is\nrarely a single suitable trajectory. Recent methods have increasingly focused\non modeling multimodal trajectory distributions. However, they suffer from\ntrajectory selection complexity and reduced trajectory quality due to high\ntrajectory divergence and inconsistencies between guidance and scene\ninformation. To address these issues, we introduce GoalFlow, a novel method\nthat effectively constrains the generative process to produce high-quality,\nmultimodal trajectories. To resolve the trajectory divergence problem inherent\nin diffusion-based methods, GoalFlow constrains the generated trajectories by\nintroducing a goal point. GoalFlow establishes a novel scoring mechanism that\nselects the most appropriate goal point from the candidate points based on\nscene information. Furthermore, GoalFlow employs an efficient generative\nmethod, Flow Matching, to generate multimodal trajectories, and incorporates a\nrefined scoring mechanism to select the optimal trajectory from the candidates.\nOur experimental results, validated on the Navsim\\cite{Dauner2024_navsim},\ndemonstrate that GoalFlow achieves state-of-the-art performance, delivering\nrobust multimodal trajectories for autonomous driving. GoalFlow achieved PDMS\nof 90.3, significantly surpassing other methods. Compared with other\ndiffusion-policy-based methods, our approach requires only a single denoising\nstep to obtain excellent performance. The code is available at\nhttps://github.com/YvanYin/GoalFlow.",
+    "source": "arXiv",
+    "categories": [],
+    "keywords": [
+      "multimodal"
+    ]
+  },
+  {
+    "id": "paperswithcode_MiniGPT_4__Enhancing_Vision_Language_Understanding",
+    "title": "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+    "url": "https://paperswithcode.com/paper/minigpt-4-enhancing-vision-language",
+    "authors": [],
+    "date": "2025-03-01",
+    "summary": "Our work, for the first time, uncovers that properly aligning the visual features with an advanced large language model can possess numerous advanced multi-modal abilities demonstrated by GPT-4, such as detailed image description generation and website creation from hand-drawn drafts.",
+    "source": "Papers With Code",
+    "keywords": [
+      "vision-language"
+    ],
+    "code_url": null
   }
 ]
