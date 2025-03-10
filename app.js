@@ -1260,13 +1260,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log("First paper attention score type:", typeof papers[0].attention_score);
                 }
                 
-                // Ensure attention scores are numbers
+                // Ensure attention scores are numbers and add missing fields
                 papers = papers.map(paper => {
                     if (paper.attention_score === undefined || paper.attention_score === null) {
                         paper.attention_score = 0;
                     } else if (typeof paper.attention_score === 'string') {
                         paper.attention_score = parseFloat(paper.attention_score) || 0;
                     }
+                    
+                    // Ensure authors field exists
+                    if (!paper.authors) {
+                        paper.authors = [];
+                    }
+                    
+                    // Ensure url field exists
+                    if (!paper.url) {
+                        paper.url = "#";
+                    }
+                    
                     return paper;
                 });
                 
@@ -1317,7 +1328,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Debug: log each paper's score
                     console.log(`Paper #${index + 1}: "${paper.title.substring(0, 30)}..." - Score: ${displayScore}`);
                     
-                    // Create paper ranking item
+                    // Create paper ranking item with safe author handling
                     paperItem.innerHTML = `
                         <div class="ranking-number">#${index + 1}</div>
                         <div class="ranking-content">
@@ -1325,6 +1336,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <a href="${paper.url}" target="_blank">${paper.title}</a>
                             </h4>
                             <div class="paper-meta">
+                                ${paper.authors && paper.authors.length > 0 ? 
+                                  `<span class="paper-authors">${paper.authors.join(', ')}</span>` : ''}
                                 <span class="paper-source">${paper.source || 'Unknown source'}</span>
                                 <span class="paper-date">${paper.date || 'Unknown date'}</span>
                             </div>
