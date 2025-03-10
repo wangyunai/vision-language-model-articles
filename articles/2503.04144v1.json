@@ -1,0 +1,30 @@
+{
+  "id": "2503.04144v1",
+  "title": "DM-Adapter: Domain-Aware Mixture-of-Adapters for Text-Based Person\n  Retrieval",
+  "url": "http://arxiv.org/abs/2503.04144v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04144v1",
+  "authors": [
+    "Yating Liu",
+    "Zimo Liu",
+    "Xiangyuan Lan",
+    "Wenming Yang",
+    "Yaowei Li",
+    "Qingmin Liao"
+  ],
+  "date": "2025-03-06",
+  "summary": "Text-based person retrieval (TPR) has gained significant attention as a\nfine-grained and challenging task that closely aligns with practical\napplications. Tailoring CLIP to person domain is now a emerging research topic\ndue to the abundant knowledge of vision-language pretraining, but challenges\nstill remain during fine-tuning: (i) Previous full-model fine-tuning in TPR is\ncomputationally expensive and prone to overfitting.(ii) Existing\nparameter-efficient transfer learning (PETL) for TPR lacks of fine-grained\nfeature extraction. To address these issues, we propose Domain-Aware\nMixture-of-Adapters (DM-Adapter), which unifies Mixture-of-Experts (MOE) and\nPETL to enhance fine-grained feature representations while maintaining\nefficiency. Specifically, Sparse Mixture-of-Adapters is designed in parallel to\nMLP layers in both vision and language branches, where different experts\nspecialize in distinct aspects of person knowledge to handle features more\nfinely. To promote the router to exploit domain information effectively and\nalleviate the routing imbalance, Domain-Aware Router is then developed by\nbuilding a novel gating function and injecting learnable domain-aware prompts.\nExtensive experiments show that our DM-Adapter achieves state-of-the-art\nperformance, outperforming previous methods by a significant margin.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language",
+    "CLIP"
+  ],
+  "attention_score": 2.71,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

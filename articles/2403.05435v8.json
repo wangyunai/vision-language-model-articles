@@ -1,0 +1,28 @@
+{
+  "id": "2403.05435v8",
+  "title": "OmniCount: Multi-label Object Counting with Semantic-Geometric Priors",
+  "url": "http://arxiv.org/abs/2403.05435v8",
+  "pdf_url": "http://arxiv.org/pdf/2403.05435v8",
+  "authors": [
+    "Anindya Mondal",
+    "Sauradip Nag",
+    "Xiatian Zhu",
+    "Anjan Dutta"
+  ],
+  "date": "2024-03-08",
+  "summary": "Object counting is pivotal for understanding the composition of scenes.\nPreviously, this task was dominated by class-specific methods, which have\ngradually evolved into more adaptable class-agnostic strategies. However, these\nstrategies come with their own set of limitations, such as the need for manual\nexemplar input and multiple passes for multiple categories, resulting in\nsignificant inefficiencies. This paper introduces a more practical approach\nenabling simultaneous counting of multiple object categories using an\nopen-vocabulary framework. Our solution, OmniCount, stands out by using\nsemantic and geometric insights (priors) from pre-trained models to count\nmultiple categories of objects as specified by users, all without additional\ntraining. OmniCount distinguishes itself by generating precise object masks and\nleveraging varied interactive prompts via the Segment Anything Model for\nefficient counting. To evaluate OmniCount, we created the OmniCount-191\nbenchmark, a first-of-its-kind dataset with multi-label object counts,\nincluding points, bounding boxes, and VQA annotations. Our comprehensive\nevaluation in OmniCount-191, alongside other leading benchmarks, demonstrates\nOmniCount's exceptional performance, significantly outpacing existing\nsolutions. The project webpage is available at\nhttps://mondalanindya.github.io/OmniCount.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VQA",
+    "Segment Anything"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

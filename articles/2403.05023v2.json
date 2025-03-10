@@ -1,0 +1,33 @@
+{
+  "id": "2403.05023v2",
+  "title": "Towards Multimodal Sentiment Analysis Debiasing via Bias Purification",
+  "url": "http://arxiv.org/abs/2403.05023v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05023v2",
+  "authors": [
+    "Dingkang Yang",
+    "Mingcheng Li",
+    "Dongling Xiao",
+    "Yang Liu",
+    "Kun Yang",
+    "Zhaoyu Chen",
+    "Yuzheng Wang",
+    "Peng Zhai",
+    "Ke Li",
+    "Lihua Zhang"
+  ],
+  "date": "2024-03-08",
+  "summary": "Multimodal Sentiment Analysis (MSA) aims to understand human intentions by\nintegrating emotion-related clues from diverse modalities, such as visual,\nlanguage, and audio. Unfortunately, the current MSA task invariably suffers\nfrom unplanned dataset biases, particularly multimodal utterance-level label\nbias and word-level context bias. These harmful biases potentially mislead\nmodels to focus on statistical shortcuts and spurious correlations, causing\nsevere performance bottlenecks. To alleviate these issues, we present a\nMultimodal Counterfactual Inference Sentiment (MCIS) analysis framework based\non causality rather than conventional likelihood. Concretely, we first\nformulate a causal graph to discover harmful biases from already-trained\nvanilla models. In the inference phase, given a factual multimodal input, MCIS\nimagines two counterfactual scenarios to purify and mitigate these biases.\nThen, MCIS can make unbiased decisions from biased observations by comparing\nfactual and counterfactual outcomes. We conduct extensive experiments on\nseveral standard MSA benchmarks. Qualitative and quantitative results show the\neffectiveness of the proposed framework.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "2403.05025v3",
+  "title": "Debiased Multimodal Understanding for Human Language Sequences",
+  "url": "http://arxiv.org/abs/2403.05025v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.05025v3",
+  "authors": [
+    "Zhi Xu",
+    "Dingkang Yang",
+    "Mingcheng Li",
+    "Yuzheng Wang",
+    "Zhaoyu Chen",
+    "Jiawei Chen",
+    "Jinjie Wei",
+    "Lihua Zhang"
+  ],
+  "date": "2024-03-08",
+  "summary": "Human multimodal language understanding (MLU) is an indispensable component\nof expression analysis (e.g., sentiment or humor) from heterogeneous\nmodalities, including visual postures, linguistic contents, and acoustic\nbehaviours. Existing works invariably focus on designing sophisticated\nstructures or fusion strategies to achieve impressive improvements.\nUnfortunately, they all suffer from the subject variation problem due to data\ndistribution discrepancies among subjects. Concretely, MLU models are easily\nmisled by distinct subjects with different expression customs and\ncharacteristics in the training data to learn subject-specific spurious\ncorrelations, limiting performance and generalizability across new subjects.\nMotivated by this observation, we introduce a recapitulative causal graph to\nformulate the MLU procedure and analyze the confounding effect of subjects.\nThen, we propose SuCI, a simple yet effective causal intervention module to\ndisentangle the impact of subjects acting as unobserved confounders and achieve\nmodel training via true causal effects. As a plug-and-play component, SuCI can\nbe widely applied to most methods that seek unbiased predictions. Comprehensive\nexperiments on several MLU benchmarks clearly show the effectiveness of the\nproposed module.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

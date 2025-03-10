@@ -1,0 +1,36 @@
+{
+  "id": "2403.04735v1",
+  "title": "SnapNTell: Enhancing Entity-Centric Visual Question Answering with\n  Retrieval Augmented Multimodal LLM",
+  "url": "http://arxiv.org/abs/2403.04735v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04735v1",
+  "authors": [
+    "Jielin Qiu",
+    "Andrea Madotto",
+    "Zhaojiang Lin",
+    "Paul A. Crook",
+    "Yifan Ethan Xu",
+    "Xin Luna Dong",
+    "Christos Faloutsos",
+    "Lei Li",
+    "Babak Damavandi",
+    "Seungwhan Moon"
+  ],
+  "date": "2024-03-07",
+  "summary": "Vision-extended LLMs have made significant strides in Visual Question\nAnswering (VQA). Despite these advancements, VLLMs still encounter substantial\ndifficulties in handling queries involving long-tail entities, with a tendency\nto produce erroneous or hallucinated responses. In this work, we introduce a\nnovel evaluative benchmark named \\textbf{SnapNTell}, specifically tailored for\nentity-centric VQA. This task aims to test the models' capabilities in\nidentifying entities and providing detailed, entity-specific knowledge. We have\ndeveloped the \\textbf{SnapNTell Dataset}, distinct from traditional VQA\ndatasets: (1) It encompasses a wide range of categorized entities, each\nrepresented by images and explicitly named in the answers; (2) It features QA\npairs that require extensive knowledge for accurate responses. The dataset is\norganized into 22 major categories, containing 7,568 unique entities in total.\nFor each entity, we curated 10 illustrative images and crafted 10\nknowledge-intensive QA pairs. To address this novel task, we devised a\nscalable, efficient, and transparent retrieval-augmented multimodal LLM. Our\napproach markedly outperforms existing methods on the SnapNTell dataset,\nachieving a 66.5\\% improvement in the BELURT score. We will soon make the\ndataset and the source code publicly accessible.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "visual question answering",
+    "VQA",
+    "multimodal LLM"
+  ],
+  "attention_score": 0.18,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

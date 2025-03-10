@@ -1,0 +1,32 @@
+{
+  "id": "2403.05029v2",
+  "title": "BjTT: A Large-scale Multimodal Dataset for Traffic Prediction",
+  "url": "http://arxiv.org/abs/2403.05029v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05029v2",
+  "authors": [
+    "Chengyang Zhang",
+    "Yong Zhang",
+    "Qitan Shao",
+    "Jiangtao Feng",
+    "Bo Li",
+    "Yisheng Lv",
+    "Xinglin Piao",
+    "Baocai Yin"
+  ],
+  "date": "2024-03-08",
+  "summary": "Traffic prediction is one of the most significant foundations in Intelligent\nTransportation Systems (ITS). Traditional traffic prediction methods rely only\non historical traffic data to predict traffic trends and face two main\nchallenges. 1) insensitivity to unusual events. 2) limited performance in\nlong-term prediction. In this work, we explore how generative models combined\nwith text describing the traffic system can be applied for traffic generation,\nand name the task Text-to-Traffic Generation (TTG). The key challenge of the\nTTG task is how to associate text with the spatial structure of the road\nnetwork and traffic data for generating traffic situations. To this end, we\npropose ChatTraffic, the first diffusion model for text-to-traffic generation.\nTo guarantee the consistency between synthetic and real data, we augment a\ndiffusion model with the Graph Convolutional Network (GCN) to extract spatial\ncorrelations of traffic data. In addition, we construct a large dataset\ncontaining text-traffic pairs for the TTG task. We benchmarked our model\nqualitatively and quantitatively on the released dataset. The experimental\nresults indicate that ChatTraffic can generate realistic traffic situations\nfrom the text. Our code and dataset are available at\nhttps://github.com/ChyaZhang/ChatTraffic.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2403.05380v1",
+  "title": "Spectrogram-Based Detection of Auto-Tuned Vocals in Music Recordings",
+  "url": "http://arxiv.org/abs/2403.05380v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05380v1",
+  "authors": [
+    "Mahyar Gohari",
+    "Paolo Bestagini",
+    "Sergio Benini",
+    "Nicola Adami"
+  ],
+  "date": "2024-03-08",
+  "summary": "In the domain of music production and audio processing, the implementation of\nautomatic pitch correction of the singing voice, also known as Auto-Tune, has\nsignificantly transformed the landscape of vocal performance. While auto-tuning\ntechnology has offered musicians the ability to tune their vocal pitches and\nachieve a desired level of precision, its use has also sparked debates\nregarding its impact on authenticity and artistic integrity. As a result,\ndetecting and analyzing Auto-Tuned vocals in music recordings has become\nessential for music scholars, producers, and listeners. However, to the best of\nour knowledge, no prior effort has been made in this direction. This study\nintroduces a data-driven approach leveraging triplet networks for the detection\nof Auto-Tuned songs, backed by the creation of a dataset composed of original\nand Auto-Tuned audio clips. The experimental results demonstrate the\nsuperiority of the proposed method in both accuracy and robustness compared to\nRawnet2, an end-to-end model proposed for anti-spoofing and widely used for\nother audio forensic tasks.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

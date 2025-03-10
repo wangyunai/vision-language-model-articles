@@ -1,0 +1,28 @@
+{
+  "id": "2403.05465v2",
+  "title": "Algorithm-Hardware Co-Design of Distribution-Aware Logarithmic-Posit\n  Encodings for Efficient DNN Inference",
+  "url": "http://arxiv.org/abs/2403.05465v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05465v2",
+  "authors": [
+    "Akshat Ramachandran",
+    "Zishen Wan",
+    "Geonhwa Jeong",
+    "John Gustafson",
+    "Tushar Krishna"
+  ],
+  "date": "2024-03-08",
+  "summary": "Traditional Deep Neural Network (DNN) quantization methods using integer,\nfixed-point, or floating-point data types struggle to capture diverse DNN\nparameter distributions at low precision, and often require large silicon\noverhead and intensive quantization-aware training. In this study, we introduce\nLogarithmic Posits (LP), an adaptive, hardware-friendly data type inspired by\nposits that dynamically adapts to DNN weight/activation distributions by\nparameterizing LP bit fields. We also develop a novel genetic-algorithm based\nframework, LP Quantization (LPQ), to find optimal layer-wise LP parameters\nwhile reducing representational divergence between quantized and full-precision\nmodels through a novel global-local contrastive objective. Additionally, we\ndesign a unified mixed-precision LP accelerator (LPA) architecture comprising\nof processing elements (PEs) incorporating LP in the computational datapath.\nOur algorithm-hardware co-design demonstrates on average <1% drop in top-1\naccuracy across various CNN and ViT models. It also achieves ~ 2x improvements\nin performance per unit area and 2.2x gains in energy efficiency compared to\nstate-of-the-art quantization accelerators using different data types.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "ViT"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

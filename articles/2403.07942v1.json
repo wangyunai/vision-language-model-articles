@@ -1,0 +1,31 @@
+{
+  "id": "2403.07942v1",
+  "title": "Attacking Transformers with Feature Diversity Adversarial Perturbation",
+  "url": "http://arxiv.org/abs/2403.07942v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.07942v1",
+  "authors": [
+    "Chenxing Gao",
+    "Hang Zhou",
+    "Junqing Yu",
+    "YuTeng Ye",
+    "Jiale Cai",
+    "Junle Wang",
+    "Wei Yang"
+  ],
+  "date": "2024-03-10",
+  "summary": "Understanding the mechanisms behind Vision Transformer (ViT), particularly\nits vulnerability to adversarial perturba tions, is crucial for addressing\nchallenges in its real-world applications. Existing ViT adversarial attackers\nrely on la bels to calculate the gradient for perturbation, and exhibit low\ntransferability to other structures and tasks. In this paper, we present a\nlabel-free white-box attack approach for ViT-based models that exhibits strong\ntransferability to various black box models, including most ViT variants, CNNs,\nand MLPs, even for models developed for other modalities. Our inspira tion\ncomes from the feature collapse phenomenon in ViTs, where the critical\nattention mechanism overly depends on the low-frequency component of features,\ncausing the features in middle-to-end layers to become increasingly similar and\neventually collapse. We propose the feature diversity attacker to naturally\naccelerate this process and achieve remarkable performance and transferability.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

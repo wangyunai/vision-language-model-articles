@@ -1,0 +1,30 @@
+{
+  "id": "2403.05783v1",
+  "title": "Large Generative Model Assisted 3D Semantic Communication",
+  "url": "http://arxiv.org/abs/2403.05783v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05783v1",
+  "authors": [
+    "Feibo Jiang",
+    "Yubo Peng",
+    "Li Dong",
+    "Kezhi Wang",
+    "Kun Yang",
+    "Cunhua Pan",
+    "Xiaohu You"
+  ],
+  "date": "2024-03-09",
+  "summary": "Semantic Communication (SC) is a novel paradigm for data transmission in 6G.\nHowever, there are several challenges posed when performing SC in 3D scenarios:\n1) 3D semantic extraction; 2) Latent semantic redundancy; and 3) Uncertain\nchannel estimation. To address these issues, we propose a Generative AI Model\nassisted 3D SC (GAM-3DSC) system. Firstly, we introduce a 3D Semantic Extractor\n(3DSE), which employs generative AI models, including Segment Anything Model\n(SAM) and Neural Radiance Field (NeRF), to extract key semantics from a 3D\nscenario based on user requirements. The extracted 3D semantics are represented\nas multi-perspective images of the goal-oriented 3D object. Then, we present an\nAdaptive Semantic Compression Model (ASCM) for encoding these multi-perspective\nimages, in which we use a semantic encoder with two output heads to perform\nsemantic encoding and mask redundant semantics in the latent semantic space,\nrespectively. Next, we design a conditional Generative adversarial network and\nDiffusion model aided-Channel Estimation (GDCE) to estimate and refine the\nChannel State Information (CSI) of physical channels. Finally, simulation\nresults demonstrate the advantages of the proposed GAM-3DSC system in\neffectively transmitting the goal-oriented 3D scenario.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "Segment Anything"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

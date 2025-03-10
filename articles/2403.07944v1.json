@@ -1,0 +1,33 @@
+{
+  "id": "2403.07944v1",
+  "title": "WorldGPT: A Sora-Inspired Video AI Agent as Rich World Models from Text\n  and Image Inputs",
+  "url": "http://arxiv.org/abs/2403.07944v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.07944v1",
+  "authors": [
+    "Deshun Yang",
+    "Luhui Hu",
+    "Yu Tian",
+    "Zihao Li",
+    "Chris Kelly",
+    "Bang Yang",
+    "Cindy Yang",
+    "Yuexian Zou"
+  ],
+  "date": "2024-03-10",
+  "summary": "Several text-to-video diffusion models have demonstrated commendable\ncapabilities in synthesizing high-quality video content. However, it remains a\nformidable challenge pertaining to maintaining temporal consistency and\nensuring action smoothness throughout the generated sequences. In this paper,\nwe present an innovative video generation AI agent that harnesses the power of\nSora-inspired multimodal learning to build skilled world models framework based\non textual prompts and accompanying images. The framework includes two parts:\nprompt enhancer and full video translation. The first part employs the\ncapabilities of ChatGPT to meticulously distill and proactively construct\nprecise prompts for each subsequent step, thereby guaranteeing the utmost\naccuracy in prompt communication and accurate execution in following model\noperations. The second part employ compatible with existing advanced diffusion\ntechniques to expansively generate and refine the key frame at the conclusion\nof a video. Then we can expertly harness the power of leading and trailing key\nframes to craft videos with enhanced temporal consistency and action\nsmoothness. The experimental results confirm that our method has strong\neffectiveness and novelty in constructing world models from text and image\ninputs over the other methods.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "text-to-video",
+    "Sora"
+  ],
+  "attention_score": 0.16,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

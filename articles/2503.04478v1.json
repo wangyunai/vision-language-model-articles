@@ -1,0 +1,28 @@
+{
+  "id": "2503.04478v1",
+  "title": "Semantic Alignment of Unimodal Medical Text and Vision Representations",
+  "url": "http://arxiv.org/abs/2503.04478v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04478v1",
+  "authors": [
+    "Maxime Di Folco",
+    "Emily Chan",
+    "Marta Hasny",
+    "Cosmin I. Bercea",
+    "Julia A. Schnabel"
+  ],
+  "date": "2025-03-06",
+  "summary": "General-purpose AI models, particularly those designed for text and vision,\ndemonstrate impressive versatility across a wide range of deep-learning tasks.\nHowever, they often underperform in specialised domains like medical imaging,\nwhere domain-specific solutions or alternative knowledge transfer approaches\nare typically required. Recent studies have noted that general-purpose models\ncan exhibit similar latent spaces when processing semantically related data,\nalthough this alignment does not occur naturally. Building on this insight, it\nhas been shown that applying a simple transformation - at most affine -\nestimated from a subset of semantically corresponding samples, known as\nanchors, enables model stitching across diverse training paradigms,\narchitectures, and modalities. In this paper, we explore how semantic alignment\n- estimating transformations between anchors - can bridge general-purpose AI\nwith specialised medical knowledge. Using multiple public chest X-ray datasets,\nwe demonstrate that model stitching across model architectures allows general\nmodels to integrate domain-specific knowledge without additional training,\nleading to improved performance on medical tasks. Furthermore, we introduce a\nnovel zero-shot classification approach for unimodal vision encoders that\nleverages semantic alignment across modalities. Our results show that our\nmethod not only outperforms general multimodal models but also approaches the\nperformance levels of fully trained, medical-specific multimodal solutions",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

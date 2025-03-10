@@ -1,0 +1,30 @@
+{
+  "id": "2403.05523v2",
+  "title": "Beyond Finite Data: Towards Data-free Out-of-distribution Generalization\n  via Extrapolation",
+  "url": "http://arxiv.org/abs/2403.05523v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05523v2",
+  "authors": [
+    "Yijiang Li",
+    "Sucheng Ren",
+    "Weipeng Deng",
+    "Yuzhi Xu",
+    "Ying Gao",
+    "Edith Ngai",
+    "Haohan Wang"
+  ],
+  "date": "2024-03-08",
+  "summary": "Out-of-distribution (OOD) generalization is a favorable yet challenging\nproperty for deep neural networks. The core challenges lie in the limited\navailability of source domains that help models learn an invariant\nrepresentation from the spurious features. Various domain augmentation have\nbeen proposed but largely rely on interpolating existing domains and frequently\nface difficulties in creating truly \"novel\" domains. Humans, on the other hand,\ncan easily extrapolate novel domains, thus, an intriguing question arises: How\ncan neural networks extrapolate like humans and achieve OOD generalization?\n  We introduce a novel approach to domain extrapolation that leverages\nreasoning ability and the extensive knowledge encapsulated within large\nlanguage models (LLMs) to synthesize entirely new domains. Starting with the\nclass of interest, we query the LLMs to extract relevant knowledge for these\nnovel domains. We then bridge the gap between the text-centric knowledge\nderived from LLMs and the pixel input space of the model using text-to-image\ngeneration techniques. By augmenting the training set of domain generalization\ndatasets with high-fidelity, photo-realistic images of these new domains, we\nachieve significant improvements over all existing methods, as demonstrated in\nboth single and multi-domain generalization across various benchmarks.\n  With the ability to extrapolate any domains for any class, our method has the\npotential to learn a generalized model for any task without any data. To\nillustrate, we put forth a much more difficult setting termed, data-free domain\ngeneralization, that aims to learn a generalized model in the absence of any\ncollected data. Our empirical findings support the above argument and our\nmethods exhibit commendable performance in this setting, even surpassing the\nsupervised setting by approximately 1-2\\% on datasets such as VLCS.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

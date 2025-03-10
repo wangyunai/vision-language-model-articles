@@ -1,0 +1,28 @@
+{
+  "id": "2403.06126v2",
+  "title": "In-context Prompt Learning for Test-time Vision Recognition with Frozen\n  Vision-language Model",
+  "url": "http://arxiv.org/abs/2403.06126v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.06126v2",
+  "authors": [
+    "Junhui Yin",
+    "Xinyu Zhang",
+    "Lin Wu",
+    "Xiaojie Wang"
+  ],
+  "date": "2024-03-10",
+  "summary": "Current pre-trained vision-language models, such as CLIP, have demonstrated\nremarkable zero-shot generalization capabilities across various downstream\ntasks. However, their performance significantly degrades when test inputs\nexhibit different distributions. In this paper, we explore the concept of\ntest-time prompt tuning (TTPT), which facilitates the adaptation of the CLIP\nmodel to novel downstream tasks through a one-step unsupervised optimization\nthat involves only test samples. Inspired by in-context learning in natural\nlanguage processing (NLP), we propose In-Context Prompt Learning (InCPL) for\ntest-time visual recognition tasks, which empowers a pre-trained\nvision-language model with labeled examples as context information on\ndownstream task. Specifically, InCPL associates a new test sample with very few\nlabeled examples (sometimes just one) as context information, enabling reliable\nlabel estimation for the test sample and facilitating model adaptation. To\nachieve this, InCPL employs an efficient language-to-vision translator to\nexplore the textual prior information for visual prompt learning. Further, we\nintroduce a context-aware unsupervised loss to optimize visual prompts tailored\nto test samples. Finally, we design a cyclic learning strategy for visual and\ntextual prompts to ensure mutual synergy across different modalities. This\nenables a pre-trained, frozen CLIP model to adapt to any task using its learned\nadaptive prompt. Our method demonstrates superior performance and achieves\nstate-of-the-art results across various downstream datasets.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language",
+    "CLIP"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

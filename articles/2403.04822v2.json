@@ -1,0 +1,29 @@
+{
+  "id": "2403.04822v2",
+  "title": "UniTable: Towards a Unified Framework for Table Recognition via\n  Self-Supervised Pretraining",
+  "url": "http://arxiv.org/abs/2403.04822v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.04822v2",
+  "authors": [
+    "ShengYun Peng",
+    "Aishwarya Chakravarthy",
+    "Seongmin Lee",
+    "Xiaojing Wang",
+    "Rajarajeswari Balasubramaniyan",
+    "Duen Horng Chau"
+  ],
+  "date": "2024-03-07",
+  "summary": "Tables convey factual and quantitative data with implicit conventions created\nby humans that are often challenging for machines to parse. Prior work on table\nrecognition (TR) has mainly centered around complex task-specific combinations\nof available inputs and tools. We present UniTable, a training framework that\nunifies both the training paradigm and training objective of TR. Its training\nparadigm combines the simplicity of purely pixel-level inputs with the\neffectiveness and scalability empowered by self-supervised pretraining from\ndiverse unannotated tabular images. Our framework unifies the training\nobjectives of all three TR tasks - extracting table structure, cell content,\nand cell bounding box - into a unified task-agnostic training objective:\nlanguage modeling. Extensive quantitative and qualitative analyses highlight\nUniTable's state-of-the-art (SOTA) performance on four of the largest TR\ndatasets. UniTable's table parsing capability has surpassed both existing TR\nmethods and general large vision-language models, e.g., GPT-4o, GPT-4-turbo\nwith vision, and LLaVA. Our code is publicly available at\nhttps://github.com/poloclub/unitable, featuring a Jupyter Notebook that\nincludes the complete inference pipeline, fine-tuned across multiple TR\ndatasets, supporting all three TR tasks.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

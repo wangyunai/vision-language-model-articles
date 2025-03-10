@@ -1,0 +1,29 @@
+{
+  "id": "2503.05305v1",
+  "title": "Frequency Autoregressive Image Generation with Continuous Tokens",
+  "url": "http://arxiv.org/abs/2503.05305v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05305v1",
+  "authors": [
+    "Hu Yu",
+    "Hao Luo",
+    "Hangjie Yuan",
+    "Yu Rong",
+    "Feng Zhao"
+  ],
+  "date": "2025-03-07",
+  "summary": "Autoregressive (AR) models for image generation typically adopt a two-stage\nparadigm of vector quantization and raster-scan ``next-token prediction\",\ninspired by its great success in language modeling. However, due to the huge\nmodality gap, image autoregressive models may require a systematic reevaluation\nfrom two perspectives: tokenizer format and regression direction. In this\npaper, we introduce the frequency progressive autoregressive (\\textbf{FAR})\nparadigm and instantiate FAR with the continuous tokenizer. Specifically, we\nidentify spectral dependency as the desirable regression direction for FAR,\nwherein higher-frequency components build upon the lower one to progressively\nconstruct a complete image. This design seamlessly fits the causality\nrequirement for autoregressive models and preserves the unique spatial locality\nof image data. Besides, we delve into the integration of FAR and the continuous\ntokenizer, introducing a series of techniques to address optimization\nchallenges and improve the efficiency of training and inference processes. We\ndemonstrate the efficacy of FAR through comprehensive experiments on the\nImageNet dataset and verify its potential on text-to-image generation.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 2.73,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

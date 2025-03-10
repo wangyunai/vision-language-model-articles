@@ -1,0 +1,27 @@
+{
+  "id": "2403.05659v2",
+  "title": "Audio-Synchronized Visual Animation",
+  "url": "http://arxiv.org/abs/2403.05659v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05659v2",
+  "authors": [
+    "Lin Zhang",
+    "Shentong Mo",
+    "Yijing Zhang",
+    "Pedro Morgado"
+  ],
+  "date": "2024-03-08",
+  "summary": "Current visual generation methods can produce high quality videos guided by\ntexts. However, effectively controlling object dynamics remains a challenge.\nThis work explores audio as a cue to generate temporally synchronized image\nanimations. We introduce Audio Synchronized Visual Animation (ASVA), a task\nanimating a static image to demonstrate motion dynamics, temporally guided by\naudio clips across multiple classes. To this end, we present AVSync15, a\ndataset curated from VGGSound with videos featuring synchronized audio visual\nevents across 15 categories. We also present a diffusion model, AVSyncD,\ncapable of generating dynamic animations guided by audios. Extensive\nevaluations validate AVSync15 as a reliable benchmark for synchronized\ngeneration and demonstrate our models superior performance. We further explore\nAVSyncDs potential in a variety of audio synchronized generation tasks, from\ngenerating full videos without a base image to controlling object motions with\nvarious sounds. We hope our established benchmark can open new avenues for\ncontrollable visual generation. More videos on project webpage\nhttps://lzhangbj.github.io/projects/asva/asva.html.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

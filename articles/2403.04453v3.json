@@ -1,0 +1,27 @@
+{
+  "id": "2403.04453v3",
+  "title": "Efficient Off-Policy Learning for High-Dimensional Action Spaces",
+  "url": "http://arxiv.org/abs/2403.04453v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.04453v3",
+  "authors": [
+    "Fabian Otto",
+    "Philipp Becker",
+    "Ngo Anh Vien",
+    "Gerhard Neumann"
+  ],
+  "date": "2024-03-07",
+  "summary": "Existing off-policy reinforcement learning algorithms often rely on an\nexplicit state-action-value function representation, which can be problematic\nin high-dimensional action spaces due to the curse of dimensionality. This\nreliance results in data inefficiency as maintaining a state-action-value\nfunction in such spaces is challenging. We present an efficient approach that\nutilizes only a state-value function as the critic for off-policy deep\nreinforcement learning. This approach, which we refer to as Vlearn, effectively\ncircumvents the limitations of existing methods by eliminating the necessity\nfor an explicit state-action-value function. To this end, we leverage a\nweighted importance sampling loss for learning deep value functions from\noff-policy data. While this is common for linear methods, it has not been\ncombined with deep value function networks. This transfer to deep methods is\nnot straightforward and requires novel design choices such as robust policy\nupdates, twin value function networks to avoid an optimization bias, and\nimportance weight clipping. We also present a novel analysis of the variance of\nour estimate compared to commonly used importance sampling estimators such as\nV-trace. Our approach improves sample complexity as well as final performance\nand ensures consistent and robust performance across various benchmark tasks.\nEliminating the state-action-value function in Vlearn facilitates a streamlined\nlearning process, yielding high-return agents.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

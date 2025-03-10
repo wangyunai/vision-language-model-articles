@@ -1,0 +1,30 @@
+{
+  "id": "2503.05204v1",
+  "title": "Data-Efficient Generalization for Zero-shot Composed Image Retrieval",
+  "url": "http://arxiv.org/abs/2503.05204v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05204v1",
+  "authors": [
+    "Zining Chen",
+    "Zhicheng Zhao",
+    "Fei Su",
+    "Xiaoqin Zhang",
+    "Shijian Lu"
+  ],
+  "date": "2025-03-07",
+  "summary": "Zero-shot Composed Image Retrieval (ZS-CIR) aims to retrieve the target image\nbased on a reference image and a text description without requiring\nin-distribution triplets for training. One prevalent approach follows the\nvision-language pretraining paradigm that employs a mapping network to transfer\nthe image embedding to a pseudo-word token in the text embedding space.\nHowever, this approach tends to impede network generalization due to modality\ndiscrepancy and distribution shift between training and inference. To this end,\nwe propose a Data-efficient Generalization (DeG) framework, including two novel\ndesigns, namely, Textual Supplement (TS) module and Semantic-Set (S-Set). The\nTS module exploits compositional textual semantics during training, enhancing\nthe pseudo-word token with more linguistic semantics and thus mitigating the\nmodality discrepancy effectively. The S-Set exploits the zero-shot capability\nof pretrained Vision-Language Models (VLMs), alleviating the distribution shift\nand mitigating the overfitting issue from the redundancy of the large-scale\nimage-text data. Extensive experiments over four ZS-CIR benchmarks show that\nDeG outperforms the state-of-the-art (SOTA) methods with much less training\ndata, and saves substantial training and inference time for practical usage.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language",
+    "image-text"
+  ],
+  "attention_score": 3.12,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

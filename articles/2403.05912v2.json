@@ -1,0 +1,32 @@
+{
+  "id": "2403.05912v2",
+  "title": "Mask-Enhanced Segment Anything Model for Tumor Lesion Semantic\n  Segmentation",
+  "url": "http://arxiv.org/abs/2403.05912v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05912v2",
+  "authors": [
+    "Hairong Shi",
+    "Songhao Han",
+    "Shaofei Huang",
+    "Yue Liao",
+    "Guanbin Li",
+    "Xiangxing Kong",
+    "Hua Zhu",
+    "Xiaomu Wang",
+    "Si Liu"
+  ],
+  "date": "2024-03-09",
+  "summary": "Tumor lesion segmentation on CT or MRI images plays a critical role in cancer\ndiagnosis and treatment planning. Considering the inherent differences in tumor\nlesion segmentation data across various medical imaging modalities and\nequipment, integrating medical knowledge into the Segment Anything Model (SAM)\npresents promising capability due to its versatility and generalization\npotential. Recent studies have attempted to enhance SAM with medical expertise\nby pre-training on large-scale medical segmentation datasets. However,\nchallenges still exist in 3D tumor lesion segmentation owing to tumor\ncomplexity and the imbalance in foreground and background regions. Therefore,\nwe introduce Mask-Enhanced SAM (M-SAM), an innovative architecture tailored for\n3D tumor lesion segmentation. We propose a novel Mask-Enhanced Adapter (MEA)\nwithin M-SAM that enriches the semantic information of medical images with\npositional data from coarse segmentation masks, facilitating the generation of\nmore precise segmentation masks. Furthermore, an iterative refinement scheme is\nimplemented in M-SAM to refine the segmentation masks progressively, leading to\nimproved performance. Extensive experiments on seven tumor lesion segmentation\ndatasets indicate that our M-SAM not only achieves high segmentation accuracy\nbut also exhibits robust generalization. The code is available at\nhttps://github.com/nanase1025/M-SAM.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "Segment Anything"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "2503.04444v1",
+  "title": "ToFu: Visual Tokens Reduction via Fusion for Multi-modal, Multi-patch,\n  Multi-image Task",
+  "url": "http://arxiv.org/abs/2503.04444v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04444v1",
+  "authors": [
+    "Vittorio Pippi",
+    "Matthieu Guillaumin",
+    "Silvia Cascianelli",
+    "Rita Cucchiara",
+    "Maximilian Jaritz",
+    "Loris Bazzani"
+  ],
+  "date": "2025-03-06",
+  "summary": "Large Multimodal Models (LMMs) are powerful tools that are capable of\nreasoning and understanding multimodal information beyond text and language.\nDespite their entrenched impact, the development of LMMs is hindered by the\nhigher computational requirements compared to their unimodal counterparts. One\nof the main causes of this is the large amount of tokens needed to encode the\nvisual input, which is especially evident for multi-image multimodal tasks.\nRecent approaches to reduce visual tokens depend on the visual encoder\narchitecture, require fine-tuning the LLM to maintain the performance, and only\nconsider single-image scenarios. To address these limitations, we propose ToFu,\na visual encoder-agnostic, training-free Token Fusion strategy that combines\nredundant visual tokens of LMMs for high-resolution, multi-image, tasks. The\ncore intuition behind our method is straightforward yet effective: preserve\ndistinctive tokens while combining similar ones. We achieve this by\nsequentially examining visual tokens and deciding whether to merge them with\nothers or keep them as separate entities. We validate our approach on the\nwell-established LLaVA-Interleave Bench, which covers challenging multi-image\ntasks. In addition, we push to the extreme our method by testing it on a\nnewly-created benchmark, ComPairs, focused on multi-image comparisons where a\nlarger amount of images and visual tokens are inputted to the LMMs. Our\nextensive analysis, considering several LMM architectures, demonstrates the\nbenefits of our approach both in terms of efficiency and performance gain.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

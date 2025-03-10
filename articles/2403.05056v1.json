@@ -1,0 +1,28 @@
+{
+  "id": "2403.05056v1",
+  "title": "Stealing Stable Diffusion Prior for Robust Monocular Depth Estimation",
+  "url": "http://arxiv.org/abs/2403.05056v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05056v1",
+  "authors": [
+    "Yifan Mao",
+    "Jian Liu",
+    "Xianming Liu"
+  ],
+  "date": "2024-03-08",
+  "summary": "Monocular depth estimation is a crucial task in computer vision. While\nexisting methods have shown impressive results under standard conditions, they\noften face challenges in reliably performing in scenarios such as low-light or\nrainy conditions due to the absence of diverse training data. This paper\nintroduces a novel approach named Stealing Stable Diffusion (SSD) prior for\nrobust monocular depth estimation. The approach addresses this limitation by\nutilizing stable diffusion to generate synthetic images that mimic challenging\nconditions. Additionally, a self-training mechanism is introduced to enhance\nthe model's depth estimation capability in such challenging environments. To\nenhance the utilization of the stable diffusion prior further, the DINOv2\nencoder is integrated into the depth model architecture, enabling the model to\nleverage rich semantic priors and improve its scene understanding. Furthermore,\na teacher loss is introduced to guide the student models in acquiring\nmeaningful knowledge independently, thus reducing their dependency on the\nteacher models. The effectiveness of the approach is evaluated on nuScenes and\nOxford RobotCar, two challenging public datasets, with the results showing the\nefficacy of the method. Source code and weights are available at:\nhttps://github.com/hitcslj/SSD.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "Stable Diffusion",
+    "DINO",
+    "DINOv2"
+  ],
+  "attention_score": 0.16,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

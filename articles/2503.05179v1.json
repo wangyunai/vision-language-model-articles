@@ -1,0 +1,26 @@
+{
+  "id": "2503.05179v1",
+  "title": "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive\n  Cognitive-Inspired Sketching",
+  "url": "http://arxiv.org/abs/2503.05179v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05179v1",
+  "authors": [
+    "Simon A. Aytes",
+    "Jinheon Baek",
+    "Sung Ju Hwang"
+  ],
+  "date": "2025-03-07",
+  "summary": "Recent advances in large language models have demonstrated remarkable\nreasoning capabilities through Chain of Thought (CoT) prompting, but often at\nthe cost of excessive verbosity in their intermediate outputs, which increases\ncomputational overhead. We introduce Sketch-of-Thought (SoT), a novel prompting\nframework that combines cognitive-inspired reasoning paradigms with linguistic\nconstraints to minimize token usage while preserving reasoning accuracy. SoT is\ndesigned as a flexible framework that can incorporate any custom reasoning\nparadigms based on cognitive science, and we instantiate it with three such\nparadigms - Conceptual Chaining, Chunked Symbolism, and Expert Lexicons - each\ntailored to different reasoning tasks and selected dynamically via a\nlightweight routing model. Through comprehensive evaluation across 15 reasoning\ndatasets with multiple languages and multimodal scenarios, we demonstrate that\nSoT achieves token reductions of 76% with negligible accuracy impact. In\ncertain domains like mathematical and multi-hop reasoning, it even improves\naccuracy while using significantly fewer tokens. Our code is publicly\navailable: https://www.github.com/SimonAytes/SoT.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.34,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

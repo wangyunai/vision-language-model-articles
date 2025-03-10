@@ -1,0 +1,34 @@
+{
+  "id": "2403.05131v2",
+  "title": "Sora as an AGI World Model? A Complete Survey on Text-to-Video\n  Generation",
+  "url": "http://arxiv.org/abs/2403.05131v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05131v2",
+  "authors": [
+    "Joseph Cho",
+    "Fachrina Dewi Puspitasari",
+    "Sheng Zheng",
+    "Jingyao Zheng",
+    "Lik-Hang Lee",
+    "Tae-Ho Kim",
+    "Choong Seon Hong",
+    "Chaoning Zhang"
+  ],
+  "date": "2024-03-08",
+  "summary": "The evolution of video generation from text, starting with animating MNIST\nnumbers to simulating the physical world with Sora, has progressed at a\nbreakneck speed over the past seven years. While often seen as a superficial\nexpansion of the predecessor text-to-image generation model, text-to-video\ngeneration models are developed upon carefully engineered constituents. Here,\nwe systematically discuss these elements consisting of but not limited to core\nbuilding blocks (vision, language, and temporal) and supporting features from\nthe perspective of their contributions to achieving a world model. We employ\nthe PRISMA framework to curate 97 impactful research articles from renowned\nscientific databases primarily studying video synthesis using text conditions.\nUpon minute exploration of these manuscripts, we observe that text-to-video\ngeneration involves more intricate technologies beyond the plain extension of\ntext-to-image generation. Our additional review into the shortcomings of\nSora-generated videos pinpoints the call for more in-depth studies in various\nenabling aspects of video generation such as dataset, evaluation metric,\nefficient architecture, and human-controlled generation. Finally, we conclude\nthat the study of the text-to-video generation may still be in its infancy,\nrequiring contribution from the cross-discipline research community towards its\nadvancement as the first step to realize artificial general intelligence (AGI).",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "text-to-video",
+    "Sora",
+    "image generation"
+  ],
+  "attention_score": 0.18,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

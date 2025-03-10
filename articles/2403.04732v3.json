@@ -1,0 +1,32 @@
+{
+  "id": "2403.04732v3",
+  "title": "How Far Are We from Intelligent Visual Deductive Reasoning?",
+  "url": "http://arxiv.org/abs/2403.04732v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.04732v3",
+  "authors": [
+    "Yizhe Zhang",
+    "He Bai",
+    "Ruixiang Zhang",
+    "Jiatao Gu",
+    "Shuangfei Zhai",
+    "Josh Susskind",
+    "Navdeep Jaitly"
+  ],
+  "date": "2024-03-07",
+  "summary": "Vision-Language Models (VLMs) have recently demonstrated incredible strides\non diverse vision language tasks. We dig into vision-based deductive reasoning,\na more sophisticated but less explored realm, and find previously unexposed\nblindspots in the current SOTA VLMs. Specifically, we leverage Raven's\nProgressive Matrices (RPMs), to assess VLMs' abilities to perform multi-hop\nrelational and deductive reasoning relying solely on visual clues. We perform\ncomprehensive evaluations of several popular VLMs employing standard strategies\nsuch as in-context learning, self-consistency, and Chain-of-thoughts (CoT) on\nthree diverse datasets, including the Mensa IQ test, IntelligenceTest, and\nRAVEN. The results reveal that despite the impressive capabilities of LLMs in\ntext-based reasoning, we are still far from achieving comparable proficiency in\nvisual deductive reasoning. We found that certain standard strategies that are\neffective when applied to LLMs do not seamlessly translate to the challenges\npresented by visual reasoning tasks. A detailed analysis reveals that VLMs\nstruggle to solve these tasks mainly because they are unable to perceive and\ncomprehend multiple, confounding abstract patterns in RPM examples.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language",
+    "visual reasoning"
+  ],
+  "attention_score": 0.16,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

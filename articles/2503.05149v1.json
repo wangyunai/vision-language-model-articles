@@ -1,0 +1,25 @@
+{
+  "id": "2503.05149v1",
+  "title": "Development and Enhancement of Text-to-Image Diffusion Models",
+  "url": "http://arxiv.org/abs/2503.05149v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05149v1",
+  "authors": [
+    "Rajdeep Roshan Sahu"
+  ],
+  "date": "2025-03-07",
+  "summary": "This research focuses on the development and enhancement of text-to-image\ndenoising diffusion models, addressing key challenges such as limited sample\ndiversity and training instability. By incorporating Classifier-Free Guidance\n(CFG) and Exponential Moving Average (EMA) techniques, this study significantly\nimproves image quality, diversity, and stability. Utilizing Hugging Face's\nstate-of-the-art text-to-image generation model, the proposed enhancements\nestablish new benchmarks in generative AI. This work explores the underlying\nprinciples of diffusion models, implements advanced strategies to overcome\nexisting limitations, and presents a comprehensive evaluation of the\nimprovements achieved. Results demonstrate substantial progress in generating\nstable, diverse, and high-quality images from textual descriptions, advancing\nthe field of generative artificial intelligence and providing new foundations\nfor future applications.\n  Keywords: Text-to-image, Diffusion model, Classifier-free guidance,\nExponential moving average, Image generation.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 2.73,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

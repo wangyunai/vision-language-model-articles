@@ -1,0 +1,29 @@
+{
+  "id": "2503.03651v1",
+  "title": "DoraCycle: Domain-Oriented Adaptation of Unified Generative Model in\n  Multimodal Cycles",
+  "url": "http://arxiv.org/abs/2503.03651v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03651v1",
+  "authors": [
+    "Rui Zhao",
+    "Weijia Mao",
+    "Mike Zheng Shou"
+  ],
+  "date": "2025-03-05",
+  "summary": "Adapting generative models to specific domains presents an effective solution\nfor satisfying specialized requirements. However, adapting to some complex\ndomains remains challenging, especially when these domains require substantial\npaired data to capture the targeted distributions. Since unpaired data from a\nsingle modality, such as vision or language, is more readily available, we\nutilize the bidirectional mappings between vision and language learned by the\nunified generative model to enable training on unpaired data for domain\nadaptation. Specifically, we propose DoraCycle, which integrates two multimodal\ncycles: text-to-image-to-text and image-to-text-to-image. The model is\noptimized through cross-entropy loss computed at the cycle endpoints, where\nboth endpoints share the same modality. This facilitates self-evolution of the\nmodel without reliance on annotated text-image pairs. Experimental results\ndemonstrate that for tasks independent of paired knowledge, such as\nstylization, DoraCycle can effectively adapt the unified model using only\nunpaired data. For tasks involving new paired knowledge, such as specific\nidentities, a combination of a small set of paired image-text examples and\nlarger-scale unpaired data is sufficient for effective domain-oriented\nadaptation. The code will be released at https://github.com/showlab/DoraCycle.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "image-text",
+    "text-to-image",
+    "image-to-text"
+  ],
+  "attention_score": 3.45,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.9863013698630136,
+    "source_weight": 1.0,
+    "age_months": 0.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "2403.05300v5",
+  "title": "Unity by Diversity: Improved Representation Learning in Multimodal VAEs",
+  "url": "http://arxiv.org/abs/2403.05300v5",
+  "pdf_url": "http://arxiv.org/pdf/2403.05300v5",
+  "authors": [
+    "Thomas M. Sutter",
+    "Yang Meng",
+    "Andrea Agostini",
+    "Daphn\u00e9 Chopard",
+    "Norbert Fortin",
+    "Julia E. Vogt",
+    "Babak Shahbaba",
+    "Stephan Mandt"
+  ],
+  "date": "2024-03-08",
+  "summary": "Variational Autoencoders for multimodal data hold promise for many tasks in\ndata analysis, such as representation learning, conditional generation, and\nimputation. Current architectures either share the encoder output, decoder\ninput, or both across modalities to learn a shared representation. Such\narchitectures impose hard constraints on the model. In this work, we show that\na better latent representation can be obtained by replacing these hard\nconstraints with a soft constraint. We propose a new mixture-of-experts prior,\nsoftly guiding each modality's latent representation towards a shared aggregate\nposterior. This approach results in a superior latent representation and allows\neach encoding to preserve information better from its uncompressed original\nfeatures. In extensive experiments on multiple benchmark datasets and two\nchallenging real-world datasets, we show improved learned latent\nrepresentations and imputation of missing data modalities compared to existing\nmethods.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

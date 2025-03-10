@@ -1,0 +1,32 @@
+{
+  "id": "2403.05906v1",
+  "title": "Segmentation Guided Sparse Transformer for Under-Display Camera Image\n  Restoration",
+  "url": "http://arxiv.org/abs/2403.05906v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05906v1",
+  "authors": [
+    "Jingyun Xue",
+    "Tao Wang",
+    "Jun Wang",
+    "Kaihao Zhang",
+    "Wenhan Luo",
+    "Wenqi Ren",
+    "Zikun Liu",
+    "Hyunhee Park",
+    "Xiaochun Cao"
+  ],
+  "date": "2024-03-09",
+  "summary": "Under-Display Camera (UDC) is an emerging technology that achieves\nfull-screen display via hiding the camera under the display panel. However, the\ncurrent implementation of UDC causes serious degradation. The incident light\nrequired for camera imaging undergoes attenuation and diffraction when passing\nthrough the display panel, leading to various artifacts in UDC imaging.\nPresently, the prevailing UDC image restoration methods predominantly utilize\nconvolutional neural network architectures, whereas Transformer-based methods\nhave exhibited superior performance in the majority of image restoration tasks.\nThis is attributed to the Transformer's capability to sample global features\nfor the local reconstruction of images, thereby achieving high-quality image\nrestoration. In this paper, we observe that when using the Vision Transformer\nfor UDC degraded image restoration, the global attention samples a large amount\nof redundant information and noise. Furthermore, compared to the ordinary\nTransformer employing dense attention, the Transformer utilizing sparse\nattention can alleviate the adverse impact of redundant information and noise.\nBuilding upon this discovery, we propose a Segmentation Guided Sparse\nTransformer method (SGSFormer) for the task of restoring high-quality images\nfrom UDC degraded images. Specifically, we utilize sparse self-attention to\nfilter out redundant information and noise, directing the model's attention to\nfocus on the features more relevant to the degraded regions in need of\nreconstruction. Moreover, we integrate the instance segmentation map as prior\ninformation to guide the sparse self-attention in filtering and focusing on the\ncorrect regions.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

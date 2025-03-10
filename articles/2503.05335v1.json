@@ -1,0 +1,25 @@
+{
+  "id": "2503.05335v1",
+  "title": "New multimodal similarity measure for image registration via modeling\n  local functional dependence with linear combination of learned basis\n  functions",
+  "url": "http://arxiv.org/abs/2503.05335v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05335v1",
+  "authors": [
+    "Joel Honkamaa",
+    "Pekka Marttinen"
+  ],
+  "date": "2025-03-07",
+  "summary": "The deformable registration of images of different modalities, essential in\nmany medical imaging applications, remains challenging. The main challenge is\ndeveloping a robust measure for image overlap despite the compared images\ncapturing different aspects of the underlying tissue. Here, we explore\nsimilarity metrics based on functional dependence between intensity values of\nregistered images. Although functional dependence is too restrictive on the\nglobal scale, earlier work has shown competitive performance in deformable\nregistration when such measures are applied over small enough contexts. We\nconfirm this finding and further develop the idea by modeling local functional\ndependence via the linear basis function model with the basis functions learned\njointly with the deformation. The measure can be implemented via convolutions,\nmaking it efficient to compute on GPUs. We release the method as an easy-to-use\ntool and show good performance on three datasets compared to well-established\nbaseline and earlier functional dependence-based methods.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.34,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

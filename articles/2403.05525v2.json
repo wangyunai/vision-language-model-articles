@@ -1,0 +1,38 @@
+{
+  "id": "2403.05525v2",
+  "title": "DeepSeek-VL: Towards Real-World Vision-Language Understanding",
+  "url": "http://arxiv.org/abs/2403.05525v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05525v2",
+  "authors": [
+    "Haoyu Lu",
+    "Wen Liu",
+    "Bo Zhang",
+    "Bingxuan Wang",
+    "Kai Dong",
+    "Bo Liu",
+    "Jingxiang Sun",
+    "Tongzheng Ren",
+    "Zhuoshu Li",
+    "Hao Yang",
+    "Yaofeng Sun",
+    "Chengqi Deng",
+    "Hanwei Xu",
+    "Zhenda Xie",
+    "Chong Ruan"
+  ],
+  "date": "2024-03-08",
+  "summary": "We present DeepSeek-VL, an open-source Vision-Language (VL) Model designed\nfor real-world vision and language understanding applications. Our approach is\nstructured around three key dimensions:\n  We strive to ensure our data is diverse, scalable, and extensively covers\nreal-world scenarios including web screenshots, PDFs, OCR, charts, and\nknowledge-based content, aiming for a comprehensive representation of practical\ncontexts. Further, we create a use case taxonomy from real user scenarios and\nconstruct an instruction tuning dataset accordingly. The fine-tuning with this\ndataset substantially improves the model's user experience in practical\napplications. Considering efficiency and the demands of most real-world\nscenarios, DeepSeek-VL incorporates a hybrid vision encoder that efficiently\nprocesses high-resolution images (1024 x 1024), while maintaining a relatively\nlow computational overhead. This design choice ensures the model's ability to\ncapture critical semantic and detailed information across various visual tasks.\nWe posit that a proficient Vision-Language Model should, foremost, possess\nstrong language abilities. To ensure the preservation of LLM capabilities\nduring pretraining, we investigate an effective VL pretraining strategy by\nintegrating LLM training from the beginning and carefully managing the\ncompetitive dynamics observed between vision and language modalities.\n  The DeepSeek-VL family (both 1.3B and 7B models) showcases superior user\nexperiences as a vision-language chatbot in real-world applications, achieving\nstate-of-the-art or competitive performance across a wide range of\nvisual-language benchmarks at the same model size while maintaining robust\nperformance on language-centric benchmarks. We have made both 1.3B and 7B\nmodels publicly accessible to foster innovations based on this foundation\nmodel.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

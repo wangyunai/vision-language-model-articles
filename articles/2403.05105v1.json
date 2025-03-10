@@ -1,0 +1,29 @@
+{
+  "id": "2403.05105v1",
+  "title": "Learning to Rematch Mismatched Pairs for Robust Cross-Modal Retrieval",
+  "url": "http://arxiv.org/abs/2403.05105v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05105v1",
+  "authors": [
+    "Haochen Han",
+    "Qinghua Zheng",
+    "Guang Dai",
+    "Minnan Luo",
+    "Jingdong Wang"
+  ],
+  "date": "2024-03-08",
+  "summary": "Collecting well-matched multimedia datasets is crucial for training\ncross-modal retrieval models. However, in real-world scenarios, massive\nmultimodal data are harvested from the Internet, which inevitably contains\nPartially Mismatched Pairs (PMPs). Undoubtedly, such semantical irrelevant data\nwill remarkably harm the cross-modal retrieval performance. Previous efforts\ntend to mitigate this problem by estimating a soft correspondence to\ndown-weight the contribution of PMPs. In this paper, we aim to address this\nchallenge from a new perspective: the potential semantic similarity among\nunpaired samples makes it possible to excavate useful knowledge from mismatched\npairs. To achieve this, we propose L2RM, a general framework based on Optimal\nTransport (OT) that learns to rematch mismatched pairs. In detail, L2RM aims to\ngenerate refined alignments by seeking a minimal-cost transport plan across\ndifferent modalities. To formalize the rematching idea in OT, first, we propose\na self-supervised cost function that automatically learns from explicit\nsimilarity-cost mapping relation. Second, we present to model a partial OT\nproblem while restricting the transport among false positives to further boost\nrefined alignments. Extensive experiments on three benchmarks demonstrate our\nL2RM significantly improves the robustness against PMPs for existing models.\nThe code is available at https://github.com/hhc1997/L2RM.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

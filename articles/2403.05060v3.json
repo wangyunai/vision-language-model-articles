@@ -1,0 +1,29 @@
+{
+  "id": "2403.05060v3",
+  "title": "Multimodal Infusion Tuning for Large Models",
+  "url": "http://arxiv.org/abs/2403.05060v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.05060v3",
+  "authors": [
+    "Hao Sun",
+    "Yu Song",
+    "Xinyao Yu",
+    "Jiaqing Liu",
+    "Yen-Wei Chen",
+    "Lanfen Lin"
+  ],
+  "date": "2024-03-08",
+  "summary": "Recent advancements in large-scale models have showcased remarkable\ngeneralization capabilities in various tasks. However, integrating multimodal\nprocessing into these models presents a significant challenge, as it often\ncomes with a high computational burden. To address this challenge, we introduce\na new parameter-efficient multimodal tuning strategy for large models in this\npaper, referred to as Multimodal Infusion Tuning (MiT). MiT leverages decoupled\nself-attention mechanisms within large language models to effectively integrate\ninformation from diverse modalities such as images and acoustics. In MiT, we\nalso design a novel adaptive rescaling strategy at the attention head level,\nwhich optimizes the representation of infused multimodal features. Notably, all\nfoundation models are kept frozen during the tuning process to reduce the\ncomputational burden and only 2.5\\% parameters are tunable. We conduct\nexperiments across a range of multimodal tasks, including image-related tasks\nlike referring segmentation and non-image tasks such as sentiment analysis. Our\nresults showcase that MiT achieves state-of-the-art performance in multimodal\nunderstanding while significantly reducing computational overhead(10\\% of\nprevious methods). Moreover, our tuned model exhibits robust reasoning\nabilities even in complex scenarios.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

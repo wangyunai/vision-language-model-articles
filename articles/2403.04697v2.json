@@ -1,0 +1,30 @@
+{
+  "id": "2403.04697v2",
+  "title": "AUFormer: Vision Transformers are Parameter-Efficient Facial Action Unit\n  Detectors",
+  "url": "http://arxiv.org/abs/2403.04697v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.04697v2",
+  "authors": [
+    "Kaishen Yuan",
+    "Zitong Yu",
+    "Xin Liu",
+    "Weicheng Xie",
+    "Huanjing Yue",
+    "Jingyu Yang"
+  ],
+  "date": "2024-03-07",
+  "summary": "Facial Action Units (AU) is a vital concept in the realm of affective\ncomputing, and AU detection has always been a hot research topic. Existing\nmethods suffer from overfitting issues due to the utilization of a large number\nof learnable parameters on scarce AU-annotated datasets or heavy reliance on\nsubstantial additional relevant data. Parameter-Efficient Transfer Learning\n(PETL) provides a promising paradigm to address these challenges, whereas its\nexisting methods lack design for AU characteristics. Therefore, we innovatively\ninvestigate PETL paradigm to AU detection, introducing AUFormer and proposing a\nnovel Mixture-of-Knowledge Expert (MoKE) collaboration mechanism. An individual\nMoKE specific to a certain AU with minimal learnable parameters first\nintegrates personalized multi-scale and correlation knowledge. Then the MoKE\ncollaborates with other MoKEs in the expert group to obtain aggregated\ninformation and inject it into the frozen Vision Transformer (ViT) to achieve\nparameter-efficient AU detection. Additionally, we design a Margin-truncated\nDifficulty-aware Weighted Asymmetric Loss (MDWA-Loss), which can encourage the\nmodel to focus more on activated AUs, differentiate the difficulty of\nunactivated AUs, and discard potential mislabeled samples. Extensive\nexperiments from various perspectives, including within-domain, cross-domain,\ndata efficiency, and micro-expression domain, demonstrate AUFormer's\nstate-of-the-art performance and robust generalization abilities without\nrelying on additional relevant data. The code for AUFormer is available at\nhttps://github.com/yuankaishen2001/AUFormer.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

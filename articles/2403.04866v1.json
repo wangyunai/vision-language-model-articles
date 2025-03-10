@@ -1,0 +1,26 @@
+{
+  "id": "2403.04866v1",
+  "title": "A Modular End-to-End Multimodal Learning Method for Structured and\n  Unstructured Data",
+  "url": "http://arxiv.org/abs/2403.04866v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04866v1",
+  "authors": [
+    "Marco D Alessandro",
+    "Enrique Calabr\u00e9s",
+    "Mikel Elkano"
+  ],
+  "date": "2024-03-07",
+  "summary": "Multimodal learning is a rapidly growing research field that has\nrevolutionized multitasking and generative modeling in AI. While much of the\nresearch has focused on dealing with unstructured data (e.g., language, images,\naudio, or video), structured data (e.g., tabular data, time series, or signals)\nhas received less attention. However, many industry-relevant use cases involve\nor can be benefited from both types of data. In this work, we propose a\nmodular, end-to-end multimodal learning method called MAGNUM, which can\nnatively handle both structured and unstructured data. MAGNUM is flexible\nenough to employ any specialized unimodal module to extract, compress, and fuse\ninformation from all available modalities.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

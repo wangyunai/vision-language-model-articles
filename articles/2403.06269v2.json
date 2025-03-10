@@ -1,0 +1,28 @@
+{
+  "id": "2403.06269v2",
+  "title": "FastVideoEdit: Leveraging Consistency Models for Efficient Text-to-Video\n  Editing",
+  "url": "http://arxiv.org/abs/2403.06269v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.06269v2",
+  "authors": [
+    "Youyuan Zhang",
+    "Xuan Ju",
+    "James J. Clark"
+  ],
+  "date": "2024-03-10",
+  "summary": "Diffusion models have demonstrated remarkable capabilities in text-to-image\nand text-to-video generation, opening up possibilities for video editing based\non textual input. However, the computational cost associated with sequential\nsampling in diffusion models poses challenges for efficient video editing.\nExisting approaches relying on image generation models for video editing suffer\nfrom time-consuming one-shot fine-tuning, additional condition extraction, or\nDDIM inversion, making real-time applications impractical. In this work, we\npropose FastVideoEdit, an efficient zero-shot video editing approach inspired\nby Consistency Models (CMs). By leveraging the self-consistency property of\nCMs, we eliminate the need for time-consuming inversion or additional condition\nextraction, reducing editing time. Our method enables direct mapping from\nsource video to target video with strong preservation ability utilizing a\nspecial variance schedule. This results in improved speed advantages, as fewer\nsampling steps can be used while maintaining comparable generation quality.\nExperimental results validate the state-of-the-art performance and speed\nadvantages of FastVideoEdit across evaluation metrics encompassing editing\nspeed, temporal consistency, and text-video alignment.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "text-to-video",
+    "image generation"
+  ],
+  "attention_score": 0.16,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

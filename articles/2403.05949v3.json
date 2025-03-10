@@ -1,0 +1,28 @@
+{
+  "id": "2403.05949v3",
+  "title": "General surgery vision transformer: A video pre-trained foundation model\n  for general surgery",
+  "url": "http://arxiv.org/abs/2403.05949v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.05949v3",
+  "authors": [
+    "Samuel Schmidgall",
+    "Ji Woong Kim",
+    "Jeffrey Jopling",
+    "Axel Krieger"
+  ],
+  "date": "2024-03-09",
+  "summary": "The absence of openly accessible data and specialized foundation models is a\nmajor barrier for computational research in surgery. Toward this, (i) we\nopen-source the largest dataset of general surgery videos to-date, consisting\nof 680 hours of surgical videos, including data from robotic and laparoscopic\ntechniques across 28 procedures; (ii) we propose a technique for video\npre-training a general surgery vision transformer (GSViT) on surgical videos\nbased on forward video prediction that can run in real-time for surgical\napplications, toward which we open-source the code and weights of GSViT; (iii)\nwe also release code and weights for procedure-specific fine-tuned versions of\nGSViT across 10 procedures; (iv) we demonstrate the performance of GSViT on the\nCholec80 phase annotation task, displaying improved performance over\nstate-of-the-art single frame predictors.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

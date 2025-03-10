@@ -1,0 +1,30 @@
+{
+  "id": "2403.04321v2",
+  "title": "Discriminative Probing and Tuning for Text-to-Image Generation",
+  "url": "http://arxiv.org/abs/2403.04321v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.04321v2",
+  "authors": [
+    "Leigang Qu",
+    "Wenjie Wang",
+    "Yongqi Li",
+    "Hanwang Zhang",
+    "Liqiang Nie",
+    "Tat-Seng Chua"
+  ],
+  "date": "2024-03-07",
+  "summary": "Despite advancements in text-to-image generation (T2I), prior methods often\nface text-image misalignment problems such as relation confusion in generated\nimages. Existing solutions involve cross-attention manipulation for better\ncompositional understanding or integrating large language models for improved\nlayout planning. However, the inherent alignment capabilities of T2I models are\nstill inadequate. By reviewing the link between generative and discriminative\nmodeling, we posit that T2I models' discriminative abilities may reflect their\ntext-image alignment proficiency during generation. In this light, we advocate\nbolstering the discriminative abilities of T2I models to achieve more precise\ntext-to-image alignment for generation. We present a discriminative adapter\nbuilt on T2I models to probe their discriminative abilities on two\nrepresentative tasks and leverage discriminative fine-tuning to improve their\ntext-image alignment. As a bonus of the discriminative adapter, a\nself-correction mechanism can leverage discriminative gradients to better align\ngenerated images to text prompts during inference. Comprehensive evaluations\nacross three benchmark datasets, including both in-distribution and\nout-of-distribution scenarios, demonstrate our method's superior generation\nperformance. Meanwhile, it achieves state-of-the-art discriminative performance\non the two discriminative tasks compared to other generative models.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

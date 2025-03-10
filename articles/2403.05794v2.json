@@ -1,0 +1,26 @@
+{
+  "id": "2403.05794v2",
+  "title": "Privacy-Preserving Diffusion Model Using Homomorphic Encryption",
+  "url": "http://arxiv.org/abs/2403.05794v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05794v2",
+  "authors": [
+    "Yaojian Chen",
+    "Qiben Yan"
+  ],
+  "date": "2024-03-09",
+  "summary": "In this paper, we introduce a privacy-preserving stable diffusion framework\nleveraging homomorphic encryption, called HE-Diffusion, which primarily focuses\non protecting the denoising phase of the diffusion process. HE-Diffusion is a\ntailored encryption framework specifically designed to align with the unique\narchitecture of stable diffusion, ensuring both privacy and functionality. To\naddress the inherent computational challenges, we propose a novel\nmin-distortion method that enables efficient partial image encryption,\nsignificantly reducing the overhead without compromising the model's output\nquality. Furthermore, we adopt a sparse tensor representation to expedite\ncomputational operations, enhancing the overall efficiency of the\nprivacy-preserving diffusion process. We successfully implement HE-based\nprivacy-preserving stable diffusion inference. The experimental results show\nthat HE-Diffusion achieves 500 times speedup compared with the baseline method,\nand reduces time cost of the homomorphically encrypted inference to the minute\nlevel. Both the performance and accuracy of the HE-Diffusion are on par with\nthe plaintext counterpart. Our approach marks a significant step towards\nintegrating advanced cryptographic techniques with state-of-the-art generative\nmodels, paving the way for privacy-preserving and efficient image generation in\ncritical applications.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "Stable Diffusion",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

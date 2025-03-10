@@ -1,0 +1,32 @@
+{
+  "id": "2403.06295v1",
+  "title": "A streamlined Approach to Multimodal Few-Shot Class Incremental Learning\n  for Fine-Grained Datasets",
+  "url": "http://arxiv.org/abs/2403.06295v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06295v1",
+  "authors": [
+    "Thang Doan",
+    "Sima Behpour",
+    "Xin Li",
+    "Wenbin He",
+    "Liang Gou",
+    "Liu Ren"
+  ],
+  "date": "2024-03-10",
+  "summary": "Few-shot Class-Incremental Learning (FSCIL) poses the challenge of retaining\nprior knowledge while learning from limited new data streams, all without\noverfitting. The rise of Vision-Language models (VLMs) has unlocked numerous\napplications, leveraging their existing knowledge to fine-tune on custom data.\nHowever, training the whole model is computationally prohibitive, and VLMs\nwhile being versatile in general domains still struggle with fine-grained\ndatasets crucial for many applications. We tackle these challenges with two\nproposed simple modules. The first, Session-Specific Prompts (SSP), enhances\nthe separability of image-text embeddings across sessions. The second,\nHyperbolic distance, compresses representations of image-text pairs within the\nsame class while expanding those from different classes, leading to better\nrepresentations. Experimental results demonstrate an average 10-point increase\ncompared to baselines while requiring at least 8 times fewer trainable\nparameters. This improvement is further underscored on our three newly\nintroduced fine-grained datasets.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "multimodal",
+    "vision-language",
+    "image-text"
+  ],
+  "attention_score": 0.18,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

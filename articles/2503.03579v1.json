@@ -1,0 +1,27 @@
+{
+  "id": "2503.03579v1",
+  "title": "A Generative System for Robot-to-Human Handovers: from Intent Inference\n  to Spatial Configuration Imagery",
+  "url": "http://arxiv.org/abs/2503.03579v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03579v1",
+  "authors": [
+    "Hanxin Zhang",
+    "Abdulqader Dhafer",
+    "Zhou Daniel Hao",
+    "Hongbiao Dong"
+  ],
+  "date": "2025-03-05",
+  "summary": "We propose a novel system for robot-to-human object handover that emulates\nhuman coworker interactions. Unlike most existing studies that focus primarily\non grasping strategies and motion planning, our system focus on 1. inferring\nhuman handover intents, 2. imagining spatial handover configuration. The first\none integrates multimodal perception-combining visual and verbal cues-to infer\nhuman intent. The second one using a diffusion-based model to generate the\nhandover configuration, involving the spacial relationship among robot's\ngripper, the object, and the human hand, thereby mimicking the cognitive\nprocess of motor imagery. Experimental results demonstrate that our approach\neffectively interprets human cues and achieves fluent, human-like handovers,\noffering a promising solution for collaborative robotics. Code, videos, and\ndata are available at: https://i3handover.github.io.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.3,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9863013698630136,
+    "source_weight": 1.0,
+    "age_months": 0.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2403.05408v2",
+  "title": "FedFMS: Exploring Federated Foundation Models for Medical Image\n  Segmentation",
+  "url": "http://arxiv.org/abs/2403.05408v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05408v2",
+  "authors": [
+    "Yuxi Liu",
+    "Guibo Luo",
+    "Yuesheng Zhu"
+  ],
+  "date": "2024-03-08",
+  "summary": "Medical image segmentation is crucial for clinical diagnosis. The\nSegmentation Anything Model (SAM) serves as a powerful foundation model for\nvisual segmentation and can be adapted for medical image segmentation. However,\nmedical imaging data typically contain privacy-sensitive information, making it\nchallenging to train foundation models with centralized storage and sharing. To\ndate, there are few foundation models tailored for medical image deployment\nwithin the federated learning framework, and the segmentation performance, as\nwell as the efficiency of communication and training, remain unexplored. In\nresponse to these issues, we developed Federated Foundation models for Medical\nimage Segmentation (FedFMS), which includes the Federated SAM (FedSAM) and a\ncommunication and training-efficient Federated SAM with Medical SAM Adapter\n(FedMSA). Comprehensive experiments on diverse datasets are conducted to\ninvestigate the performance disparities between centralized training and\nfederated learning across various configurations of FedFMS. The experiments\nrevealed that FedFMS could achieve performance comparable to models trained via\ncentralized training methods while maintaining privacy. Furthermore, FedMSA\ndemonstrated the potential to enhance communication and training efficiency.\nOur model implementation codes are available at\nhttps://github.com/LIU-YUXI/FedFMS.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "visual segmentation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

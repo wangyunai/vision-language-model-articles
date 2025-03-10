@@ -1,0 +1,32 @@
+{
+  "id": "2503.04252v1",
+  "title": "RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud\n  Database Systems",
+  "url": "http://arxiv.org/abs/2503.04252v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04252v1",
+  "authors": [
+    "Biao Ouyang",
+    "Yingying Zhang",
+    "Hanyin Cheng",
+    "Yang Shu",
+    "Chenjuan Guo",
+    "Bin Yang",
+    "Qingsong Wen",
+    "Lunting Fan",
+    "Christian S. Jensen"
+  ],
+  "date": "2025-03-06",
+  "summary": "With the continued migration of storage to cloud database systems,the impact\nof slow queries in such systems on services and user experience is increasing.\nRoot-cause diagnosis plays an indispensable role in facilitating slow-query\ndetection and revision. This paper proposes a method capable of both\nidentifying possible root cause types for slow queries and ranking these\naccording to their potential for accelerating slow queries. This enables\nprioritizing root causes with the highest impact, in turn improving slow-query\nrevision effectiveness. To enable more accurate and detailed diagnoses, we\npropose the multimodal Ranking for the Root Causes of slow queries (RCRank)\nframework, which formulates root cause analysis as a multimodal machine\nlearning problem and leverages multimodal information from query statements,\nexecution plans, execution logs, and key performance indicators. To obtain\nexpressive embeddings from its heterogeneous multimodal input, RCRank\nintegrates self-supervised pre-training that enhances cross-modal alignment and\ntask relevance. Next, the framework integrates root-cause-adaptive cross\nTransformers that enable adaptive fusion of multimodal features with varying\ncharacteristics. Finally, the framework offers a unified model that features an\nimpact-aware training objective for identifying and ranking root causes. We\nreport on experiments on real and synthetic datasets, finding that RCRank is\ncapable of consistently outperforming the state-of-the-art methods at root\ncause identification and ranking according to a range of metrics.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

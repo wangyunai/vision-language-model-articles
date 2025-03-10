@@ -1,0 +1,36 @@
+{
+  "id": "2403.05606v1",
+  "title": "A Concept-based Interpretable Model for the Diagnosis of Choroid\n  Neoplasias using Multimodal Data",
+  "url": "http://arxiv.org/abs/2403.05606v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05606v1",
+  "authors": [
+    "Yifan Wu",
+    "Yang Liu",
+    "Yue Yang",
+    "Michael S. Yao",
+    "Wenli Yang",
+    "Xuehui Shi",
+    "Lihong Yang",
+    "Dongjun Li",
+    "Yueming Liu",
+    "James C. Gee",
+    "Xuan Yang",
+    "Wenbin Wei",
+    "Shi Gu"
+  ],
+  "date": "2024-03-08",
+  "summary": "Diagnosing rare diseases presents a common challenge in clinical practice,\nnecessitating the expertise of specialists for accurate identification. The\nadvent of machine learning offers a promising solution, while the development\nof such technologies is hindered by the scarcity of data on rare conditions and\nthe demand for models that are both interpretable and trustworthy in a clinical\ncontext. Interpretable AI, with its capacity for human-readable outputs, can\nfacilitate validation by clinicians and contribute to medical education. In the\ncurrent work, we focus on choroid neoplasias, the most prevalent form of eye\ncancer in adults, albeit rare with 5.1 per million. We built the so-far largest\ndataset consisting of 750 patients, incorporating three distinct imaging\nmodalities collected from 2004 to 2022. Our work introduces a concept-based\ninterpretable model that distinguishes between three types of choroidal tumors,\nintegrating insights from domain experts via radiological reports. Remarkably,\nthis model not only achieves an F1 score of 0.91, rivaling that of black-box\nmodels, but also boosts the diagnostic accuracy of junior doctors by 42%. This\nstudy highlights the significant potential of interpretable machine learning in\nimproving the diagnosis of rare diseases, laying a groundwork for future\nbreakthroughs in medical AI that could tackle a wider array of complex health\nscenarios.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

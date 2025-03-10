@@ -1,0 +1,26 @@
+{
+  "id": "2403.06213v1",
+  "title": "$V_kD:$ Improving Knowledge Distillation using Orthogonal Projections",
+  "url": "http://arxiv.org/abs/2403.06213v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06213v1",
+  "authors": [
+    "Roy Miles",
+    "Ismail Elezi",
+    "Jiankang Deng"
+  ],
+  "date": "2024-03-10",
+  "summary": "Knowledge distillation is an effective method for training small and\nefficient deep learning models. However, the efficacy of a single method can\ndegenerate when transferring to other tasks, modalities, or even other\narchitectures. To address this limitation, we propose a novel constrained\nfeature distillation method. This method is derived from a small set of core\nprinciples, which results in two emerging components: an orthogonal projection\nand a task-specific normalisation. Equipped with both of these components, our\ntransformer models can outperform all previous methods on ImageNet and reach up\nto a 4.4% relative improvement over the previous state-of-the-art methods. To\nfurther demonstrate the generality of our method, we apply it to object\ndetection and image generation, whereby we obtain consistent and substantial\nperformance improvements over state-of-the-art. Code and models are publicly\navailable: https://github.com/roymiles/vkd",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "2403.04306v5",
+  "title": "Effectiveness Assessment of Recent Large Vision-Language Models",
+  "url": "http://arxiv.org/abs/2403.04306v5",
+  "pdf_url": "http://arxiv.org/pdf/2403.04306v5",
+  "authors": [
+    "Yao Jiang",
+    "Xinyu Yan",
+    "Ge-Peng Ji",
+    "Keren Fu",
+    "Meijun Sun",
+    "Huan Xiong",
+    "Deng-Ping Fan",
+    "Fahad Shahbaz Khan"
+  ],
+  "date": "2024-03-07",
+  "summary": "The advent of large vision-language models (LVLMs) represents a remarkable\nadvance in the quest for artificial general intelligence. However, the model's\neffectiveness in both specialized and general tasks warrants further\ninvestigation. This paper endeavors to evaluate the competency of popular LVLMs\nin specialized and general tasks, respectively, aiming to offer a comprehensive\nunderstanding of these novel models. To gauge their effectiveness in\nspecialized tasks, we employ six challenging tasks in three different\napplication scenarios: natural, healthcare, and industrial. These six tasks\ninclude salient/camouflaged/transparent object detection, as well as polyp\ndetection, skin lesion detection, and industrial anomaly detection. We examine\nthe performance of three recent open-source LVLMs, including MiniGPT-v2,\nLLaVA-1.5, and Shikra, on both visual recognition and localization in these\ntasks. Moreover, we conduct empirical investigations utilizing the\naforementioned LVLMs together with GPT-4V, assessing their multi-modal\nunderstanding capabilities in general tasks including object counting, absurd\nquestion answering, affordance reasoning, attribute recognition, and spatial\nrelation reasoning. Our investigations reveal that these LVLMs demonstrate\nlimited proficiency not only in specialized tasks but also in general tasks. We\ndelve deep into this inadequacy and uncover several potential factors,\nincluding limited cognition in specialized tasks, object hallucination,\ntext-to-image interference, and decreased robustness in complex problems. We\nhope that this study can provide useful insights for the future development of\nLVLMs, helping researchers improve LVLMs for both general and specialized\napplications.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language",
+    "GPT-4V",
+    "text-to-image"
+  ],
+  "attention_score": 0.18,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

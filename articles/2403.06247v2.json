@@ -1,0 +1,25 @@
+{
+  "id": "2403.06247v2",
+  "title": "Text-Guided Variational Image Generation for Industrial Anomaly\n  Detection and Segmentation",
+  "url": "http://arxiv.org/abs/2403.06247v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.06247v2",
+  "authors": [
+    "Mingyu Lee",
+    "Jongwon Choi"
+  ],
+  "date": "2024-03-10",
+  "summary": "We propose a text-guided variational image generation method to address the\nchallenge of getting clean data for anomaly detection in industrial\nmanufacturing. Our method utilizes text information about the target object,\nlearned from extensive text library documents, to generate non-defective data\nimages resembling the input image. The proposed framework ensures that the\ngenerated non-defective images align with anticipated distributions derived\nfrom textual and image-based knowledge, ensuring stability and generality.\nExperimental results demonstrate the effectiveness of our approach, surpassing\nprevious methods even with limited non-defective data. Our approach is\nvalidated through generalization tests across four baseline models and three\ndistinct datasets. We present an additional analysis to enhance the\neffectiveness of anomaly detection models by utilizing the generated images.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

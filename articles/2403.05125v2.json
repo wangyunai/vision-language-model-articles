@@ -1,0 +1,32 @@
+{
+  "id": "2403.05125v2",
+  "title": "Evaluating Text-to-Image Generative Models: An Empirical Study on Human\n  Image Synthesis",
+  "url": "http://arxiv.org/abs/2403.05125v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05125v2",
+  "authors": [
+    "Muxi Chen",
+    "Yi Liu",
+    "Jian Yi",
+    "Changran Xu",
+    "Qiuxia Lai",
+    "Hongliang Wang",
+    "Tsung-Yi Ho",
+    "Qiang Xu"
+  ],
+  "date": "2024-03-08",
+  "summary": "In this paper, we present an empirical study introducing a nuanced evaluation\nframework for text-to-image (T2I) generative models, applied to human image\nsynthesis. Our framework categorizes evaluations into two distinct groups:\nfirst, focusing on image qualities such as aesthetics and realism, and second,\nexamining text conditions through concept coverage and fairness. We introduce\nan innovative aesthetic score prediction model that assesses the visual appeal\nof generated images and unveils the first dataset marked with low-quality\nregions in generated human images to facilitate automatic defect detection. Our\nexploration into concept coverage probes the model's effectiveness in\ninterpreting and rendering text-based concepts accurately, while our analysis\nof fairness reveals biases in model outputs, with an emphasis on gender, race,\nand age. While our study is grounded in human imagery, this dual-faceted\napproach is designed with the flexibility to be applicable to other forms of\nimage generation, enhancing our understanding of generative models and paving\nthe way to the next generation of more sophisticated, contextually aware, and\nethically attuned generative models. Code and data, including the dataset\nannotated with defective areas, are available at\n\\href{https://github.com/cure-lab/EvaluateAIGC}{https://github.com/cure-lab/EvaluateAIGC}.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

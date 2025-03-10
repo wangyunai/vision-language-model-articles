@@ -1,0 +1,28 @@
+{
+  "id": "2503.04107v1",
+  "title": "Fractional Correspondence Framework in Detection Transformer",
+  "url": "http://arxiv.org/abs/2503.04107v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04107v1",
+  "authors": [
+    "Masoumeh Zareapoor",
+    "Pourya Shamsolmoali",
+    "Huiyu Zhou",
+    "Yue Lu",
+    "Salvador Garc\u00eda"
+  ],
+  "date": "2025-03-06",
+  "summary": "The Detection Transformer (DETR), by incorporating the Hungarian algorithm,\nhas significantly simplified the matching process in object detection tasks.\nThis algorithm facilitates optimal one-to-one matching of predicted bounding\nboxes to ground-truth annotations during training. While effective, this strict\nmatching process does not inherently account for the varying densities and\ndistributions of objects, leading to suboptimal correspondences such as failing\nto handle multiple detections of the same object or missing small objects. To\naddress this, we propose the Regularized Transport Plan (RTP). RTP introduces a\nflexible matching strategy that captures the cost of aligning predictions with\nground truths to find the most accurate correspondences between these sets. By\nutilizing the differentiable Sinkhorn algorithm, RTP allows for soft,\nfractional matching rather than strict one-to-one assignments. This approach\nenhances the model's capability to manage varying object densities and\ndistributions effectively. Our extensive evaluations on the MS-COCO and VOC\nbenchmarks demonstrate the effectiveness of our approach. RTP-DETR, surpassing\nthe performance of the Deform-DETR and the recently introduced DINO-DETR,\nachieving absolute gains in mAP of +3.8% and +1.7%, respectively.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "DINO"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

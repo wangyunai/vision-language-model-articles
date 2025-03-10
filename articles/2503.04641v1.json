@@ -1,0 +1,33 @@
+{
+  "id": "2503.04641v1",
+  "title": "Simulating the Real World: A Unified Survey of Multimodal Generative\n  Models",
+  "url": "http://arxiv.org/abs/2503.04641v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04641v1",
+  "authors": [
+    "Yuqi Hu",
+    "Longguang Wang",
+    "Xian Liu",
+    "Ling-Hao Chen",
+    "Yuwei Guo",
+    "Yukai Shi",
+    "Ce Liu",
+    "Anyi Rao",
+    "Zeyu Wang",
+    "Hui Xiong"
+  ],
+  "date": "2025-03-06",
+  "summary": "Understanding and replicating the real world is a critical challenge in\nArtificial General Intelligence (AGI) research. To achieve this, many existing\napproaches, such as world models, aim to capture the fundamental principles\ngoverning the physical world, enabling more accurate simulations and meaningful\ninteractions. However, current methods often treat different modalities,\nincluding 2D (images), videos, 3D, and 4D representations, as independent\ndomains, overlooking their interdependencies. Additionally, these methods\ntypically focus on isolated dimensions of reality without systematically\nintegrating their connections. In this survey, we present a unified survey for\nmultimodal generative models that investigate the progression of data\ndimensionality in real-world simulation. Specifically, this survey starts from\n2D generation (appearance), then moves to video (appearance+dynamics) and 3D\ngeneration (appearance+geometry), and finally culminates in 4D generation that\nintegrate all dimensions. To the best of our knowledge, this is the first\nattempt to systematically unify the study of 2D, video, 3D and 4D generation\nwithin a single framework. To guide future research, we provide a comprehensive\nreview of datasets, evaluation metrics and future directions, and fostering\ninsights for newcomers. This survey serves as a bridge to advance the study of\nmultimodal generative models and real-world simulation within a unified\nframework.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

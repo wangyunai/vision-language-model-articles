@@ -1,0 +1,27 @@
+{
+  "id": "2403.05379v2",
+  "title": "Self-Supervised Multiple Instance Learning for Acute Myeloid Leukemia\n  Classification",
+  "url": "http://arxiv.org/abs/2403.05379v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05379v2",
+  "authors": [
+    "Salome Kazeminia",
+    "Max Joosten",
+    "Dragan Bosnacki",
+    "Carsten Marr"
+  ],
+  "date": "2024-03-08",
+  "summary": "Automated disease diagnosis using medical image analysis relies on deep\nlearning, often requiring large labeled datasets for supervised model training.\nDiseases like Acute Myeloid Leukemia (AML) pose challenges due to scarce and\ncostly annotations on a single-cell level. Multiple Instance Learning (MIL)\naddresses weakly labeled scenarios but necessitates powerful encoders typically\ntrained with labeled data. In this study, we explore Self-Supervised Learning\n(SSL) as a pre-training approach for MIL-based AML subtype classification from\nblood smears, removing the need for labeled data during encoder training. We\ninvestigate the three state-of-the-art SSL methods SimCLR, SwAV, and DINO, and\ncompare their performance against supervised pre-training. Our findings show\nthat SSL-pretrained encoders achieve comparable performance, showcasing the\npotential of SSL in MIL. This breakthrough offers a cost-effective and\ndata-efficient solution, propelling the field of AI-based disease diagnosis.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "DINO"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

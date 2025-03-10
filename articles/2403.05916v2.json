@@ -1,0 +1,42 @@
+{
+  "id": "2403.05916v2",
+  "title": "GPT as Psychologist? Preliminary Evaluations for GPT-4V on Visual\n  Affective Computing",
+  "url": "http://arxiv.org/abs/2403.05916v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05916v2",
+  "authors": [
+    "Hao Lu",
+    "Xuesong Niu",
+    "Jiyao Wang",
+    "Yin Wang",
+    "Qingyong Hu",
+    "Jiaqi Tang",
+    "Yuting Zhang",
+    "Kaishen Yuan",
+    "Bin Huang",
+    "Zitong Yu",
+    "Dengbo He",
+    "Shuiguang Deng",
+    "Hao Chen",
+    "Yingcong Chen",
+    "Shiguang Shan"
+  ],
+  "date": "2024-03-09",
+  "summary": "Multimodal large language models (MLLMs) are designed to process and\nintegrate information from multiple sources, such as text, speech, images, and\nvideos. Despite its success in language understanding, it is critical to\nevaluate the performance of downstream tasks for better human-centric\napplications. This paper assesses the application of MLLMs with 5 crucial\nabilities for affective computing, spanning from visual affective tasks and\nreasoning tasks. The results show that \\gpt has high accuracy in facial action\nunit recognition and micro-expression detection while its general facial\nexpression recognition performance is not accurate. We also highlight the\nchallenges of achieving fine-grained micro-expression recognition and the\npotential for further study and demonstrate the versatility and potential of\n\\gpt for handling advanced tasks in emotion recognition and related fields by\nintegrating with task-related agents for more complex tasks, such as heart rate\nestimation through signal processing. In conclusion, this paper provides\nvaluable insights into the potential applications and challenges of MLLMs in\nhuman-centric computing. Our interesting examples are at\nhttps://github.com/EnVision-Research/GPT4Affectivity.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "GPT-4V",
+    "MLLM",
+    "ViT",
+    "MLLMs"
+  ],
+  "attention_score": 0.2,
+  "attention_components": {
+    "base_score": 2.0,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

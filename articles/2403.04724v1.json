@@ -1,0 +1,27 @@
+{
+  "id": "2403.04724v1",
+  "title": "Masked Capsule Autoencoders",
+  "url": "http://arxiv.org/abs/2403.04724v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04724v1",
+  "authors": [
+    "Miles Everett",
+    "Mingjun Zhong",
+    "Georgios Leontidis"
+  ],
+  "date": "2024-03-07",
+  "summary": "We propose Masked Capsule Autoencoders (MCAE), the first Capsule Network that\nutilises pretraining in a self-supervised manner. Capsule Networks have emerged\nas a powerful alternative to Convolutional Neural Networks (CNNs), and have\nshown favourable properties when compared to Vision Transformers (ViT), but\nhave struggled to effectively learn when presented with more complex data,\nleading to Capsule Network models that do not scale to modern tasks. Our\nproposed MCAE model alleviates this issue by reformulating the Capsule Network\nto use masked image modelling as a pretraining stage before finetuning in a\nsupervised manner. Across several experiments and ablations studies we\ndemonstrate that similarly to CNNs and ViTs, Capsule Networks can also benefit\nfrom self-supervised pretraining, paving the way for further advancements in\nthis neural network domain. For instance, pretraining on the Imagenette\ndataset, a dataset of 10 classes of Imagenet-sized images, we achieve not only\nstate-of-the-art results for Capsule Networks but also a 9% improvement\ncompared to purely supervised training. Thus we propose that Capsule Networks\nbenefit from and should be trained within a masked image modelling framework,\nwith a novel capsule decoder, to improve a Capsule Network's performance on\nrealistic-sized images.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

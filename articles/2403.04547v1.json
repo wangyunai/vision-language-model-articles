@@ -1,0 +1,31 @@
+{
+  "id": "2403.04547v1",
+  "title": "CLIP the Bias: How Useful is Balancing Data in Multimodal Learning?",
+  "url": "http://arxiv.org/abs/2403.04547v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04547v1",
+  "authors": [
+    "Ibrahim Alabdulmohsin",
+    "Xiao Wang",
+    "Andreas Steiner",
+    "Priya Goyal",
+    "Alexander D'Amour",
+    "Xiaohua Zhai"
+  ],
+  "date": "2024-03-07",
+  "summary": "We study the effectiveness of data-balancing for mitigating biases in\ncontrastive language-image pretraining (CLIP), identifying areas of strength\nand limitation. First, we reaffirm prior conclusions that CLIP models can\ninadvertently absorb societal stereotypes. To counter this, we present a novel\nalgorithm, called Multi-Modal Moment Matching (M4), designed to reduce both\nrepresentation and association biases (i.e. in first- and second-order\nstatistics) in multimodal data. We use M4 to conduct an in-depth analysis\ntaking into account various factors, such as the model, representation, and\ndata size. Our study also explores the dynamic nature of how CLIP learns and\nunlearns biases. In particular, we find that fine-tuning is effective in\ncountering representation biases, though its impact diminishes for association\nbiases. Also, data balancing has a mixed impact on quality: it tends to improve\nclassification but can hurt retrieval. Interestingly, data and architectural\nimprovements seem to mitigate the negative impact of data balancing on\nperformance; e.g. applying M4 to SigLIP-B/16 with data quality filters improves\nCOCO image-to-text retrieval @5 from 86% (without data balancing) to 87% and\nImageNet 0-shot classification from 77% to 77.5%! Finally, we conclude with\nrecommendations for improving the efficacy of data balancing in multimodal\nsystems.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "CLIP",
+    "image-to-text"
+  ],
+  "attention_score": 0.16,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

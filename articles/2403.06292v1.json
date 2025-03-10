@@ -1,0 +1,27 @@
+{
+  "id": "2403.06292v1",
+  "title": "Transformer based Multitask Learning for Image Captioning and Object\n  Detection",
+  "url": "http://arxiv.org/abs/2403.06292v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06292v1",
+  "authors": [
+    "Debolena Basak",
+    "P. K. Srijith",
+    "Maunendra Sankar Desarkar"
+  ],
+  "date": "2024-03-10",
+  "summary": "In several real-world scenarios like autonomous navigation and mobility, to\nobtain a better visual understanding of the surroundings, image captioning and\nobject detection play a crucial role. This work introduces a novel multitask\nlearning framework that combines image captioning and object detection into a\njoint model. We propose TICOD, Transformer-based Image Captioning and Object\ndetection model for jointly training both tasks by combining the losses\nobtained from image captioning and object detection networks. By leveraging\njoint training, the model benefits from the complementary information shared\nbetween the two tasks, leading to improved performance for image captioning.\nOur approach utilizes a transformer-based architecture that enables end-to-end\nnetwork integration for image captioning and object detection and performs both\ntasks jointly. We evaluate the effectiveness of our approach through\ncomprehensive experiments on the MS-COCO dataset. Our model outperforms the\nbaselines from image captioning literature by achieving a 3.65% improvement in\nBERTScore.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image captioning",
+    "visual understanding"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

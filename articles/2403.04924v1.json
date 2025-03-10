@@ -1,0 +1,32 @@
+{
+  "id": "2403.04924v1",
+  "title": "$\\text{R}^2$-Bench: Benchmarking the Robustness of Referring Perception\n  Models under Perturbations",
+  "url": "http://arxiv.org/abs/2403.04924v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04924v1",
+  "authors": [
+    "Xiang Li",
+    "Kai Qiu",
+    "Jinglu Wang",
+    "Xiaohao Xu",
+    "Rita Singh",
+    "Kashu Yamazak",
+    "Hao Chen",
+    "Xiaonan Huang",
+    "Bhiksha Raj"
+  ],
+  "date": "2024-03-07",
+  "summary": "Referring perception, which aims at grounding visual objects with multimodal\nreferring guidance, is essential for bridging the gap between humans, who\nprovide instructions, and the environment where intelligent systems perceive.\nDespite progress in this field, the robustness of referring perception models\n(RPMs) against disruptive perturbations is not well explored. This work\nthoroughly assesses the resilience of RPMs against various perturbations in\nboth general and specific contexts. Recognizing the complex nature of referring\nperception tasks, we present a comprehensive taxonomy of perturbations, and\nthen develop a versatile toolbox for synthesizing and evaluating the effects of\ncomposite disturbances. Employing this toolbox, we construct\n$\\text{R}^2$-Bench, a benchmark for assessing the Robustness of Referring\nperception models under noisy conditions across five key tasks. Moreover, we\npropose the $\\text{R}^2$-Agent, an LLM-based agent that simplifies and\nautomates model evaluation via natural language instructions. Our investigation\nuncovers the vulnerabilities of current RPMs to various perturbations and\nprovides tools for assessing model robustness, potentially promoting the safe\nand resilient integration of intelligent systems into complex real-world\nscenarios.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

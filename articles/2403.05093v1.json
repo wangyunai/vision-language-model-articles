@@ -1,0 +1,26 @@
+{
+  "id": "2403.05093v1",
+  "title": "Spectrum Translation for Refinement of Image Generation (STIG) Based on\n  Contrastive Learning and Spectral Filter Profile",
+  "url": "http://arxiv.org/abs/2403.05093v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05093v1",
+  "authors": [
+    "Seokjun Lee",
+    "Seung-Won Jung",
+    "Hyunseok Seo"
+  ],
+  "date": "2024-03-08",
+  "summary": "Currently, image generation and synthesis have remarkably progressed with\ngenerative models. Despite photo-realistic results, intrinsic discrepancies are\nstill observed in the frequency domain. The spectral discrepancy appeared not\nonly in generative adversarial networks but in diffusion models. In this study,\nwe propose a framework to effectively mitigate the disparity in frequency\ndomain of the generated images to improve generative performance of both GAN\nand diffusion models. This is realized by spectrum translation for the\nrefinement of image generation (STIG) based on contrastive learning. We adopt\ntheoretical logic of frequency components in various generative networks. The\nkey idea, here, is to refine the spectrum of the generated image via the\nconcept of image-to-image translation and contrastive learning in terms of\ndigital signal processing. We evaluate our framework across eight fake image\ndatasets and various cutting-edge models to demonstrate the effectiveness of\nSTIG. Our framework outperforms other cutting-edges showing significant\ndecreases in FID and log frequency distance of spectrum. We further emphasize\nthat STIG improves image quality by decreasing the spectral anomaly.\nAdditionally, validation results present that the frequency-based deepfake\ndetector confuses more in the case where fake spectrums are manipulated by\nSTIG.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

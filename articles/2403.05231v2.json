@@ -1,0 +1,29 @@
+{
+  "id": "2403.05231v2",
+  "title": "Tracking Meets LoRA: Faster Training, Larger Model, Stronger Performance",
+  "url": "http://arxiv.org/abs/2403.05231v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05231v2",
+  "authors": [
+    "Liting Lin",
+    "Heng Fan",
+    "Zhipeng Zhang",
+    "Yaowei Wang",
+    "Yong Xu",
+    "Haibin Ling"
+  ],
+  "date": "2024-03-08",
+  "summary": "Motivated by the Parameter-Efficient Fine-Tuning (PEFT) in large language\nmodels, we propose LoRAT, a method that unveils the power of large ViT model\nfor tracking within laboratory-level resources. The essence of our work lies in\nadapting LoRA, a technique that fine-tunes a small subset of model parameters\nwithout adding inference latency, to the domain of visual tracking. However,\nunique challenges and potential domain gaps make this transfer not as easy as\nthe first intuition. Firstly, a transformer-based tracker constructs unshared\nposition embedding for template and search image. This poses a challenge for\nthe transfer of LoRA, usually requiring consistency in the design when applied\nto the pre-trained backbone, to downstream tasks. Secondly, the inductive bias\ninherent in convolutional heads diminishes the effectiveness of\nparameter-efficient fine-tuning in tracking models. To overcome these\nlimitations, we first decouple the position embeddings in transformer-based\ntrackers into shared spatial ones and independent type ones. The shared\nembeddings, which describe the absolute coordinates of multi-resolution images\n(namely, the template and search images), are inherited from the pre-trained\nbackbones. In contrast, the independent embeddings indicate the sources of each\ntoken and are learned from scratch. Furthermore, we design an anchor-free head\nsolely based on MLP to adapt PETR, enabling better performance with less\ncomputational overhead. With our design, 1) it becomes practical to train\ntrackers with the ViT-g backbone on GPUs with only memory of 25.8GB (batch size\nof 16); 2) we reduce the training time of the L-224 variant from 35.0 to 10.8\nGPU hours; 3) we improve the LaSOT SUC score from 0.703 to 0.742 with the L-224\nvariant; 4) we fast the inference speed of the L-224 variant from 52 to 119\nFPS. Code and models are available at https://github.com/LitingLin/LoRAT.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "ViT"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

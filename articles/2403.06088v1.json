@@ -1,0 +1,26 @@
+{
+  "id": "2403.06088v1",
+  "title": "Towards In-Vehicle Multi-Task Facial Attribute Recognition:\n  Investigating Synthetic Data and Vision Foundation Models",
+  "url": "http://arxiv.org/abs/2403.06088v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06088v1",
+  "authors": [
+    "Esmaeil Seraj",
+    "Walter Talamonti"
+  ],
+  "date": "2024-03-10",
+  "summary": "In the burgeoning field of intelligent transportation systems, enhancing\nvehicle-driver interaction through facial attribute recognition, such as facial\nexpression, eye gaze, age, etc., is of paramount importance for safety,\npersonalization, and overall user experience. However, the scarcity of\ncomprehensive large-scale, real-world datasets poses a significant challenge\nfor training robust multi-task models. Existing literature often overlooks the\npotential of synthetic datasets and the comparative efficacy of\nstate-of-the-art vision foundation models in such constrained settings. This\npaper addresses these gaps by investigating the utility of synthetic datasets\nfor training complex multi-task models that recognize facial attributes of\npassengers of a vehicle, such as gaze plane, age, and facial expression.\nUtilizing transfer learning techniques with both pre-trained Vision Transformer\n(ViT) and Residual Network (ResNet) models, we explore various training and\nadaptation methods to optimize performance, particularly when data availability\nis limited. We provide extensive post-evaluation analysis, investigating the\neffects of synthetic data distributions on model performance in in-distribution\ndata and out-of-distribution inference. Our study unveils counter-intuitive\nfindings, notably the superior performance of ResNet over ViTs in our specific\nmulti-task context, which is attributed to the mismatch in model complexity\nrelative to task complexity. Our results highlight the challenges and\nopportunities for enhancing the use of synthetic data and vision foundation\nmodels in practical applications.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

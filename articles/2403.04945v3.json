@@ -1,0 +1,33 @@
+{
+  "id": "2403.04945v3",
+  "title": "MEIT: Multi-Modal Electrocardiogram Instruction Tuning on Large Language\n  Models for Report Generation",
+  "url": "http://arxiv.org/abs/2403.04945v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.04945v3",
+  "authors": [
+    "Zhongwei Wan",
+    "Che Liu",
+    "Xin Wang",
+    "Chaofan Tao",
+    "Hui Shen",
+    "Zhenwu Peng",
+    "Jie Fu",
+    "Rossella Arcucci",
+    "Huaxiu Yao",
+    "Mi Zhang"
+  ],
+  "date": "2024-03-07",
+  "summary": "Electrocardiogram (ECG) is the primary non-invasive diagnostic tool for\nmonitoring cardiac conditions and is crucial in assisting clinicians. Recent\nstudies have concentrated on classifying cardiac conditions using ECG data but\nhave overlooked ECG report generation, which is time-consuming and requires\nclinical expertise. To automate ECG report generation and ensure its\nversatility, we propose the Multimodal ECG Instruction Tuning (MEIT) framework,\nthe first attempt to tackle ECG report generation with LLMs and multimodal\ninstructions. To facilitate future research, we establish a benchmark to\nevaluate MEIT with various LLMs backbones across two large-scale ECG datasets.\nOur approach uniquely aligns the representations of the ECG signal and the\nreport, and we conduct extensive experiments to benchmark MEIT with nine\nopen-source LLMs using more than 800,000 ECG reports. MEIT's results underscore\nthe superior performance of instruction-tuned LLMs, showcasing their\nproficiency in quality report generation, zero-shot capabilities, and\nresilience to signal perturbation. These findings emphasize the efficacy of our\nMEIT framework and its potential for real-world clinical application.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

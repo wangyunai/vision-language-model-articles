@@ -1,0 +1,25 @@
+{
+  "id": "2403.06338v1",
+  "title": "Disentangling shared and private latent factors in multimodal\n  Variational Autoencoders",
+  "url": "http://arxiv.org/abs/2403.06338v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06338v1",
+  "authors": [
+    "Kaspar M\u00e4rtens",
+    "Christopher Yau"
+  ],
+  "date": "2024-03-10",
+  "summary": "Generative models for multimodal data permit the identification of latent\nfactors that may be associated with important determinants of observed data\nheterogeneity. Common or shared factors could be important for explaining\nvariation across modalities whereas other factors may be private and important\nonly for the explanation of a single modality. Multimodal Variational\nAutoencoders, such as MVAE and MMVAE, are a natural choice for inferring those\nunderlying latent factors and separating shared variation from private. In this\nwork, we investigate their capability to reliably perform this disentanglement.\nIn particular, we highlight a challenging problem setting where\nmodality-specific variation dominates the shared signal. Taking a cross-modal\nprediction perspective, we demonstrate limitations of existing models, and\npropose a modification how to make them more robust to modality-specific\nvariation. Our findings are supported by experiments on synthetic as well as\nvarious real-world multi-omics data sets.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

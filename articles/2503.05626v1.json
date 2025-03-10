@@ -1,0 +1,25 @@
+{
+  "id": "2503.05626v1",
+  "title": "FMT:A Multimodal Pneumonia Detection Model Based on Stacking MOE\n  Framework",
+  "url": "http://arxiv.org/abs/2503.05626v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05626v1",
+  "authors": [
+    "Jingyu Xu",
+    "Yang Wang"
+  ],
+  "date": "2025-03-07",
+  "summary": "Artificial intelligence has shown the potential to improve diagnostic\naccuracy through medical image analysis for pneumonia diagnosis. However,\ntraditional multimodal approaches often fail to address real-world challenges\nsuch as incomplete data and modality loss. In this study, a Flexible Multimodal\nTransformer (FMT) was proposed, which uses ResNet-50 and BERT for joint\nrepresentation learning, followed by a dynamic masked attention strategy that\nsimulates clinical modality loss to improve robustness; finally, a sequential\nmixture of experts (MOE) architecture was used to achieve multi-level decision\nrefinement. After evaluation on a small multimodal pneumonia dataset, FMT\nachieved state-of-the-art performance with 94% accuracy, 95% recall, and 93% F1\nscore, outperforming single-modal baselines (ResNet: 89%; BERT: 79%) and the\nmedical benchmark CheXMed (90%), providing a scalable solution for multimodal\ndiagnosis of pneumonia in resource-constrained medical settings.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.34,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

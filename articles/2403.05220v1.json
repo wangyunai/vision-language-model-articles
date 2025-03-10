@@ -1,0 +1,28 @@
+{
+  "id": "2403.05220v1",
+  "title": "Synthetic Privileged Information Enhances Medical Image Representation\n  Learning",
+  "url": "http://arxiv.org/abs/2403.05220v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05220v1",
+  "authors": [
+    "Lucas Farndale",
+    "Chris Walsh",
+    "Robert Insall",
+    "Ke Yuan"
+  ],
+  "date": "2024-03-08",
+  "summary": "Multimodal self-supervised representation learning has consistently proven to\nbe a highly effective method in medical image analysis, offering strong task\nperformance and producing biologically informed insights. However, these\nmethods heavily rely on large, paired datasets, which is prohibitive for their\nuse in scenarios where paired data does not exist, or there is only a small\namount available. In contrast, image generation methods can work well on very\nsmall datasets, and can find mappings between unpaired datasets, meaning an\neffectively unlimited amount of paired synthetic data can be generated. In this\nwork, we demonstrate that representation learning can be significantly improved\nby synthetically generating paired information, both compared to training on\neither single-modality (up to 4.4x error reduction) or authentic multi-modal\npaired datasets (up to 5.6x error reduction).",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "2403.05239v1",
+  "title": "Towards Effective Usage of Human-Centric Priors in Diffusion Models for\n  Text-based Human Image Generation",
+  "url": "http://arxiv.org/abs/2403.05239v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05239v1",
+  "authors": [
+    "Junyan Wang",
+    "Zhenhong Sun",
+    "Zhiyu Tan",
+    "Xuanbai Chen",
+    "Weihua Chen",
+    "Hao Li",
+    "Cheng Zhang",
+    "Yang Song"
+  ],
+  "date": "2024-03-08",
+  "summary": "Vanilla text-to-image diffusion models struggle with generating accurate\nhuman images, commonly resulting in imperfect anatomies such as unnatural\npostures or disproportionate limbs.Existing methods address this issue mostly\nby fine-tuning the model with extra images or adding additional controls --\nhuman-centric priors such as pose or depth maps -- during the image generation\nphase. This paper explores the integration of these human-centric priors\ndirectly into the model fine-tuning stage, essentially eliminating the need for\nextra conditions at the inference stage. We realize this idea by proposing a\nhuman-centric alignment loss to strengthen human-related information from the\ntextual prompts within the cross-attention maps. To ensure semantic detail\nrichness and human structural accuracy during fine-tuning, we introduce\nscale-aware and step-wise constraints within the diffusion process, according\nto an in-depth analysis of the cross-attention layer. Extensive experiments\nshow that our method largely improves over state-of-the-art text-to-image\nmodels to synthesize high-quality human images based on user-written prompts.\nProject page: \\url{https://hcplayercvpr2024.github.io}.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

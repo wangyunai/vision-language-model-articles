@@ -1,0 +1,31 @@
+{
+  "id": "2503.04639v1",
+  "title": "Enhancing SAM with Efficient Prompting and Preference Optimization for\n  Semi-supervised Medical Image Segmentation",
+  "url": "http://arxiv.org/abs/2503.04639v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04639v1",
+  "authors": [
+    "Aishik Konwer",
+    "Zhijian Yang",
+    "Erhan Bas",
+    "Cao Xiao",
+    "Prateek Prasanna",
+    "Parminder Bhatia",
+    "Taha Kass-Hout"
+  ],
+  "date": "2025-03-06",
+  "summary": "Foundational models such as the Segment Anything Model (SAM) are gaining\ntraction in medical imaging segmentation, supporting multiple downstream tasks.\nHowever, such models are supervised in nature, still relying on large annotated\ndatasets or prompts supplied by experts. Conventional techniques such as active\nlearning to alleviate such limitations are limited in scope and still\nnecessitate continuous human involvement and complex domain knowledge for label\nrefinement or establishing reward ground truth. To address these challenges, we\npropose an enhanced Segment Anything Model (SAM) framework that utilizes\nannotation-efficient prompts generated in a fully unsupervised fashion, while\nstill capturing essential semantic, location, and shape information through\ncontrastive language-image pretraining and visual question answering. We adopt\nthe direct preference optimization technique to design an optimal policy that\nenables the model to generate high-fidelity segmentations with simple ratings\nor rankings provided by a virtual annotator simulating the human annotation\nprocess. State-of-the-art performance of our framework in tasks such as lung\nsegmentation, breast tumor segmentation, and organ segmentation across various\nmodalities, including X-ray, ultrasound, and abdominal CT, justifies its\neffectiveness in low-annotation data scenarios.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "visual question answering",
+    "Segment Anything"
+  ],
+  "attention_score": 2.71,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

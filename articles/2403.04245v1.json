@@ -1,0 +1,31 @@
+{
+  "id": "2403.04245v1",
+  "title": "A Study of Dropout-Induced Modality Bias on Robustness to Missing Video\n  Frames for Audio-Visual Speech Recognition",
+  "url": "http://arxiv.org/abs/2403.04245v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04245v1",
+  "authors": [
+    "Yusheng Dai",
+    "Hang Chen",
+    "Jun Du",
+    "Ruoyu Wang",
+    "Shihao Chen",
+    "Jiefeng Ma",
+    "Haotian Wang",
+    "Chin-Hui Lee"
+  ],
+  "date": "2024-03-07",
+  "summary": "Advanced Audio-Visual Speech Recognition (AVSR) systems have been observed to\nbe sensitive to missing video frames, performing even worse than\nsingle-modality models. While applying the dropout technique to the video\nmodality enhances robustness to missing frames, it simultaneously results in a\nperformance loss when dealing with complete data input. In this paper, we\ninvestigate this contrasting phenomenon from the perspective of modality bias\nand reveal that an excessive modality bias on the audio caused by dropout is\nthe underlying reason. Moreover, we present the Modality Bias Hypothesis (MBH)\nto systematically describe the relationship between modality bias and\nrobustness against missing modality in multimodal systems. Building on these\nfindings, we propose a novel Multimodal Distribution Approximation with\nKnowledge Distillation (MDA-KD) framework to reduce over-reliance on the audio\nmodality and to maintain performance and robustness simultaneously. Finally, to\naddress an entirely missing modality, we adopt adapters to dynamically switch\ndecision strategies. The effectiveness of our proposed approach is evaluated\nand validated through a series of comprehensive experiments using the MISP2021\nand MISP2022 datasets. Our code is available at\nhttps://github.com/dalision/ModalBiasAVSR",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

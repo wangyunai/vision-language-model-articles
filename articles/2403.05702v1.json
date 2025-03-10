@@ -1,0 +1,26 @@
+{
+  "id": "2403.05702v1",
+  "title": "Spatial-aware Transformer-GRU Framework for Enhanced Glaucoma Diagnosis\n  from 3D OCT Imaging",
+  "url": "http://arxiv.org/abs/2403.05702v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05702v1",
+  "authors": [
+    "Mona Ashtari-Majlan",
+    "Mohammad Mahdi Dehshibi",
+    "David Masip"
+  ],
+  "date": "2024-03-08",
+  "summary": "Glaucoma, a leading cause of irreversible blindness, necessitates early\ndetection for accurate and timely intervention to prevent irreversible vision\nloss. In this study, we present a novel deep learning framework that leverages\nthe diagnostic value of 3D Optical Coherence Tomography (OCT) imaging for\nautomated glaucoma detection. In this framework, we integrate a pre-trained\nVision Transformer on retinal data for rich slice-wise feature extraction and a\nbidirectional Gated Recurrent Unit for capturing inter-slice spatial\ndependencies. This dual-component approach enables comprehensive analysis of\nlocal nuances and global structural integrity, crucial for accurate glaucoma\ndiagnosis. Experimental results on a large dataset demonstrate the superior\nperformance of the proposed method over state-of-the-art ones, achieving an\nF1-score of 93.58%, Matthews Correlation Coefficient (MCC) of 73.54%, and AUC\nof 95.24%. The framework's ability to leverage the valuable information in 3D\nOCT data holds significant potential for enhancing clinical decision support\nsystems and improving patient outcomes in glaucoma management.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

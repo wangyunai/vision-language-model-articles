@@ -1,0 +1,40 @@
+{
+  "id": "2503.04130v1",
+  "title": "Token-Efficient Long Video Understanding for Multimodal LLMs",
+  "url": "http://arxiv.org/abs/2503.04130v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04130v1",
+  "authors": [
+    "Jindong Jiang",
+    "Xiuyu Li",
+    "Zhijian Liu",
+    "Muyang Li",
+    "Guo Chen",
+    "Zhiqi Li",
+    "De-An Huang",
+    "Guilin Liu",
+    "Zhiding Yu",
+    "Kurt Keutzer",
+    "Sungjin Ahn",
+    "Jan Kautz",
+    "Hongxu Yin",
+    "Yao Lu",
+    "Song Han",
+    "Wonmin Byeon"
+  ],
+  "date": "2025-03-06",
+  "summary": "Recent advances in video-based multimodal large language models (Video-LLMs)\nhave significantly improved video understanding by processing videos as\nsequences of image frames. However, many existing methods treat frames\nindependently in the vision backbone, lacking explicit temporal modeling, which\nlimits their ability to capture dynamic patterns and efficiently handle long\nvideos. To address these limitations, we introduce STORM\n(\\textbf{S}patiotemporal \\textbf{TO}ken \\textbf{R}eduction for\n\\textbf{M}ultimodal LLMs), a novel architecture incorporating a dedicated\ntemporal encoder between the image encoder and the LLM. Our temporal encoder\nleverages the Mamba State Space Model to integrate temporal information into\nimage tokens, generating enriched representations that preserve inter-frame\ndynamics across the entire video sequence. This enriched encoding not only\nenhances video reasoning capabilities but also enables effective token\nreduction strategies, including test-time sampling and training-based temporal\nand spatial pooling, substantially reducing computational demands on the LLM\nwithout sacrificing key temporal information. By integrating these techniques,\nour approach simultaneously reduces training and inference latency while\nimproving performance, enabling efficient and robust video understanding over\nextended temporal contexts. Extensive evaluations show that STORM achieves\nstate-of-the-art results across various long video understanding benchmarks\n(more than 5\\% improvement on MLVU and LongVideoBench) while reducing the\ncomputation costs by up to $8\\times$ and the decoding latency by\n2.4-2.9$\\times$ for the fixed numbers of input frames. Project page is\navailable at https://research.nvidia.com/labs/lpr/storm",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "multimodal LLM"
+  ],
+  "attention_score": 2.71,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

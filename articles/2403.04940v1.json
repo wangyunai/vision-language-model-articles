@@ -1,0 +1,25 @@
+{
+  "id": "2403.04940v1",
+  "title": "A spatiotemporal style transfer algorithm for dynamic visual stimulus\n  generation",
+  "url": "http://arxiv.org/abs/2403.04940v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04940v1",
+  "authors": [
+    "Antonino Greco",
+    "Markus Siegel"
+  ],
+  "date": "2024-03-07",
+  "summary": "Understanding how visual information is encoded in biological and artificial\nsystems often requires vision scientists to generate appropriate stimuli to\ntest specific hypotheses. Although deep neural network models have\nrevolutionized the field of image generation with methods such as image style\ntransfer, available methods for video generation are scarce. Here, we introduce\nthe Spatiotemporal Style Transfer (STST) algorithm, a dynamic visual stimulus\ngeneration framework that allows powerful manipulation and synthesis of video\nstimuli for vision research. It is based on a two-stream deep neural network\nmodel that factorizes spatial and temporal features to generate dynamic visual\nstimuli whose model layer activations are matched to those of input videos. As\nan example, we show that our algorithm enables the generation of model\nmetamers, dynamic stimuli whose layer activations within our two-stream model\nare matched to those of natural videos. We show that these generated stimuli\nmatch the low-level spatiotemporal features of their natural counterparts but\nlack their high-level semantic features, making it a powerful paradigm to study\nobject recognition. Late layer activations in deep vision models exhibited a\nlower similarity between natural and metameric stimuli compared to early\nlayers, confirming the lack of high-level information in the generated stimuli.\nFinally, we use our generated stimuli to probe the representational\ncapabilities of predictive coding deep networks. These results showcase\npotential applications of our algorithm as a versatile tool for dynamic\nstimulus generation in vision science.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

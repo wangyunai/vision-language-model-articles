@@ -1,0 +1,34 @@
+{
+  "id": "2403.05680v2",
+  "title": "How Well Do Multi-modal LLMs Interpret CT Scans? An Auto-Evaluation\n  Framework for Analyses",
+  "url": "http://arxiv.org/abs/2403.05680v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05680v2",
+  "authors": [
+    "Qingqing Zhu",
+    "Benjamin Hou",
+    "Tejas S. Mathai",
+    "Pritam Mukherjee",
+    "Qiao Jin",
+    "Xiuying Chen",
+    "Zhizheng Wang",
+    "Ruida Cheng",
+    "Ronald M. Summers",
+    "Zhiyong Lu"
+  ],
+  "date": "2024-03-08",
+  "summary": "Automatically interpreting CT scans can ease the workload of radiologists.\nHowever, this is challenging mainly due to the scarcity of adequate datasets\nand reference standards for evaluation. This study aims to bridge this gap by\nintroducing a novel evaluation framework, named ``GPTRadScore''. This framework\nassesses the capabilities of multi-modal LLMs, such as GPT-4 with Vision\n(GPT-4V), Gemini Pro Vision, LLaVA-Med, and RadFM, in generating descriptions\nfor prospectively-identified findings. By employing a decomposition technique\nbased on GPT-4, GPTRadScore compares these generated descriptions with\ngold-standard report sentences, analyzing their accuracy in terms of body part,\nlocation, and type of finding. Evaluations demonstrated a high correlation with\nclinician assessments and highlighted its potential over traditional metrics,\nsuch as BLEU, METEOR, and ROUGE. Furthermore, to contribute to future studies,\nwe plan to release a benchmark dataset annotated by clinicians. Using\nGPTRadScore, we found that while GPT-4V and Gemini Pro Vision fare better,\ntheir performance revealed significant areas for improvement, primarily due to\nlimitations in the dataset used for training these models. To demonstrate this\npotential, RadFM was fine-tuned and it resulted in significant accuracy\nimprovements: location accuracy rose from 3.41\\% to 12.8\\%, body part accuracy\nfrom 29.12\\% to 53\\%, and type accuracy from 9.24\\% to 30\\%, thereby validating\nour hypothesis.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "GPT-4V",
+    "Gemini Pro Vision"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

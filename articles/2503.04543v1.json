@@ -1,0 +1,43 @@
+{
+  "id": "2503.04543v1",
+  "title": "Keeping Yourself is Important in Downstream Tuning Multimodal Large\n  Language Model",
+  "url": "http://arxiv.org/abs/2503.04543v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04543v1",
+  "authors": [
+    "Wenke Huang",
+    "Jian Liang",
+    "Xianda Guo",
+    "Yiyang Fang",
+    "Guancheng Wan",
+    "Xuankun Rong",
+    "Chi Wen",
+    "Zekun Shi",
+    "Qingyun Li",
+    "Didi Zhu",
+    "Yanbiao Ma",
+    "Ke Liang",
+    "Bin Yang",
+    "He Li",
+    "Jiawei Shao",
+    "Mang Ye",
+    "Bo Du"
+  ],
+  "date": "2025-03-06",
+  "summary": "Multi-modal Large Language Models (MLLMs) integrate visual and linguistic\nreasoning to address complex tasks such as image captioning and visual question\nanswering. While MLLMs demonstrate remarkable versatility, MLLMs appears\nlimited performance on special applications. But tuning MLLMs for downstream\ntasks encounters two key challenges: Task-Expert Specialization, where\ndistribution shifts between pre-training and target datasets constrain target\nperformance, and Open-World Stabilization, where catastrophic forgetting erases\nthe model general knowledge. In this work, we systematically review recent\nadvancements in MLLM tuning methodologies, classifying them into three\nparadigms: (I) Selective Tuning, (II) Additive Tuning, and (III)\nReparameterization Tuning. Furthermore, we benchmark these tuning strategies\nacross popular MLLM architectures and diverse downstream tasks to establish\nstandardized evaluation analysis and systematic tuning principles. Finally, we\nhighlight several open challenges in this domain and propose future research\ndirections. To facilitate ongoing progress in this rapidly evolving field, we\nprovide a public repository that continuously tracks developments:\nhttps://github.com/WenkeHuang/Awesome-MLLM-Tuning.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "image captioning",
+    "MLLM",
+    "MLLMs"
+  ],
+  "attention_score": 3.48,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

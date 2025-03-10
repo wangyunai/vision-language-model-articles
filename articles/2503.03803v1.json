@@ -1,0 +1,46 @@
+{
+  "id": "2503.03803v1",
+  "title": "EgoLife: Towards Egocentric Life Assistant",
+  "url": "http://arxiv.org/abs/2503.03803v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03803v1",
+  "authors": [
+    "Jingkang Yang",
+    "Shuai Liu",
+    "Hongming Guo",
+    "Yuhao Dong",
+    "Xiamengwei Zhang",
+    "Sicheng Zhang",
+    "Pengyun Wang",
+    "Zitang Zhou",
+    "Binzhu Xie",
+    "Ziyue Wang",
+    "Bei Ouyang",
+    "Zhengyu Lin",
+    "Marco Cominelli",
+    "Zhongang Cai",
+    "Yuanhan Zhang",
+    "Peiyuan Zhang",
+    "Fangzhou Hong",
+    "Joerg Widmer",
+    "Francesco Gringoli",
+    "Lei Yang",
+    "Bo Li",
+    "Ziwei Liu"
+  ],
+  "date": "2025-03-05",
+  "summary": "We introduce EgoLife, a project to develop an egocentric life assistant that\naccompanies and enhances personal efficiency through AI-powered wearable\nglasses. To lay the foundation for this assistant, we conducted a comprehensive\ndata collection study where six participants lived together for one week,\ncontinuously recording their daily activities - including discussions,\nshopping, cooking, socializing, and entertainment - using AI glasses for\nmultimodal egocentric video capture, along with synchronized third-person-view\nvideo references. This effort resulted in the EgoLife Dataset, a comprehensive\n300-hour egocentric, interpersonal, multiview, and multimodal daily life\ndataset with intensive annotation. Leveraging this dataset, we introduce\nEgoLifeQA, a suite of long-context, life-oriented question-answering tasks\ndesigned to provide meaningful assistance in daily life by addressing practical\nquestions such as recalling past relevant events, monitoring health habits, and\noffering personalized recommendations. To address the key technical challenges\nof (1) developing robust visual-audio models for egocentric data, (2) enabling\nidentity recognition, and (3) facilitating long-context question answering over\nextensive temporal information, we introduce EgoButler, an integrated system\ncomprising EgoGPT and EgoRAG. EgoGPT is an omni-modal model trained on\negocentric datasets, achieving state-of-the-art performance on egocentric video\nunderstanding. EgoRAG is a retrieval-based component that supports answering\nultra-long-context questions. Our experimental studies verify their working\nmechanisms and reveal critical factors and bottlenecks, guiding future\nimprovements. By releasing our datasets, models, and benchmarks, we aim to\nstimulate further research in egocentric AI assistants.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "ViT"
+  ],
+  "attention_score": 2.68,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.9863013698630136,
+    "source_weight": 1.0,
+    "age_months": 0.2,
+    "citation_velocity": 0
+  }
+}

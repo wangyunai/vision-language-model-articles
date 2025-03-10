@@ -1,0 +1,29 @@
+{
+  "id": "2503.04034v1",
+  "title": "GaussianGraph: 3D Gaussian-based Scene Graph Generation for Open-world\n  Scene Understanding",
+  "url": "http://arxiv.org/abs/2503.04034v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04034v1",
+  "authors": [
+    "Xihan Wang",
+    "Dianyi Yang",
+    "Yu Gao",
+    "Yufeng Yue",
+    "Yi Yang",
+    "Mengyin Fu"
+  ],
+  "date": "2025-03-06",
+  "summary": "Recent advancements in 3D Gaussian Splatting(3DGS) have significantly\nimproved semantic scene understanding, enabling natural language queries to\nlocalize objects within a scene. However, existing methods primarily focus on\nembedding compressed CLIP features to 3D Gaussians, suffering from low object\nsegmentation accuracy and lack spatial reasoning capabilities. To address these\nlimitations, we propose GaussianGraph, a novel framework that enhances\n3DGS-based scene understanding by integrating adaptive semantic clustering and\nscene graph generation. We introduce a \"Control-Follow\" clustering strategy,\nwhich dynamically adapts to scene scale and feature distribution, avoiding\nfeature compression and significantly improving segmentation accuracy.\nAdditionally, we enrich scene representation by integrating object attributes\nand spatial relations extracted from 2D foundation models. To address\ninaccuracies in spatial relationships, we propose 3D correction modules that\nfilter implausible relations through spatial consistency verification, ensuring\nreliable scene graph construction. Extensive experiments on three datasets\ndemonstrate that GaussianGraph outperforms state-of-the-art methods in both\nsemantic segmentation and object grounding tasks, providing a robust solution\nfor complex scene understanding and interaction.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

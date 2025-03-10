@@ -1,0 +1,28 @@
+{
+  "id": "2403.06027v1",
+  "title": "Multimodal deep learning approach to predicting neurological recovery\n  from coma after cardiac arrest",
+  "url": "http://arxiv.org/abs/2403.06027v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06027v1",
+  "authors": [
+    "Felix H. Krones",
+    "Ben Walker",
+    "Guy Parsons",
+    "Terry Lyons",
+    "Adam Mahdi"
+  ],
+  "date": "2024-03-09",
+  "summary": "This work showcases our team's (The BEEGees) contributions to the 2023 George\nB. Moody PhysioNet Challenge. The aim was to predict neurological recovery from\ncoma following cardiac arrest using clinical data and time-series such as\nmulti-channel EEG and ECG signals. Our modelling approach is multimodal, based\non two-dimensional spectrogram representations derived from numerous EEG\nchannels, alongside the integration of clinical data and features extracted\ndirectly from EEG recordings. Our submitted model achieved a Challenge score of\n$0.53$ on the hidden test set for predictions made $72$ hours after return of\nspontaneous circulation. Our study shows the efficacy and limitations of\nemploying transfer learning in medical classification. With regard to\nprospective implementation, our analysis reveals that the performance of the\nmodel is strongly linked to the selection of a decision threshold and exhibits\nstrong variability across data splits.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

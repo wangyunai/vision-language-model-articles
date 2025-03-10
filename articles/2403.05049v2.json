@@ -1,0 +1,32 @@
+{
+  "id": "2403.05049v2",
+  "title": "XPSR: Cross-modal Priors for Diffusion-based Image Super-Resolution",
+  "url": "http://arxiv.org/abs/2403.05049v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05049v2",
+  "authors": [
+    "Yunpeng Qu",
+    "Kun Yuan",
+    "Kai Zhao",
+    "Qizhi Xie",
+    "Jinhua Hao",
+    "Ming Sun",
+    "Chao Zhou"
+  ],
+  "date": "2024-03-08",
+  "summary": "Diffusion-based methods, endowed with a formidable generative prior, have\nreceived increasing attention in Image Super-Resolution (ISR) recently.\nHowever, as low-resolution (LR) images often undergo severe degradation, it is\nchallenging for ISR models to perceive the semantic and degradation\ninformation, resulting in restoration images with incorrect content or\nunrealistic artifacts. To address these issues, we propose a\n\\textit{Cross-modal Priors for Super-Resolution (XPSR)} framework. Within XPSR,\nto acquire precise and comprehensive semantic conditions for the diffusion\nmodel, cutting-edge Multimodal Large Language Models (MLLMs) are utilized. To\nfacilitate better fusion of cross-modal priors, a \\textit{Semantic-Fusion\nAttention} is raised. To distill semantic-preserved information instead of\nundesired degradations, a \\textit{Degradation-Free Constraint} is attached\nbetween LR and its high-resolution (HR) counterpart. Quantitative and\nqualitative results show that XPSR is capable of generating high-fidelity and\nhigh-realism images across synthetic and real-world datasets. Codes are\nreleased at \\url{https://github.com/qyp2000/XPSR}.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "MLLM",
+    "MLLMs"
+  ],
+  "attention_score": 0.16,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

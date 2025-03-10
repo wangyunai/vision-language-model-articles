@@ -1,0 +1,32 @@
+{
+  "id": "2403.05381v1",
+  "title": "Exploring Robust Features for Few-Shot Object Detection in Satellite\n  Imagery",
+  "url": "http://arxiv.org/abs/2403.05381v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05381v1",
+  "authors": [
+    "Xavier Bou",
+    "Gabriele Facciolo",
+    "Rafael Grompone von Gioi",
+    "Jean-Michel Morel",
+    "Thibaud Ehret"
+  ],
+  "date": "2024-03-08",
+  "summary": "The goal of this paper is to perform object detection in satellite imagery\nwith only a few examples, thus enabling users to specify any object class with\nminimal annotation. To this end, we explore recent methods and ideas from\nopen-vocabulary detection for the remote sensing domain. We develop a few-shot\nobject detector based on a traditional two-stage architecture, where the\nclassification block is replaced by a prototype-based classifier. A large-scale\npre-trained model is used to build class-reference embeddings or prototypes,\nwhich are compared to region proposal contents for label prediction. In\naddition, we propose to fine-tune prototypes on available training images to\nboost performance and learn differences between similar classes, such as\naircraft types. We perform extensive evaluations on two remote sensing datasets\ncontaining challenging and rare objects. Moreover, we study the performance of\nboth visual and image-text features, namely DINOv2 and CLIP, including two CLIP\nmodels specifically tailored for remote sensing applications. Results indicate\nthat visual features are largely superior to vision-language models, as the\nlatter lack the necessary domain-specific vocabulary. Lastly, the developed\ndetector outperforms fully supervised and few-shot methods evaluated on the\nSIMD and DIOR datasets, despite minimal training parameters.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language",
+    "image-text",
+    "CLIP",
+    "DINO",
+    "DINOv2"
+  ],
+  "attention_score": 0.2,
+  "attention_components": {
+    "base_score": 2.0,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

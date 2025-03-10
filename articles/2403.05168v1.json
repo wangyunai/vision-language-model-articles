@@ -1,0 +1,32 @@
+{
+  "id": "2403.05168v1",
+  "title": "Unlocking the Potential of Multimodal Unified Discrete Representation\n  through Training-Free Codebook Optimization and Hierarchical Alignment",
+  "url": "http://arxiv.org/abs/2403.05168v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05168v1",
+  "authors": [
+    "Hai Huang",
+    "Yan Xia",
+    "Shengpeng Ji",
+    "Shulei Wang",
+    "Hanting Wang",
+    "Jieming Zhu",
+    "Zhenhua Dong",
+    "Zhou Zhao"
+  ],
+  "date": "2024-03-08",
+  "summary": "Recent advances in representation learning have demonstrated the significance\nof multimodal alignment. The Dual Cross-modal Information Disentanglement\n(DCID) model, utilizing a unified codebook, shows promising results in\nachieving fine-grained representation and cross-modal generalization. However,\nit is still hindered by equal treatment of all channels and neglect of minor\nevent information, resulting in interference from irrelevant channels and\nlimited performance in fine-grained tasks. Thus, in this work, We propose a\nTraining-free Optimization of Codebook (TOC) method to enhance model\nperformance by selecting important channels in the unified space without\nretraining. Additionally, we introduce the Hierarchical Dual Cross-modal\nInformation Disentanglement (H-DCID) approach to extend information separation\nand alignment to two levels, capturing more cross-modal details. The experiment\nresults demonstrate significant improvements across various downstream tasks,\nwith TOC contributing to an average improvement of 1.70% for DCID on four\ntasks, and H-DCID surpassing DCID by an average of 3.64%. The combination of\nTOC and H-DCID further enhances performance, exceeding DCID by 4.43%. These\nfindings highlight the effectiveness of our methods in facilitating robust and\nnuanced cross-modal learning, opening avenues for future enhancements. The\nsource code and pre-trained models can be accessed at\nhttps://github.com/haihuangcode/TOC_H-DCID.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "multimodal alignment"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

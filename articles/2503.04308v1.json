@@ -1,0 +1,29 @@
+{
+  "id": "2503.04308v1",
+  "title": "Shaken, Not Stirred: A Novel Dataset for Visual Understanding of Glasses\n  in Human-Robot Bartending Tasks",
+  "url": "http://arxiv.org/abs/2503.04308v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04308v1",
+  "authors": [
+    "Luk\u00e1\u0161 Gajdo\u0161ech",
+    "Hassan Ali",
+    "Jan-Gerrit Habekost",
+    "Martin Madaras",
+    "Matthias Kerzel",
+    "Stefan Wermter"
+  ],
+  "date": "2025-03-06",
+  "summary": "Datasets for object detection often do not account for enough variety of\nglasses, due to their transparent and reflective properties. Specifically,\nopen-vocabulary object detectors, widely used in embodied robotic agents, fail\nto distinguish subclasses of glasses. This scientific gap poses an issue to\nrobotic applications that suffer from accumulating errors between detection,\nplanning, and action execution. The paper introduces a novel method for the\nacquisition of real-world data from RGB-D sensors that minimizes human effort.\nWe propose an auto-labeling pipeline that generates labels for all the acquired\nframes based on the depth measurements. We provide a novel real-world glass\nobject dataset that was collected on the Neuro-Inspired COLlaborator (NICOL), a\nhumanoid robot platform. The data set consists of 7850 images recorded from\nfive different cameras. We show that our trained baseline model outperforms\nstate-of-the-art open-vocabulary approaches. In addition, we deploy our\nbaseline model in an embodied agent approach to the NICOL platform, on which it\nachieves a success rate of 81% in a human-robot bartending scenario.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "visual understanding"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

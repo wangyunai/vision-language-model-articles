@@ -1,0 +1,33 @@
+{
+  "id": "2403.06136v1",
+  "title": "RESTORE: Towards Feature Shift for Vision-Language Prompt Learning",
+  "url": "http://arxiv.org/abs/2403.06136v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06136v1",
+  "authors": [
+    "Yuncheng Yang",
+    "Chuyan Zhang",
+    "Zuopeng Yang",
+    "Yuting Gao",
+    "Yulei Qin",
+    "Ke Li",
+    "Xing Sun",
+    "Jie Yang",
+    "Yun Gu"
+  ],
+  "date": "2024-03-10",
+  "summary": "Prompt learning is effective for fine-tuning foundation models to improve\ntheir generalization across a variety of downstream tasks. However, the prompts\nthat are independently optimized along a single modality path, may sacrifice\nthe vision-language alignment of pre-trained models in return for improved\nperformance on specific tasks and classes, leading to poorer generalization. In\nthis paper, we first demonstrate that prompt tuning along only one single\nbranch of CLIP (e.g., language or vision) is the reason why the misalignment\noccurs. Without proper regularization across the learnable parameters in\ndifferent modalities, prompt learning violates the original pre-training\nconstraints inherent in the two-tower architecture. To address such\nmisalignment, we first propose feature shift, which is defined as the variation\nof embeddings after introducing the learned prompts, to serve as an explanatory\ntool. We dive into its relation with generalizability and thereafter propose\nRESTORE, a multi-modal prompt learning method that exerts explicit constraints\non cross-modal consistency. To be more specific, to prevent feature\nmisalignment, a feature shift consistency is introduced to synchronize\ninter-modal feature shifts by measuring and regularizing the magnitude of\ndiscrepancy during prompt tuning. In addition, we propose a \"surgery\" block to\navoid short-cut hacking, where cross-modal misalignment can still be severe if\nthe feature shift of each modality varies drastically at the same rate. It is\nimplemented as feed-forward adapters upon both modalities to alleviate the\nmisalignment problem. Extensive experiments on 15 datasets demonstrate that our\nmethod outperforms the state-of-the-art prompt tuning methods without\ncompromising feature alignment.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language",
+    "CLIP"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

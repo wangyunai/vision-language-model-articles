@@ -1,0 +1,27 @@
+{
+  "id": "2403.04965v2",
+  "title": "StereoDiffusion: Training-Free Stereo Image Generation Using Latent\n  Diffusion Models",
+  "url": "http://arxiv.org/abs/2403.04965v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.04965v2",
+  "authors": [
+    "Lezhong Wang",
+    "Jeppe Revall Frisvad",
+    "Mark Bo Jensen",
+    "Siavash Arjomand Bigdeli"
+  ],
+  "date": "2024-03-08",
+  "summary": "The demand for stereo images increases as manufacturers launch more XR\ndevices. To meet this demand, we introduce StereoDiffusion, a method that,\nunlike traditional inpainting pipelines, is trainning free, remarkably\nstraightforward to use, and it seamlessly integrates into the original Stable\nDiffusion model. Our method modifies the latent variable to provide an\nend-to-end, lightweight capability for fast generation of stereo image pairs,\nwithout the need for fine-tuning model weights or any post-processing of\nimages. Using the original input to generate a left image and estimate a\ndisparity map for it, we generate the latent vector for the right image through\nStereo Pixel Shift operations, complemented by Symmetric Pixel Shift Masking\nDenoise and Self-Attention Layers Modification methods to align the right-side\nimage with the left-side image. Moreover, our proposed method maintains a high\nstandard of image quality throughout the stereo generation process, achieving\nstate-of-the-art scores in various quantitative evaluations.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

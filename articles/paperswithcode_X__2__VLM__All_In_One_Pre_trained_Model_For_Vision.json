@@ -10,5 +10,13 @@
     "VLM",
     "vision-language"
   ],
-  "code_url": null
+  "code_url": null,
+  "attention_score": 0.17,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.2,
+    "age_months": 11.9,
+    "citation_velocity": 0
+  }
 }

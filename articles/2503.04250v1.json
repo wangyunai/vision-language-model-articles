@@ -1,0 +1,42 @@
+{
+  "id": "2503.04250v1",
+  "title": "An Egocentric Vision-Language Model based Portable Real-time Smart\n  Assistant",
+  "url": "http://arxiv.org/abs/2503.04250v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04250v1",
+  "authors": [
+    "Yifei Huang",
+    "Jilan Xu",
+    "Baoqi Pei",
+    "Yuping He",
+    "Guo Chen",
+    "Mingfang Zhang",
+    "Lijin Yang",
+    "Zheng Nie",
+    "Jinyao Liu",
+    "Guoshun Fan",
+    "Dechen Lin",
+    "Fang Fang",
+    "Kunpeng Li",
+    "Chang Yuan",
+    "Xinyuan Chen",
+    "Yaohui Wang",
+    "Yali Wang",
+    "Yu Qiao",
+    "Limin Wang"
+  ],
+  "date": "2025-03-06",
+  "summary": "We present Vinci, a vision-language system designed to provide real-time,\ncomprehensive AI assistance on portable devices. At its core, Vinci leverages\nEgoVideo-VL, a novel model that integrates an egocentric vision foundation\nmodel with a large language model (LLM), enabling advanced functionalities such\nas scene understanding, temporal grounding, video summarization, and future\nplanning. To enhance its utility, Vinci incorporates a memory module for\nprocessing long video streams in real time while retaining contextual history,\na generation module for producing visual action demonstrations, and a retrieval\nmodule that bridges egocentric and third-person perspectives to provide\nrelevant how-to videos for skill acquisition. Unlike existing systems that\noften depend on specialized hardware, Vinci is hardware-agnostic, supporting\ndeployment across a wide range of devices, including smartphones and wearable\ncameras. In our experiments, we first demonstrate the superior performance of\nEgoVideo-VL on multiple public benchmarks, showcasing its vision-language\nreasoning and contextual understanding capabilities. We then conduct a series\nof user studies to evaluate the real-world effectiveness of Vinci, highlighting\nits adaptability and usability in diverse scenarios. We hope Vinci can\nestablish a new framework for portable, real-time egocentric AI systems,\nempowering users with contextual and actionable insights. Including the\nfrontend, backend, and models, all codes of Vinci are available at\nhttps://github.com/OpenGVLab/vinci.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

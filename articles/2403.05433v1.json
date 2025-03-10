@@ -1,0 +1,25 @@
+{
+  "id": "2403.05433v1",
+  "title": "Part-aware Personalized Segment Anything Model for Patient-Specific\n  Segmentation",
+  "url": "http://arxiv.org/abs/2403.05433v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05433v1",
+  "authors": [
+    "Chenhui Zhao",
+    "Liyue Shen"
+  ],
+  "date": "2024-03-08",
+  "summary": "Precision medicine, such as patient-adaptive treatments utilizing medical\nimages, poses new challenges for image segmentation algorithms due to (1) the\nlarge variability across different patients and (2) the limited availability of\nannotated data for each patient. In this work, we propose a data-efficient\nsegmentation method to address these challenges, namely Part-aware Personalized\nSegment Anything Model (P^2SAM). Without any model fine-tuning, P^2SAM enables\nseamless adaptation to any new patients relying only on one-shot\npatient-specific data. We introduce a novel part-aware prompt mechanism to\nselect multiple-point prompts based on part-level features of the one-shot\ndata. To further promote the robustness of the selected prompt, we propose a\nretrieval approach to handle outlier prompts. Extensive experiments demonstrate\nthat P^2SAM improves the performance by +8.0% and +2.0% mean Dice score within\ntwo patient-specific segmentation settings, and exhibits impressive generality\nacross different application domains, e.g., +6.4% mIoU on the PerSeg benchmark.\nCode will be released upon acceptance.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "Segment Anything"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

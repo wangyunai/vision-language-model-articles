@@ -1,0 +1,31 @@
+{
+  "id": "2503.05689v1",
+  "title": "GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories\n  Generation in End-to-End Autonomous Driving",
+  "url": "http://arxiv.org/abs/2503.05689v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05689v1",
+  "authors": [
+    "Zebin Xing",
+    "Xingyu Zhang",
+    "Yang Hu",
+    "Bo Jiang",
+    "Tong He",
+    "Qian Zhang",
+    "Xiaoxiao Long",
+    "Wei Yin"
+  ],
+  "date": "2025-03-07",
+  "summary": "We propose GoalFlow, an end-to-end autonomous driving method for generating\nhigh-quality multimodal trajectories. In autonomous driving scenarios, there is\nrarely a single suitable trajectory. Recent methods have increasingly focused\non modeling multimodal trajectory distributions. However, they suffer from\ntrajectory selection complexity and reduced trajectory quality due to high\ntrajectory divergence and inconsistencies between guidance and scene\ninformation. To address these issues, we introduce GoalFlow, a novel method\nthat effectively constrains the generative process to produce high-quality,\nmultimodal trajectories. To resolve the trajectory divergence problem inherent\nin diffusion-based methods, GoalFlow constrains the generated trajectories by\nintroducing a goal point. GoalFlow establishes a novel scoring mechanism that\nselects the most appropriate goal point from the candidate points based on\nscene information. Furthermore, GoalFlow employs an efficient generative\nmethod, Flow Matching, to generate multimodal trajectories, and incorporates a\nrefined scoring mechanism to select the optimal trajectory from the candidates.\nOur experimental results, validated on the Navsim\\cite{Dauner2024_navsim},\ndemonstrate that GoalFlow achieves state-of-the-art performance, delivering\nrobust multimodal trajectories for autonomous driving. GoalFlow achieved PDMS\nof 90.3, significantly surpassing other methods. Compared with other\ndiffusion-policy-based methods, our approach requires only a single denoising\nstep to obtain excellent performance. The code is available at\nhttps://github.com/YvanYin/GoalFlow.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.34,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

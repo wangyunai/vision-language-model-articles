@@ -1,0 +1,32 @@
+{
+  "id": "2503.04506v1",
+  "title": "Multi-modal Summarization in Model-Based Engineering: Automotive\n  Software Development Case Study",
+  "url": "http://arxiv.org/abs/2503.04506v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04506v1",
+  "authors": [
+    "Nenad Petrovic",
+    "Yurui Zhang",
+    "Moaad Maaroufi",
+    "Kuo-Yi Chao",
+    "Lukasz Mazur",
+    "Fengjunjie Pan",
+    "Vahid Zolfaghari",
+    "Alois Knoll"
+  ],
+  "date": "2025-03-06",
+  "summary": "Multimodal summarization integrating information from diverse data modalities\npresents a promising solution to aid the understanding of information within\nvarious processes. However, the application and advantages of multimodal\nsummarization have not received much attention in model-based engineering\n(MBE), where it has become a cornerstone in the design and development of\ncomplex systems, leveraging formal models to improve understanding, validation\nand automation throughout the engineering lifecycle. UML and EMF diagrams in\nmodel-based engineering contain a large amount of multimodal information and\nintricate relational data. Hence, our study explores the application of\nmultimodal large language models within the domain of model-based engineering\nto evaluate their capacity for understanding and identifying relationships,\nfeatures, and functionalities embedded in UML and EMF diagrams. We aim to\ndemonstrate the transformative potential benefits and limitations of multimodal\nsummarization in improving productivity and accuracy in MBE practices. The\nproposed approach is evaluated within the context of automotive software\ndevelopment, while many promising state-of-art models were taken into account.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "ViT"
+  ],
+  "attention_score": 2.71,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

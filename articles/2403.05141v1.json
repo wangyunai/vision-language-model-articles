@@ -1,0 +1,27 @@
+{
+  "id": "2403.05141v1",
+  "title": "Med3DInsight: Enhancing 3D Medical Image Understanding with 2D\n  Multi-Modal Large Language Models",
+  "url": "http://arxiv.org/abs/2403.05141v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05141v1",
+  "authors": [
+    "Qiuhui Chen",
+    "Huping Ye",
+    "Yi Hong"
+  ],
+  "date": "2024-03-08",
+  "summary": "Understanding 3D medical image volumes is a critical task in the medical\ndomain. However, existing 3D convolution and transformer-based methods have\nlimited semantic understanding of an image volume and also need a large set of\nvolumes for training. Recent advances in multi-modal large language models\n(MLLMs) provide a new and promising way to understand images with the help of\ntext descriptions. However, most current MLLMs are designed for 2D natural\nimages. To enhance the 3D medical image understanding with 2D MLLMs, we propose\na novel pre-training framework called Med3DInsight, which marries existing 3D\nimage encoders with 2D MLLMs and bridges them via a designed Plane-Slice-Aware\nTransformer (PSAT) module. Extensive experiments demonstrate our SOTA\nperformance on two downstream segmentation and classification tasks, including\nthree public datasets with CT and MRI modalities and comparison to more than\nten baselines. Med3DInsight can be easily integrated into any current 3D\nmedical image understanding network and improves its performance by a good\nmargin.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "MLLM",
+    "MLLMs"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

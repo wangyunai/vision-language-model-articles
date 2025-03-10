@@ -1,0 +1,29 @@
+{
+  "id": "2503.05595v1",
+  "title": "Anti-Diffusion: Preventing Abuse of Modifications of Diffusion-Based\n  Models",
+  "url": "http://arxiv.org/abs/2503.05595v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05595v1",
+  "authors": [
+    "Zheng Li",
+    "Liangbin Xie",
+    "Jiantao Zhou",
+    "Xintao Wang",
+    "Haiwei Wu",
+    "Jinyu Tian"
+  ],
+  "date": "2025-03-07",
+  "summary": "Although diffusion-based techniques have shown remarkable success in image\ngeneration and editing tasks, their abuse can lead to severe negative social\nimpacts. Recently, some works have been proposed to provide defense against the\nabuse of diffusion-based methods. However, their protection may be limited in\nspecific scenarios by manually defined prompts or the stable diffusion (SD)\nversion. Furthermore, these methods solely focus on tuning methods, overlooking\nediting methods that could also pose a significant threat. In this work, we\npropose Anti-Diffusion, a privacy protection system designed for general\ndiffusion-based methods, applicable to both tuning and editing techniques. To\nmitigate the limitations of manually defined prompts on defense performance, we\nintroduce the prompt tuning (PT) strategy that enables precise expression of\noriginal images. To provide defense against both tuning and editing methods, we\npropose the semantic disturbance loss (SDL) to disrupt the semantic information\nof protected images. Given the limited research on the defense against editing\nmethods, we develop a dataset named Defense-Edit to assess the defense\nperformance of various methods. Experiments demonstrate that our Anti-Diffusion\nachieves superior defense performance across a wide range of diffusion-based\ntechniques in different scenarios.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "Stable Diffusion"
+  ],
+  "attention_score": 2.34,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9917808219178083,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

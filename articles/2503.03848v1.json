@@ -1,0 +1,26 @@
+{
+  "id": "2503.03848v1",
+  "title": "Nexar Dashcam Collision Prediction Dataset and Challenge",
+  "url": "http://arxiv.org/abs/2503.03848v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03848v1",
+  "authors": [
+    "Daniel C. Moura",
+    "Shizhan Zhu",
+    "Orly Zvitia"
+  ],
+  "date": "2025-03-05",
+  "summary": "This paper presents the Nexar Dashcam Collision Prediction Dataset and\nChallenge, designed to support research in traffic event analysis, collision\nprediction, and autonomous vehicle safety. The dataset consists of 1,500\nannotated video clips, each approximately 40 seconds long, capturing a diverse\nrange of real-world traffic scenarios. Videos are labeled with event type\n(collision/near-collision vs. normal driving), environmental conditions\n(lighting conditions and weather), and scene type (urban, rural, highway,\netc.). For collision and near-collision cases, additional temporal labels are\nprovided, including the precise moment of the event and the alert time, marking\nwhen the collision first becomes predictable.\n  To advance research on accident prediction, we introduce the Nexar Dashcam\nCollision Prediction Challenge, a public competition on top of this dataset.\nParticipants are tasked with developing machine learning models that predict\nthe likelihood of an imminent collision, given an input video. Model\nperformance is evaluated using the average precision (AP) computed across\nmultiple intervals before the accident (i.e. 500 ms, 1000 ms, and 1500 ms prior\nto the event), emphasizing the importance of early and reliable predictions.\n  The dataset is released under an open license with restrictions on unethical\nuse, ensuring responsible research and innovation.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ],
+  "attention_score": 2.3,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9863013698630136,
+    "source_weight": 1.0,
+    "age_months": 0.2,
+    "citation_velocity": 0
+  }
+}

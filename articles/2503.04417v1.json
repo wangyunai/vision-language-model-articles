@@ -1,0 +1,28 @@
+{
+  "id": "2503.04417v1",
+  "title": "From Idea to CAD: A Language Model-Driven Multi-Agent System for\n  Collaborative Design",
+  "url": "http://arxiv.org/abs/2503.04417v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04417v1",
+  "authors": [
+    "Felix Ocker",
+    "Stefan Menzel",
+    "Ahmed Sadik",
+    "Thiago Rios"
+  ],
+  "date": "2025-03-06",
+  "summary": "Creating digital models using Computer Aided Design (CAD) is a process that\nrequires in-depth expertise. In industrial product development, this process\ntypically involves entire teams of engineers, spanning requirements\nengineering, CAD itself, and quality assurance. We present an approach that\nmirrors this team structure with a Vision Language Model (VLM)-based Multi\nAgent System, with access to parametric CAD tooling and tool documentation.\nCombining agents for requirements engineering, CAD engineering, and\nvision-based quality assurance, a model is generated automatically from\nsketches and/ or textual descriptions. The resulting model can be refined\ncollaboratively in an iterative validation loop with the user. Our approach has\nthe potential to increase the effectiveness of design processes, both for\nindustry experts and for hobbyists who create models for 3D printing. We\ndemonstrate the potential of the architecture at the example of various design\ntasks and provide several ablations that show the benefits of the\narchitecture's individual components.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision language model",
+    "VLM"
+  ],
+  "attention_score": 2.71,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

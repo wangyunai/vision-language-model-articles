@@ -1,0 +1,32 @@
+{
+  "id": "2503.04919v1",
+  "title": "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D\n  Object Placement",
+  "url": "http://arxiv.org/abs/2503.04919v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04919v1",
+  "authors": [
+    "Ian Huang",
+    "Yanan Bao",
+    "Karen Truong",
+    "Howard Zhou",
+    "Cordelia Schmid",
+    "Leonidas Guibas",
+    "Alireza Fathi"
+  ],
+  "date": "2025-03-06",
+  "summary": "Scene generation with 3D assets presents a complex challenge, requiring both\nhigh-level semantic understanding and low-level geometric reasoning. While\nMultimodal Large Language Models (MLLMs) excel at semantic tasks, their\napplication to 3D scene generation is hindered by their limited grounding on 3D\ngeometry. In this paper, we investigate how to best work with MLLMs in an\nobject placement task. Towards this goal, we introduce a novel framework,\nFirePlace, that applies existing MLLMs in (1) 3D geometric reasoning and the\nextraction of relevant geometric details from the 3D scene, (2) constructing\nand solving geometric constraints on the extracted low-level geometry, and (3)\npruning for final placements that conform to common sense. By combining\ngeometric reasoning with real-world understanding of MLLMs, our method can\npropose object placements that satisfy both geometric constraints as well as\nhigh-level semantic common-sense considerations. Our experiments show that\nthese capabilities allow our method to place objects more effectively in\ncomplex scenes with intricate geometry, surpassing the quality of prior work.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "MLLM",
+    "MLLMs"
+  ],
+  "attention_score": 3.09,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "2403.05297v3",
+  "title": "PEEB: Part-based Image Classifiers with an Explainable and Editable\n  Language Bottleneck",
+  "url": "http://arxiv.org/abs/2403.05297v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.05297v3",
+  "authors": [
+    "Thang M. Pham",
+    "Peijie Chen",
+    "Tin Nguyen",
+    "Seunghyun Yoon",
+    "Trung Bui",
+    "Anh Totti Nguyen"
+  ],
+  "date": "2024-03-08",
+  "summary": "CLIP-based classifiers rely on the prompt containing a {class name} that is\nknown to the text encoder. Therefore, they perform poorly on new classes or the\nclasses whose names rarely appear on the Internet (e.g., scientific names of\nbirds). For fine-grained classification, we propose PEEB - an explainable and\neditable classifier to (1) express the class name into a set of text\ndescriptors that describe the visual parts of that class; and (2) match the\nembeddings of the detected parts to their textual descriptors in each class to\ncompute a logit score for classification. In a zero-shot setting where the\nclass names are unknown, PEEB outperforms CLIP by a huge margin (~10x in top-1\naccuracy). Compared to part-based classifiers, PEEB is not only the\nstate-of-the-art (SOTA) on the supervised-learning setting (88.80% and 92.20%\naccuracy on CUB-200 and Dogs-120, respectively) but also the first to enable\nusers to edit the text descriptors to form a new classifier without any\nre-training. Compared to concept bottleneck models, PEEB is also the SOTA in\nboth zero-shot and supervised-learning settings.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

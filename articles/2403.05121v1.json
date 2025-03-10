@@ -1,0 +1,33 @@
+{
+  "id": "2403.05121v1",
+  "title": "CogView3: Finer and Faster Text-to-Image Generation via Relay Diffusion",
+  "url": "http://arxiv.org/abs/2403.05121v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05121v1",
+  "authors": [
+    "Wendi Zheng",
+    "Jiayan Teng",
+    "Zhuoyi Yang",
+    "Weihan Wang",
+    "Jidong Chen",
+    "Xiaotao Gu",
+    "Yuxiao Dong",
+    "Ming Ding",
+    "Jie Tang"
+  ],
+  "date": "2024-03-08",
+  "summary": "Recent advancements in text-to-image generative systems have been largely\ndriven by diffusion models. However, single-stage text-to-image diffusion\nmodels still face challenges, in terms of computational efficiency and the\nrefinement of image details. To tackle the issue, we propose CogView3, an\ninnovative cascaded framework that enhances the performance of text-to-image\ndiffusion. CogView3 is the first model implementing relay diffusion in the\nrealm of text-to-image generation, executing the task by first creating\nlow-resolution images and subsequently applying relay-based super-resolution.\nThis methodology not only results in competitive text-to-image outputs but also\ngreatly reduces both training and inference costs. Our experimental results\ndemonstrate that CogView3 outperforms SDXL, the current state-of-the-art\nopen-source text-to-image diffusion model, by 77.0\\% in human evaluations, all\nwhile requiring only about 1/2 of the inference time. The distilled variant of\nCogView3 achieves comparable performance while only utilizing 1/10 of the\ninference time by SDXL.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

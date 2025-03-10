@@ -1,0 +1,27 @@
+{
+  "id": "2503.04406v1",
+  "title": "Training-Free Graph Filtering via Multimodal Feature Refinement for\n  Extremely Fast Multimodal Recommendation",
+  "url": "http://arxiv.org/abs/2503.04406v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04406v1",
+  "authors": [
+    "Yu-Seung Roh",
+    "Joo-Young Kim",
+    "Jin-Duk Park",
+    "Won-Yong Shin"
+  ],
+  "date": "2025-03-06",
+  "summary": "Multimodal recommender systems improve the performance of canonical\nrecommender systems with no item features by utilizing diverse content types\nsuch as text, images, and videos, while alleviating inherent sparsity of\nuser-item interactions and accelerating user engagement. However, current\nneural network-based models often incur significant computational overhead due\nto the complex training process required to learn and integrate information\nfrom multiple modalities. To overcome this limitation, we propose\nMultiModal-Graph Filtering (MM-GF), a training-free method based on the notion\nof graph filtering (GF) for efficient and accurate multimodal recommendations.\nSpecifically, MM-GF first constructs multiple similarity graphs through\nnontrivial multimodal feature refinement such as robust scaling and vector\nshifting by addressing the heterogeneous characteristics across modalities.\nThen, MM-GF optimally fuses multimodal information using linear low-pass\nfilters across different modalities. Extensive experiments on real-world\nbenchmark datasets demonstrate that MM-GF not only improves recommendation\naccuracy by up to 13.35% compared to the best competitor but also dramatically\nreduces computational costs by achieving the runtime of less than 10 seconds.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

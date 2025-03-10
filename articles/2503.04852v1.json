@@ -1,0 +1,33 @@
+{
+  "id": "2503.04852v1",
+  "title": "CAUSAL3D: A Comprehensive Benchmark for Causal Learning from Visual Data",
+  "url": "http://arxiv.org/abs/2503.04852v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04852v1",
+  "authors": [
+    "Disheng Liu",
+    "Yiran Qiao",
+    "Wuche Liu",
+    "Yiren Lu",
+    "Yunlai Zhou",
+    "Tuo Liang",
+    "Yu Yin",
+    "Jing Ma"
+  ],
+  "date": "2025-03-06",
+  "summary": "True intelligence hinges on the ability to uncover and leverage hidden causal\nrelations. Despite significant progress in AI and computer vision (CV), there\nremains a lack of benchmarks for assessing models' abilities to infer latent\ncausality from complex visual data. In this paper, we introduce\n\\textsc{\\textbf{Causal3D}}, a novel and comprehensive benchmark that integrates\nstructured data (tables) with corresponding visual representations (images) to\nevaluate causal reasoning. Designed within a systematic framework, Causal3D\ncomprises 19 3D-scene datasets capturing diverse causal relations, views, and\nbackgrounds, enabling evaluations across scenes of varying complexity. We\nassess multiple state-of-the-art methods, including classical causal discovery,\ncausal representation learning, and large/vision-language models (LLMs/VLMs).\nOur experiments show that as causal structures grow more complex without prior\nknowledge, performance declines significantly, highlighting the challenges even\nadvanced methods face in complex causal scenarios. Causal3D serves as a vital\nresource for advancing causal reasoning in CV and fostering trustworthy AI in\ncritical domains.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language",
+    "ViT"
+  ],
+  "attention_score": 3.09,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

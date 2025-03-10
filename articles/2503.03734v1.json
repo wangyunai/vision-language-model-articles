@@ -1,0 +1,32 @@
+{
+  "id": "2503.03734v1",
+  "title": "OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature\n  Extraction",
+  "url": "http://arxiv.org/abs/2503.03734v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03734v1",
+  "authors": [
+    "Huang Huang",
+    "Fangchen Liu",
+    "Letian Fu",
+    "Tingfan Wu",
+    "Mustafa Mukadam",
+    "Jitendra Malik",
+    "Ken Goldberg",
+    "Pieter Abbeel"
+  ],
+  "date": "2025-03-05",
+  "summary": "Vision-Language-Action (VLA) models aim to predict robotic actions based on\nvisual observations and language instructions. Existing approaches require\nfine-tuning pre-trained visionlanguage models (VLMs) as visual and language\nfeatures are independently fed into downstream policies, degrading the\npre-trained semantic alignments. We propose OTTER, a novel VLA architecture\nthat leverages these existing alignments through explicit, text-aware visual\nfeature extraction. Instead of processing all visual features, OTTER\nselectively extracts and passes only task-relevant visual features that are\nsemantically aligned with the language instruction to the policy transformer.\nThis allows OTTER to keep the pre-trained vision-language encoders frozen.\nThereby, OTTER preserves and utilizes the rich semantic understanding learned\nfrom large-scale pre-training, enabling strong zero-shot generalization\ncapabilities. In simulation and real-world experiments, OTTER significantly\noutperforms existing VLA models, demonstrating strong zeroshot generalization\nto novel objects and environments. Video, code, checkpoints, and dataset:\nhttps://ottervla.github.io/.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language"
+  ],
+  "attention_score": 2.68,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.9863013698630136,
+    "source_weight": 1.0,
+    "age_months": 0.2,
+    "citation_velocity": 0
+  }
+}

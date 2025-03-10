@@ -1,0 +1,28 @@
+{
+  "id": "2503.04205v1",
+  "title": "Learning 3D Medical Image Models From Brain Functional Connectivity\n  Network Supervision For Mental Disorder Diagnosis",
+  "url": "http://arxiv.org/abs/2503.04205v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04205v1",
+  "authors": [
+    "Xingcan Hu",
+    "Wei Wang",
+    "Li Xiao"
+  ],
+  "date": "2025-03-06",
+  "summary": "In MRI-based mental disorder diagnosis, most previous studies focus on\nfunctional connectivity network (FCN) derived from functional MRI (fMRI).\nHowever, the small size of annotated fMRI datasets restricts its wide\napplication. Meanwhile, structural MRIs (sMRIs), such as 3D T1-weighted (T1w)\nMRI, which are commonly used and readily accessible in clinical settings, are\noften overlooked. To integrate the complementary information from both function\nand structure for improved diagnostic accuracy, we propose CINP (Contrastive\nImage-Network Pre-training), a framework that employs contrastive learning\nbetween sMRI and FCN. During pre-training, we incorporate masked image modeling\nand network-image matching to enhance visual representation learning and\nmodality alignment. Since the CINP facilitates knowledge transfer from FCN to\nsMRI, we introduce network prompting. It utilizes only sMRI from suspected\npatients and a small amount of FCNs from different patient classes for\ndiagnosing mental disorders, which is practical in real-world clinical\nscenario. The competitive performance on three mental disorder diagnosis tasks\ndemonstrate the effectiveness of the CINP in integrating multimodal MRI\ninformation, as well as the potential of incorporating sMRI into clinical\ndiagnosis using network prompting.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "ViT",
+    "visual representation learning"
+  ],
+  "attention_score": 3.09,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

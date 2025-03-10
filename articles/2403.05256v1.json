@@ -1,0 +1,28 @@
+{
+  "id": "2403.05256v1",
+  "title": "DuDoUniNeXt: Dual-domain unified hybrid model for single and\n  multi-contrast undersampled MRI reconstruction",
+  "url": "http://arxiv.org/abs/2403.05256v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05256v1",
+  "authors": [
+    "Ziqi Gao",
+    "Yue Zhang",
+    "Xinwen Liu",
+    "Kaiyan Li",
+    "S. Kevin Zhou"
+  ],
+  "date": "2024-03-08",
+  "summary": "Multi-contrast (MC) Magnetic Resonance Imaging (MRI) reconstruction aims to\nincorporate a reference image of auxiliary modality to guide the reconstruction\nprocess of the target modality. Known MC reconstruction methods perform well\nwith a fully sampled reference image, but usually exhibit inferior performance,\ncompared to single-contrast (SC) methods, when the reference image is missing\nor of low quality. To address this issue, we propose DuDoUniNeXt, a unified\ndual-domain MRI reconstruction network that can accommodate to scenarios\ninvolving absent, low-quality, and high-quality reference images. DuDoUniNeXt\nadopts a hybrid backbone that combines CNN and ViT, enabling specific\nadjustment of image domain and k-space reconstruction. Specifically, an\nadaptive coarse-to-fine feature fusion module (AdaC2F) is devised to\ndynamically process the information from reference images of varying qualities.\nBesides, a partially shared shallow feature extractor (PaSS) is proposed, which\nuses shared and distinct parameters to handle consistent and discrepancy\ninformation among contrasts. Experimental results demonstrate that the proposed\nmodel surpasses state-of-the-art SC and MC models significantly. Ablation\nstudies show the effectiveness of the proposed hybrid backbone, AdaC2F, PaSS,\nand the dual-domain unified learning scheme.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "ViT"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "2403.06024v1",
+  "title": "Semi-Supervised Multimodal Multi-Instance Learning for Aortic Stenosis\n  Diagnosis",
+  "url": "http://arxiv.org/abs/2403.06024v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06024v1",
+  "authors": [
+    "Zhe Huang",
+    "Xiaowei Yu",
+    "Benjamin S. Wessler",
+    "Michael C. Hughes"
+  ],
+  "date": "2024-03-09",
+  "summary": "Automated interpretation of ultrasound imaging of the heart (echocardiograms)\ncould improve the detection and treatment of aortic stenosis (AS), a deadly\nheart disease. However, existing deep learning pipelines for assessing AS from\nechocardiograms have two key limitations. First, most methods rely on limited\n2D cineloops, thereby ignoring widely available Doppler imaging that contains\nimportant complementary information about pressure gradients and blood flow\nabnormalities associated with AS. Second, obtaining labeled data is difficult.\nThere are often far more unlabeled echocardiogram recordings available, but\nthese remain underutilized by existing methods. To overcome these limitations,\nwe introduce Semi-supervised Multimodal Multiple-Instance Learning (SMMIL), a\nnew deep learning framework for automatic interpretation for structural heart\ndiseases like AS. When deployed, SMMIL can combine information from two input\nmodalities, spectral Dopplers and 2D cineloops, to produce a study-level AS\ndiagnosis. During training, SMMIL can combine a smaller labeled set and an\nabundant unlabeled set of both modalities to improve its classifier.\nExperiments demonstrate that SMMIL outperforms recent alternatives at 3-level\nAS severity classification as well as several clinically relevant AS detection\ntasks.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

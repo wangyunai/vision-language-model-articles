@@ -1,0 +1,28 @@
+{
+  "id": "2403.04997v1",
+  "title": "DiffChat: Learning to Chat with Text-to-Image Synthesis Models for\n  Interactive Image Creation",
+  "url": "http://arxiv.org/abs/2403.04997v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04997v1",
+  "authors": [
+    "Jiapeng Wang",
+    "Chengyu Wang",
+    "Tingfeng Cao",
+    "Jun Huang",
+    "Lianwen Jin"
+  ],
+  "date": "2024-03-08",
+  "summary": "We present DiffChat, a novel method to align Large Language Models (LLMs) to\n\"chat\" with prompt-as-input Text-to-Image Synthesis (TIS) models (e.g., Stable\nDiffusion) for interactive image creation. Given a raw prompt/image and a\nuser-specified instruction, DiffChat can effectively make appropriate\nmodifications and generate the target prompt, which can be leveraged to create\nthe target image of high quality. To achieve this, we first collect an\ninstruction-following prompt engineering dataset named InstructPE for the\nsupervised training of DiffChat. Next, we propose a reinforcement learning\nframework with the feedback of three core criteria for image creation, i.e.,\naesthetics, user preference, and content integrity. It involves an action-space\ndynamic modification technique to obtain more relevant positive samples and\nharder negative samples during the off-policy sampling. Content integrity is\nalso introduced into the value estimation function for further improvement of\nproduced images. Our method can exhibit superior performance than baseline\nmodels and strong competitors based on both automatic and human evaluations,\nwhich fully demonstrates its effectiveness.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

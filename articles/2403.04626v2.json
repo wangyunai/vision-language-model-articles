@@ -1,0 +1,31 @@
+{
+  "id": "2403.04626v2",
+  "title": "MedFLIP: Medical Vision-and-Language Self-supervised Fast Pre-Training\n  with Masked Autoencoder",
+  "url": "http://arxiv.org/abs/2403.04626v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.04626v2",
+  "authors": [
+    "Lei Li",
+    "Tianfang Zhang",
+    "Xinglin Zhang",
+    "Jiaqi Liu",
+    "Bingqi Ma",
+    "Yan Luo",
+    "Tao Chen"
+  ],
+  "date": "2024-03-07",
+  "summary": "Within the domain of medical analysis, extensive research has explored the\npotential of mutual learning between Masked Autoencoders(MAEs) and multimodal\ndata. However, the impact of MAEs on intermodality remains a key challenge. We\nintroduce MedFLIP, a Fast Language-Image Pre-training method for Medical\nanalysis. We explore MAEs for zero-shot learning with crossed domains, which\nenhances the model's ability to learn from limited data, a common scenario in\nmedical diagnostics. We verify that masking an image does not affect\ninter-modal learning. Furthermore, we propose the SVD loss to enhance the\nrepresentation learning for characteristics of medical images, aiming to\nimprove classification accuracy by leveraging the structural intricacies of\nsuch data. Our theory posits that masking encourages semantic preservation,\nrobust feature extraction, regularization, domain adaptation, and invariance\nlearning. Lastly, we validate using language will improve the zero-shot\nperformance for the medical image analysis. MedFLIP's scaling of the masking\nprocess marks an advancement in the field, offering a pathway to rapid and\nprecise medical image analysis without the traditional computational\nbottlenecks. Through experiments and validation, MedFLIP demonstrates efficient\nperformance improvements, helps for future research and application in medical\ndiagnostics.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "vision-and-language"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

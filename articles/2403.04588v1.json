@@ -1,0 +1,28 @@
+{
+  "id": "2403.04588v1",
+  "title": "Zero-shot cross-modal transfer of Reinforcement Learning policies\n  through a Global Workspace",
+  "url": "http://arxiv.org/abs/2403.04588v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04588v1",
+  "authors": [
+    "L\u00e9opold Mayti\u00e9",
+    "Benjamin Devillers",
+    "Alexandre Arnold",
+    "Rufin VanRullen"
+  ],
+  "date": "2024-03-07",
+  "summary": "Humans perceive the world through multiple senses, enabling them to create a\ncomprehensive representation of their surroundings and to generalize\ninformation across domains. For instance, when a textual description of a scene\nis given, humans can mentally visualize it. In fields like robotics and\nReinforcement Learning (RL), agents can also access information about the\nenvironment through multiple sensors; yet redundancy and complementarity\nbetween sensors is difficult to exploit as a source of robustness (e.g. against\nsensor failure) or generalization (e.g. transfer across domains). Prior\nresearch demonstrated that a robust and flexible multimodal representation can\nbe efficiently constructed based on the cognitive science notion of a 'Global\nWorkspace': a unique representation trained to combine information across\nmodalities, and to broadcast its signal back to each modality. Here, we explore\nwhether such a brain-inspired multimodal representation could be advantageous\nfor RL agents. First, we train a 'Global Workspace' to exploit information\ncollected about the environment via two input modalities (a visual input, or an\nattribute vector representing the state of the agent and/or its environment).\nThen, we train a RL agent policy using this frozen Global Workspace. In two\ndistinct environments and tasks, our results reveal the model's ability to\nperform zero-shot cross-modal transfer between input modalities, i.e. to apply\nto image inputs a policy previously trained on attribute vectors (and\nvice-versa), without additional training or fine-tuning. Variants and ablations\nof the full Global Workspace (including a CLIP-like multimodal representation\ntrained via contrastive learning) did not display the same generalization\nabilities.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "CLIP"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

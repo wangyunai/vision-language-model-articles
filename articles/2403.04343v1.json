@@ -1,0 +1,28 @@
+{
+  "id": "2403.04343v1",
+  "title": "CoTBal: Comprehensive Task Balancing for Multi-Task Visual Instruction\n  Tuning",
+  "url": "http://arxiv.org/abs/2403.04343v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04343v1",
+  "authors": [
+    "Yanqi Dai",
+    "Dong Jing",
+    "Nanyi Fei",
+    "Zhiwu Lu"
+  ],
+  "date": "2024-03-07",
+  "summary": "Visual instruction tuning is a key training stage of large multimodal models\n(LMMs). Nevertheless, the common practice of indiscriminately mixing\ninstruction-following data from various tasks may result in suboptimal overall\nperformance due to different instruction formats and knowledge domains across\ntasks. To mitigate this issue, we propose a novel Comprehensive Task Balancing\n(CoTBal) algorithm for multi-task visual instruction tuning of LMMs. To our\nknowledge, this is the first work that explores multi-task optimization in\nvisual instruction tuning. Specifically, we consider two key dimensions for\ntask balancing: (1) Inter-Task Contribution, the phenomenon where learning one\ntask potentially enhances the performance in other tasks, attributable to the\noverlapping knowledge domains, and (2) Intra-Task Difficulty, which refers to\nthe learning difficulty within a single task. By quantifying these two\ndimensions with performance-based metrics, task balancing is thus enabled by\nassigning more weights to tasks that offer substantial contributions to others,\nreceive minimal contributions from others, and also have great intra-task\ndifficulties. Experiments show that our CoTBal leads to superior overall\nperformance in multi-task visual instruction tuning.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "visual instruction tuning"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

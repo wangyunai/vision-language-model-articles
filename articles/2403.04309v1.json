@@ -1,0 +1,30 @@
+{
+  "id": "2403.04309v1",
+  "title": "AO-DETR: Anti-Overlapping DETR for X-Ray Prohibited Items Detection",
+  "url": "http://arxiv.org/abs/2403.04309v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04309v1",
+  "authors": [
+    "Mingyuan Li",
+    "Tong Jia",
+    "Hao Wang",
+    "Bowen Ma",
+    "Shuyang Lin",
+    "Da Cai",
+    "Dongyue Chen"
+  ],
+  "date": "2024-03-07",
+  "summary": "Prohibited item detection in X-ray images is one of the most essential and\nhighly effective methods widely employed in various security inspection\nscenarios. Considering the significant overlapping phenomenon in X-ray\nprohibited item images, we propose an Anti-Overlapping DETR (AO-DETR) based on\none of the state-of-the-art general object detectors, DINO. Specifically, to\naddress the feature coupling issue caused by overlapping phenomena, we\nintroduce the Category-Specific One-to-One Assignment (CSA) strategy to\nconstrain category-specific object queries in predicting prohibited items of\nfixed categories, which can enhance their ability to extract features specific\nto prohibited items of a particular category from the overlapping\nforeground-background features. To address the edge blurring problem caused by\noverlapping phenomena, we propose the Look Forward Densely (LFD) scheme, which\nimproves the localization accuracy of reference boxes in mid-to-high-level\ndecoder layers and enhances the ability to locate blurry edges of the final\nlayer. Similar to DINO, our AO-DETR provides two different versions with\ndistinct backbones, tailored to meet diverse application requirements.\nExtensive experiments on the PIXray and OPIXray datasets demonstrate that the\nproposed method surpasses the state-of-the-art object detectors, indicating its\npotential applications in the field of prohibited item detection. The source\ncode will be released at https://github.com/Limingyuan001/AO-DETR-test.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "DINO"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

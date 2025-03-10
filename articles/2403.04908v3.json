@@ -1,0 +1,29 @@
+{
+  "id": "2403.04908v3",
+  "title": "Self-Adapting Large Visual-Language Models to Edge Devices across Visual\n  Modalities",
+  "url": "http://arxiv.org/abs/2403.04908v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.04908v3",
+  "authors": [
+    "Kaiwen Cai",
+    "Zhekai Duan",
+    "Gaowen Liu",
+    "Charles Fleming",
+    "Chris Xiaoxuan Lu"
+  ],
+  "date": "2024-03-07",
+  "summary": "Recent advancements in Vision-Language (VL) models have sparked interest in\ntheir deployment on edge devices, yet challenges in handling diverse visual\nmodalities, manual annotation, and computational constraints remain. We\nintroduce EdgeVL, a novel framework that bridges this gap by seamlessly\nintegrating dual-modality knowledge distillation and quantization-aware\ncontrastive learning. This approach enables the adaptation of large VL models,\nlike CLIP, for efficient use with both RGB and non-RGB images on\nresource-limited devices without the need for manual annotations. EdgeVL not\nonly transfers visual language alignment capabilities to compact models but\nalso maintains feature quality post-quantization, significantly enhancing\nopen-vocabulary classification performance across various visual modalities.\nOur work represents the first systematic effort to adapt large VL models for\nedge deployment, showcasing up to 15.4% accuracy improvements on multiple\ndatasets and up to 93-fold reduction in model size.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language",
+    "CLIP"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

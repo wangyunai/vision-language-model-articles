@@ -1,0 +1,29 @@
+{
+  "id": "2403.05846v2",
+  "title": "Diffusion Lens: Interpreting Text Encoders in Text-to-Image Pipelines",
+  "url": "http://arxiv.org/abs/2403.05846v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05846v2",
+  "authors": [
+    "Michael Toker",
+    "Hadas Orgad",
+    "Mor Ventura",
+    "Dana Arad",
+    "Yonatan Belinkov"
+  ],
+  "date": "2024-03-09",
+  "summary": "Text-to-image diffusion models (T2I) use a latent representation of a text\nprompt to guide the image generation process. However, the process by which the\nencoder produces the text representation is unknown. We propose the Diffusion\nLens, a method for analyzing the text encoder of T2I models by generating\nimages from its intermediate representations. Using the Diffusion Lens, we\nperform an extensive analysis of two recent T2I models. Exploring compound\nprompts, we find that complex scenes describing multiple objects are composed\nprogressively and more slowly compared to simple scenes; Exploring knowledge\nretrieval, we find that representation of uncommon concepts requires further\ncomputation compared to common concepts, and that knowledge retrieval is\ngradual across layers. Overall, our findings provide valuable insights into the\ntext encoder component in T2I pipelines.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

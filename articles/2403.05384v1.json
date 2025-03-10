@@ -1,0 +1,29 @@
+{
+  "id": "2403.05384v1",
+  "title": "A Data Augmentation Pipeline to Generate Synthetic Labeled Datasets of\n  3D Echocardiography Images using a GAN",
+  "url": "http://arxiv.org/abs/2403.05384v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05384v1",
+  "authors": [
+    "Cristiana Tiago",
+    "Andrew Gilbert",
+    "Ahmed S. Beela",
+    "Svein Arne Aase",
+    "Sten Roar Snare",
+    "Jurica Sprem"
+  ],
+  "date": "2024-03-08",
+  "summary": "Due to privacy issues and limited amount of publicly available labeled\ndatasets in the domain of medical imaging, we propose an image generation\npipeline to synthesize 3D echocardiographic images with corresponding ground\ntruth labels, to alleviate the need for data collection and for laborious and\nerror-prone human labeling of images for subsequent Deep Learning (DL) tasks.\nThe proposed method utilizes detailed anatomical segmentations of the heart as\nground truth label sources. This initial dataset is combined with a second\ndataset made up of real 3D echocardiographic images to train a Generative\nAdversarial Network (GAN) to synthesize realistic 3D cardiovascular Ultrasound\nimages paired with ground truth labels. To generate the synthetic 3D dataset,\nthe trained GAN uses high resolution anatomical models from Computed Tomography\n(CT) as input. A qualitative analysis of the synthesized images showed that the\nmain structures of the heart are well delineated and closely follow the labels\nobtained from the anatomical models. To assess the usability of these synthetic\nimages for DL tasks, segmentation algorithms were trained to delineate the left\nventricle, left atrium, and myocardium. A quantitative analysis of the 3D\nsegmentations given by the models trained with the synthetic images indicated\nthe potential use of this GAN approach to generate 3D synthetic data, use the\ndata to train DL models for different clinical tasks, and therefore tackle the\nproblem of scarcity of 3D labeled echocardiography datasets.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

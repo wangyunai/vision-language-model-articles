@@ -1,0 +1,27 @@
+{
+  "id": "2403.05489v2",
+  "title": "JointMotion: Joint Self-Supervision for Joint Motion Prediction",
+  "url": "http://arxiv.org/abs/2403.05489v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05489v2",
+  "authors": [
+    "Royden Wagner",
+    "Omer Sahin Tas",
+    "Marvin Klemp",
+    "Carlos Fernandez"
+  ],
+  "date": "2024-03-08",
+  "summary": "We present JointMotion, a self-supervised pre-training method for joint\nmotion prediction in self-driving vehicles. Our method jointly optimizes a\nscene-level objective connecting motion and environments, and an instance-level\nobjective to refine learned representations. Scene-level representations are\nlearned via non-contrastive similarity learning of past motion sequences and\nenvironment context. At the instance level, we use masked autoencoding to\nrefine multimodal polyline representations. We complement this with an adaptive\npre-training decoder that enables JointMotion to generalize across different\nenvironment representations, fusion mechanisms, and dataset characteristics.\nNotably, our method reduces the joint final displacement error of Wayformer,\nHPTR, and Scene Transformer models by 3\\%, 8\\%, and 12\\%, respectively; and\nenables transfer learning between the Waymo Open Motion and the Argoverse 2\nMotion Forecasting datasets. Code: https://github.com/kit-mrt/future-motion",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

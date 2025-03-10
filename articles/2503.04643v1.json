@@ -1,0 +1,28 @@
+{
+  "id": "2503.04643v1",
+  "title": "Adaptive Prototype Learning for Multimodal Cancer Survival Analysis",
+  "url": "http://arxiv.org/abs/2503.04643v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04643v1",
+  "authors": [
+    "Hong Liu",
+    "Haosen Yang",
+    "Federica Eduati",
+    "Josien P. W. Pluim",
+    "Mitko Veta"
+  ],
+  "date": "2025-03-06",
+  "summary": "Leveraging multimodal data, particularly the integration of whole-slide\nhistology images (WSIs) and transcriptomic profiles, holds great promise for\nimproving cancer survival prediction. However, excessive redundancy in\nmultimodal data can degrade model performance. In this paper, we propose\nAdaptive Prototype Learning (APL), a novel and effective approach for\nmultimodal cancer survival analysis. APL adaptively learns representative\nprototypes in a data-driven manner, reducing redundancy while preserving\ncritical information. Our method employs two sets of learnable query vectors\nthat serve as a bridge between high-dimensional representations and survival\nprediction, capturing task-relevant features. Additionally, we introduce a\nmultimodal mixed self-attention mechanism to enable cross-modal interactions,\nfurther enhancing information fusion. Extensive experiments on five benchmark\ncancer datasets demonstrate the superiority of our approach over existing\nmethods. The code is available at https://github.com/HongLiuuuuu/APL.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 2.32,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

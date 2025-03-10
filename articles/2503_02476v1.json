@@ -19,5 +19,13 @@
     "image-text",
     "visual question answering",
     "VQA"
-  ]
+  ],
+  "attention_score": 0.18,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.4,
+    "citation_velocity": 0
+  }
 }

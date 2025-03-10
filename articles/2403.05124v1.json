@@ -1,0 +1,29 @@
+{
+  "id": "2403.05124v1",
+  "title": "CLIP-Gaze: Towards General Gaze Estimation via Visual-Linguistic Model",
+  "url": "http://arxiv.org/abs/2403.05124v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05124v1",
+  "authors": [
+    "Pengwei Yin",
+    "Guanzhong Zeng",
+    "Jingjing Wang",
+    "Di Xie"
+  ],
+  "date": "2024-03-08",
+  "summary": "Gaze estimation methods often experience significant performance degradation\nwhen evaluated across different domains, due to the domain gap between the\ntesting and training data. Existing methods try to address this issue using\nvarious domain generalization approaches, but with little success because of\nthe limited diversity of gaze datasets, such as appearance, wearable, and image\nquality. To overcome these limitations, we propose a novel framework called\nCLIP-Gaze that utilizes a pre-trained vision-language model to leverage its\ntransferable knowledge. Our framework is the first to leverage the\nvision-and-language cross-modality approach for gaze estimation task.\nSpecifically, we extract gaze-relevant feature by pushing it away from\ngaze-irrelevant features which can be flexibly constructed via language\ndescriptions. To learn more suitable prompts, we propose a personalized context\noptimization method for text prompt tuning. Furthermore, we utilize the\nrelationship among gaze samples to refine the distribution of gaze-relevant\nfeatures, thereby improving the generalization capability of the gaze\nestimation model. Extensive experiments demonstrate the excellent performance\nof CLIP-Gaze over existing methods on four cross-domain evaluations.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language",
+    "CLIP",
+    "vision-and-language"
+  ],
+  "attention_score": 0.16,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "2403.06199v4",
+  "title": "Mipha: A Comprehensive Overhaul of Multimodal Assistant with Small\n  Language Models",
+  "url": "http://arxiv.org/abs/2403.06199v4",
+  "pdf_url": "http://arxiv.org/pdf/2403.06199v4",
+  "authors": [
+    "Minjie Zhu",
+    "Yichen Zhu",
+    "Xin Liu",
+    "Ning Liu",
+    "Zhiyuan Xu",
+    "Chaomin Shen",
+    "Yaxin Peng",
+    "Zhicai Ou",
+    "Feifei Feng",
+    "Jian Tang"
+  ],
+  "date": "2024-03-10",
+  "summary": "Multimodal Large Language Models (MLLMs) have showcased impressive skills in\ntasks related to visual understanding and reasoning. Yet, their widespread\napplication faces obstacles due to the high computational demands during both\nthe training and inference phases, restricting their use to a limited audience\nwithin the research and user communities. In this paper, we investigate the\ndesign aspects of Multimodal Small Language Models (MSLMs) and propose an\nefficient multimodal assistant named Mipha, which is designed to create synergy\namong various aspects: visual representation, language models, and optimization\nstrategies. We show that without increasing the volume of training data, our\nMipha-3B outperforms the state-of-the-art large MLLMs, especially\nLLaVA-1.5-13B, on multiple benchmarks. Through detailed discussion, we provide\ninsights and guidelines for developing strong MSLMs that rival the capabilities\nof MLLMs. Our code is available at https://github.com/zhuyiche/llava-phi.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "visual understanding",
+    "MLLM",
+    "MLLMs"
+  ],
+  "attention_score": 0.18,
+  "attention_components": {
+    "base_score": 1.8,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "2403.04294v1",
+  "title": "A$^{3}$lign-DFER: Pioneering Comprehensive Dynamic Affective Alignment\n  for Dynamic Facial Expression Recognition with CLIP",
+  "url": "http://arxiv.org/abs/2403.04294v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04294v1",
+  "authors": [
+    "Zeng Tao",
+    "Yan Wang",
+    "Junxiong Lin",
+    "Haoran Wang",
+    "Xinji Mai",
+    "Jiawen Yu",
+    "Xuan Tong",
+    "Ziheng Zhou",
+    "Shaoqi Yan",
+    "Qing Zhao",
+    "Liyuan Han",
+    "Wenqiang Zhang"
+  ],
+  "date": "2024-03-07",
+  "summary": "The performance of CLIP in dynamic facial expression recognition (DFER) task\ndoesn't yield exceptional results as observed in other CLIP-based\nclassification tasks. While CLIP's primary objective is to achieve alignment\nbetween images and text in the feature space, DFER poses challenges due to the\nabstract nature of text and the dynamic nature of video, making label\nrepresentation limited and perfect alignment difficult. To address this issue,\nwe have designed A$^{3}$lign-DFER, which introduces a new DFER labeling\nparadigm to comprehensively achieve alignment, thus enhancing CLIP's\nsuitability for the DFER task. Specifically, our A$^{3}$lign-DFER method is\ndesigned with multiple modules that work together to obtain the most suitable\nexpanded-dimensional embeddings for classification and to achieve alignment in\nthree key aspects: affective, dynamic, and bidirectional. We replace the input\nlabel text with a learnable Multi-Dimensional Alignment Token (MAT), enabling\nalignment of text to facial expression video samples in both affective and\ndynamic dimensions. After CLIP feature extraction, we introduce the Joint\nDynamic Alignment Synchronizer (JAS), further facilitating synchronization and\nalignment in the temporal dimension. Additionally, we implement a Bidirectional\nAlignment Training Paradigm (BAP) to ensure gradual and steady training of\nparameters for both modalities. Our insightful and concise A$^{3}$lign-DFER\nmethod achieves state-of-the-art results on multiple DFER datasets, including\nDFEW, FERV39k, and MAFW. Extensive ablation experiments and visualization\nstudies demonstrate the effectiveness of A$^{3}$lign-DFER. The code will be\navailable in the future.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

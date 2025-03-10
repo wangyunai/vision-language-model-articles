@@ -1,0 +1,36 @@
+{
+  "id": "2403.05808v2",
+  "title": "Adaptive Multi-modal Fusion of Spatially Variant Kernel Refinement with\n  Diffusion Model for Blind Image Super-Resolution",
+  "url": "http://arxiv.org/abs/2403.05808v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.05808v2",
+  "authors": [
+    "Junxiong Lin",
+    "Yan Wang",
+    "Zeng Tao",
+    "Boyang Wang",
+    "Qing Zhao",
+    "Haorang Wang",
+    "Xuan Tong",
+    "Xinji Mai",
+    "Yuxuan Lin",
+    "Wei Song",
+    "Jiawen Yu",
+    "Shaoqi Yan",
+    "Wenqiang Zhang"
+  ],
+  "date": "2024-03-09",
+  "summary": "Pre-trained diffusion models utilized for image generation encapsulate a\nsubstantial reservoir of a priori knowledge pertaining to intricate textures.\nHarnessing the potential of leveraging this a priori knowledge in the context\nof image super-resolution presents a compelling avenue. Nonetheless, prevailing\ndiffusion-based methodologies presently overlook the constraints imposed by\ndegradation information on the diffusion process. Furthermore, these methods\nfail to consider the spatial variability inherent in the estimated blur kernel,\nstemming from factors such as motion jitter and out-of-focus elements in\nopen-environment scenarios. This oversight results in a notable deviation of\nthe image super-resolution effect from fundamental realities. To address these\nconcerns, we introduce a framework known as Adaptive Multi-modal Fusion of\n\\textbf{S}patially Variant Kernel Refinement with Diffusion Model for Blind\nImage \\textbf{S}uper-\\textbf{R}esolution (SSR). Within the SSR framework, we\npropose a Spatially Variant Kernel Refinement (SVKR) module. SVKR estimates a\nDepth-Informed Kernel, which takes the depth information into account and is\nspatially variant. Additionally, SVKR enhance the accuracy of depth information\nacquired from LR images, allowing for mutual enhancement between the depth map\nand blur kernel estimates. Finally, we introduce the Adaptive Multi-Modal\nFusion (AMF) module to align the information from three modalities:\nlow-resolution images, depth maps, and blur kernels. This alignment can\nconstrain the diffusion model to generate more authentic SR results.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

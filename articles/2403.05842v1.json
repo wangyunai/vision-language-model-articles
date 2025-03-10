@@ -1,0 +1,28 @@
+{
+  "id": "2403.05842v1",
+  "title": "Hufu: A Modality-Agnositc Watermarking System for Pre-Trained\n  Transformers via Permutation Equivariance",
+  "url": "http://arxiv.org/abs/2403.05842v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05842v1",
+  "authors": [
+    "Hengyuan Xu",
+    "Liyao Xiang",
+    "Xingjun Ma",
+    "Borui Yang",
+    "Baochun Li"
+  ],
+  "date": "2024-03-09",
+  "summary": "With the blossom of deep learning models and services, it has become an\nimperative concern to safeguard the valuable model parameters from being\nstolen. Watermarking is considered an important tool for ownership\nverification. However, current watermarking schemes are customized for\ndifferent models and tasks, hard to be integrated as an integrated intellectual\nprotection service. We propose Hufu, a modality-agnostic watermarking system\nfor pre-trained Transformer-based models, relying on the permutation\nequivariance property of Transformers. Hufu embeds watermark by fine-tuning the\npre-trained model on a set of data samples specifically permuted, and the\nembedded model essentially contains two sets of weights -- one for normal use\nand the other for watermark extraction which is triggered on permuted inputs.\nThe permutation equivariance ensures minimal interference between these two\nsets of model weights and thus high fidelity on downstream tasks. Since our\nmethod only depends on the model itself, it is naturally modality-agnostic,\ntask-independent, and trigger-sample-free. Extensive experiments on the\nstate-of-the-art vision Transformers, BERT, and GPT2 have demonstrated Hufu's\nsuperiority in meeting watermarking requirements including effectiveness,\nefficiency, fidelity, and robustness, showing its great potential to be\ndeployed as a uniform ownership verification service for various Transformers.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

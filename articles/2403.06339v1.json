@@ -1,0 +1,26 @@
+{
+  "id": "2403.06339v1",
+  "title": "FOAA: Flattened Outer Arithmetic Attention For Multimodal Tumor\n  Classification",
+  "url": "http://arxiv.org/abs/2403.06339v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06339v1",
+  "authors": [
+    "Omnia Alwazzan",
+    "Ioannis Patras",
+    "Gregory Slabaugh"
+  ],
+  "date": "2024-03-10",
+  "summary": "Fusion of multimodal healthcare data holds great promise to provide a\nholistic view of a patient's health, taking advantage of the complementarity of\ndifferent modalities while leveraging their correlation. This paper proposes a\nsimple and effective approach, inspired by attention, to fuse discriminative\nfeatures from different modalities. We propose a novel attention mechanism,\ncalled Flattened Outer Arithmetic Attention (FOAA), which relies on outer\narithmetic operators (addition, subtraction, product, and division) to compute\nattention scores from keys, queries and values derived from flattened\nembeddings of each modality. We demonstrate how FOAA can be implemented for\nself-attention and cross-attention, providing a reusable component in neural\nnetwork architectures. We evaluate FOAA on two datasets for multimodal tumor\nclassification and achieve state-of-the-art results, and we demonstrate that\nfeatures enriched by FOAA are superior to those derived from other fusion\napproaches. The code is publicly available at\n\\href{https://github.com/omniaalwazzan/FOAA}{https://github.com/omniaalwazzan/FOAA}",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

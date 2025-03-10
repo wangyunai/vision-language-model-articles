@@ -1,0 +1,34 @@
+{
+  "id": "2403.04692v2",
+  "title": "PixArt-\u03a3: Weak-to-Strong Training of Diffusion Transformer for 4K\n  Text-to-Image Generation",
+  "url": "http://arxiv.org/abs/2403.04692v2",
+  "pdf_url": "http://arxiv.org/pdf/2403.04692v2",
+  "authors": [
+    "Junsong Chen",
+    "Chongjian Ge",
+    "Enze Xie",
+    "Yue Wu",
+    "Lewei Yao",
+    "Xiaozhe Ren",
+    "Zhongdao Wang",
+    "Ping Luo",
+    "Huchuan Lu",
+    "Zhenguo Li"
+  ],
+  "date": "2024-03-07",
+  "summary": "In this paper, we introduce PixArt-\\Sigma, a Diffusion Transformer\nmodel~(DiT) capable of directly generating images at 4K resolution.\nPixArt-\\Sigma represents a significant advancement over its predecessor,\nPixArt-\\alpha, offering images of markedly higher fidelity and improved\nalignment with text prompts. A key feature of PixArt-\\Sigma is its training\nefficiency. Leveraging the foundational pre-training of PixArt-\\alpha, it\nevolves from the `weaker' baseline to a `stronger' model via incorporating\nhigher quality data, a process we term \"weak-to-strong training\". The\nadvancements in PixArt-\\Sigma are twofold: (1) High-Quality Training Data:\nPixArt-\\Sigma incorporates superior-quality image data, paired with more\nprecise and detailed image captions. (2) Efficient Token Compression: we\npropose a novel attention module within the DiT framework that compresses both\nkeys and values, significantly improving efficiency and facilitating\nultra-high-resolution image generation. Thanks to these improvements,\nPixArt-\\Sigma achieves superior image quality and user prompt adherence\ncapabilities with significantly smaller model size (0.6B parameters) than\nexisting text-to-image diffusion models, such as SDXL (2.6B parameters) and SD\nCascade (5.1B parameters). Moreover, PixArt-\\Sigma's capability to generate 4K\nimages supports the creation of high-resolution posters and wallpapers,\nefficiently bolstering the production of high-quality visual content in\nindustries such as film and gaming.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

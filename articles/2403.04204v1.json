@@ -1,0 +1,34 @@
+{
+  "id": "2403.04204v1",
+  "title": "On the Essence and Prospect: An Investigation of Alignment Approaches\n  for Big Models",
+  "url": "http://arxiv.org/abs/2403.04204v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04204v1",
+  "authors": [
+    "Xinpeng Wang",
+    "Shitong Duan",
+    "Xiaoyuan Yi",
+    "Jing Yao",
+    "Shanlin Zhou",
+    "Zhihua Wei",
+    "Peng Zhang",
+    "Dongkuan Xu",
+    "Maosong Sun",
+    "Xing Xie"
+  ],
+  "date": "2024-03-07",
+  "summary": "Big models have achieved revolutionary breakthroughs in the field of AI, but\nthey might also pose potential concerns. Addressing such concerns, alignment\ntechnologies were introduced to make these models conform to human preferences\nand values. Despite considerable advancements in the past year, various\nchallenges lie in establishing the optimal alignment strategy, such as data\ncost and scalable oversight, and how to align remains an open question. In this\nsurvey paper, we comprehensively investigate value alignment approaches. We\nfirst unpack the historical context of alignment tracing back to the 1920s\n(where it comes from), then delve into the mathematical essence of alignment\n(what it is), shedding light on the inherent challenges. Following this\nfoundation, we provide a detailed examination of existing alignment methods,\nwhich fall into three categories: Reinforcement Learning, Supervised\nFine-Tuning, and In-context Learning, and demonstrate their intrinsic\nconnections, strengths, and limitations, helping readers better understand this\nresearch area. In addition, two emerging topics, personal alignment, and\nmultimodal alignment, are also discussed as novel frontiers in this field.\nLooking forward, we discuss potential alignment paradigms and how they could\nhandle remaining challenges, prospecting where future alignment will go.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "multimodal alignment"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

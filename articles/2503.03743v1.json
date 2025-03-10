@@ -1,0 +1,30 @@
+{
+  "id": "2503.03743v1",
+  "title": "CHOP: Mobile Operating Assistant with Constrained High-frequency\n  Optimized Subtask Planning",
+  "url": "http://arxiv.org/abs/2503.03743v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03743v1",
+  "authors": [
+    "Yuqi Zhou",
+    "Shuai Wang",
+    "Sunhao Dai",
+    "Qinglin Jia",
+    "Zhaocheng Du",
+    "Zhenhua Dong",
+    "Jun Xu"
+  ],
+  "date": "2025-03-05",
+  "summary": "The advancement of visual language models (VLMs) has enhanced mobile device\noperations, allowing simulated human-like actions to address user requirements.\nCurrent VLM-based mobile operating assistants can be structured into three\nlevels: task, subtask, and action. The subtask level, linking high-level goals\nwith low-level executable actions, is crucial for task completion but faces two\nchallenges: ineffective subtasks that lower-level agent cannot execute and\ninefficient subtasks that fail to contribute to the completion of the\nhigher-level task. These challenges stem from VLM's lack of experience in\ndecomposing subtasks within GUI scenarios in multi-agent architecture. To\naddress these, we propose a new mobile assistant architecture with constrained\nhigh-frequency o}ptimized planning (CHOP). Our approach overcomes the VLM's\ndeficiency in GUI scenarios planning by using human-planned subtasks as the\nbasis vector. We evaluate our architecture in both English and Chinese contexts\nacross 20 Apps, demonstrating significant improvements in both effectiveness\nand efficiency. Our dataset and code is available at\nhttps://github.com/Yuqi-Zhou/CHOP",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM"
+  ],
+  "attention_score": 2.3,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.9863013698630136,
+    "source_weight": 1.0,
+    "age_months": 0.2,
+    "citation_velocity": 0
+  }
+}

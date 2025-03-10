@@ -1,0 +1,30 @@
+{
+  "id": "2403.06071v1",
+  "title": "Bit-mask Robust Contrastive Knowledge Distillation for Unsupervised\n  Semantic Hashing",
+  "url": "http://arxiv.org/abs/2403.06071v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.06071v1",
+  "authors": [
+    "Liyang He",
+    "Zhenya Huang",
+    "Jiayu Liu",
+    "Enhong Chen",
+    "Fei Wang",
+    "Jing Sha",
+    "Shijin Wang"
+  ],
+  "date": "2024-03-10",
+  "summary": "Unsupervised semantic hashing has emerged as an indispensable technique for\nfast image search, which aims to convert images into binary hash codes without\nrelying on labels. Recent advancements in the field demonstrate that employing\nlarge-scale backbones (e.g., ViT) in unsupervised semantic hashing models can\nyield substantial improvements. However, the inference delay has become\nincreasingly difficult to overlook. Knowledge distillation provides a means for\npractical model compression to alleviate this delay. Nevertheless, the\nprevailing knowledge distillation approaches are not explicitly designed for\nsemantic hashing. They ignore the unique search paradigm of semantic hashing,\nthe inherent necessities of the distillation process, and the property of hash\ncodes. In this paper, we propose an innovative Bit-mask Robust Contrastive\nknowledge Distillation (BRCD) method, specifically devised for the distillation\nof semantic hashing models. To ensure the effectiveness of two kinds of search\nparadigms in the context of semantic hashing, BRCD first aligns the semantic\nspaces between the teacher and student models through a contrastive knowledge\ndistillation objective. Additionally, to eliminate noisy augmentations and\nensure robust optimization, a cluster-based method within the knowledge\ndistillation process is introduced. Furthermore, through a bit-level analysis,\nwe uncover the presence of redundancy bits resulting from the bit independence\nproperty. To mitigate these effects, we introduce a bit mask mechanism in our\nknowledge distillation objective. Finally, extensive experiments not only\nshowcase the noteworthy performance of our BRCD method in comparison to other\nknowledge distillation methods but also substantiate the generality of our\nmethods across diverse semantic hashing models and backbones. The code for BRCD\nis available at https://github.com/hly1998/BRCD.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "ViT"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "2503.04459v2",
+  "title": "Question-Aware Gaussian Experts for Audio-Visual Question Answering",
+  "url": "http://arxiv.org/abs/2503.04459v2",
+  "pdf_url": "http://arxiv.org/pdf/2503.04459v2",
+  "authors": [
+    "Hongyeob Kim",
+    "Inyoung Jung",
+    "Dayoon Suh",
+    "Youjia Zhang",
+    "Sangmin Lee",
+    "Sungeun Hong"
+  ],
+  "date": "2025-03-06",
+  "summary": "Audio-Visual Question Answering (AVQA) requires not only question-based\nmultimodal reasoning but also precise temporal grounding to capture subtle\ndynamics for accurate prediction. However, existing methods mainly use question\ninformation implicitly, limiting focus on question-specific details.\nFurthermore, most studies rely on uniform frame sampling, which can miss key\nquestion-relevant frames. Although recent Top-K frame selection methods aim to\naddress this, their discrete nature still overlooks fine-grained temporal\ndetails. This paper proposes QA-TIGER, a novel framework that explicitly\nincorporates question information and models continuous temporal dynamics. Our\nkey idea is to use Gaussian-based modeling to adaptively focus on both\nconsecutive and non-consecutive frames based on the question, while explicitly\ninjecting question information and applying progressive refinement. We leverage\na Mixture of Experts (MoE) to flexibly implement multiple Gaussian models,\nactivating temporal experts specifically tailored to the question. Extensive\nexperiments on multiple AVQA benchmarks show that QA-TIGER consistently\nachieves state-of-the-art performance. Code is available at\nhttps://aim-skku.github.io/QA-TIGER/",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "visual question answering",
+    "VQA"
+  ],
+  "attention_score": 3.09,
+  "attention_components": {
+    "base_score": 1.6,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

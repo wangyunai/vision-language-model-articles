@@ -1,0 +1,25 @@
+{
+  "id": "2403.05325v1",
+  "title": "Fine-tuning a Multiple Instance Learning Feature Extractor with Masked\n  Context Modelling and Knowledge Distillation",
+  "url": "http://arxiv.org/abs/2403.05325v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.05325v1",
+  "authors": [
+    "Juan I. Pisula",
+    "Katarzyna Bozek"
+  ],
+  "date": "2024-03-08",
+  "summary": "The first step in Multiple Instance Learning (MIL) algorithms for Whole Slide\nImage (WSI) classification consists of tiling the input image into smaller\npatches and computing their feature vectors produced by a pre-trained feature\nextractor model. Feature extractor models that were pre-trained with\nsupervision on ImageNet have proven to transfer well to this domain, however,\nthis pre-training task does not take into account that visual information in\nneighboring patches is highly correlated. Based on this observation, we propose\nto increase downstream MIL classification by fine-tuning the feature extractor\nmodel using \\textit{Masked Context Modelling with Knowledge Distillation}. In\nthis task, the feature extractor model is fine-tuned by predicting masked\npatches in a bigger context window. Since reconstructing the input image would\nrequire a powerful image generation model, and our goal is not to generate\nrealistically looking image patches, we predict instead the feature vectors\nproduced by a larger teacher network. A single epoch of the proposed task\nsuffices to increase the downstream performance of the feature-extractor model\nwhen used in a MIL scenario, even capable of outperforming the downstream\nperformance of the teacher model, while being considerably smaller and\nrequiring a fraction of its compute.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

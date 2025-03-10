@@ -1,306 +1,125 @@
 {
   "keywords": {
-    "VLM": {
-      "count": 37,
-      "mentions_by_month": {
-        "2024-03": 37
-      },
-      "sources": {
-        "Papers With Code": 10,
-        "arXiv": 27
-      },
-      "attention_score": 37.0
-    },
-    "vision-and-language": {
-      "count": 1,
-      "mentions_by_month": {
-        "2024-03": 1
-      },
-      "sources": {
-        "Papers With Code": 1
-      },
-      "attention_score": 1.0
-    },
-    "vision-language": {
-      "count": 32,
-      "mentions_by_month": {
-        "2024-03": 32
-      },
-      "sources": {
-        "Papers With Code": 6,
-        "arXiv": 26
-      },
-      "attention_score": 32.0
-    },
-    "image-text": {
-      "count": 9,
-      "mentions_by_month": {
-        "2024-03": 9
-      },
-      "sources": {
-        "Papers With Code": 1,
-        "arXiv": 8
-      },
-      "attention_score": 9.0
-    },
-    "BLIP": {
-      "count": 1,
-      "mentions_by_month": {
-        "2024-03": 1
-      },
-      "sources": {
-        "Papers With Code": 1
-      },
-      "attention_score": 1.0
-    },
-    "vision language model": {
-      "count": 8,
-      "mentions_by_month": {
-        "2024-03": 8
-      },
-      "sources": {
-        "arXiv": 8
-      },
-      "attention_score": 8.0
-    },
     "multimodal": {
-      "count": 91,
+      "count": 12,
+      "attention_score": 12.0,
       "mentions_by_month": {
-        "2024-03": 91
+        "2025-03": 12
       },
       "sources": {
-        "arXiv": 80,
-        "Papers With Code": 11
-      },
-      "attention_score": 91.0
+        "arXiv": 12
+      }
     },
-    "visual reasoning": {
-      "count": 2,
-      "mentions_by_month": {
-        "2024-03": 2
-      },
-      "sources": {
-        "arXiv": 2
-      },
-      "attention_score": 2.0
-    },
-    "text-to-image": {
-      "count": 7,
-      "mentions_by_month": {
-        "2024-03": 7
-      },
-      "sources": {
-        "arXiv": 6,
-        "Papers With Code": 1
-      },
-      "attention_score": 7.0
-    },
-    "image generation": {
-      "count": 7,
-      "mentions_by_month": {
-        "2024-03": 7
-      },
-      "sources": {
-        "arXiv": 6,
-        "Papers With Code": 1
-      },
-      "attention_score": 7.0
-    },
-    "MLLM": {
-      "count": 6,
-      "mentions_by_month": {
-        "2024-03": 6
-      },
-      "sources": {
-        "Papers With Code": 4,
-        "arXiv": 2
-      },
-      "attention_score": 6.0
-    },
-    "MLLMs": {
-      "count": 4,
-      "mentions_by_month": {
-        "2024-03": 4
-      },
-      "sources": {
-        "Papers With Code": 2,
-        "arXiv": 2
-      },
-      "attention_score": 4.0
-    },
-    "Kosmos": {
+    "ViT": {
       "count": 1,
+      "attention_score": 1.0,
       "mentions_by_month": {
-        "2024-03": 1
+        "2025-03": 1
       },
       "sources": {
-        "Papers With Code": 1
-      },
-      "attention_score": 1.0
-    },
-    "text-to-video": {
-      "count": 2,
-      "mentions_by_month": {
-        "2024-03": 2
-      },
-      "sources": {
-        "Papers With Code": 1,
         "arXiv": 1
-      },
-      "attention_score": 2.0
-    },
-    "multimodal LLM": {
-      "count": 1,
-      "mentions_by_month": {
-        "2024-03": 1
-      },
-      "sources": {
-        "Papers With Code": 1
-      },
-      "attention_score": 1.0
-    },
-    "GPT-4V": {
-      "count": 1,
-      "mentions_by_month": {
-        "2024-03": 1
-      },
-      "sources": {
-        "Papers With Code": 1
-      },
-      "attention_score": 1.0
+      }
     },
     "CLIP": {
-      "count": 11,
+      "count": 2,
+      "attention_score": 2.0,
       "mentions_by_month": {
-        "2024-03": 11
+        "2025-03": 2
       },
       "sources": {
-        "arXiv": 11
+        "arXiv": 2
+      }
+    },
+    "Stable Diffusion": {
+      "count": 1,
+      "attention_score": 1.0,
+      "mentions_by_month": {
+        "2025-03": 1
       },
-      "attention_score": 11.0
+      "sources": {
+        "arXiv": 1
+      }
+    },
+    "MLLM": {
+      "count": 1,
+      "attention_score": 1.0,
+      "mentions_by_month": {
+        "2025-03": 1
+      },
+      "sources": {
+        "arXiv": 1
+      }
+    },
+    "MLLMs": {
+      "count": 1,
+      "attention_score": 1.0,
+      "mentions_by_month": {
+        "2025-03": 1
+      },
+      "sources": {
+        "arXiv": 1
+      }
     },
     "Segment Anything": {
       "count": 1,
+      "attention_score": 1.0,
       "mentions_by_month": {
-        "2024-03": 1
+        "2025-03": 1
       },
       "sources": {
         "arXiv": 1
-      },
-      "attention_score": 1.0
+      }
     },
-    "visual question answering": {
-      "count": 7,
-      "mentions_by_month": {
-        "2024-03": 7
-      },
-      "sources": {
-        "arXiv": 6,
-        "Papers With Code": 1
-      },
-      "attention_score": 7.0
-    },
-    "image captioning": {
-      "count": 3,
-      "mentions_by_month": {
-        "2024-03": 3
-      },
-      "sources": {
-        "arXiv": 3
-      },
-      "attention_score": 3.0
-    },
-    "vision transformer": {
-      "count": 10,
-      "mentions_by_month": {
-        "2024-03": 10
-      },
-      "sources": {
-        "arXiv": 10
-      },
-      "attention_score": 10.0
-    },
-    "VQA": {
-      "count": 6,
-      "mentions_by_month": {
-        "2024-03": 6
-      },
-      "sources": {
-        "arXiv": 6
-      },
-      "attention_score": 6.0
-    },
-    "ViT": {
-      "count": 4,
-      "mentions_by_month": {
-        "2024-03": 4
-      },
-      "sources": {
-        "arXiv": 4
-      },
-      "attention_score": 4.0
-    },
-    "DINO": {
+    "VLM": {
       "count": 2,
+      "attention_score": 2.0,
       "mentions_by_month": {
-        "2024-03": 2
+        "2025-03": 2
       },
       "sources": {
         "arXiv": 2
-      },
-      "attention_score": 2.0
+      }
     },
-    "Sora": {
-      "count": 1,
-      "mentions_by_month": {
-        "2024-03": 1
-      },
-      "sources": {
-        "arXiv": 1
-      },
-      "attention_score": 1.0
-    },
-    "Stable Diffusion": {
-      "count": 4,
-      "mentions_by_month": {
-        "2024-03": 4
-      },
-      "sources": {
-        "arXiv": 4
-      },
-      "attention_score": 4.0
-    },
-    "visual understanding": {
+    "vision-language": {
       "count": 2,
+      "attention_score": 2.0,
       "mentions_by_month": {
-        "2024-03": 2
+        "2025-03": 2
       },
       "sources": {
         "arXiv": 2
-      },
-      "attention_score": 2.0
+      }
     },
-    "visual grounding": {
-      "count": 2,
-      "mentions_by_month": {
-        "2024-03": 2
-      },
-      "sources": {
-        "arXiv": 1,
-        "Papers With Code": 1
-      },
-      "attention_score": 2.0
-    },
-    "image-to-text": {
+    "text-to-image": {
       "count": 1,
+      "attention_score": 1.0,
       "mentions_by_month": {
-        "2024-03": 1
+        "2025-03": 1
       },
       "sources": {
         "arXiv": 1
+      }
+    },
+    "image generation": {
+      "count": 2,
+      "attention_score": 2.0,
+      "mentions_by_month": {
+        "2025-03": 2
       },
-      "attention_score": 1.0
+      "sources": {
+        "arXiv": 2
+      }
+    },
+    "image-text": {
+      "count": 1,
+      "attention_score": 1.0,
+      "mentions_by_month": {
+        "2025-03": 1
+      },
+      "sources": {
+        "arXiv": 1
+      }
     }
   },
-  "updated_at": "2024-03-10 00:19:34"
+  "updated_at": "2025-03-10 11:40:23"
 }

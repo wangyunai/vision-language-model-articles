@@ -1,0 +1,26 @@
+{
+  "id": "2503.04006v1",
+  "title": "DSV-LFS: Unifying LLM-Driven Semantic Cues with Visual Features for\n  Robust Few-Shot Segmentation",
+  "url": "http://arxiv.org/abs/2503.04006v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04006v1",
+  "authors": [
+    "Amin Karimi",
+    "Charalambos Poullis"
+  ],
+  "date": "2025-03-06",
+  "summary": "Few-shot semantic segmentation (FSS) aims to enable models to segment\nnovel/unseen object classes using only a limited number of labeled examples.\nHowever, current FSS methods frequently struggle with generalization due to\nincomplete and biased feature representations, especially when support images\ndo not capture the full appearance variability of the target class. To improve\nthe FSS pipeline, we propose a novel framework that utilizes large language\nmodels (LLMs) to adapt general class semantic information to the query image.\nFurthermore, the framework employs dense pixel-wise matching to identify\nsimilarities between query and support images, resulting in enhanced FSS\nperformance. Inspired by reasoning-based segmentation frameworks, our method,\nnamed DSV-LFS, introduces an additional token into the LLM vocabulary, allowing\na multimodal LLM to generate a \"semantic prompt\" from class descriptions. In\nparallel, a dense matching module identifies visual similarities between the\nquery and support images, generating a \"visual prompt\". These prompts are then\njointly employed to guide the prompt-based decoder for accurate segmentation of\nthe query image. Comprehensive experiments on the benchmark datasets\nPascal-$5^{i}$ and COCO-$20^{i}$ demonstrate that our framework achieves\nstate-of-the-art performance-by a significant margin-demonstrating superior\ngeneralization to novel classes and robustness across diverse scenarios. The\nsource code is available at\n\\href{https://github.com/aminpdik/DSV-LFS}{https://github.com/aminpdik/DSV-LFS}",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "multimodal LLM"
+  ],
+  "attention_score": 2.71,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.989041095890411,
+    "source_weight": 1.0,
+    "age_months": 0.1,
+    "citation_velocity": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "2403.05346v3",
+  "title": "VLM-PL: Advanced Pseudo Labeling Approach for Class Incremental Object\n  Detection via Vision-Language Model",
+  "url": "http://arxiv.org/abs/2403.05346v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.05346v3",
+  "authors": [
+    "Junsu Kim",
+    "Yunhoe Ku",
+    "Jihyeon Kim",
+    "Junuk Cha",
+    "Seungryul Baek"
+  ],
+  "date": "2024-03-08",
+  "summary": "In the field of Class Incremental Object Detection (CIOD), creating models\nthat can continuously learn like humans is a major challenge. Pseudo-labeling\nmethods, although initially powerful, struggle with multi-scenario incremental\nlearning due to their tendency to forget past knowledge. To overcome this, we\nintroduce a new approach called Vision-Language Model assisted Pseudo-Labeling\n(VLM-PL). This technique uses Vision-Language Model (VLM) to verify the\ncorrectness of pseudo ground-truths (GTs) without requiring additional model\ntraining. VLM-PL starts by deriving pseudo GTs from a pre-trained detector.\nThen, we generate custom queries for each pseudo GT using carefully designed\nprompt templates that combine image and text features. This allows the VLM to\nclassify the correctness through its responses. Furthermore, VLM-PL integrates\nrefined pseudo and real GTs from upcoming training, effectively combining new\nand old knowledge. Extensive experiments conducted on the Pascal VOC and MS\nCOCO datasets not only highlight VLM-PL's exceptional performance in\nmulti-scenario but also illuminate its effectiveness in dual-scenario by\nachieving state-of-the-art results in both.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

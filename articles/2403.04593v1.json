@@ -1,0 +1,34 @@
+{
+  "id": "2403.04593v1",
+  "title": "Embodied Understanding of Driving Scenarios",
+  "url": "http://arxiv.org/abs/2403.04593v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04593v1",
+  "authors": [
+    "Yunsong Zhou",
+    "Linyan Huang",
+    "Qingwen Bu",
+    "Jia Zeng",
+    "Tianyu Li",
+    "Hang Qiu",
+    "Hongzi Zhu",
+    "Minyi Guo",
+    "Yu Qiao",
+    "Hongyang Li"
+  ],
+  "date": "2024-03-07",
+  "summary": "Embodied scene understanding serves as the cornerstone for autonomous agents\nto perceive, interpret, and respond to open driving scenarios. Such\nunderstanding is typically founded upon Vision-Language Models (VLMs).\nNevertheless, existing VLMs are restricted to the 2D domain, devoid of spatial\nawareness and long-horizon extrapolation proficiencies. We revisit the key\naspects of autonomous driving and formulate appropriate rubrics. Hereby, we\nintroduce the Embodied Language Model (ELM), a comprehensive framework tailored\nfor agents' understanding of driving scenes with large spatial and temporal\nspans. ELM incorporates space-aware pre-training to endow the agent with robust\nspatial localization capabilities. Besides, the model employs time-aware token\nselection to accurately inquire about temporal cues. We instantiate ELM on the\nreformulated multi-faced benchmark, and it surpasses previous state-of-the-art\napproaches in all aspects. All code, data, and models will be publicly shared.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

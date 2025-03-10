@@ -1,0 +1,30 @@
+{
+  "id": "2403.05266v3",
+  "title": "ERBench: An Entity-Relationship based Automatically Verifiable\n  Hallucination Benchmark for Large Language Models",
+  "url": "http://arxiv.org/abs/2403.05266v3",
+  "pdf_url": "http://arxiv.org/pdf/2403.05266v3",
+  "authors": [
+    "Jio Oh",
+    "Soyeon Kim",
+    "Junseok Seo",
+    "Jindong Wang",
+    "Ruochen Xu",
+    "Xing Xie",
+    "Steven Euijong Whang"
+  ],
+  "date": "2024-03-08",
+  "summary": "Large language models (LLMs) have achieved unprecedented performances in\nvarious applications, yet evaluating them is still challenging. Existing\nbenchmarks are either manually constructed or are automatic, but lack the\nability to evaluate the thought process of LLMs with arbitrary complexity. We\ncontend that utilizing existing relational databases based on the\nentity-relationship (ER) model is a promising approach for constructing\nbenchmarks as they contain structured knowledge that can be used to question\nLLMs. Unlike knowledge graphs, which are also used to evaluate LLMs, relational\ndatabases have integrity constraints that can be used to better construct\ncomplex in-depth questions and verify answers: (1) functional dependencies can\nbe used to pinpoint critical keywords that an LLM must know to properly answer\na given question containing certain attribute values; and (2) foreign key\nconstraints can be used to join relations and construct multi-hop questions,\nwhich can be arbitrarily long and used to debug intermediate answers. We thus\npropose ERBench, which uses these integrity constraints to convert any database\ninto an LLM benchmark. ERBench supports continuous evaluation as databases\nchange, multimodal questions, and various prompt engineering techniques. In our\nexperiments, we construct LLM benchmarks using databases of multiple domains\nand make an extensive comparison of contemporary LLMs. We show how ERBench can\nproperly evaluate any LLM by not only checking for answer correctness, but also\neffectively verifying the rationales by looking for the right keywords.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ],
+  "attention_score": 0.12,
+  "attention_components": {
+    "base_score": 1.2,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.2,
+    "citation_velocity": 0
+  }
+}

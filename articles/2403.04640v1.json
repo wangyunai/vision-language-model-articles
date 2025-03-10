@@ -1,0 +1,33 @@
+{
+  "id": "2403.04640v1",
+  "title": "CAT: Enhancing Multimodal Large Language Model to Answer Questions in\n  Dynamic Audio-Visual Scenarios",
+  "url": "http://arxiv.org/abs/2403.04640v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04640v1",
+  "authors": [
+    "Qilang Ye",
+    "Zitong Yu",
+    "Rui Shao",
+    "Xinyu Xie",
+    "Philip Torr",
+    "Xiaochun Cao"
+  ],
+  "date": "2024-03-07",
+  "summary": "This paper focuses on the challenge of answering questions in scenarios that\nare composed of rich and complex dynamic audio-visual components. Although\nexisting Multimodal Large Language Models (MLLMs) can respond to audio-visual\ncontent, these responses are sometimes ambiguous and fail to describe specific\naudio-visual events. To overcome this limitation, we introduce the CAT, which\nenhances MLLM in three ways: 1) besides straightforwardly bridging audio and\nvideo, we design a clue aggregator that aggregates question-related clues in\ndynamic audio-visual scenarios to enrich the detailed knowledge required for\nlarge language models. 2) CAT is trained on a mixed multimodal dataset,\nallowing direct application in audio-visual scenarios. Notably, we collect an\naudio-visual joint instruction dataset named AVinstruct, to further enhance the\ncapacity of CAT to model cross-semantic correlations. 3) we propose AI-assisted\nambiguity-aware direct preference optimization, a strategy specialized in\nretraining the model to favor the non-ambiguity response and improve the\nability to localize specific audio-visual objects. Extensive experimental\nresults demonstrate that CAT outperforms existing methods on multimodal tasks,\nespecially in Audio-Visual Question Answering (AVQA) tasks. The codes and the\ncollected instructions are released at https://github.com/rikeilong/Bay-CAT.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "visual question answering",
+    "VQA",
+    "MLLM",
+    "MLLMs"
+  ],
+  "attention_score": 0.2,
+  "attention_components": {
+    "base_score": 2.0,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}

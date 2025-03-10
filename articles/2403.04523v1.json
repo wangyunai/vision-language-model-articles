@@ -1,0 +1,27 @@
+{
+  "id": "2403.04523v1",
+  "title": "T-TAME: Trainable Attention Mechanism for Explaining Convolutional\n  Networks and Vision Transformers",
+  "url": "http://arxiv.org/abs/2403.04523v1",
+  "pdf_url": "http://arxiv.org/pdf/2403.04523v1",
+  "authors": [
+    "Mariano V. Ntrougkas",
+    "Nikolaos Gkalelis",
+    "Vasileios Mezaris"
+  ],
+  "date": "2024-03-07",
+  "summary": "The development and adoption of Vision Transformers and other deep-learning\narchitectures for image classification tasks has been rapid. However, the\n\"black box\" nature of neural networks is a barrier to adoption in applications\nwhere explainability is essential. While some techniques for generating\nexplanations have been proposed, primarily for Convolutional Neural Networks,\nadapting such techniques to the new paradigm of Vision Transformers is\nnon-trivial. This paper presents T-TAME, Transformer-compatible Trainable\nAttention Mechanism for Explanations, a general methodology for explaining deep\nneural networks used in image classification tasks. The proposed architecture\nand training technique can be easily applied to any convolutional or Vision\nTransformer-like neural network, using a streamlined training approach. After\ntraining, explanation maps can be computed in a single forward pass; these\nexplanation maps are comparable to or outperform the outputs of computationally\nexpensive perturbation-based explainability techniques, achieving SOTA\nperformance. We apply T-TAME to three popular deep learning classifier\narchitectures, VGG-16, ResNet-50, and ViT-B-16, trained on the ImageNet\ndataset, and we demonstrate improvements over existing state-of-the-art\nexplainability methods. A detailed analysis of the results and an ablation\nstudy provide insights into how the T-TAME design choices affect the quality of\nthe generated explanation maps.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision transformer",
+    "ViT"
+  ],
+  "attention_score": 0.14,
+  "attention_components": {
+    "base_score": 1.4,
+    "recency_factor": 0.1,
+    "source_weight": 1.0,
+    "age_months": 12.3,
+    "citation_velocity": 0
+  }
+}
