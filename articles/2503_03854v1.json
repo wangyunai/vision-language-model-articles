@@ -10,7 +10,7 @@
     "Jeremy Barnes",
     "Oier Lopez de Lacalle"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Cross-modal entity linking refers to the ability to align entities and their\nattributes across different modalities. While cross-modal entity linking is a\nfundamental skill needed for real-world applications such as multimodal code\ngeneration, fake news detection, or scene understanding, it has not been\nthoroughly studied in the literature. In this paper, we introduce a new task\nand benchmark to address this gap. Our benchmark, MATE, consists of 5.5k\nevaluation instances featuring visual scenes aligned with their textual\nrepresentations. To evaluate cross-modal entity linking performance, we design\na question-answering task that involves retrieving one attribute of an object\nin one modality based on a unique attribute of that object in another modality.\nWe evaluate state-of-the-art Vision-Language Models (VLMs) and humans on this\ntask, and find that VLMs struggle significantly compared to humans,\nparticularly as the number of objects in the scene increases. Our analysis also\nshows that, while chain-of-thought prompting can improve VLM performance,\nmodels remain far from achieving human-level proficiency. These findings\nhighlight the need for further research in cross-modal entity linking and show\nthat MATE is a strong benchmark to support that progress.",
   "source": "arXiv",
   "categories": [],

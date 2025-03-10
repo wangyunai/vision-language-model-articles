@@ -7,7 +7,7 @@
     "Jingyu Xu",
     "Yang Wang"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Artificial intelligence has shown the potential to improve diagnostic\naccuracy through medical image analysis for pneumonia diagnosis. However,\ntraditional multimodal approaches often fail to address real-world challenges\nsuch as incomplete data and modality loss. In this study, a Flexible Multimodal\nTransformer (FMT) was proposed, which uses ResNet-50 and BERT for joint\nrepresentation learning, followed by a dynamic masked attention strategy that\nsimulates clinical modality loss to improve robustness; finally, a sequential\nmixture of experts (MOE) architecture was used to achieve multi-level decision\nrefinement. After evaluation on a small multimodal pneumonia dataset, FMT\nachieved state-of-the-art performance with 94% accuracy, 95% recall, and 93% F1\nscore, outperforming single-modal baselines (ResNet: 89%; BERT: 79%) and the\nmedical benchmark CheXMed (90%), providing a scalable solution for multimodal\ndiagnosis of pneumonia in resource-constrained medical settings.",
   "source": "arXiv",
   "categories": [],

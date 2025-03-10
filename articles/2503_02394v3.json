@@ -12,7 +12,7 @@
     "Chengzhong Xu",
     "Hui Kong"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Model binarization has made significant progress in enabling real-time and\nenergy-efficient computation for convolutional neural networks (CNN), offering\na potential solution to the deployment challenges faced by Vision Transformers\n(ViTs) on edge devices. However, due to the structural differences between CNN\nand Transformer architectures, simply applying binary CNN strategies to the ViT\nmodels will lead to a significant performance drop. To tackle this challenge,\nwe propose BHViT, a binarization-friendly hybrid ViT architecture and its full\nbinarization model with the guidance of three important observations.\nInitially, BHViT utilizes the local information interaction and hierarchical\nfeature aggregation technique from coarse to fine levels to address redundant\ncomputations stemming from excessive tokens. Then, a novel module based on\nshift operations is proposed to enhance the performance of the binary\nMultilayer Perceptron (MLP) module without significantly increasing\ncomputational overhead. In addition, an innovative attention matrix\nbinarization method based on quantization decomposition is proposed to evaluate\nthe token's importance in the binarized attention matrix. Finally, we propose a\nregularization loss to address the inadequate optimization caused by the\nincompatibility between the weight oscillation in the binary layers and the\nAdam Optimizer. Extensive experimental results demonstrate that our proposed\nalgorithm achieves SOTA performance among binary ViT methods.",
   "source": "arXiv",
   "categories": [],

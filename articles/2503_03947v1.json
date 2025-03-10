@@ -14,7 +14,7 @@
     "Alexandre Alahi",
     "Deegan Atha"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Autonomous off-road navigation faces challenges due to diverse, unstructured\nenvironments, requiring robust perception with both geometric and semantic\nunderstanding. However, scarce densely labeled semantic data limits\ngeneralization across domains. Simulated data helps, but introduces domain\nadaptation issues. We propose COARSE, a semi-supervised domain adaptation\nframework for off-road semantic segmentation, leveraging sparse, coarse\nin-domain labels and densely labeled out-of-domain data. Using pretrained\nvision transformers, we bridge domain gaps with complementary pixel-level and\npatch-level decoders, enhanced by a collaborative pseudo-labeling strategy on\nunlabeled data. Evaluations on RUGD and Rellis-3D datasets show significant\nimprovements of 9.7\\% and 8.4\\% respectively, versus only using coarse data.\nTests on real-world off-road vehicle data in a multi-biome setting further\ndemonstrate COARSE's applicability.",
   "source": "arXiv",
   "categories": [],

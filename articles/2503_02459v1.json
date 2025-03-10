@@ -10,7 +10,7 @@
     "C. L. Philip Chen",
     "Haiqing Mei"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Semi-supervised semantic segmentation has witnessed remarkable advancements\nin recent years. However, existing algorithms are based on convolutional neural\nnetworks and directly applying them to Vision Transformers poses certain\nlimitations due to conceptual disparities. To this end, we propose TokenMix, a\ndata augmentation technique specifically designed for semi-supervised semantic\nsegmentation with Vision Transformers. TokenMix aligns well with the global\nattention mechanism by mixing images at the token level, enhancing learning\ncapability for contexutual information among image patches. We further\nincorporate image augmentation and feature augmentation to promote the\ndiversity of augmentation. Moreover, to enhance consistency regularization, we\npropose a dual-branch framework where each branch applies both image\naugmentation and feature augmentation to the input image. We conduct extensive\nexperiments across multiple benchmark datasets, including Pascal VOC 2012,\nCityscapes, and COCO. Results suggest that the proposed method outperforms\nstate-of-the-art algorithms with notably observed accuracy improvement,\nespecially under the circumstance of limited fine annotations.",
   "source": "arXiv",
   "categories": [],

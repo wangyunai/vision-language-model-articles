@@ -7,7 +7,7 @@
     "Alan Luo",
     "Kaiwen Yuan"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Vision Transformers (ViTs) have demonstrated exceptional performance in\nvarious vision tasks. However, they tend to underperform on smaller datasets\ndue to their inherent lack of inductive biases. Current approaches address this\nlimitation implicitly-often by pairing ViTs with pretext tasks or by distilling\nknowledge from convolutional neural networks (CNNs) to strengthen the prior. In\ncontrast, Self-Organizing Maps (SOMs), a widely adopted self-supervised\nframework, are inherently structured to preserve topology and spatial\norganization, making them a promising candidate to directly address the\nlimitations of ViTs in limited or small training datasets. Despite this\npotential, equipping SOMs with modern deep learning architectures remains\nlargely unexplored. In this study, we conduct a novel exploration on how Vision\nTransformers (ViTs) and Self-Organizing Maps (SOMs) can empower each other,\naiming to bridge this critical research gap. Our findings demonstrate that\nthese architectures can synergistically enhance each other, leading to\nsignificantly improved performance in both unsupervised and supervised tasks.\nCode will be publicly available.",
   "source": "arXiv",
   "categories": [],

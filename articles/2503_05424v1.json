@@ -7,7 +7,7 @@
     "Niklas Penzel",
     "Joachim Denzler"
   ],
-  "date": "2025-03-08",
+  "date": "2024-03-08",
   "summary": "Deep learning models achieve high predictive performance but lack intrinsic\ninterpretability, hindering our understanding of the learned prediction\nbehavior. Existing local explainability methods focus on associations,\nneglecting the causal drivers of model predictions. Other approaches adopt a\ncausal perspective but primarily provide more general global explanations.\nHowever, for specific inputs, it's unclear whether globally identified factors\napply locally. To address this limitation, we introduce a novel framework for\nlocal interventional explanations by leveraging recent advances in\nimage-to-image editing models. Our approach performs gradual interventions on\nsemantic properties to quantify the corresponding impact on a model's\npredictions using a novel score, the expected property gradient magnitude. We\ndemonstrate the effectiveness of our approach through an extensive empirical\nevaluation on a wide range of architectures and tasks. First, we validate it in\na synthetic scenario and demonstrate its ability to locally identify biases.\nAfterward, we apply our approach to analyze network training dynamics,\ninvestigate medical skin lesion classifiers, and study a pre-trained CLIP model\nwith real-life interventional data. Our results highlight the potential of\ninterventional explanations on the property level to reveal new insights into\nthe behavior of deep models.",
   "source": "arXiv",
   "categories": [],

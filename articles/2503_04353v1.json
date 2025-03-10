@@ -8,7 +8,7 @@
     "Indra Deep Mastan",
     "Debayan Gupta"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "We propose ObjMST, an object-focused multimodal style transfer framework that\nprovides separate style supervision for salient objects and surrounding\nelements while addressing alignment issues in multimodal representation\nlearning. Existing image-text multimodal style transfer methods face the\nfollowing challenges: (1) generating non-aligned and inconsistent multimodal\nstyle representations; and (2) content mismatch, where identical style patterns\nare applied to both salient objects and their surrounding elements. Our\napproach mitigates these issues by: (1) introducing a Style-Specific Masked\nDirectional CLIP Loss, which ensures consistent and aligned style\nrepresentations for both salient objects and their surroundings; and (2)\nincorporating a salient-to-key mapping mechanism for stylizing salient objects,\nfollowed by image harmonization to seamlessly blend the stylized objects with\ntheir environment. We validate the effectiveness of ObjMST through experiments,\nusing both quantitative metrics and qualitative visual evaluations of the\nstylized outputs. Our code is available at:\nhttps://github.com/chandagrover/ObjMST.",
   "source": "arXiv",
   "categories": [],

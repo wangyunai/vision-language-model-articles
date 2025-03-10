@@ -12,7 +12,7 @@
     "Ilhyun Cho",
     "Cheul-Hee Hahm"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "In the research of video quality assessment (VQA), two-branch network has\nemerged as a promising solution. It decouples VQA with separate technical and\naesthetic branches to measure the perception of low-level distortions and\nhigh-level semantics respectively. However, we argue that while technical and\naesthetic perspectives are complementary, the technical perspective itself\nshould be measured in semantic-aware manner. We hypothesize that existing\ntechnical branch struggles to perceive the semantics of high-resolution videos,\nas it is trained on local mini-patches sampled from videos. This issue can be\nhidden by apparently good results on low-resolution videos, but indeed becomes\ncritical for high-resolution VQA. This work introduces SiamVQA, a simple but\neffective Siamese network for highre-solution VQA. SiamVQA shares weights\nbetween technical and aesthetic branches, enhancing the semantic perception\nability of technical branch to facilitate technical-quality representation\nlearning. Furthermore, it integrates a dual cross-attention layer for fusing\ntechnical and aesthetic features. SiamVQA achieves state-of-the-art accuracy on\nhigh-resolution benchmarks, and competitive results on lower-resolution\nbenchmarks. Codes will be available at: https://github.com/srcn-ivl/SiamVQA",
   "source": "arXiv",
   "categories": [],

@@ -9,7 +9,7 @@
     "Antonio Rod\u00e0",
     "Franco Pierucci"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "In recent decades, neuroscientific and psychological research has traced\ndirect relationships between taste and auditory perceptions. This article\nexplores multimodal generative models capable of converting taste information\ninto music, building on this foundational research. We provide a brief review\nof the state of the art in this field, highlighting key findings and\nmethodologies. We present an experiment in which a fine-tuned version of a\ngenerative music model (MusicGEN) is used to generate music based on detailed\ntaste descriptions provided for each musical piece. The results are promising:\naccording the participants' ($n=111$) evaluation, the fine-tuned model produces\nmusic that more coherently reflects the input taste descriptions compared to\nthe non-fine-tuned model. This study represents a significant step towards\nunderstanding and developing embodied interactions between AI, sound, and\ntaste, opening new possibilities in the field of generative AI. We release our\ndataset, code and pre-trained model at: https://osf.io/xs5jy/.",
   "source": "arXiv",
   "categories": [],

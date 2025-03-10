@@ -11,7 +11,7 @@
     "Piotr Skalski",
     "David Sutton"
   ],
-  "date": "2025-03-02",
+  "date": "2024-03-02",
   "summary": "Pre-trained foundation models can be adapted for specific tasks using\nLow-Rank Adaptation (LoRA). However, the fairness properties of these adapted\nclassifiers remain underexplored. Existing fairness-aware fine-tuning methods\nrely on direct access to sensitive attributes or their predictors, but in\npractice, these sensitive attributes are often held under strict consumer\nprivacy controls, and neither the attributes nor their predictors are available\nto model developers, hampering the development of fair models. To address this\nissue, we introduce a set of LoRA-based fine-tuning methods that can be trained\nin a distributed fashion, where model developers and fairness auditors\ncollaborate without sharing sensitive attributes or predictors. In this paper,\nwe evaluate three such methods - sensitive unlearning, adversarial training,\nand orthogonality loss - against a fairness-unaware baseline, using experiments\non the CelebA and UTK-Face datasets with an ImageNet pre-trained ViT-Base\nmodel. We find that orthogonality loss consistently reduces bias while\nmaintaining or improving utility, whereas adversarial training improves False\nPositive Rate Parity and Demographic Parity in some cases, and sensitive\nunlearning provides no clear benefit. In tasks where significant biases are\npresent, distributed fairness-aware fine-tuning methods can effectively\neliminate bias without compromising consumer privacy and, in most cases,\nimprove model utility.",
   "source": "arXiv",
   "categories": [],

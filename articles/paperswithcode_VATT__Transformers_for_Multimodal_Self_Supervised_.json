@@ -3,7 +3,7 @@
   "title": "VATT: Transformers for Multimodal Self-Supervised Learning from Raw Video, Audio and Text",
   "url": "https://paperswithcode.com/paper/vatt-transformers-for-multimodal-self",
   "authors": [],
-  "date": "2025-03-12",
+  "date": "2024-03-12",
   "summary": "We train VATT end-to-end from scratch using multimodal contrastive losses and evaluate its performance by the downstream tasks of video action recognition, audio event classification, image classification, and text-to-video retrieval.",
   "source": "Papers With Code",
   "keywords": [

@@ -12,7 +12,7 @@
     "Zeyu Chen",
     "Yi Liu"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "With the rapid advancement of digitalization, various document images are\nbeing applied more extensively in production and daily life, and there is an\nincreasingly urgent need for fast and accurate parsing of the content in\ndocument images. Therefore, this report presents PP-DocBee, a novel multimodal\nlarge language model designed for end-to-end document image understanding.\nFirst, we develop a data synthesis strategy tailored to document scenarios in\nwhich we build a diverse dataset to improve the model generalization. Then, we\napply a few training techniques, including dynamic proportional sampling, data\npreprocessing, and OCR postprocessing strategies. Extensive evaluations\ndemonstrate the superior performance of PP-DocBee, achieving state-of-the-art\nresults on English document understanding benchmarks and even outperforming\nexisting open source and commercial models in Chinese document understanding.\nThe source code and pre-trained models are publicly available at\n\\href{https://github.com/PaddlePaddle/PaddleMIX}{https://github.com/PaddlePaddle/PaddleMIX}.",
   "source": "arXiv",
   "categories": [],

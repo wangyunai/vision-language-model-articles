@@ -11,7 +11,7 @@
     "Cosmin I. Bercea",
     "Julia A. Schnabel"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Visual Language Models (VLMs) have demonstrated impressive capabilities in\nvisual grounding tasks. However, their effectiveness in the medical domain,\nparticularly for abnormality detection and localization within medical images,\nremains underexplored. A major challenge is the complex and abstract nature of\nmedical terminology, which makes it difficult to directly associate\npathological anomaly terms with their corresponding visual features. In this\nwork, we introduce a novel approach to enhance VLM performance in medical\nabnormality detection and localization by leveraging decomposed medical\nknowledge. Instead of directly prompting models to recognize specific\nabnormalities, we focus on breaking down medical concepts into fundamental\nattributes and common visual patterns. This strategy promotes a stronger\nalignment between textual descriptions and visual features, improving both the\nrecognition and localization of abnormalities in medical images.We evaluate our\nmethod on the 0.23B Florence-2 base model and demonstrate that it achieves\ncomparable performance in abnormality grounding to significantly larger 7B\nLLaVA-based medical VLMs, despite being trained on only 1.5% of the data used\nfor such models. Experimental results also demonstrate the effectiveness of our\napproach in both known and previously unseen abnormalities, suggesting its\nstrong generalization capabilities.",
   "source": "arXiv",
   "categories": [],

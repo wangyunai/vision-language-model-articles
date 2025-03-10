@@ -8,7 +8,7 @@
     "Kimathi Njoki",
     "Jordan W. Suchow"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "As artificial intelligence (AI) continues to advance--particularly in\ngenerative models--an open question is whether these systems can replicate\nfoundational models of human social perception. A well-established framework in\nsocial cognition suggests that social judgments are organized along two primary\ndimensions: valence (e.g., trustworthiness, warmth) and dominance (e.g., power,\nassertiveness). This study examines whether multimodal generative AI systems\ncan reproduce this valence-dominance structure when evaluating facial images\nand how their representations align with those observed across world regions.\nThrough principal component analysis (PCA), we found that the extracted\ndimensions closely mirrored the theoretical structure of valence and dominance,\nwith trait loadings aligning with established definitions. However, many world\nregions and generative AI models also exhibited a third component, the nature\nand significance of which warrant further investigation. These findings\ndemonstrate that multimodal generative AI systems can replicate key aspects of\nhuman social perception, raising important questions about their implications\nfor AI-driven decision-making and human-AI interactions.",
   "source": "arXiv",
   "categories": [],

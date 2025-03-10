@@ -8,7 +8,7 @@
     "Ahmet O\u011fuz Salt\u0131k",
     "Anthony Stein"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Deep learning-based weed control systems often suffer from limited training\ndata diversity and constrained on-board computation, impacting their real-world\nperformance. To overcome these challenges, we propose a framework that\nleverages Stable Diffusion-based inpainting to augment training data\nprogressively in 10% increments -- up to an additional 200%, thus enhancing\nboth the volume and diversity of samples. Our approach is evaluated on two\nstate-of-the-art object detection models, YOLO11(l) and RT-DETR(l), using the\nmAP50 metric to assess detection performance. We explore quantization\nstrategies (FP16 and INT8) for both the generative inpainting and detection\nmodels to strike a balance between inference speed and accuracy. Deployment of\nthe downstream models on the Jetson Orin Nano demonstrates the practical\nviability of our framework in resource-constrained environments, ultimately\nimproving detection accuracy and computational efficiency in intelligent weed\nmanagement systems.",
   "source": "arXiv",
   "categories": [],

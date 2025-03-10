@@ -7,7 +7,7 @@
     "Tiancheng Hu",
     "Nigel Collier"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Current approaches to emotion detection often overlook the inherent\nsubjectivity of affective experiences, instead relying on aggregated labels\nthat mask individual variations in emotional responses. We introduce iNews, a\nnovel large-scale dataset explicitly capturing subjective affective responses\nto news headlines. Our dataset comprises annotations from 291 demographically\ndiverse UK participants across 2,899 multimodal Facebook news posts from major\nUK outlets, with an average of 5.18 annotators per sample. For each post,\nannotators provide multifaceted labels including valence, arousal, dominance,\ndiscrete emotions, content relevance judgments, sharing likelihood, and\nmodality importance ratings (text, image, or both). Furthermore, we collect\ncomprehensive annotator persona information covering demographics, personality,\nmedia trust, and consumption patterns, which explain 15.2% of annotation\nvariance - higher than existing NLP datasets. Incorporating this information\nyields a 7% accuracy gain in zero-shot prediction and remains beneficial even\nwith 32-shot. iNews will enhance research in LLM personalization, subjectivity,\naffective computing, and individual-level behavior simulation.",
   "source": "arXiv",
   "categories": [],

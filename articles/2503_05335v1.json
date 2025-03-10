@@ -7,7 +7,7 @@
     "Joel Honkamaa",
     "Pekka Marttinen"
   ],
-  "date": "2025-03-11",
+  "date": "2024-03-11",
   "summary": "The deformable registration of images of different modalities, essential in\nmany medical imaging applications, remains challenging. The main challenge is\ndeveloping a robust measure for image overlap despite the compared images\ncapturing different aspects of the underlying tissue. Here, we explore\nsimilarity metrics based on functional dependence between intensity values of\nregistered images. Although functional dependence is too restrictive on the\nglobal scale, earlier work has shown competitive performance in deformable\nregistration when such measures are applied over small enough contexts. We\nconfirm this finding and further develop the idea by modeling local functional\ndependence via the linear basis function model with the basis functions learned\njointly with the deformation. The measure can be implemented via convolutions,\nmaking it efficient to compute on GPUs. We release the method as an easy-to-use\ntool and show good performance on three datasets compared to well-established\nbaseline and earlier functional dependence-based methods.",
   "source": "arXiv",
   "categories": [],

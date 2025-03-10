@@ -6,7 +6,7 @@
   "authors": [
     "Yanshu Li"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Multimodal in-context learning (ICL) has emerged as a key capability of Large\nVision-Language Models (LVLMs), driven by their increasing scale and\napplicability. Despite its promise, effective ICL in the multimodal setting\nremains challenging due to the inherent complexity of image-text inputs and the\nhigh sensitivity of ICL performance to input configurations. In this work, we\nshed light on the core mechanism underlying multimodal ICL, identifying task\nmapping as a crucial factor in configuring robust in-context demonstration\n(ICD) sequences. Building on these insights, we propose \\textit{SabER}, a\nlightweight yet powerful decoder-only transformer equipped with task-aware\nattention, which intelligently selects and arranges ICDs from a demonstration\nlibrary in an autoregressive fashion. This design enables fine-grained feature\nextraction and cross-modal reasoning, iteratively refining task mapping to\ngenerate high-quality ICD sequences. Through extensive experiments covering\nfive LVLMs and nine benchmark datasets, SabER not only demonstrates strong\nempirical performance, but also provides deeper understanding of how task\nsemantics interact with multimodal ICDs. Our findings highlight the importance\nof principled ICD sequence configuration and open new avenues to enhance\nmultimodal ICL in a wide range of real-world scenarios.",
   "source": "arXiv",
   "categories": [],

@@ -16,7 +16,7 @@
     "Yi Wang",
     "Hao Jiang"
   ],
-  "date": "2025-03-15",
+  "date": "2024-03-15",
   "summary": "While previous multimodal slow-thinking methods have demonstrated remarkable\nsuccess in single-image understanding scenarios, their effectiveness becomes\nfundamentally constrained when extended to more complex multi-image\ncomprehension tasks. This limitation stems from their predominant reliance on\ntext-based intermediate reasoning processes. While for human, when engaging in\nsophisticated multi-image analysis, they typically perform two complementary\ncognitive operations: (1) continuous cross-image visual comparison through\nregion-of-interest matching, and (2) dynamic memorization of critical visual\nconcepts throughout the reasoning chain. Motivated by these observations, we\npropose the Complex Multi-Modal Chain-of-Thought (CMMCoT) framework, a\nmulti-step reasoning framework that mimics human-like \"slow thinking\" for\nmulti-image understanding. Our approach incorporates two key innovations: 1.\nThe construction of interleaved multimodal multi-step reasoning chains, which\nutilize critical visual region tokens, extracted from intermediate reasoning\nsteps, as supervisory signals. This mechanism not only facilitates\ncomprehensive cross-modal understanding but also enhances model\ninterpretability. 2. The introduction of a test-time memory augmentation module\nthat expands the model reasoning capacity during inference while preserving\nparameter efficiency. Furthermore, to facilitate research in this direction, we\nhave curated a novel multi-image slow-thinking dataset. Extensive experiments\ndemonstrate the effectiveness of our model.",
   "source": "arXiv",
   "categories": [],

@@ -9,7 +9,7 @@
     "Jilin Mei",
     "Yu Hu"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "RGB-Thermal fusion is a potential solution for various weather and light\nconditions in challenging scenarios. However, plenty of studies focus on\ndesigning complex modules to fuse different modalities. With the widespread\napplication of large language models (LLMs), valuable information can be more\neffectively extracted from natural language. Therefore, we aim to leverage the\nadvantages of large language models to design a structurally simple and highly\nadaptable multimodal fusion model architecture. We proposed MultimodAl\nSegmentation with TExt PRompts (MASTER) architecture, which integrates LLM into\nthe fusion of RGB-Thermal multimodal data and allows complex query text to\nparticipate in the fusion process. Our model utilizes a dual-path structure to\nextract information from different modalities of images. Additionally, we\nemploy LLM as the core module for multimodal fusion, enabling the model to\ngenerate learnable codebook tokens from RGB, thermal images, and textual\ninformation. A lightweight image decoder is used to obtain semantic\nsegmentation results. The proposed MASTER performs exceptionally well in\nbenchmark tests across various automated driving scenarios, yielding promising\nresults.",
   "source": "arXiv",
   "categories": [],

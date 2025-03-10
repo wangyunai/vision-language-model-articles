@@ -6,7 +6,7 @@
   "authors": [
     "Amin Honarmandi Shandiz"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Molecular subtyping of breast cancer is crucial for personalized treatment\nand prognosis. Traditional classification approaches rely on either\nhistopathological images or gene expression profiling, limiting their\npredictive power. In this study, we propose a deep multimodal learning\nframework that integrates histopathological images and gene expression data to\nclassify breast cancer into BRCA.Luminal and BRCA.Basal / Her2 subtypes. Our\napproach employs a ResNet-50 model for image feature extraction and fully\nconnected layers for gene expression processing, with a cross-attention fusion\nmechanism to enhance modality interaction. We conduct extensive experiments\nusing five-fold cross-validation, demonstrating that our multimodal integration\noutperforms unimodal approaches in terms of classification accuracy,\nprecision-recall AUC, and F1-score. Our findings highlight the potential of\ndeep learning for robust and interpretable breast cancer subtype\nclassification, paving the way for improved clinical decision-making.",
   "source": "arXiv",
   "categories": [],

@@ -11,7 +11,7 @@
     "Huy Thanh Nguyen",
     "Vinh Quang Dinh"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Visual Question Answering (VQA) is a multimodal task requiring reasoning\nacross textual and visual inputs, which becomes particularly challenging in\nlow-resource languages like Vietnamese due to linguistic variability and the\nlack of high-quality datasets. Traditional methods often rely heavily on\nextensive annotated datasets, computationally expensive pipelines, and large\npre-trained models, specifically in the domain of Vietnamese VQA, limiting\ntheir applicability in such scenarios. To address these limitations, we propose\na training framework that combines a paraphrase-based feature augmentation\nmodule with a dynamic curriculum learning strategy. Explicitly, augmented\nsamples are considered \"easy\" while raw samples are regarded as \"hard\". The\nframework then utilizes a mechanism that dynamically adjusts the ratio of easy\nto hard samples during training, progressively modifying the same dataset to\nincrease its difficulty level. By enabling gradual adaptation to task\ncomplexity, this approach helps the Vietnamese VQA model generalize well, thus\nimproving overall performance. Experimental results show consistent\nimprovements on the OpenViVQA dataset and mixed outcomes on the ViVQA dataset,\nhighlighting both the potential and challenges of our approach in advancing VQA\nfor Vietnamese language.",
   "source": "arXiv",
   "categories": [],

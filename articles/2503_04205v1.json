@@ -8,7 +8,7 @@
     "Wei Wang",
     "Li Xiao"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "In MRI-based mental disorder diagnosis, most previous studies focus on\nfunctional connectivity network (FCN) derived from functional MRI (fMRI).\nHowever, the small size of annotated fMRI datasets restricts its wide\napplication. Meanwhile, structural MRIs (sMRIs), such as 3D T1-weighted (T1w)\nMRI, which are commonly used and readily accessible in clinical settings, are\noften overlooked. To integrate the complementary information from both function\nand structure for improved diagnostic accuracy, we propose CINP (Contrastive\nImage-Network Pre-training), a framework that employs contrastive learning\nbetween sMRI and FCN. During pre-training, we incorporate masked image modeling\nand network-image matching to enhance visual representation learning and\nmodality alignment. Since the CINP facilitates knowledge transfer from FCN to\nsMRI, we introduce network prompting. It utilizes only sMRI from suspected\npatients and a small amount of FCNs from different patient classes for\ndiagnosing mental disorders, which is practical in real-world clinical\nscenario. The competitive performance on three mental disorder diagnosis tasks\ndemonstrate the effectiveness of the CINP in integrating multimodal MRI\ninformation, as well as the potential of incorporating sMRI into clinical\ndiagnosis using network prompting.",
   "source": "arXiv",
   "categories": [],

@@ -10,7 +10,7 @@
     "Miguel Cazorla",
     "Francisco Gomez-Donoso"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "The monitoring and prediction of in-class student activities is of paramount\nimportance for the comprehension of engagement and the enhancement of\npedagogical efficacy. The accurate detection of these activities enables\neducators to modify their lessons in real time, thereby reducing negative\nemotional states and enhancing the overall learning experience. To this end,\nthe use of non-intrusive devices, such as inertial measurement units (IMUs)\nembedded in smartwatches, represents a viable solution. The development of\nreliable predictive systems has been limited by the lack of large, labeled\ndatasets in education. To bridge this gap, we present a novel dataset for\nin-class activity detection using affordable IMU sensors. The dataset comprises\n19 diverse activities, both instantaneous and continuous, performed by 12\nparticipants in typical classroom scenarios. It includes accelerometer,\ngyroscope, rotation vector data, and synchronized stereo images, offering a\ncomprehensive resource for developing multimodal algorithms using sensor and\nvisual data. This dataset represents a key step toward scalable solutions for\nactivity recognition in educational settings.",
   "source": "arXiv",
   "categories": [],

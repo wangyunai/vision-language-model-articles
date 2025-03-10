@@ -7,7 +7,7 @@
     "Jingfei Huang",
     "Alexandros Haridis"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Recent advancements in multimodal Generative AI have the potential to\ndemocratize specialized architectural tasks, such as interpreting technical\ndrawings and creating 3D CAD models, which traditionally require expert\nknowledge. This paper presents a comparative evaluation of two systems: GPT-4o\nand Claude 3.5, in the task of architectural 3D synthesis. We conduct a case\nstudy on two buildings from Palladio's Four Books of Architecture (1965): Villa\nRotonda and Palazzo Porto. High-level architectural models and drawings of\nthese buildings were prepared, inspired by Palladio's original texts and\ndrawings. Through sequential text and image prompting, we assess the systems'\nabilities in (1) interpreting 2D and 3D representations of buildings from\ndrawings, (2) encoding the buildings into a CAD software script, and (3)\nself-improving based on outputs. While both systems successfully generate\nindividual parts, they struggle to accurately assemble these parts into the\ndesired spatial relationships, with Claude 3.5 demonstrating better\nperformance, particularly in self-correcting its output. This study contributes\nto ongoing research on benchmarking the strengths and weaknesses of\noff-the-shelf AI systems in performing intelligent human tasks that require\ndiscipline-specific knowledge. The findings highlight the potential of\nlanguage-enabled AI systems to act as collaborative technical assistants in the\narchitectural design process.",
   "source": "arXiv",
   "categories": [],

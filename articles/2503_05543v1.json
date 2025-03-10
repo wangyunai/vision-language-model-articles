@@ -10,7 +10,7 @@
     "Mi Tian",
     "Hua Huang"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Geometry problem solving has garnered increasing attention due to its\npotential applications in intelligent education field. Inspired by the\nobservation that text often introduces ambiguities that diagrams can clarify,\nthis paper presents Pi-GPS, a novel framework that unleashes the power of\ndiagrammatic information to resolve textual ambiguities, an aspect largely\noverlooked in prior research. Specifically, we design a micro module comprising\na rectifier and verifier: the rectifier employs MLLMs to disambiguate text\nbased on the diagrammatic context, while the verifier ensures the rectified\noutput adherence to geometric rules, mitigating model hallucinations.\nAdditionally, we explore the impact of LLMs in theorem predictor based on the\ndisambiguated formal language. Empirical results demonstrate that Pi-GPS\nsurpasses state-of-the-art models, achieving a nearly 10\\% improvement on\nGeometry3K over prior neural-symbolic approaches. We hope this work highlights\nthe significance of resolving textual ambiguity in multimodal mathematical\nreasoning, a crucial factor limiting performance.",
   "source": "arXiv",
   "categories": [],

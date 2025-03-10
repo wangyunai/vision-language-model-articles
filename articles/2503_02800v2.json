@@ -12,7 +12,7 @@
     "Thomas Arnold",
     "Joshua Church"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Anomaly detection in complex industrial environments poses unique challenges,\nparticularly in contexts characterized by data sparsity and evolving\noperational conditions. Predictive maintenance (PdM) in such settings demands\nmethodologies that are adaptive, transferable, and capable of integrating\ndomain-specific knowledge. In this paper, we present RAAD-LLM, a novel\nframework for adaptive anomaly detection, leveraging large language models\n(LLMs) integrated with Retrieval-Augmented Generation (RAG). This approach\naddresses the aforementioned PdM challenges. By effectively utilizing\ndomain-specific knowledge, RAAD-LLM enhances the detection of anomalies in time\nseries data without requiring fine-tuning on specific datasets. The framework's\nadaptability mechanism enables it to adjust its understanding of normal\noperating conditions dynamically, thus increasing detection accuracy. We\nvalidate this methodology through a real-world application for a plastics\nmanufacturing plant and the Skoltech Anomaly Benchmark (SKAB). Results show\nsignificant improvements over our previous model with an accuracy increase from\n70.7% to 89.1% on the real-world dataset. By allowing for the enriching of\ninput series data with semantics, RAAD-LLM incorporates multimodal capabilities\nthat facilitate more collaborative decision-making between the model and plant\noperators. Overall, our findings support RAAD-LLM's ability to revolutionize\nanomaly detection methodologies in PdM, potentially leading to a paradigm shift\nin how anomaly detection is implemented across various industries.",
   "source": "arXiv",
   "categories": [],

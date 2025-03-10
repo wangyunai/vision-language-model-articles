@@ -14,7 +14,7 @@
     "Peng Li",
     "Yang Liu"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Dongba pictographs are the only pictographs still in use in the world. They\nhave pictorial ideographic features, and their symbols carry rich cultural and\ncontextual information. Due to the lack of relevant datasets, existing research\nhas difficulty in advancing the study of semantic understanding of Dongba\npictographs. To this end, we propose DongbaMIE, the first multimodal dataset\nfor semantic understanding and extraction of Dongba pictographs. The dataset\nconsists of Dongba pictograph images and their corresponding Chinese semantic\nannotations. It contains 23,530 sentence-level and 2,539 paragraph-level\nimages, covering four semantic dimensions: objects, actions, relations, and\nattributes. We systematically evaluate the GPT-4o, Gemini-2.0, and Qwen2-VL\nmodels. Experimental results show that the F1 scores of GPT-4o and Gemini in\nthe best object extraction are only 3.16 and 3.11 respectively. The F1 score of\nQwen2-VL after supervised fine-tuning is only 11.49. These results suggest that\ncurrent large multimodal models still face significant challenges in accurately\nrecognizing the diverse semantic information in Dongba pictographs. The dataset\ncan be obtained from this URL.",
   "source": "arXiv",
   "categories": [],

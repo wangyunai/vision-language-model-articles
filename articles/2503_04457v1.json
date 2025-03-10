@@ -8,7 +8,7 @@
     "Weiwei Fu",
     "Yang Zhou"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Vision-language models (VLMs) have achieved remarkable advancements,\ncapitalizing on the impressive capabilities of large language models (LLMs)\nacross diverse tasks. Despite this, a critical challenge known as hallucination\noccurs when models overconfidently describe objects or attributes absent from\nthe image, a problem exacerbated by the tendency of VLMs to rely on linguistic\npriors. This limitation reduces model reliability in high-stakes applications.\nIn this work, we have observed the characteristic of logits' continuity\nconsistency enhancement and introduced a straightforward and efficient method,\nCross-Temporal Prediction Connection (TPC), designed to enhance the semantic\nconsistency of logits by connecting them temporally across timesteps. TPC\namplifies information flow and improves coherence, effectively reducing\nhallucination. Extensive experiments show that TPC surpasses existing\nrepresentatives, delivering superior performance in both accuracy and\nefficiency while maintaining robustness in open-ended text generation tasks.",
   "source": "arXiv",
   "categories": [],

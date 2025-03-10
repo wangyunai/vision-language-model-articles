@@ -9,7 +9,7 @@
     "Huazhu Fu",
     "Daoqiang Zhang"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Vision-language models (VLMs) like CLIP (Contrastive Language-Image\nPre-Training) have seen remarkable success in visual recognition, highlighting\nthe increasing need to safeguard the intellectual property (IP) of well-trained\nmodels. Effective IP protection extends beyond ensuring authorized usage; it\nalso necessitates restricting model deployment to authorized data domains,\nparticularly when the model is fine-tuned for specific target domains. However,\ncurrent IP protection methods often rely solely on the visual backbone, which\nmay lack sufficient semantic richness. To bridge this gap, we introduce\nIP-CLIP, a lightweight IP protection strategy tailored to CLIP, employing a\nprompt-based learning approach. By leveraging the frozen visual backbone of\nCLIP, we extract both image style and content information, incorporating them\ninto the learning of IP prompt. This strategy acts as a robust barrier,\neffectively preventing the unauthorized transfer of features from authorized\ndomains to unauthorized ones. Additionally, we propose a style-enhancement\nbranch that constructs feature banks for both authorized and unauthorized\ndomains. This branch integrates self-enhanced and cross-domain features,\nfurther strengthening IP-CLIP's capability to block features from unauthorized\ndomains. Finally, we present new three metrics designed to better balance the\nperformance degradation of authorized and unauthorized domains. Comprehensive\nexperiments in various scenarios demonstrate its promising potential for\napplication in IP protection tasks for VLMs.",
   "source": "arXiv",
   "categories": [],

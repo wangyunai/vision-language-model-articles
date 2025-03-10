@@ -10,7 +10,7 @@
     "Zhaohui Hou",
     "Mingjie Zhan"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Graphical User Interface (GUI) agents show amazing abilities in assisting\nhuman-computer interaction, automating human user's navigation on digital\ndevices. An ideal GUI agent is expected to achieve high accuracy, low latency,\nand compatibility for different GUI platforms. Recent vision-based approaches\nhave shown promise by leveraging advanced Vision Language Models (VLMs). While\nthey generally meet the requirements of compatibility and low latency, these\nvision-based GUI agents tend to have low accuracy due to their limitations in\nelement grounding. To address this issue, we propose $\\textbf{SpiritSight}$, a\nvision-based, end-to-end GUI agent that excels in GUI navigation tasks across\nvarious GUI platforms. First, we create a multi-level, large-scale,\nhigh-quality GUI dataset called $\\textbf{GUI-Lasagne}$ using scalable methods,\nempowering SpiritSight with robust GUI understanding and grounding\ncapabilities. Second, we introduce the $\\textbf{Universal Block Parsing (UBP)}$\nmethod to resolve the ambiguity problem in dynamic high-resolution of visual\ninputs, further enhancing SpiritSight's ability to ground GUI objects. Through\nthese efforts, SpiritSight agent outperforms other advanced methods on diverse\nGUI benchmarks, demonstrating its superior capability and compatibility in GUI\nnavigation tasks. Models are available at\n$\\href{https://huggingface.co/SenseLLM/SpiritSight-Agent-8B}{this\\ URL}$.",
   "source": "arXiv",
   "categories": [],

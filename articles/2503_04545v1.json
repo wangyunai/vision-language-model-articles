@@ -10,7 +10,7 @@
     "Wilfried W\u00f6ber",
     "Jos\u00e9 Grac\u00eda-Rodr\u00edguez"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Visual servoing enables robots to precisely position their end-effector\nrelative to a target object. While classical methods rely on hand-crafted\nfeatures and thus are universally applicable without task-specific training,\nthey often struggle with occlusions and environmental variations, whereas\nlearning-based approaches improve robustness but typically require extensive\ntraining. We present a visual servoing approach that leverages pretrained\nvision transformers for semantic feature extraction, combining the advantages\nof both paradigms while also being able to generalize beyond the provided\nsample. Our approach achieves full convergence in unperturbed scenarios and\nsurpasses classical image-based visual servoing by up to 31.2\\% relative\nimprovement in perturbed scenarios. Even the convergence rates of\nlearning-based methods are matched despite requiring no task- or\nobject-specific training. Real-world evaluations confirm robust performance in\nend-effector positioning, industrial box manipulation, and grasping of unseen\nobjects using only a reference from the same category. Our code and simulation\nenvironment are available at: https://alessandroscherl.github.io/ViT-VS/",
   "source": "arXiv",
   "categories": [],

@@ -8,7 +8,7 @@
     "Runkai Zhao",
     "Weidong Cai"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Weakly supervised monocular 3D detection, while less annotation-intensive,\noften struggles to capture the global context required for reliable 3D\nreasoning. Conventional label-efficient methods focus on object-centric\nfeatures, neglecting contextual semantic relationships that are critical in\ncomplex scenes. In this work, we propose a Context-Aware Weak Supervision for\nMonocular 3D object detection, namely CA-W3D, to address this limitation in a\ntwo-stage training paradigm. Specifically, we first introduce a pre-training\nstage employing Region-wise Object Contrastive Matching (ROCM), which aligns\nregional object embeddings derived from a trainable monocular 3D encoder and a\nfrozen open-vocabulary 2D visual grounding model. This alignment encourages the\nmonocular encoder to discriminate scene-specific attributes and acquire richer\ncontextual knowledge. In the second stage, we incorporate a pseudo-label\ntraining process with a Dual-to-One Distillation (D2OD) mechanism, which\neffectively transfers contextual priors into the monocular encoder while\npreserving spatial fidelity and maintaining computational efficiency during\ninference. Extensive experiments conducted on the public KITTI benchmark\ndemonstrate the effectiveness of our approach, surpassing the SoTA method over\nall metrics, highlighting the importance of contextual-aware knowledge in\nweakly-supervised monocular 3D detection.",
   "source": "arXiv",
   "categories": [],

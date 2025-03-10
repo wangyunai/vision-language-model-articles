@@ -9,7 +9,7 @@
     "Yixing Jiang",
     "Roxana Daneshjou"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Vision language models (VLMs) show promise in medical diagnosis, but their\nperformance across demographic subgroups when using in-context learning (ICL)\nremains poorly understood. We examine how the demographic composition of\ndemonstration examples affects VLM performance in two medical imaging tasks:\nskin lesion malignancy prediction and pneumothorax detection from chest\nradiographs. Our analysis reveals that ICL influences model predictions through\nmultiple mechanisms: (1) ICL allows VLMs to learn subgroup-specific disease\nbase rates from prompts and (2) ICL leads VLMs to make predictions that perform\ndifferently across demographic groups, even after controlling for\nsubgroup-specific disease base rates. Our empirical results inform\nbest-practices for prompting current VLMs (specifically examining demographic\nsubgroup performance, and matching base rates of labels to target distribution\nat a bulk level and within subgroups), while also suggesting next steps for\nimproving our theoretical understanding of these models.",
   "source": "arXiv",
   "categories": [],

@@ -13,7 +13,7 @@
     "Xinrui Zhang",
     "Yu Li"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Large Language models (LLMs) have emerged as powerful tools for addressing\nchallenges across diverse domains. Notably, recent studies have demonstrated\nthat large language models significantly enhance the efficiency of biomolecular\nanalysis and synthesis, attracting widespread attention from academics and\nmedicine. In this paper, we systematically investigate the application of\nprompt-based methods with LLMs to biological sequences, including DNA, RNA,\nproteins, and drug discovery tasks. Specifically, we focus on how prompt\nengineering enables LLMs to tackle domain-specific problems, such as promoter\nsequence prediction, protein structure modeling, and drug-target binding\naffinity prediction, often with limited labeled data. Furthermore, our\ndiscussion highlights the transformative potential of prompting in\nbioinformatics while addressing key challenges such as data scarcity,\nmultimodal fusion, and computational resource limitations. Our aim is for this\npaper to function both as a foundational primer for newcomers and a catalyst\nfor continued innovation within this dynamic field of study.",
   "source": "arXiv",
   "categories": [],

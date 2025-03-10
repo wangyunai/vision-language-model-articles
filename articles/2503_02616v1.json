@@ -7,7 +7,7 @@
     "Zirun Guo",
     "Tao Jin"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Test-Time Adaptation (TTA) aims to tackle distribution shifts using unlabeled\ntest data without access to the source data. In the context of multimodal data,\nthere are more complex noise patterns than unimodal data such as simultaneous\ncorruptions for multiple modalities and missing modalities. Besides, in\nreal-world applications, corruptions from different distribution shifts are\nalways mixed. Existing TTA methods always fail in such multimodal scenario\nbecause the abrupt distribution shifts will destroy the prior knowledge from\nthe source model, thus leading to performance degradation. To this end, we\nreveal a new challenge named multimodal wild TTA. To address this challenging\nproblem, we propose two novel strategies: sample identification with\ninterquartile range Smoothing and unimodal assistance, and Mutual information\nsharing (SuMi). SuMi smooths the adaptation process by interquartile range\nwhich avoids the abrupt distribution shifts. Then, SuMi fully utilizes the\nunimodal features to select low-entropy samples with rich multimodal\ninformation for optimization. Furthermore, mutual information sharing is\nintroduced to align the information, reduce the discrepancies and enhance the\ninformation utilization across different modalities. Extensive experiments on\ntwo public datasets show the effectiveness and superiority over existing\nmethods under the complex noise patterns in multimodal data. Code is available\nat https://github.com/zrguo/SuMi.",
   "source": "arXiv",
   "categories": [],

@@ -13,7 +13,7 @@
     "Arnold Chen",
     "Junyu Cao"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "We introduce LiteWebAgent, an open-source suite for VLM-based web agent\napplications. Our framework addresses a critical gap in the web agent ecosystem\nwith a production-ready solution that combines minimal serverless backend\nconfiguration, intuitive user and browser interfaces, and extensible research\ncapabilities in agent planning, memory, and tree search. For the core\nLiteWebAgent agent framework, we implemented a simple yet effective baseline\nusing recursive function calling, providing with decoupled action generation\nand action grounding. In addition, we integrate advanced research components\nsuch as agent planning, agent workflow memory, and tree search in a modular and\nextensible manner. We then integrate the LiteWebAgent agent framework with\nfrontend and backend as deployed systems in two formats: (1) a production\nVercel-based web application, which provides users with an agent-controlled\nremote browser, (2) a Chrome extension leveraging LiteWebAgent's API to control\nan existing Chrome browser via CDP (Chrome DevTools Protocol). The LiteWebAgent\nframework is available at https://github.com/PathOnAI/LiteWebAgent, with\ndeployed frontend at https://lite-web-agent.vercel.app/.",
   "source": "arXiv",
   "categories": [],

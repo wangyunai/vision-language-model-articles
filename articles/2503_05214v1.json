@@ -12,7 +12,7 @@
     "Shaghayegh Raad",
     "Moi Hoon Yap"
   ],
-  "date": "2025-03-19",
+  "date": "2024-03-19",
   "summary": "The growing rate of chronic wound occurrence, especially in patients with\ndiabetes, has become a concerning trend in recent years. Chronic wounds are\ndifficult and costly to treat, and have become a serious burden on health care\nsystems worldwide. Chronic wounds can have devastating consequences for the\npatient, with infection often leading to reduced quality of life and increased\nmortality risk. Innovative deep learning methods for the detection and\nmonitoring of such wounds have the potential to reduce the impact to both\npatient and clinician. We present a novel multimodal segmentation method which\nallows for the introduction of patient metadata into the training workflow\nwhereby the patient data are expressed as Gaussian random fields. Our results\nindicate that the proposed method improved performance when utilising multiple\nmodels, each trained on different metadata categories. Using the Diabetic Foot\nUlcer Challenge 2022 test set, when compared to the baseline results\n(intersection over union = 0.4670, Dice similarity coefficient = 0.5908) we\ndemonstrate improvements of +0.0220 and +0.0229 for intersection over union and\nDice similarity coefficient respectively. This paper presents the first study\nto focus on integrating patient data into a chronic wound segmentation\nworkflow. Our results show significant performance gains when training\nindividual models using specific metadata categories, followed by average\nmerging of prediction masks using distance transforms. All source code for this\nstudy is available at:\nhttps://github.com/mmu-dermatology-research/multimodal-grf",
   "source": "arXiv",
   "categories": [],

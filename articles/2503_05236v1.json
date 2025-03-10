@@ -10,7 +10,7 @@
     "Cheng Jin",
     "Jiaqi Wang"
   ],
-  "date": "2025-03-16",
+  "date": "2024-03-16",
   "summary": "Recent advances in human preference alignment have significantly enhanced\nmultimodal generation and understanding. A key approach is training reward\nmodels to guide preference optimization. However, existing models are often\ntask-specific, limiting their adaptability across diverse visual applications.\nWe also argue that jointly learning to assess multiple tasks may foster a\nsynergistic effect, where improved image understanding enhances image\ngeneration assessment, and refined image evaluation benefits video assessment\nthrough better frame analysis. To this end, this paper proposes UnifiedReward,\nthe first unified reward model for multimodal understanding and generation\nassessment, enabling both pairwise ranking and pointwise scoring, which can be\nemployed for vision model preference alignment. Specifically, (1) we first\ndevelop UnifiedReward on our constructed large-scale human preference dataset,\nincluding both image and video generation/understanding tasks. (2) Then, it is\nutilized to automatically construct high-quality preference pair data based on\nthe vision models, fine-gradually filtering their outputs through pair ranking\nand point sifting. (3) Finally, these data are used for their preference\nalignment through Direct Preference Optimization (DPO). Experimental results\ndemonstrate that joint learning to assess diverse visual tasks can lead to\nsubstantial mutual benefits and we apply our pipeline to both image and video\nunderstanding/generation tasks, significantly improving the performance in each\ndomain.",
   "source": "arXiv",
   "categories": [],

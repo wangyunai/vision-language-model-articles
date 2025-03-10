@@ -8,7 +8,7 @@
     "Xihan Wei",
     "Liefeng Bo"
   ],
-  "date": "2025-03-10",
+  "date": "2024-03-10",
   "summary": "In this work, we present the first application of Reinforcement Learning with\nVerifiable Reward (RLVR) to an Omni-multimodal large language model in the\ncontext of emotion recognition, a task where both visual and audio modalities\nplay crucial roles. We leverage RLVR to optimize the Omni model, significantly\nenhancing its performance in three key aspects: reasoning capability, emotion\nrecognition accuracy, and generalization ability. The introduction of RLVR not\nonly improves the model's overall performance on in-distribution data but also\ndemonstrates superior robustness when evaluated on out-of-distribution\ndatasets. More importantly, the improved reasoning capability enables clear\nanalysis of the contributions of different modalities, particularly visual and\naudio information, in the emotion recognition process. This provides valuable\ninsights into the optimization of multimodal large language models.",
   "source": "arXiv",
   "categories": [],

@@ -3,7 +3,7 @@
   "title": "VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding",
   "url": "https://paperswithcode.com/paper/vlm-task-agnostic-video-language-model-pre",
   "authors": [],
-  "date": "2025-03-15",
+  "date": "2024-03-15",
   "summary": "We present a simplified, task-agnostic multi-modal pre-training approach that can accept either video or text input, or both for a variety of end tasks.",
   "source": "Papers With Code",
   "keywords": [

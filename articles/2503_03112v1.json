@@ -10,7 +10,7 @@
     "Wei Cai",
     "Yongsen Qian"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "The rapid proliferation of the Internet and the widespread adoption of social\nnetworks have significantly accelerated information dissemination. However,\nthis transformation has introduced complexities in information capture and\nprocessing, posing substantial challenges for researchers and practitioners.\nPredicting the dissemination of topic-related information within social\nnetworks has thus become a critical research focus. This paper proposes a\npredictive model for topic dissemination in social networks by integrating\nmultidimensional features derived from key dissemination characteristics.\nSpecifically, we introduce two novel indicators, user relationship breadth and\nuser authority, into the PageRank algorithm to quantify user influence more\neffectively. Additionally, we employ a Text-CNN model for sentiment\nclassification, extracting sentiment features from textual content. Temporal\nembeddings of nodes are encoded using a Bi-LSTM model to capture temporal\ndynamics. Furthermore, we refine the measurement of user interaction traces\nwith topics, replacing traditional topic view metrics with a more precise\ncommunication characteristics measure. Finally, we integrate the extracted\nmultidimensional features using a Transformer model, significantly enhancing\npredictive performance. Experimental results demonstrate that our proposed\nmodel outperforms traditional machine learning and unimodal deep learning\nmodels in terms of FI-Score, AUC, and Recall, validating its effectiveness in\npredicting topic propagation within social networks.",
   "source": "arXiv",
   "categories": [],

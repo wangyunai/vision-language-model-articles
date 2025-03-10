@@ -3,7 +3,7 @@
   "title": "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning",
   "url": "https://paperswithcode.com/paper/minigpt-v2-large-language-model-as-a-unified",
   "authors": [],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Motivated by this, we target to build a unified interface for completing many vision-language tasks including image description, visual question answering, and visual grounding, among others.",
   "source": "Papers With Code",
   "keywords": [

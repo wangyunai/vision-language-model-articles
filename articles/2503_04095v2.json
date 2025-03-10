@@ -13,7 +13,7 @@
     "Yi Yang",
     "Yueting Zhuang"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Multimodal Large Language Models (MLLMs) have garnered significant attention\nfor their strong visual-semantic understanding. Most existing chart benchmarks\nevaluate MLLMs' ability to parse information from charts to answer questions.\nHowever, they overlook the inherent output biases of MLLMs, where models rely\non their parametric memory to answer questions rather than genuinely\nunderstanding the chart content. To address this limitation, we introduce a\nnovel Chart Hypothetical Question Answering (HQA) task, which imposes\nassumptions on the same question to compel models to engage in counterfactual\nreasoning based on the chart content. Furthermore, we introduce HAI, a human-AI\ninteractive data synthesis approach that leverages the efficient text-editing\ncapabilities of LLMs alongside human expert knowledge to generate diverse and\nhigh-quality HQA data at a low cost. Using HAI, we construct Chart-HQA, a\nchallenging benchmark synthesized from publicly available data sources.\nEvaluation results on 18 MLLMs of varying model sizes reveal that current\nmodels face significant generalization challenges and exhibit imbalanced\nreasoning performance on the HQA task.",
   "source": "arXiv",
   "categories": [],

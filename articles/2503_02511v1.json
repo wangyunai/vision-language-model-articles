@@ -10,7 +10,7 @@
     "Sarvapali D. Ramchurn",
     "Shoaib Ehsan"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "Visual Place Recognition (VPR) localizes a query image by matching it against\na database of geo-tagged reference images, making it essential for navigation\nand mapping in robotics. Although Vision Transformer (ViT) solutions deliver\nhigh accuracy, their large models often exceed the memory and compute budgets\nof resource-constrained platforms such as drones and mobile robots. To address\nthis issue, we propose TeTRA, a ternary transformer approach that progressively\nquantizes the ViT backbone to 2-bit precision and binarizes its final embedding\nlayer, offering substantial reductions in model size and latency. A carefully\ndesigned progressive distillation strategy preserves the representational power\nof a full-precision teacher, allowing TeTRA to retain or even surpass the\naccuracy of uncompressed convolutional counterparts, despite using fewer\nresources. Experiments on standard VPR benchmarks demonstrate that TeTRA\nreduces memory consumption by up to 69% compared to efficient baselines, while\nlowering inference latency by 35%, with either no loss or a slight improvement\nin recall@1. These gains enable high-accuracy VPR on power-constrained,\nmemory-limited robotic platforms, making TeTRA an appealing solution for\nreal-world deployment.",
   "source": "arXiv",
   "categories": [],

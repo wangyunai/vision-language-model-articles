@@ -13,7 +13,7 @@
     "Vahid Zolfaghari",
     "Alois Knoll"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Multimodal summarization integrating information from diverse data modalities\npresents a promising solution to aid the understanding of information within\nvarious processes. However, the application and advantages of multimodal\nsummarization have not received much attention in model-based engineering\n(MBE), where it has become a cornerstone in the design and development of\ncomplex systems, leveraging formal models to improve understanding, validation\nand automation throughout the engineering lifecycle. UML and EMF diagrams in\nmodel-based engineering contain a large amount of multimodal information and\nintricate relational data. Hence, our study explores the application of\nmultimodal large language models within the domain of model-based engineering\nto evaluate their capacity for understanding and identifying relationships,\nfeatures, and functionalities embedded in UML and EMF diagrams. We aim to\ndemonstrate the transformative potential benefits and limitations of multimodal\nsummarization in improving productivity and accuracy in MBE practices. The\nproposed approach is evaluated within the context of automotive software\ndevelopment, while many promising state-of-art models were taken into account.",
   "source": "arXiv",
   "categories": [],

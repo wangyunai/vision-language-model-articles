@@ -12,7 +12,7 @@
     "Matthew P. Buman",
     "Hassan Ghasemzadeh"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Postprandial hyperglycemia, marked by the blood glucose level exceeding the\nnormal range after meals, is a critical indicator of progression toward type 2\ndiabetes in prediabetic and healthy individuals. A key metric for understanding\nblood glucose dynamics after eating is the postprandial area under the curve\n(PAUC). Predicting PAUC in advance based on a person's diet and activity level\nand explaining what affects postprandial blood glucose could allow an\nindividual to adjust their lifestyle accordingly to maintain normal glucose\nlevels. In this paper, we propose GlucoLens, an explainable machine learning\napproach to predict PAUC and hyperglycemia from diet, activity, and recent\nglucose patterns. We conducted a five-week user study with 10 full-time working\nindividuals to develop and evaluate the computational model. Our machine\nlearning model takes multimodal data including fasting glucose, recent glucose,\nrecent activity, and macronutrient amounts, and provides an interpretable\nprediction of the postprandial glucose pattern. Our extensive analyses of the\ncollected data revealed that the trained model achieves a normalized root mean\nsquared error (NRMSE) of 0.123. On average, GlucoLense with a Random Forest\nbackbone provides a 16% better result than the baseline models. Additionally,\nGlucoLens predicts hyperglycemia with an accuracy of 74% and recommends\ndifferent options to help avoid hyperglycemia through diverse counterfactual\nexplanations. Code available: https://github.com/ab9mamun/GlucoLens.",
   "source": "arXiv",
   "categories": [],

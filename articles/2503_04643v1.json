@@ -10,7 +10,7 @@
     "Josien P. W. Pluim",
     "Mitko Veta"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Leveraging multimodal data, particularly the integration of whole-slide\nhistology images (WSIs) and transcriptomic profiles, holds great promise for\nimproving cancer survival prediction. However, excessive redundancy in\nmultimodal data can degrade model performance. In this paper, we propose\nAdaptive Prototype Learning (APL), a novel and effective approach for\nmultimodal cancer survival analysis. APL adaptively learns representative\nprototypes in a data-driven manner, reducing redundancy while preserving\ncritical information. Our method employs two sets of learnable query vectors\nthat serve as a bridge between high-dimensional representations and survival\nprediction, capturing task-relevant features. Additionally, we introduce a\nmultimodal mixed self-attention mechanism to enable cross-modal interactions,\nfurther enhancing information fusion. Extensive experiments on five benchmark\ncancer datasets demonstrate the superiority of our approach over existing\nmethods. The code is available at https://github.com/HongLiuuuuu/APL.",
   "source": "arXiv",
   "categories": [],

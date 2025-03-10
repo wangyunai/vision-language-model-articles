@@ -3,7 +3,7 @@
   "title": "PaliGemma: A versatile 3B VLM for transfer",
   "url": "https://paperswithcode.com/paper/paligemma-a-versatile-3b-vlm-for-transfer",
   "authors": [],
-  "date": "2025-03-16",
+  "date": "2024-03-16",
   "summary": "PaliGemma is an open Vision-Language Model (VLM) that is based on the SigLIP-So400m vision encoder and the Gemma-2B language model.",
   "source": "Papers With Code",
   "keywords": [

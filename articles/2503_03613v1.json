@@ -8,7 +8,7 @@
     "Zhengyu Zhao",
     "Nicu Sebe"
   ],
-  "date": "2025-03-05",
+  "date": "2024-03-05",
   "summary": "Despite its prevalent use in image-text matching tasks in a zero-shot manner,\nCLIP has been shown to be highly vulnerable to adversarial perturbations added\nonto images. Recent studies propose to finetune the vision encoder of CLIP with\nadversarial samples generated on the fly, and show improved robustness against\nadversarial attacks on a spectrum of downstream datasets, a property termed as\nzero-shot robustness. In this paper, we show that malicious perturbations that\nseek to maximise the classification loss lead to `falsely stable' images, and\npropose to leverage the pre-trained vision encoder of CLIP to counterattack\nsuch adversarial images during inference to achieve robustness. Our paradigm is\nsimple and training-free, providing the first method to defend CLIP from\nadversarial attacks at test time, which is orthogonal to existing methods\naiming to boost zero-shot adversarial robustness of CLIP. We conduct\nexperiments across 16 classification datasets, and demonstrate stable and\nconsistent gains compared to test-time defence methods adapted from existing\nadversarial robustness studies that do not rely on external networks, without\nnoticeably impairing performance on clean images. We also show that our\nparadigm can be employed on CLIP models that have been adversarially finetuned\nto further enhance their robustness at test time. Our code is available\n\\href{https://github.com/Sxing2/CLIP-Test-time-Counterattacks}{here}.",
   "source": "arXiv",
   "categories": [],

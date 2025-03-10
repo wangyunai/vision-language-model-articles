@@ -11,7 +11,7 @@
     "Yi Yang",
     "Mengyin Fu"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Recent advancements in 3D Gaussian Splatting(3DGS) have significantly\nimproved semantic scene understanding, enabling natural language queries to\nlocalize objects within a scene. However, existing methods primarily focus on\nembedding compressed CLIP features to 3D Gaussians, suffering from low object\nsegmentation accuracy and lack spatial reasoning capabilities. To address these\nlimitations, we propose GaussianGraph, a novel framework that enhances\n3DGS-based scene understanding by integrating adaptive semantic clustering and\nscene graph generation. We introduce a \"Control-Follow\" clustering strategy,\nwhich dynamically adapts to scene scale and feature distribution, avoiding\nfeature compression and significantly improving segmentation accuracy.\nAdditionally, we enrich scene representation by integrating object attributes\nand spatial relations extracted from 2D foundation models. To address\ninaccuracies in spatial relationships, we propose 3D correction modules that\nfilter implausible relations through spatial consistency verification, ensuring\nreliable scene graph construction. Extensive experiments on three datasets\ndemonstrate that GaussianGraph outperforms state-of-the-art methods in both\nsemantic segmentation and object grounding tasks, providing a robust solution\nfor complex scene understanding and interaction.",
   "source": "arXiv",
   "categories": [],

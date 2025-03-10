@@ -10,7 +10,7 @@
     "Tahniat Khan",
     "Marcelo Lotif"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "In this paper, we introduce FairSense-AI: a multimodal framework designed to\ndetect and mitigate bias in both text and images. By leveraging Large Language\nModels (LLMs) and Vision-Language Models (VLMs), FairSense-AI uncovers subtle\nforms of prejudice or stereotyping that can appear in content, providing users\nwith bias scores, explanatory highlights, and automated recommendations for\nfairness enhancements. In addition, FairSense-AI integrates an AI risk\nassessment component that aligns with frameworks like the MIT AI Risk\nRepository and NIST AI Risk Management Framework, enabling structured\nidentification of ethical and safety concerns. The platform is optimized for\nenergy efficiency via techniques such as model pruning and mixed-precision\ncomputation, thereby reducing its environmental footprint. Through a series of\ncase studies and applications, we demonstrate how FairSense-AI promotes\nresponsible AI use by addressing both the social dimension of fairness and the\npressing need for sustainability in large-scale AI deployments.\nhttps://vectorinstitute.github.io/FairSense-AI,\nhttps://pypi.org/project/fair-sense-ai/ (Sustainability , Responsible AI ,\nLarge Language Models , Vision Language Models , Ethical AI , Green AI)",
   "source": "arXiv",
   "categories": [],

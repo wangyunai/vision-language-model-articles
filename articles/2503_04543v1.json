@@ -22,7 +22,7 @@
     "Mang Ye",
     "Bo Du"
   ],
-  "date": "2025-03-06",
+  "date": "2024-03-06",
   "summary": "Multi-modal Large Language Models (MLLMs) integrate visual and linguistic\nreasoning to address complex tasks such as image captioning and visual question\nanswering. While MLLMs demonstrate remarkable versatility, MLLMs appears\nlimited performance on special applications. But tuning MLLMs for downstream\ntasks encounters two key challenges: Task-Expert Specialization, where\ndistribution shifts between pre-training and target datasets constrain target\nperformance, and Open-World Stabilization, where catastrophic forgetting erases\nthe model general knowledge. In this work, we systematically review recent\nadvancements in MLLM tuning methodologies, classifying them into three\nparadigms: (I) Selective Tuning, (II) Additive Tuning, and (III)\nReparameterization Tuning. Furthermore, we benchmark these tuning strategies\nacross popular MLLM architectures and diverse downstream tasks to establish\nstandardized evaluation analysis and systematic tuning principles. Finally, we\nhighlight several open challenges in this domain and propose future research\ndirections. To facilitate ongoing progress in this rapidly evolving field, we\nprovide a public repository that continuously tracks developments:\nhttps://github.com/WenkeHuang/Awesome-MLLM-Tuning.",
   "source": "arXiv",
   "categories": [],

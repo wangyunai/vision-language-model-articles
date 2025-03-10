@@ -3,7 +3,7 @@
   "title": "LlavaGuard: An Open VLM-based Framework for Safeguarding Vision Datasets and Models",
   "url": "https://paperswithcode.com/paper/llavaguard-vlm-based-safeguards-for-vision",
   "authors": [],
-  "date": "2025-03-23",
+  "date": "2024-03-23",
   "summary": "This paper introduces LlavaGuard, a suite of VLM-based vision safeguards that address the critical need for reliable guardrails in the era of large-scale data and models.",
   "source": "Papers With Code",
   "keywords": [

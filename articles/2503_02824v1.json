@@ -23,7 +23,7 @@
     "Kuangyu Shi",
     "Quanzheng Li"
   ],
-  "date": "2025-03-04",
+  "date": "2024-03-04",
   "summary": "In oncology, Positron Emission Tomography-Computed Tomography (PET/CT) is\nwidely used in cancer diagnosis, staging, and treatment monitoring, as it\ncombines anatomical details from CT with functional metabolic activity and\nmolecular marker expression information from PET. However, existing artificial\nintelligence-driven PET/CT analyses rely predominantly on task-specific models\ntrained from scratch or on limited datasets, limiting their generalizability\nand robustness. To address this, we propose a foundation model approach\nspecifically designed for multimodal PET/CT imaging. We introduce the\nCross-Fraternal Twin Masked Autoencoder (FratMAE), a novel framework that\neffectively integrates whole-body anatomical and functional or molecular\ninformation. FratMAE employs separate Vision Transformer (ViT) encoders for PET\nand CT scans, along with cross-attention decoders that enable synergistic\ninteractions between modalities during masked autoencoder training.\nAdditionally, it incorporates textual metadata to enhance PET representation\nlearning. By pre-training on PET/CT datasets, FratMAE captures intricate\ncross-modal relationships and global uptake patterns, achieving superior\nperformance on downstream tasks and demonstrating its potential as a\ngeneralizable foundation model.",
   "source": "arXiv",
   "categories": [],
