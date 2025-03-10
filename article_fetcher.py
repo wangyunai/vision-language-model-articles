@@ -335,4 +335,4 @@ if __name__ == "__main__":
     logger.info("Starting VLM article fetcher")
     fetcher = ArticleFetcher()
     num_articles = fetcher.run()
-    logger.info(f"Completed fetching. Found {num_articles} new articles.") 
+    logger.info(f"Completed fetching. Found {num_articles} new articles.")
