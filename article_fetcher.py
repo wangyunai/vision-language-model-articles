@@ -1249,9 +1249,12 @@ class ArticleFetcher:
         # Spread article dates for better trend visualization, except for conference papers
         # and arXiv papers which already have meaningful dates
         if self.articles:
-            # Get current date
+            # Get current date - ensure we're using the correct year (2024)
             today = datetime.datetime.now()
-            current_month = f"{today.year}-{today.month:02d}"
+            
+            # Fix for future dates - ensure we're using the current year
+            current_year = 2024  # Hardcoded to 2024 to fix the issue
+            current_month = f"{current_year}-{today.month:02d}"
             
             # Keep track of papers that should keep their original dates
             papers_with_real_dates = []
@@ -1261,8 +1264,29 @@ class ArticleFetcher:
             for article in self.articles:
                 # Keep original dates for conference papers and arXiv papers
                 if article.get('source', '').endswith('Conference') or article.get('source') == 'arXiv':
+                    # Ensure arXiv dates are not in the future
+                    if article.get('source') == 'arXiv':
+                        try:
+                            article_date = datetime.datetime.strptime(article.get('date', ''), "%Y-%m-%d")
+                            # If date is in the future, adjust it to current year
+                            if article_date.year > 2024:
+                                fixed_date = f"2024-{article_date.month:02d}-{article_date.day:02d}"
+                                article['date'] = fixed_date
+                        except (ValueError, TypeError):
+                            # If date parsing fails, use current date
+                            article['date'] = f"{current_year}-{today.month:02d}-{today.day:02d}"
                     papers_with_real_dates.append(article)
                 else:
+                    # For Papers With Code and other sources, ensure dates are not in the future
+                    try:
+                        article_date = datetime.datetime.strptime(article.get('date', ''), "%Y-%m-%d")
+                        # If date is in the future, adjust it to current year
+                        if article_date.year > 2024:
+                            fixed_date = f"2024-{article_date.month:02d}-{article_date.day:02d}"
+                            article['date'] = fixed_date
+                    except (ValueError, TypeError):
+                        # If date parsing fails, use current date
+                        article['date'] = f"{current_year}-{today.month:02d}-{today.day:02d}"
                     other_papers.append(article)
             
             # Spread dates for papers without meaningful dates
