@@ -10,7 +10,15 @@
     "keywords": [
       "VLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_ViLT__Vision_and_Language_Transformer_Without_Conv",
@@ -23,7 +31,15 @@
     "keywords": [
       "vision-and-language"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_BLIP__Bootstrapping_Language_Image_Pre_training_fo",
@@ -38,7 +54,15 @@
       "image-text",
       "BLIP"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05093v1",
@@ -59,7 +83,15 @@
       "vision language model",
       "VLM",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05132v1",
@@ -81,7 +113,15 @@
     "keywords": [
       "multimodal",
       "visual reasoning"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05149v1",
@@ -98,7 +138,15 @@
     "keywords": [
       "text-to-image",
       "image generation"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_LlavaGuard__An_Open_VLM_based_Framework_for_Safegu",
@@ -111,7 +159,15 @@
     "keywords": [
       "VLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05179v1",
@@ -129,7 +185,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_Open6DOR__Benchmarking_Open_instruction_6_DoF_Obje",
@@ -142,7 +206,15 @@
     "keywords": [
       "VLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05186v1",
@@ -164,7 +236,15 @@
     "categories": [],
     "keywords": [
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_RL_VLM_F__Reinforcement_Learning_from_Vision_Langu",
@@ -177,7 +257,15 @@
     "keywords": [
       "VLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05204v1",
@@ -199,7 +287,15 @@
       "VLM",
       "vision-language",
       "image-text"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_An_Image_Grid_Can_Be_Worth_a_Video__Zero_shot_Vide",
@@ -212,7 +308,15 @@
     "keywords": [
       "VLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05214v1",
@@ -234,7 +338,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_G_LLaVA__Solving_Geometric_Problem_with_Multi_Moda",
@@ -249,7 +361,15 @@
       "MLLM",
       "MLLMs"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05228v1",
@@ -273,7 +393,15 @@
     "categories": [],
     "keywords": [
       "image generation"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_ConceptLab__Creative_Concept_Generation_using_VLM_",
@@ -287,7 +415,15 @@
       "VLM",
       "text-to-image"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05231v1",
@@ -308,7 +444,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_X__2__VLM__All_In_One_Pre_trained_Model_For_Vision",
@@ -322,7 +466,15 @@
       "VLM",
       "vision-language"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05236v1",
@@ -342,7 +494,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_PaliGemma__A_versatile_3B_VLM_for_transfer",
@@ -356,7 +516,15 @@
       "VLM",
       "vision-language"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05255v1",
@@ -382,7 +550,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_VLM__Task_agnostic_Video_Language_Model_Pre_traini",
@@ -395,7 +571,15 @@
     "keywords": [
       "VLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05298v1",
@@ -414,7 +598,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_MME__A_Comprehensive_Evaluation_Benchmark_for_Mult",
@@ -428,7 +620,15 @@
       "multimodal",
       "MLLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05305v1",
@@ -449,7 +649,15 @@
     "keywords": [
       "text-to-image",
       "image generation"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_Kosmos_G__Generating_Images_in_Context_with_Multim",
@@ -464,7 +672,15 @@
       "image generation",
       "Kosmos"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05319v1",
@@ -489,7 +705,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_VATT__Transformers_for_Multimodal_Self_Supervised_",
@@ -503,7 +727,15 @@
       "multimodal",
       "text-to-video"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05335v1",
@@ -520,7 +752,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_MME_Survey__A_Comprehensive_Survey_on_Evaluation_o",
@@ -536,7 +776,15 @@
       "MLLM",
       "MLLMs"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05379v1",
@@ -554,7 +802,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_A_Survey_on_Multimodal_Large_Language_Models",
@@ -569,7 +825,15 @@
       "GPT-4V",
       "MLLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05383v1",
@@ -590,7 +854,15 @@
       "VLM",
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_Screen2Words__Automatic_Mobile_UI_Summarization_wi",
@@ -603,7 +875,15 @@
     "keywords": [
       "multimodal"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05424v1",
@@ -620,7 +900,15 @@
     "categories": [],
     "keywords": [
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_Multimodal_Latent_Language_Modeling_with_Next_Toke",
@@ -633,7 +921,15 @@
     "keywords": [
       "multimodal"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05534v1",
@@ -655,7 +951,15 @@
     "categories": [],
     "keywords": [
       "Segment Anything"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_Socratic_Models__Composing_Zero_Shot_Multimodal_Re",
@@ -668,7 +972,15 @@
     "keywords": [
       "multimodal"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.2,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05064v1",
@@ -692,7 +1004,15 @@
     "keywords": [
       "VLM",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9971042009381119,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04724v1",
@@ -716,7 +1036,15 @@
     "keywords": [
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04643v1",
@@ -736,7 +1064,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04641v1",
@@ -761,7 +1097,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04639v1",
@@ -783,7 +1127,15 @@
     "categories": [],
     "keywords": [
       "visual question answering"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04592v1",
@@ -806,7 +1158,15 @@
       "VLM",
       "vision-language",
       "image captioning"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04545v1",
@@ -826,7 +1186,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04543v1",
@@ -859,7 +1227,15 @@
     "keywords": [
       "multimodal",
       "image captioning"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04528v1",
@@ -878,7 +1254,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04506v1",
@@ -901,7 +1285,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04504v1",
@@ -923,7 +1315,15 @@
     "keywords": [
       "VLM",
       "visual question answering"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04490v1",
@@ -944,7 +1344,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04478v1",
@@ -964,7 +1372,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04470v1",
@@ -981,7 +1397,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04459v2",
@@ -1004,7 +1428,15 @@
       "multimodal",
       "visual question answering",
       "VQA"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04457v1",
@@ -1023,7 +1455,15 @@
     "keywords": [
       "VLM",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04444v1",
@@ -1044,7 +1484,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04417v1",
@@ -1064,7 +1512,15 @@
     "keywords": [
       "vision language model",
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04406v1",
@@ -1083,7 +1539,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04353v1",
@@ -1103,7 +1567,15 @@
       "multimodal",
       "image-text",
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04325v2",
@@ -1123,7 +1595,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04280v2",
@@ -1144,7 +1624,15 @@
     "categories": [],
     "keywords": [
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04252v1",
@@ -1168,7 +1656,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04250v1",
@@ -1202,7 +1698,15 @@
     "categories": [],
     "keywords": [
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04229v1",
@@ -1224,7 +1728,15 @@
       "vision-language",
       "image-text",
       "text-to-image"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04205v1",
@@ -1242,7 +1754,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04201v1",
@@ -1262,7 +1782,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04199v1",
@@ -1281,7 +1809,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04167v1",
@@ -1306,7 +1842,15 @@
     "keywords": [
       "multimodal",
       "VQA"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04144v1",
@@ -1328,7 +1872,15 @@
     "keywords": [
       "vision-language",
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04135v1",
@@ -1351,7 +1903,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04130v1",
@@ -1382,7 +1942,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04121v1",
@@ -1399,7 +1967,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04110v1",
@@ -1423,7 +1999,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04095v2",
@@ -1446,7 +2030,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04078v1",
@@ -1467,7 +2059,15 @@
     "keywords": [
       "multimodal",
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04065v1",
@@ -1489,7 +2089,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04058v1",
@@ -1512,7 +2120,15 @@
     "keywords": [
       "VLM",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04034v1",
@@ -1533,7 +2149,15 @@
     "categories": [],
     "keywords": [
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04006v1",
@@ -1550,7 +2174,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03987v1",
@@ -1577,7 +2209,15 @@
     "keywords": [
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05543v1",
@@ -1599,7 +2239,15 @@
       "multimodal",
       "MLLM",
       "MLLMs"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_Supervised_Multimodal_Bitransformers_for_Classifyi",
@@ -1612,7 +2260,15 @@
     "keywords": [
       "multimodal"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.2,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04982v1",
@@ -1638,7 +2294,15 @@
       "VLM",
       "vision-language",
       "visual reasoning"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04971v1",
@@ -1657,7 +2321,15 @@
     "categories": [],
     "keywords": [
       "ViT"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04919v1",
@@ -1681,7 +2353,15 @@
       "multimodal",
       "MLLM",
       "MLLMs"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04918v1",
@@ -1702,7 +2382,15 @@
     "keywords": [
       "VLM",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04900v1",
@@ -1719,7 +2407,15 @@
     "categories": [],
     "keywords": [
       "DINO"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04606v1",
@@ -1742,7 +2438,15 @@
     "keywords": [
       "text-to-video",
       "Sora"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04871v1",
@@ -1761,7 +2465,15 @@
       "Stable Diffusion",
       "vision transformer",
       "image generation"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04308v1",
@@ -1782,7 +2494,15 @@
     "categories": [],
     "keywords": [
       "visual understanding"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04215v1",
@@ -1804,7 +2524,15 @@
     "keywords": [
       "text-to-image",
       "image generation"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04858v1",
@@ -1827,7 +2555,15 @@
     "keywords": [
       "VLM",
       "VQA"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04170v1",
@@ -1852,7 +2588,15 @@
     "categories": [],
     "keywords": [
       "visual understanding"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04154v1",
@@ -1870,7 +2614,15 @@
     "categories": [],
     "keywords": [
       "visual grounding"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04107v1",
@@ -1890,7 +2642,15 @@
     "categories": [],
     "keywords": [
       "DINO"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04852v1",
@@ -1915,7 +2675,15 @@
       "VLM",
       "vision-language",
       "ViT"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04050v1",
@@ -1936,7 +2704,15 @@
     "categories": [],
     "keywords": [
       "image generation"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9961407992630352,
+      "source_weight": 1.0,
+      "age_months": 0.13333333333333333,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03947v1",
@@ -1960,7 +2736,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03935v1",
@@ -1982,7 +2766,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03854v1",
@@ -2004,7 +2796,15 @@
       "VLM",
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03848v1",
@@ -2022,7 +2822,15 @@
     "categories": [],
     "keywords": [
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03840v1",
@@ -2045,7 +2853,15 @@
     "keywords": [
       "vision language model",
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03743v1",
@@ -2067,7 +2883,15 @@
     "categories": [],
     "keywords": [
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03803v1",
@@ -2104,7 +2928,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03734v1",
@@ -2128,7 +2960,15 @@
     "keywords": [
       "VLM",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03689v1",
@@ -2151,7 +2991,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03664v1",
@@ -2169,7 +3017,15 @@
     "keywords": [
       "Stable Diffusion",
       "text-to-image"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03663v2",
@@ -2189,7 +3045,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03651v1",
@@ -2210,7 +3074,15 @@
       "image-text",
       "text-to-image",
       "image-to-text"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03644v2",
@@ -2234,7 +3106,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03613v1",
@@ -2253,7 +3133,15 @@
     "keywords": [
       "image-text",
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03579v1",
@@ -2272,7 +3160,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03507v1",
@@ -2292,7 +3188,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03465v2",
@@ -2312,7 +3216,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03335v1",
@@ -2329,7 +3241,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03321v1",
@@ -2349,7 +3269,15 @@
     "keywords": [
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03285v2",
@@ -2372,7 +3300,15 @@
       "multimodal",
       "visual question answering",
       "VQA"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03280v1",
@@ -2394,7 +3330,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03278v1",
@@ -2416,7 +3360,15 @@
     "keywords": [
       "vision language model",
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03792v1",
@@ -2437,7 +3389,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03244v1",
@@ -2458,7 +3418,15 @@
     "categories": [],
     "keywords": [
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03215v1",
@@ -2479,7 +3447,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03202v1",
@@ -2497,7 +3473,15 @@
       "multimodal",
       "vision-language",
       "image-text"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03196v1",
@@ -2518,7 +3502,15 @@
     "keywords": [
       "vision language model",
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03190v2",
@@ -2540,7 +3532,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03122v1",
@@ -2563,7 +3563,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03112v1",
@@ -2583,7 +3591,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_03107v1",
@@ -2603,7 +3619,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05595v1",
@@ -2624,7 +3648,15 @@
     "categories": [],
     "keywords": [
       "Stable Diffusion"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_LayoutXLM__Multimodal_Pre_training_for_Multilingua",
@@ -2637,7 +3669,15 @@
     "keywords": [
       "multimodal"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.2,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04842v1",
@@ -2655,7 +3695,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_04839v1",
@@ -2675,7 +3723,15 @@
       "vision-language",
       "image-text",
       "ViT"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9951783284262666,
+      "source_weight": 1.0,
+      "age_months": 0.16666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02950v1",
@@ -2698,7 +3754,15 @@
     "categories": [],
     "keywords": [
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02876v1",
@@ -2716,7 +3780,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02865v2",
@@ -2739,7 +3811,15 @@
       "VLM",
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02861v1",
@@ -2756,7 +3836,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02853v1",
@@ -2776,7 +3864,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02849v1",
@@ -2792,7 +3888,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02824v1",
@@ -2826,7 +3930,15 @@
     "keywords": [
       "multimodal",
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02823v1",
@@ -2845,7 +3957,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02800v2",
@@ -2867,7 +3987,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02798v1",
@@ -2886,7 +4014,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02781v1",
@@ -2911,7 +4047,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02733v1",
@@ -2932,7 +4076,15 @@
     "categories": [],
     "keywords": [
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02616v1",
@@ -2949,7 +4101,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02600v1",
@@ -2973,7 +4133,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02597v1",
@@ -2993,7 +4161,15 @@
     "keywords": [
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02589v2",
@@ -3013,7 +4189,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02579v1",
@@ -3039,7 +4223,15 @@
     "keywords": [
       "multimodal",
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02917v1",
@@ -3060,7 +4252,15 @@
     "categories": [],
     "keywords": [
       "vision-language"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02511v1",
@@ -3080,7 +4280,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02476v1",
@@ -3103,7 +4311,15 @@
       "image-text",
       "visual question answering",
       "VQA"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02459v1",
@@ -3123,7 +4339,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02420v1",
@@ -3141,7 +4365,15 @@
     "categories": [],
     "keywords": [
       "Stable Diffusion"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02394v3",
@@ -3163,7 +4395,15 @@
     "categories": [],
     "keywords": [
       "vision transformer"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02393v1",
@@ -3184,7 +4424,15 @@
       "VLM",
       "vision-language",
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02379v1",
@@ -3205,7 +4453,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02358v1",
@@ -3226,7 +4482,15 @@
       "VLM",
       "image captioning",
       "visual question answering"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02334v1",
@@ -3246,7 +4510,15 @@
     "keywords": [
       "vision language model",
       "VLM"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_02330v1",
@@ -3268,7 +4540,15 @@
     "categories": [],
     "keywords": [
       "VQA"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05626v1",
@@ -3285,7 +4565,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_MiniGPT_v2__large_language_model_as_a_unified_inte",
@@ -3300,7 +4588,15 @@
       "visual question answering",
       "visual grounding"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9942167875284308,
+      "source_weight": 1.2,
+      "age_months": 0.2,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05639v1",
@@ -3322,7 +4618,15 @@
     "categories": [],
     "keywords": [
       "CLIP"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9932561756710209,
+      "source_weight": 1.0,
+      "age_months": 0.23333333333333334,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_F_VLM__Open_Vocabulary_Object_Detection_upon_Froze",
@@ -3335,7 +4639,15 @@
     "keywords": [
       "VLM"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9932561756710209,
+      "source_weight": 1.2,
+      "age_months": 0.23333333333333334,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05684v1",
@@ -3356,7 +4668,15 @@
     "categories": [],
     "keywords": [
       "ViT"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9922964919563986,
+      "source_weight": 1.0,
+      "age_months": 0.26666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_VILA__Learning_Image_Aesthetics_from_User_Comments",
@@ -3369,7 +4689,15 @@
     "keywords": [
       "vision-language"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9922964919563986,
+      "source_weight": 1.2,
+      "age_months": 0.26666666666666666,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "2503_05689v1",
@@ -3392,7 +4720,15 @@
     "categories": [],
     "keywords": [
       "multimodal"
-    ]
+    ],
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9913377354877926,
+      "source_weight": 1.0,
+      "age_months": 0.3,
+      "citation_velocity": 0.0
+    }
   },
   {
     "id": "paperswithcode_MiniGPT_4__Enhancing_Vision_Language_Understanding",
@@ -3405,6 +4741,14 @@
     "keywords": [
       "vision-language"
     ],
-    "code_url": null
+    "code_url": null,
+    "attention_score": 0.0,
+    "attention_components": {
+      "base_score": 0.0,
+      "recency_factor": 0.9913377354877926,
+      "source_weight": 1.2,
+      "age_months": 0.3,
+      "citation_velocity": 0.0
+    }
   }
 ]
