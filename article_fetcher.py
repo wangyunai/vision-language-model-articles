@@ -843,105 +843,132 @@ class ArticleFetcher:
         for venue in venues:
             logger.info(f"Searching for papers in {venue}...")
             
-            try:
-                params = {
-                    "query": f"venue:{venue} AND (vision language model OR VLM OR CLIP OR multimodal OR vision-language)",
-                    "limit": 50,  # Get more papers per venue
-                    "fields": "title,authors,venue,year,abstract,url,citationCount",
-                    "year": year_range
-                }
-                
-                headers = {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                }
-                
-                response = requests.get(SEMANTIC_SCHOLAR_API_URL, params=params, headers=headers)
-                logger.info(f"Semantic Scholar API response status for {venue}: {response.status_code}")
-                
-                if response.status_code == 200:
-                    data = response.json()
+            # Exponential backoff parameters for rate limiting
+            max_retries = 3
+            base_wait = 5  # seconds
+            
+            for attempt in range(max_retries + 1):
+                try:
+                    params = {
+                        "query": f"venue:{venue} AND (vision language model OR VLM OR CLIP OR multimodal OR vision-language)",
+                        "limit": 50,  # Get more papers per venue
+                        "fields": "title,authors,venue,year,abstract,url,citationCount",
+                        "year": year_range
+                    }
                     
-                    if "data" in data:
-                        papers = data["data"]
-                        logger.info(f"Found {len(papers)} papers for venue '{venue}'")
+                    headers = {
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                    }
+                    
+                    response = requests.get(SEMANTIC_SCHOLAR_API_URL, params=params, headers=headers)
+                    status_code = response.status_code
+                    logger.info(f"Semantic Scholar API response status for {venue}: {status_code}")
+                    
+                    # Handle rate limiting with exponential backoff
+                    if status_code == 429:
+                        if attempt < max_retries:
+                            wait_time = base_wait * (2 ** attempt)
+                            logger.warning(f"Rate limited. Waiting {wait_time}s before retry...")
+                            time.sleep(wait_time)
+                            continue
+                        else:
+                            logger.error(f"Max retries exceeded for {venue}. Skipping.")
+                            break
+                    
+                    if status_code == 200:
+                        data = response.json()
                         
-                        for paper in papers:
-                            # Skip if title is missing
-                            if not paper.get("title"):
-                                continue
+                        if "data" in data:
+                            papers = data["data"]
+                            logger.info(f"Found {len(papers)} papers for venue '{venue}'")
+                            
+                            for paper in papers:
+                                # Skip if title is missing
+                                if not paper.get("title"):
+                                    continue
+                                    
+                                title = paper["title"]
                                 
-                            title = paper["title"]
-                            
-                            # Skip if already exists
-                            paper_url = paper.get("url") or f"https://api.semanticscholar.org/paper/{paper.get('paperId')}"
-                            if any(a['url'] == paper_url for a in self.existing_articles):
-                                logger.info(f"Skipping existing paper: {title}")
-                                continue
-                            
-                            # Skip if not relevant (double check)
-                            if not self.is_relevant(title) and (not paper.get("abstract") or not self.is_relevant(paper["abstract"])):
-                                logger.info(f"Skipping irrelevant paper: {title}")
-                                continue
-                            
-                            # Get authors
-                            authors = []
-                            if "authors" in paper:
-                                authors = [author.get("name", "") for author in paper["authors"] if author.get("name")]
-                            
-                            # Get venue and year
-                            year = paper.get("year", current_year)
-                            citation_count = paper.get("citationCount", 0)
-                            
-                            # Create a reasonable date for the paper
-                            # Set papers from this year to be more recent
-                            if year == current_year:
-                                # Last 3 months for current year papers
-                                month = max(1, current_month - random.randint(0, 2))
-                                date = f"{year}-{month:02d}-01"
-                            else:
-                                # Random month from last year
-                                month = random.randint(1, 12)
-                                date = f"{year}-{month:02d}-01"
-                            
-                            # Get abstract
-                            summary = paper.get("abstract", f"Conference paper from {venue}")
-                            
-                            # Create a unique ID
-                            paper_id = paper.get("paperId", "")
-                            if paper_id:
-                                article_id = f"semantic_scholar_{paper_id}"
-                            else:
-                                article_id = f"conf_{re.sub(r'[^a-zA-Z0-9]', '_', title)[:50]}"
-                            
-                            # Extract keywords from title and abstract
-                            content = title + " " + summary
-                            keywords = [k for k in VLM_KEYWORDS if k.lower() in content.lower()]
-                            
-                            # Create article object
-                            article_obj = {
-                                "id": article_id,
-                                "title": title,
-                                "url": paper_url,
-                                "authors": authors,
-                                "date": date,
-                                "summary": summary,
-                                "source": f"{venue} Conference",
-                                "keywords": keywords,
-                                "citation_count": citation_count
-                            }
-                            
-                            self.articles.append(article_obj)
-                            logger.info(f"Found new conference paper: {title}")
+                                # Skip if already exists
+                                paper_url = paper.get("url") or f"https://api.semanticscholar.org/paper/{paper.get('paperId')}"
+                                if any(a['url'] == paper_url for a in self.existing_articles):
+                                    logger.info(f"Skipping existing paper: {title}")
+                                    continue
+                                
+                                # Skip if not relevant (double check)
+                                if not self.is_relevant(title) and (not paper.get("abstract") or not self.is_relevant(paper["abstract"])):
+                                    logger.info(f"Skipping irrelevant paper: {title}")
+                                    continue
+                                
+                                # Get authors
+                                authors = []
+                                if "authors" in paper:
+                                    authors = [author.get("name", "") for author in paper["authors"] if author.get("name")]
+                                
+                                # Get venue and year
+                                year = paper.get("year", current_year)
+                                citation_count = paper.get("citationCount", 0)
+                                
+                                # Create a reasonable date for the paper
+                                # Set papers from this year to be more recent
+                                if year == current_year:
+                                    # Last 3 months for current year papers
+                                    month = max(1, datetime.datetime.now().month - random.randint(0, 2))
+                                    date = f"{year}-{month:02d}-01"
+                                else:
+                                    # Random month from last year
+                                    month = random.randint(1, 12)
+                                    date = f"{year}-{month:02d}-01"
+                                
+                                # Get abstract
+                                summary = paper.get("abstract", f"Conference paper from {venue}")
+                                
+                                # Create a unique ID
+                                paper_id = paper.get("paperId", "")
+                                if paper_id:
+                                    article_id = f"semantic_scholar_{paper_id}"
+                                else:
+                                    article_id = f"conf_{re.sub(r'[^a-zA-Z0-9]', '_', title)[:50]}"
+                                
+                                # Extract keywords from title and abstract
+                                content = title + " " + summary
+                                keywords = [k for k in VLM_KEYWORDS if k.lower() in content.lower()]
+                                
+                                # Create article object
+                                article_obj = {
+                                    "id": article_id,
+                                    "title": title,
+                                    "url": paper_url,
+                                    "authors": authors,
+                                    "date": date,
+                                    "summary": summary,
+                                    "source": f"{venue} Conference",
+                                    "keywords": keywords,
+                                    "citation_count": citation_count
+                                }
+                                
+                                self.articles.append(article_obj)
+                                logger.info(f"Found new conference paper: {title}")
+                        else:
+                            logger.warning(f"No data found in Semantic Scholar response for '{venue}'")
+                        
+                        # Successfully processed this venue, break out of retry loop
+                        break
                     else:
-                        logger.warning(f"No data found in Semantic Scholar response for '{venue}'")
-                else:
-                    logger.error(f"Error from Semantic Scholar API: {response.status_code}")
-                    
-                # Be nice to the API
-                time.sleep(2)
+                        logger.error(f"Error from Semantic Scholar API: {status_code}")
+                        break
+                        
+                except Exception as e:
+                    logger.error(f"Error fetching from Semantic Scholar for '{venue}': {str(e)}", exc_info=True)
+                    if attempt < max_retries:
+                        wait_time = base_wait * (2 ** attempt)
+                        logger.warning(f"Error occurred. Waiting {wait_time}s before retry...")
+                        time.sleep(wait_time)
+                    else:
+                        logger.error(f"Max retries exceeded for {venue}. Skipping.")
                 
-            except Exception as e:
-                logger.error(f"Error fetching from Semantic Scholar for '{venue}': {str(e)}", exc_info=True)
+            # Always be nice to the API between venues
+            time.sleep(2)
     
     def calculate_keyword_statistics(self):
         """Calculate statistics and attention scores for keywords"""
