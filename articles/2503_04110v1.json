@@ -1,0 +1,24 @@
+{
+  "id": "2503_04110v1",
+  "title": "InterChat: Enhancing Generative Visual Analytics using Multimodal\n  Interactions",
+  "url": "http://arxiv.org/abs/2503.04110v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04110v1",
+  "authors": [
+    "Juntong Chen",
+    "Jiang Wu",
+    "Jiajing Guo",
+    "Vikram Mohanty",
+    "Xueming Li",
+    "Jorge Piazentin Ono",
+    "Wenbin He",
+    "Liu Ren",
+    "Dongyu Liu"
+  ],
+  "date": "2025-03-06",
+  "summary": "The rise of Large Language Models (LLMs) and generative visual analytics\nsystems has transformed data-driven insights, yet significant challenges\npersist in accurately interpreting users' analytical and interaction intents.\nWhile language inputs offer flexibility, they often lack precision, making the\nexpression of complex intents inefficient, error-prone, and time-intensive. To\naddress these limitations, we investigate the design space of multimodal\ninteractions for generative visual analytics through a literature review and\npilot brainstorming sessions. Building on these insights, we introduce a highly\nextensible workflow that integrates multiple LLM agents for intent inference\nand visualization generation. We develop InterChat, a generative visual\nanalytics system that combines direct manipulation of visual elements with\nnatural language inputs. This integration enables precise intent communication\nand supports progressive, visually driven exploratory data analyses. By\nemploying effective prompt engineering, and contextual interaction linking,\nalongside intuitive visualization and interaction designs, InterChat bridges\nthe gap between user interactions and LLM-driven visualizations, enhancing both\ninterpretability and usability. Extensive evaluations, including two usage\nscenarios, a user study, and expert feedback, demonstrate the effectiveness of\nInterChat. Results show significant improvements in the accuracy and efficiency\nof handling complex visual analytics tasks, highlighting the potential of\nmultimodal interactions to redefine user engagement and analytical depth in\ngenerative visual analytics.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

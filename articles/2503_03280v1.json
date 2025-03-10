@@ -1,0 +1,22 @@
+{
+  "id": "2503_03280v1",
+  "title": "BEVMOSNet: Multimodal Fusion for BEV Moving Object Segmentation",
+  "url": "http://arxiv.org/abs/2503.03280v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03280v1",
+  "authors": [
+    "Hiep Truong Cong",
+    "Ajay Kumar Sigatapu",
+    "Arindam Das",
+    "Yashwanth Sharma",
+    "Venkatesh Satagopan",
+    "Ganesh Sistu",
+    "Ciaran Eising"
+  ],
+  "date": "2025-03-05",
+  "summary": "Accurate motion understanding of the dynamic objects within the scene in\nbird's-eye-view (BEV) is critical to ensure a reliable obstacle avoidance\nsystem and smooth path planning for autonomous vehicles. However, this task has\nreceived relatively limited exploration when compared to object detection and\nsegmentation with only a few recent vision-based approaches presenting\npreliminary findings that significantly deteriorate in low-light, nighttime,\nand adverse weather conditions such as rain. Conversely, LiDAR and radar\nsensors remain almost unaffected in these scenarios, and radar provides key\nvelocity information of the objects. Therefore, we introduce BEVMOSNet, to our\nknowledge, the first end-to-end multimodal fusion leveraging cameras, LiDAR,\nand radar to precisely predict the moving objects in BEV. In addition, we\nperform a deeper analysis to find out the optimal strategy for deformable\ncross-attention-guided sensor fusion for cross-sensor knowledge sharing in BEV.\nWhile evaluating BEVMOSNet on the nuScenes dataset, we show an overall\nimprovement in IoU score of 36.59% compared to the vision-based unimodal\nbaseline BEV-MoSeg (Sigatapu et al., 2023), and 2.35% compared to the\nmultimodel SimpleBEV (Harley et al., 2022), extended for the motion\nsegmentation task, establishing this method as the state-of-the-art in BEV\nmotion segmentation.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

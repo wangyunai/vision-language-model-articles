@@ -1,0 +1,172 @@
+2025-03-09 22:06:17,529 - vlm_fetcher - INFO - Starting VLM article fetcher
+2025-03-09 22:06:17,529 - vlm_fetcher - INFO - Fetching arXiv articles...
+2025-03-09 22:06:20,642 - vlm_fetcher - INFO - Found new article: LLMVoX: Autoregressive Streaming Text-to-Speech Model for Any LLM
+2025-03-09 22:06:20,642 - vlm_fetcher - INFO - Found new article: Adaptive Prototype Learning for Multimodal Cancer Survival Analysis
+2025-03-09 22:06:20,642 - vlm_fetcher - INFO - Found new article: Simulating the Real World: A Unified Survey of Multimodal Generative
+  Models
+2025-03-09 22:06:20,642 - vlm_fetcher - INFO - Found new article: Enhancing SAM with Efficient Prompting and Preference Optimization for
+  Semi-supervised Medical Image Segmentation
+2025-03-09 22:06:20,642 - vlm_fetcher - INFO - Found new article: A Benchmark for Multi-Lingual Vision-Language Learning in Remote Sensing
+  Image Captioning
+2025-03-09 22:06:20,642 - vlm_fetcher - INFO - Found new article: ViT-VS: On the Applicability of Pretrained Vision Transformer Features
+  for Generalizable Visual Servoing
+2025-03-09 22:06:20,642 - vlm_fetcher - INFO - Found new article: Keeping Yourself is Important in Downstream Tuning Multimodal Large
+  Language Model
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: Federated Dynamic Modeling and Learning for Spatiotemporal Data
+  Forecasting
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: Multi-modal Summarization in Model-Based Engineering: Automotive
+  Software Development Case Study
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: AnyAnomaly: Zero-Shot Customizable Video Anomaly Detection with LVLM
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: Large Language Models in Bioinformatics: A Survey
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: Semantic Alignment of Unimodal Medical Text and Vision Representations
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: Gate-Shift-Pose: Enhancing Action Recognition in Sports with Skeleton
+  Information
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: Question-Aware Gaussian Experts for Audio-Visual Question Answering
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: TPC: Cross-Temporal Prediction Connection for Vision-Language Model
+  Hallucination Reduction
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: ToFu: Visual Tokens Reduction via Fusion for Multi-modal, Multi-patch,
+  Multi-image Task
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: From Idea to CAD: A Language Model-Driven Multi-Agent System for
+  Collaborative Design
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: Training-Free Graph Filtering via Multimodal Feature Refinement for
+  Extremely Fast Multimodal Recommendation
+2025-03-09 22:06:20,643 - vlm_fetcher - INFO - Found new article: ObjMST: An Object-Focused Multimodal Style Transfer Framework
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: GBT-SAM: A Parameter-Efficient Depth-Aware Model for Generalizable Brain
+  tumour Segmentation on mp-MRI
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: Towards Autonomous Reinforcement Learning for Real-World Robotic
+  Manipulation with Large Language Models
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud
+  Database Systems
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: An Egocentric Vision-Language Model based Portable Real-time Smart
+  Assistant
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: Synthetic Data is an Elegant GIFT for Continual Vision-Language Models
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: Learning 3D Medical Image Models From Brain Functional Connectivity
+  Network Supervision For Mental Disorder Diagnosis
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: Knowledge-Decoupled Synergetic Learning: An MLLM based Collaborative
+  Approach to Few-shot Multimodal Dialogue Intention Recognition
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: MASTER: Multimodal Segmentation with Text Prompts
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: The Role of Visual Modality in Multimodal Mathematical Reasoning:
+  Challenges and Insights
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: DM-Adapter: Domain-Aware Mixture-of-Adapters for Text-Based Person
+  Retrieval
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: Biological Sequence with Language Model Prompting: A Survey
+2025-03-09 22:06:20,644 - vlm_fetcher - INFO - Found new article: Token-Efficient Long Video Understanding for Multimodal LLMs
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: Simple Self Organizing Map with Visual Transformer
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: InterChat: Enhancing Generative Visual Analytics using Multimodal
+  Interactions
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: Chart-HQA: A Benchmark for Hypothetical Question Answering in Charts
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: Spatial-Temporal Perception with Causal Inference for Naturalistic
+  Driving Action Recognition
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: PP-DocBee: Improving Multimodal Document Understanding Through a Bag of
+  Tricks
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: EVE: Towards End-to-End Video Subtitle Extraction with Vision-Language
+  Models
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: GaussianGraph: 3D Gaussian-based Scene Graph Generation for Open-world
+  Scene Understanding
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: DSV-LFS: Unifying LLM-Driven Semantic Cues with Visual Features for
+  Robust Few-Shot Segmentation
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: RetinalGPT: A Retinal Clinical Preference Conversational Assistant
+  Powered by Large Vision-Language Models
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: COARSE: Collaborative Pseudo-Labeling with Coarse Real Labels for
+  Off-Road Semantic Segmentation
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: GlucoLens: Explainable Postprandial Blood Glucose Prediction from Diet
+  and Physical Activity
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: Vision-Language Models Struggle to Align Entities across Modalities
+2025-03-09 22:06:20,645 - vlm_fetcher - INFO - Found new article: Nexar Dashcam Collision Prediction Dataset and Challenge
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: Decoupling the components of geometric understanding in Vision Language
+  Models
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: CHOP: Mobile Operating Assistant with Constrained High-frequency
+  Optimized Subtask Planning
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: EgoLife: Towards Egocentric Life Assistant
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature
+  Extraction
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: DualDiff+: Dual-Branch Diffusion for High-Fidelity Video Generation with
+  Reward Guidance
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: A Generative Approach to High Fidelity 3D Reconstruction from Text Data
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: LION-FS: Fast & Slow Video-Language Thinker as Online Video Assistant
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: DoraCycle: Domain-Oriented Adaptation of Unified Generative Model in
+  Multimodal Cycles
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: DongbaMIE: A Multimodal Information Extraction Dataset for Evaluating
+  Semantic Understanding of Dongba Pictograms
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: CLIP is Strong Enough to Fight Back: Test-time Counterattacks towards
+  Zero-shot Adversarial Robustness of CLIP
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: A Generative System for Robot-to-Human Handovers: from Intent Inference
+  to Spatial Configuration Imagery
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: Mineral segmentation using electron microscope images and spectral
+  sampling through multimodal graph neural networks
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: DTU-Net: A Multi-Scale Dilated Transformer Network for Nonlinear
+  Hyperspectral Unmixing
+2025-03-09 22:06:20,646 - vlm_fetcher - INFO - Found new article: iNews: A Multimodal Dataset for Modeling Personalized Affective
+  Responses to News
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: See What You Are Told: Visual Attention Sink in Large Multimodal Models
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: Enhancing Vietnamese VQA through Curriculum Learning on Raw and
+  Augmented Text Representations
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: BEVMOSNet: Multimodal Fusion for BEV Moving Object Segmentation
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: Enhancing Abnormality Grounding for Vision Language Models with
+  Knowledge Descriptions
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: Rebalanced Multimodal Learning with Data-aware Unimodal Sampling
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: Two-Stream Thermal Imaging Fusion for Enhanced Time of Birth Detection
+  in Neonatal Care
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: COSINT-Agent: A Knowledge-Driven Multimodal Agent for Chinese Open
+  Source Intelligence
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: Variance-Aware Loss Scheduling for Multimodal Alignment in Low-Data
+  Settings
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: SpiritSight Agent: Advanced GUI Agent with One Look
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: DSPNet: Dual-vision Scene Perception for Robust 3D Question Answering
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: The Devil Is in the Details: Tackling Unimodal Spurious Correlations for
+  Generalizable Multimodal Reward Models
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: A Multimodal Framework for Topic Propagation Classification in Social
+  Networks
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: External Reliable Information-enhanced Multimodal Contrastive Learning
+  for Fake News Detection
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: LiteWebAgent: The Open-Source Suite for VLM-Based Web-Agent Applications
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: SPIDER: A Comprehensive Multi-Organ Supervised Pathology Dataset and
+  Baseline Models
+2025-03-09 22:06:20,647 - vlm_fetcher - INFO - Found new article: FairSense-AI: Responsible AI Meets Sustainability
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: Evaluation of Architectural Synthesis Using Generative AI
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: CADDI: An in-Class Activity Detection Dataset using IMU data from
+  low-cost sensors
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: Multimodal Deep Learning for Subtype Classification in Breast Cancer
+  Using Histopathological Images and Gene Expression Data
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: Developing a PET/CT Foundation Model for Cross-Modal Anatomical and
+  Functional Imaging
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: A Multimodal Symphony: Integrating Taste and Sound through Generative AI
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: RAAD-LLM: Adaptive Anomaly Detection Using LLMs and RAG Integration
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: Spike-and-Slab Posterior Sampling in High Dimensions
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: Multimodal AI predicts clinical outcomes of drug combinations from
+  preclinical data
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: UAR-NVC: A Unified AutoRegressive Framework for Memory-Efficient Neural
+  Video Compression
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: Smoothing the Shift: Towards Stable Test-Time Adaptation under Complex
+  Multimodal Noises
+2025-03-09 22:06:20,648 - vlm_fetcher - INFO - Found new article: Resource-Efficient Affordance Grounding with Complementary Depth and
+  Semantic Prompts
+2025-03-09 22:06:20,649 - vlm_fetcher - INFO - Found new article: Seeing is Understanding: Unlocking Causal Attention into Modality-Mutual
+  Attention for Multimodal LLMs
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: MCiteBench: A Benchmark for Multimodal Citation Text Generation in MLLMs
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: MM-OR: A Large Multimodal Operating Room Dataset for Semantic
+  Understanding of High-Intensity Surgical Environments
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: Interpretable Few-Shot Retinal Disease Diagnosis with Concept-Guided
+  Prompting of Vision-Language Models
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: TeTRA-VPR: A Ternary Transformer Approach for Compact Visual Place
+  Recognition
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: BioD2C: A Dual-level Semantic Consistency Constraint Framework for
+  Biomedical VQA
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: Exploring Token-Level Augmentation in Vision Transformer for
+  Semi-Supervised Semantic Segmentation
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: Exploring Model Quantization in GenAI-based Image Inpainting and
+  Detection of Arable Plants
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: BHViT: Binarized Hybrid Vision Transformer
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: Vision-Language Model IP Protection via Prompt-based Learning
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: Teaching Metric Distance to Autoregressive Multimodal Foundational
+  Models
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: Are Large Vision Language Models Good Game Players?
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: BiasICL: In-Context Learning and Demographic Biases of Vision Language
+  Models
+2025-03-09 22:06:20,650 - vlm_fetcher - INFO - Found new article: Exploring Simple Siamese Network for High-Resolution Video Quality
+  Assessment
+2025-03-09 22:06:20,651 - vlm_fetcher - INFO - Fetching Google AI Blog articles...
+2025-03-09 22:06:20,989 - vlm_fetcher - INFO - Fetching OpenAI Blog articles...
+2025-03-09 22:06:21,091 - vlm_fetcher - ERROR - Error fetching OpenAI Blog: 403 Client Error: Forbidden for url: https://openai.com/blog
+2025-03-09 22:06:21,108 - vlm_fetcher - INFO - Saved 99 new articles. Total: 99
+2025-03-09 22:06:21,108 - vlm_fetcher - INFO - Completed fetching. Found 99 new articles.

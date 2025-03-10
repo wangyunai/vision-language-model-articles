@@ -1,0 +1,25 @@
+{
+  "id": "2503_04167v1",
+  "title": "The Role of Visual Modality in Multimodal Mathematical Reasoning:\n  Challenges and Insights",
+  "url": "http://arxiv.org/abs/2503.04167v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04167v1",
+  "authors": [
+    "Yufang Liu",
+    "Yao Du",
+    "Tao Ji",
+    "Jianing Wang",
+    "Yang Liu",
+    "Yuanbin Wu",
+    "Aimin Zhou",
+    "Mengdi Zhang",
+    "Xunliang Cai"
+  ],
+  "date": "2025-03-06",
+  "summary": "Recent research has increasingly focused on multimodal mathematical\nreasoning, particularly emphasizing the creation of relevant datasets and\nbenchmarks. Despite this, the role of visual information in reasoning has been\nunderexplored. Our findings show that existing multimodal mathematical models\nminimally leverage visual information, and model performance remains largely\nunaffected by changes to or removal of images in the dataset. We attribute this\nto the dominance of textual information and answer options that inadvertently\nguide the model to correct answers. To improve evaluation methods, we introduce\nthe HC-M3D dataset, specifically designed to require image reliance for\nproblem-solving and to challenge models with similar, yet distinct, images that\nchange the correct answer. In testing leading models, their failure to detect\nthese subtle visual differences suggests limitations in current visual\nperception capabilities. Additionally, we observe that the common approach of\nimproving general VQA capabilities by combining various types of image encoders\ndoes not contribute to math reasoning performance. This finding also presents a\nchallenge to enhancing visual reliance during math reasoning. Our benchmark and\ncode would be available at\n\\href{https://github.com/Yufang-Liu/visual_modality_role}{https://github.com/Yufang-Liu/visual\\_modality\\_role}.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "VQA"
+  ]
+}

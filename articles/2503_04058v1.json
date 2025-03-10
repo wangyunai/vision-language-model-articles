@@ -1,0 +1,23 @@
+{
+  "id": "2503_04058v1",
+  "title": "EVE: Towards End-to-End Video Subtitle Extraction with Vision-Language\n  Models",
+  "url": "http://arxiv.org/abs/2503.04058v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04058v1",
+  "authors": [
+    "Haiyang Yu",
+    "Jinghui Lu",
+    "Yanjie Wang",
+    "Yang Li",
+    "Han Wang",
+    "Can Huang",
+    "Bin Li"
+  ],
+  "date": "2025-03-06",
+  "summary": "The advent of Large Vision-Language Models (LVLMs) has advanced the\nvideo-based tasks, such as video captioning and video understanding. Some\nprevious research indicates that taking texts in videos as input can further\nimprove the performance of video understanding. As a type of indispensable\ninformation in short videos or movies, subtitles can assist LVLMs to better\nunderstand videos. Most existing methods for video subtitle extraction are\nbased on a multi-stage framework, handling each frame independently. They can\nhardly exploit the temporal information of videos. Although some LVLMs exhibit\nthe robust OCR capability, predicting accurate timestamps for subtitle texts is\nstill challenging. In this paper, we propose an End-to-end Video Subtitle\nExtraction method, called EVE, which consists of three modules: a vision\nencoder, an adapter module, and a large language model. To effectively compress\nthe visual tokens from the vision encoder, we propose a novel adapter\nInterleavedVT to interleave two modalities. It contains a visual compressor and\na textual region compressor. The proposed InterleavedVT exploits both the\nmerits of average pooling and Q-Former in token compression. Taking the\ntemporal information of videos into account, we introduce a sliding-window\nmechanism in the textual region compressor. To benchmark the video subtitle\nextraction task, we propose a large dataset ViSa including 2.5M videos.\nExtensive experiments on ViSa demonstrate that the proposed EVE can outperform\nexisting open-sourced tools and LVLMs.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language"
+  ]
+}

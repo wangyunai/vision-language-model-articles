@@ -1,0 +1,22 @@
+{
+  "id": "2503_03190v2",
+  "title": "DSPNet: Dual-vision Scene Perception for Robust 3D Question Answering",
+  "url": "http://arxiv.org/abs/2503.03190v2",
+  "pdf_url": "http://arxiv.org/pdf/2503.03190v2",
+  "authors": [
+    "Jingzhou Luo",
+    "Yang Liu",
+    "Weixing Chen",
+    "Zhen Li",
+    "Yaowei Wang",
+    "Guanbin Li",
+    "Liang Lin"
+  ],
+  "date": "2025-03-05",
+  "summary": "3D Question Answering (3D QA) requires the model to comprehensively\nunderstand its situated 3D scene described by the text, then reason about its\nsurrounding environment and answer a question under that situation. However,\nexisting methods usually rely on global scene perception from pure 3D point\nclouds and overlook the importance of rich local texture details from\nmulti-view images. Moreover, due to the inherent noise in camera poses and\ncomplex occlusions, there exists significant feature degradation and reduced\nfeature robustness problems when aligning 3D point cloud with multi-view\nimages. In this paper, we propose a Dual-vision Scene Perception Network\n(DSPNet), to comprehensively integrate multi-view and point cloud features to\nimprove robustness in 3D QA. Our Text-guided Multi-view Fusion (TGMF) module\nprioritizes image views that closely match the semantic content of the text. To\nadaptively fuse back-projected multi-view images with point cloud features, we\ndesign the Adaptive Dual-vision Perception (ADVP) module, enhancing 3D scene\ncomprehension. Additionally, our Multimodal Context-guided Reasoning (MCGR)\nmodule facilitates robust reasoning by integrating contextual information\nacross visual and linguistic modalities. Experimental results on SQA3D and\nScanQA datasets demonstrate the superiority of our DSPNet. Codes will be\navailable at https://github.com/LZ-CH/DSPNet.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "2503_02798v1",
+  "title": "Spike-and-Slab Posterior Sampling in High Dimensions",
+  "url": "http://arxiv.org/abs/2503.02798v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02798v1",
+  "authors": [
+    "Syamantak Kumar",
+    "Purnamrita Sarkar",
+    "Kevin Tian",
+    "Yusong Zhu"
+  ],
+  "date": "2025-03-04",
+  "summary": "Posterior sampling with the spike-and-slab prior [MB88], a popular multimodal\ndistribution used to model uncertainty in variable selection, is considered the\ntheoretical gold standard method for Bayesian sparse linear regression [CPS09,\nRoc18]. However, designing provable algorithms for performing this sampling\ntask is notoriously challenging. Existing posterior samplers for Bayesian\nsparse variable selection tasks either require strong assumptions about the\nsignal-to-noise ratio (SNR) [YWJ16], only work when the measurement count grows\nat least linearly in the dimension [MW24], or rely on heuristic approximations\nto the posterior. We give the first provable algorithms for spike-and-slab\nposterior sampling that apply for any SNR, and use a measurement count\nsublinear in the problem dimension. Concretely, assume we are given a\nmeasurement matrix $\\mathbf{X} \\in \\mathbb{R}^{n\\times d}$ and noisy\nobservations $\\mathbf{y} = \\mathbf{X}\\mathbf{\\theta}^\\star + \\mathbf{\\xi}$ of a\nsignal $\\mathbf{\\theta}^\\star$ drawn from a spike-and-slab prior $\\pi$ with a\nGaussian diffuse density and expected sparsity k, where $\\mathbf{\\xi} \\sim\n\\mathcal{N}(\\mathbb{0}_n, \\sigma^2\\mathbf{I}_n)$. We give a polynomial-time\nhigh-accuracy sampler for the posterior $\\pi(\\cdot \\mid \\mathbf{X},\n\\mathbf{y})$, for any SNR $\\sigma^{-1}$ > 0, as long as $n \\geq k^3 \\cdot\n\\text{polylog}(d)$ and $X$ is drawn from a matrix ensemble satisfying the\nrestricted isometry property. We further give a sampler that runs in\nnear-linear time $\\approx nd$ in the same setting, as long as $n \\geq k^5 \\cdot\n\\text{polylog}(d)$. To demonstrate the flexibility of our framework, we extend\nour result to spike-and-slab posterior sampling with Laplace diffuse densities,\nachieving similar guarantees when $\\sigma = O(\\frac{1}{k})$ is bounded.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

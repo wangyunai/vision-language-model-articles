@@ -1,0 +1,21 @@
+{
+  "id": "2503_02358v1",
+  "title": "Are Large Vision Language Models Good Game Players?",
+  "url": "http://arxiv.org/abs/2503.02358v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02358v1",
+  "authors": [
+    "Xinyu Wang",
+    "Bohan Zhuang",
+    "Qi Wu"
+  ],
+  "date": "2025-03-04",
+  "summary": "Large Vision Language Models (LVLMs) have demonstrated remarkable abilities\nin understanding and reasoning about both visual and textual information.\nHowever, existing evaluation methods for LVLMs, primarily based on benchmarks\nlike Visual Question Answering and image captioning, often fail to capture the\nfull scope of LVLMs' capabilities. These benchmarks are limited by issues such\nas inadequate assessment of detailed visual perception, data contamination, and\na lack of focus on multi-turn reasoning. To address these challenges, we\npropose \\method{}, a game-based evaluation framework designed to provide a\ncomprehensive assessment of LVLMs' cognitive and reasoning skills in structured\nenvironments. \\method{} uses a set of games to evaluate LVLMs on four core\ntasks: Perceiving, Question Answering, Rule Following, and End-to-End Playing,\nwith each target task designed to assess specific abilities, including visual\nperception, reasoning, decision-making, etc. Based on this framework, we\nconduct extensive experiments that explore the limitations of current LVLMs,\nsuch as handling long structured outputs and perceiving detailed and dense\nelements. Code and data are publicly available at\nhttps://github.com/xinke-wang/LVLM-Playground.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision language model",
+    "VLM",
+    "image captioning",
+    "visual question answering"
+  ]
+}

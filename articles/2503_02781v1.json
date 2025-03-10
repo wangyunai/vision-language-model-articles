@@ -1,0 +1,25 @@
+{
+  "id": "2503_02781v1",
+  "title": "Multimodal AI predicts clinical outcomes of drug combinations from\n  preclinical data",
+  "url": "http://arxiv.org/abs/2503.02781v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02781v1",
+  "authors": [
+    "Yepeng Huang",
+    "Xiaorui Su",
+    "Varun Ullanat",
+    "Ivy Liang",
+    "Lindsay Clegg",
+    "Damilola Olabode",
+    "Nicholas Ho",
+    "Bino John",
+    "Megan Gibbs",
+    "Marinka Zitnik"
+  ],
+  "date": "2025-03-04",
+  "summary": "Predicting clinical outcomes from preclinical data is essential for\nidentifying safe and effective drug combinations. Current models rely on\nstructural or target-based features to identify high-efficacy, low-toxicity\ndrug combinations. However, these approaches fail to incorporate the multimodal\ndata necessary for accurate, clinically-relevant predictions. Here, we\nintroduce MADRIGAL, a multimodal AI model that learns from structural, pathway,\ncell viability, and transcriptomic data to predict drug combination effects\nacross 953 clinical outcomes and 21842 compounds, including combinations of\napproved drugs and novel compounds in development. MADRIGAL uses a transformer\nbottleneck module to unify preclinical drug data modalities while handling\nmissing data during training and inference--a major challenge in multimodal\nlearning. It outperforms single-modality methods and state-of-the-art models in\npredicting adverse drug interactions. MADRIGAL performs virtual screening of\nanticancer drug combinations and supports polypharmacy management for type II\ndiabetes and metabolic dysfunction-associated steatohepatitis (MASH). It\nidentifies transporter-mediated drug interactions. MADRIGAL predicts\nresmetirom, the first and only FDA-approved drug for MASH, among therapies with\nthe most favorable safety profile. It supports personalized cancer therapy by\nintegrating genomic profiles from cancer patients. Using primary acute myeloid\nleukemia samples and patient-derived xenograft models, it predicts the efficacy\nof personalized drug combinations. Integrating MADRIGAL with a large language\nmodel allows users to describe clinical outcomes in natural language, improving\nsafety assessment by identifying potential adverse interactions and toxicity\nrisks. MADRIGAL provides a multimodal approach for designing combination\ntherapies with improved predictive accuracy and clinical relevance.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

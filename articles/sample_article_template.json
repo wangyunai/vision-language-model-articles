@@ -1,0 +1,12 @@
+{
+  "id": "sample_article_id",
+  "title": "Sample Article Title About Vision Language Models",
+  "url": "https://example.com/sample-article",
+  "pdf_url": "https://example.com/sample-article.pdf",
+  "authors": ["Author Name 1", "Author Name 2"],
+  "date": "2025-03-10",
+  "summary": "This is a sample article about Vision Language Models. This field contains a brief summary of the article's content.",
+  "source": "Sample Source",
+  "categories": ["Computer Vision", "Machine Learning"],
+  "keywords": ["vision language model", "VLM", "multimodal"]
+} 

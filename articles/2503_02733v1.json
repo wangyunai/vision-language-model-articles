@@ -1,0 +1,21 @@
+{
+  "id": "2503_02733v1",
+  "title": "UAR-NVC: A Unified AutoRegressive Framework for Memory-Efficient Neural\n  Video Compression",
+  "url": "http://arxiv.org/abs/2503.02733v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02733v1",
+  "authors": [
+    "Jia Wang",
+    "Xinfeng Zhang",
+    "Gai Zhang",
+    "Jun Zhu",
+    "Lv Tang",
+    "Li Zhang"
+  ],
+  "date": "2025-03-04",
+  "summary": "Implicit Neural Representations (INRs) have demonstrated significant\npotential in video compression by representing videos as neural networks.\nHowever, as the number of frames increases, the memory consumption for training\nand inference increases substantially, posing challenges in\nresource-constrained scenarios. Inspired by the success of traditional video\ncompression frameworks, which process video frame by frame and can efficiently\ncompress long videos, we adopt this modeling strategy for INRs to decrease\nmemory consumption, while aiming to unify the frameworks from the perspective\nof timeline-based autoregressive modeling. In this work, we present a novel\nunderstanding of INR models from an autoregressive (AR) perspective and\nintroduce a Unified AutoRegressive Framework for memory-efficient Neural Video\nCompression (UAR-NVC). UAR-NVC integrates timeline-based and INR-based neural\nvideo compression under a unified autoregressive paradigm. It partitions videos\ninto several clips and processes each clip using a different INR model\ninstance, leveraging the advantages of both compression frameworks while\nallowing seamless adaptation to either in form. To further reduce temporal\nredundancy between clips, we design two modules to optimize the initialization,\ntraining, and compression of these model parameters. UAR-NVC supports\nadjustable latencies by varying the clip length. Extensive experimental results\ndemonstrate that UAR-NVC, with its flexible video clip setting, can adapt to\nresource-constrained environments and significantly improve performance\ncompared to different baseline models.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ]
+}

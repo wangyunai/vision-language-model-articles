@@ -1,0 +1,21 @@
+{
+  "id": "2503_04490v1",
+  "title": "Large Language Models in Bioinformatics: A Survey",
+  "url": "http://arxiv.org/abs/2503.04490v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04490v1",
+  "authors": [
+    "Zhenyu Wang",
+    "Zikang Wang",
+    "Jiyue Jiang",
+    "Pengan Chen",
+    "Xiangyu Shi",
+    "Yu Li"
+  ],
+  "date": "2025-03-06",
+  "summary": "Large Language Models (LLMs) are revolutionizing bioinformatics, enabling\nadvanced analysis of DNA, RNA, proteins, and single-cell data. This survey\nprovides a systematic review of recent advancements, focusing on genomic\nsequence modeling, RNA structure prediction, protein function inference, and\nsingle-cell transcriptomics. Meanwhile, we also discuss several key challenges,\nincluding data scarcity, computational complexity, and cross-omics integration,\nand explore future directions such as multimodal learning, hybrid AI models,\nand clinical applications. By offering a comprehensive perspective, this paper\nunderscores the transformative potential of LLMs in driving innovations in\nbioinformatics and precision medicine.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

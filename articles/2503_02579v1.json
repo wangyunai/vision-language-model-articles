@@ -1,0 +1,26 @@
+{
+  "id": "2503_02579v1",
+  "title": "MM-OR: A Large Multimodal Operating Room Dataset for Semantic\n  Understanding of High-Intensity Surgical Environments",
+  "url": "http://arxiv.org/abs/2503.02579v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02579v1",
+  "authors": [
+    "Ege \u00d6zsoy",
+    "Chantal Pellegrini",
+    "Tobias Czempiel",
+    "Felix Tristram",
+    "Kun Yuan",
+    "David Bani-Harouni",
+    "Ulrich Eck",
+    "Benjamin Busam",
+    "Matthias Keicher",
+    "Nassir Navab"
+  ],
+  "date": "2025-03-04",
+  "summary": "Operating rooms (ORs) are complex, high-stakes environments requiring precise\nunderstanding of interactions among medical staff, tools, and equipment for\nenhancing surgical assistance, situational awareness, and patient safety.\nCurrent datasets fall short in scale, realism and do not capture the multimodal\nnature of OR scenes, limiting progress in OR modeling. To this end, we\nintroduce MM-OR, a realistic and large-scale multimodal spatiotemporal OR\ndataset, and the first dataset to enable multimodal scene graph generation.\nMM-OR captures comprehensive OR scenes containing RGB-D data, detail views,\naudio, speech transcripts, robotic logs, and tracking data and is annotated\nwith panoptic segmentations, semantic scene graphs, and downstream task labels.\nFurther, we propose MM2SG, the first multimodal large vision-language model for\nscene graph generation, and through extensive experiments, demonstrate its\nability to effectively leverage multimodal inputs. Together, MM-OR and MM2SG\nestablish a new benchmark for holistic OR understanding, and open the path\ntowards multimodal scene analysis in complex, high-stakes environments. Our\ncode, and data is available at https://github.com/egeozsoy/MM-OR.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "vision-language"
+  ]
+}

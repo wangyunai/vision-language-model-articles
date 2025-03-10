@@ -1,0 +1,21 @@
+{
+  "id": "2503_02379v1",
+  "title": "Teaching Metric Distance to Autoregressive Multimodal Foundational\n  Models",
+  "url": "http://arxiv.org/abs/2503.02379v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02379v1",
+  "authors": [
+    "Jiwan Chung",
+    "Saejin Kim",
+    "Yongrae Jo",
+    "Jaewoo Park",
+    "Dongjun Min",
+    "Youngjae Yu"
+  ],
+  "date": "2025-03-04",
+  "summary": "As large language models expand beyond natural language to domains such as\nmathematics, multimodal understanding, and embodied agents, tokens increasingly\nreflect metric relationships rather than purely linguistic meaning. We\nintroduce DIST2Loss, a distance-aware framework designed to train\nautoregressive discrete models by leveraging predefined distance relationships\namong output tokens. At its core, DIST2Loss transforms continuous exponential\nfamily distributions derived from inherent distance metrics into discrete,\ncategorical optimization targets compatible with the models' architectures.\nThis approach enables the models to learn and preserve meaningful distance\nrelationships during token generation while maintaining compatibility with\nexisting architectures. Empirical evaluations show consistent performance gains\nin diverse multimodal applications, including visual grounding, robotic\nmanipulation, generative reward modeling, and image generation using\nvector-quantized features. These improvements are pronounced in cases of\nlimited training data, highlighting DIST2Loss's effectiveness in\nresource-constrained settings.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

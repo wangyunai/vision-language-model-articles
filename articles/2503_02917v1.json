@@ -1,0 +1,21 @@
+{
+  "id": "2503_02917v1",
+  "title": "Interpretable Few-Shot Retinal Disease Diagnosis with Concept-Guided\n  Prompting of Vision-Language Models",
+  "url": "http://arxiv.org/abs/2503.02917v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02917v1",
+  "authors": [
+    "Deval Mehta",
+    "Yiwen Jiang",
+    "Catherine L Jan",
+    "Mingguang He",
+    "Kshitij Jadhav",
+    "Zongyuan Ge"
+  ],
+  "date": "2025-03-04",
+  "summary": "Recent advancements in deep learning have shown significant potential for\nclassifying retinal diseases using color fundus images. However, existing works\npredominantly rely exclusively on image data, lack interpretability in their\ndiagnostic decisions, and treat medical professionals primarily as annotators\nfor ground truth labeling. To fill this gap, we implement two key strategies:\nextracting interpretable concepts of retinal diseases using the knowledge base\nof GPT models and incorporating these concepts as a language component in\nprompt-learning to train vision-language (VL) models with both fundus images\nand their associated concepts. Our method not only improves retinal disease\nclassification but also enriches few-shot and zero-shot detection (novel\ndisease detection), while offering the added benefit of concept-based model\ninterpretability. Our extensive evaluation across two diverse retinal fundus\nimage datasets illustrates substantial performance gains in VL-model based\nfew-shot methodologies through our concept integration approach, demonstrating\nan average improvement of approximately 5.8\\% and 2.7\\% mean average precision\nfor 16-shot learning and zero-shot (novel class) detection respectively. Our\nmethod marks a pivotal step towards interpretable and efficient retinal disease\nrecognition for real-world clinical applications.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language"
+  ]
+}

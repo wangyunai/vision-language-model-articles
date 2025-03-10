@@ -1,0 +1,21 @@
+{
+  "id": "2503_03244v1",
+  "title": "Two-Stream Thermal Imaging Fusion for Enhanced Time of Birth Detection\n  in Neonatal Care",
+  "url": "http://arxiv.org/abs/2503.03244v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03244v1",
+  "authors": [
+    "Jorge Garc\u00eda-Torres",
+    "\u00d8yvind Meinich-Bache",
+    "Sara Brunner",
+    "Siren Rettedal",
+    "Vilde Kolstad",
+    "Kjersti Engan"
+  ],
+  "date": "2025-03-05",
+  "summary": "Around 10% of newborns require some help to initiate breathing, and 5\\% need\nventilation assistance. Accurate Time of Birth (ToB) documentation is essential\nfor optimizing neonatal care, as timely interventions are vital for proper\nresuscitation. However, current clinical methods for recording ToB often rely\non manual processes, which can be prone to inaccuracies. In this study, we\npresent a novel two-stream fusion system that combines the power of image and\nvideo analysis to accurately detect the ToB from thermal recordings in the\ndelivery room and operating theater. By integrating static and dynamic streams,\nour approach captures richer birth-related spatiotemporal features, leading to\nmore robust and precise ToB estimation. We demonstrate that this synergy\nbetween data modalities enhances performance over single-stream approaches. Our\nsystem achieves 95.7% precision and 84.8% recall in detecting birth within\nshort video clips. Additionally, with the help of a score aggregation module,\nit successfully identifies ToB in 100% of test cases, with a median absolute\nerror of 2 seconds and an absolute mean deviation of 4.5 seconds compared to\nmanual annotations.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "CLIP"
+  ]
+}

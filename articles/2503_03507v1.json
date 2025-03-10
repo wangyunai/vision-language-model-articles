@@ -1,0 +1,20 @@
+{
+  "id": "2503_03507v1",
+  "title": "Mineral segmentation using electron microscope images and spectral\n  sampling through multimodal graph neural networks",
+  "url": "http://arxiv.org/abs/2503.03507v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03507v1",
+  "authors": [
+    "Samuel Repka",
+    "Bo\u0159ek Reich",
+    "Fedor Zolotarev",
+    "Tuomas Eerola",
+    "Pavel Zem\u010d\u00edk"
+  ],
+  "date": "2025-03-05",
+  "summary": "We propose a novel Graph Neural Network-based method for segmentation based\non data fusion of multimodal Scanning Electron Microscope (SEM) images. In most\ncases, Backscattered Electron (BSE) images obtained using SEM do not contain\nsufficient information for mineral segmentation. Therefore, imaging is often\ncomplemented with point-wise Energy-Dispersive X-ray Spectroscopy (EDS)\nspectral measurements that provide highly accurate information about the\nchemical composition but that are time-consuming to acquire. This motivates the\nuse of sparse spectral data in conjunction with BSE images for mineral\nsegmentation. The unstructured nature of the spectral data makes most\ntraditional image fusion techniques unsuitable for BSE-EDS fusion. We propose\nusing graph neural networks to fuse the two modalities and segment the mineral\nphases simultaneously. Our results demonstrate that providing EDS data for as\nfew as 1% of BSE pixels produces accurate segmentation, enabling rapid analysis\nof mineral samples. The proposed data fusion pipeline is versatile and can be\nadapted to other domains that involve image data and point-wise measurements.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

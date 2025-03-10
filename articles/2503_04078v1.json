@@ -1,0 +1,21 @@
+{
+  "id": "2503_04078v1",
+  "title": "Spatial-Temporal Perception with Causal Inference for Naturalistic\n  Driving Action Recognition",
+  "url": "http://arxiv.org/abs/2503.04078v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04078v1",
+  "authors": [
+    "Qing Chang",
+    "Wei Dai",
+    "Zhihao Shuai",
+    "Limin Yu",
+    "Yutao Yue"
+  ],
+  "date": "2025-03-06",
+  "summary": "Naturalistic driving action recognition is essential for vehicle cabin\nmonitoring systems. However, the complexity of real-world backgrounds presents\nsignificant challenges for this task, and previous approaches have struggled\nwith practical implementation due to their limited ability to observe subtle\nbehavioral differences and effectively learn inter-frame features from video.\nIn this paper, we propose a novel Spatial-Temporal Perception (STP)\narchitecture that emphasizes both temporal information and spatial\nrelationships between key objects, incorporating a causal decoder to perform\nbehavior recognition and temporal action localization. Without requiring\nmultimodal input, STP directly extracts temporal and spatial distance features\nfrom RGB video clips. Subsequently, these dual features are jointly encoded by\nmaximizing the expected likelihood across all possible permutations of the\nfactorization order. By integrating temporal and spatial features at different\nscales, STP can perceive subtle behavioral changes in challenging scenarios.\nAdditionally, we introduce a causal-aware module to explore relationships\nbetween video frame features, significantly enhancing detection efficiency and\nperformance. We validate the effectiveness of our approach using two publicly\navailable driver distraction detection benchmarks. The results demonstrate that\nour framework achieves state-of-the-art performance.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "CLIP"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2503_03840v1",
+  "title": "Decoupling the components of geometric understanding in Vision Language\n  Models",
+  "url": "http://arxiv.org/abs/2503.03840v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03840v1",
+  "authors": [
+    "Eliza Kosoy",
+    "Annya Dahmani",
+    "Andrew K. Lampinen",
+    "Iulia M. Comsa",
+    "Soojin Jeong",
+    "Ishita Dasgupta",
+    "Kelsey Allen"
+  ],
+  "date": "2025-03-05",
+  "summary": "Understanding geometry relies heavily on vision. In this work, we evaluate\nwhether state-of-the-art vision language models (VLMs) can understand simple\ngeometric concepts. We use a paradigm from cognitive science that isolates\nvisual understanding of simple geometry from the many other capabilities it is\noften conflated with such as reasoning and world knowledge. We compare model\nperformance with human adults from the USA, as well as with prior research on\nhuman adults without formal education from an Amazonian indigenous group. We\nfind that VLMs consistently underperform both groups of human adults, although\nthey succeed with some concepts more than others. We also find that VLM\ngeometric understanding is more brittle than human understanding, and is not\nrobust when tasks require mental rotation. This work highlights interesting\ndifferences in the origin of geometric understanding in humans and machines --\ne.g. from printed materials used in formal education vs. interactions with the\nphysical world or a combination of the two -- and a small step toward\nunderstanding these differences.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision language model",
+    "VLM"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2503_04470v1",
+  "title": "Gate-Shift-Pose: Enhancing Action Recognition in Sports with Skeleton\n  Information",
+  "url": "http://arxiv.org/abs/2503.04470v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04470v1",
+  "authors": [
+    "Edoardo Bianchi",
+    "Oswald Lanz"
+  ],
+  "date": "2025-03-06",
+  "summary": "This paper introduces Gate-Shift-Pose, an enhanced version of Gate-Shift-Fuse\nnetworks, designed for athlete fall classification in figure skating by\nintegrating skeleton pose data alongside RGB frames. We evaluate two fusion\nstrategies: early-fusion, which combines RGB frames with Gaussian heatmaps of\npose keypoints at the input stage, and late-fusion, which employs a\nmulti-stream architecture with attention mechanisms to combine RGB and pose\nfeatures. Experiments on the FR-FS dataset demonstrate that Gate-Shift-Pose\nsignificantly outperforms the RGB-only baseline, improving accuracy by up to\n40% with ResNet18 and 20% with ResNet50. Early-fusion achieves the highest\naccuracy (98.08%) with ResNet50, leveraging the model's capacity for effective\nmultimodal integration, while late-fusion is better suited for lighter\nbackbones like ResNet18. These results highlight the potential of multimodal\narchitectures for sports action recognition and the critical role of skeleton\npose information in capturing complex motion patterns.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

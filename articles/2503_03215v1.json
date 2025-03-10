@@ -1,0 +1,21 @@
+{
+  "id": "2503_03215v1",
+  "title": "COSINT-Agent: A Knowledge-Driven Multimodal Agent for Chinese Open\n  Source Intelligence",
+  "url": "http://arxiv.org/abs/2503.03215v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03215v1",
+  "authors": [
+    "Wentao Li",
+    "Congcong Wang",
+    "Xiaoxiao Cui",
+    "Zhi Liu",
+    "Wei Guo",
+    "Lizhen Cui"
+  ],
+  "date": "2025-03-05",
+  "summary": "Open Source Intelligence (OSINT) requires the integration and reasoning of\ndiverse multimodal data, presenting significant challenges in deriving\nactionable insights. Traditional approaches, including multimodal large\nlanguage models (MLLMs), often struggle to infer complex contextual\nrelationships or deliver comprehensive intelligence from unstructured data\nsources. In this paper, we introduce COSINT-Agent, a knowledge-driven\nmultimodal agent tailored to address the challenges of OSINT in the Chinese\ndomain. COSINT-Agent seamlessly integrates the perceptual capabilities of\nfine-tuned MLLMs with the structured reasoning power of the Entity-Event-Scene\nKnowledge Graph (EES-KG). Central to COSINT-Agent is the innovative EES-Match\nframework, which bridges COSINT-MLLM and EES-KG, enabling systematic\nextraction, reasoning, and contextualization of multimodal insights. This\nintegration facilitates precise entity recognition, event interpretation, and\ncontext retrieval, effectively transforming raw multimodal data into actionable\nintelligence. Extensive experiments validate the superior performance of\nCOSINT-Agent across core OSINT tasks, including entity recognition, EES\ngeneration, and context matching. These results underscore its potential as a\nrobust and scalable solution for advancing automated multimodal reasoning and\nenhancing the effectiveness of OSINT methodologies.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

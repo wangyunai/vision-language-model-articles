@@ -1,0 +1,18 @@
+{
+  "id": "2503_03202v1",
+  "title": "Variance-Aware Loss Scheduling for Multimodal Alignment in Low-Data\n  Settings",
+  "url": "http://arxiv.org/abs/2503.03202v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03202v1",
+  "authors": [
+    "Sneh Pillai"
+  ],
+  "date": "2025-03-05",
+  "summary": "Training vision-language models for image-text alignment typically requires\nlarge datasets to achieve robust performance. In low-data scenarios, standard\ncontrastive learning can struggle to align modalities effectively due to\noverfitting and unstable training dynamics. In this paper, we propose a\nvariance-aware loss scheduling approach that dynamically adjusts the weighting\nof the contrastive loss based on the statistical variability (uncertainty) in\nthe model's alignment predictions. Using a subset of the Flickr8k image-caption\ndataset to simulate limited data conditions, we demonstrate that our approach\nimproves image-text retrieval accuracy compared to a fixed-weight baseline. We\nalso compare against other adaptive weighting strategies (using output entropy\nand cosine similarity spread) and find that variance-aware scheduling provides\nthe best overall trade-off. Qualitatively, our method yields more distinct\nmultimodal embeddings as shown by t-SNE visualizations. Moreover, in a stress\ntest with noise-injected captions and images, the variance-guided loss proves\nmore robust, maintaining higher recall when random perturbations are\nintroduced. These results highlight the benefit of adaptive loss weighting for\nmultimodal alignment in low-data regimes.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "vision-language",
+    "image-text"
+  ]
+}

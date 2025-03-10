@@ -1,0 +1,23 @@
+{
+  "id": "2503_03122v1",
+  "title": "The Devil Is in the Details: Tackling Unimodal Spurious Correlations for\n  Generalizable Multimodal Reward Models",
+  "url": "http://arxiv.org/abs/2503.03122v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03122v1",
+  "authors": [
+    "Zichao Li",
+    "Xueru Wen",
+    "Jie Lou",
+    "Yuqiu Ji",
+    "Yaojie Lu",
+    "Xianpei Han",
+    "Debing Zhang",
+    "Le Sun"
+  ],
+  "date": "2025-03-05",
+  "summary": "Multimodal Reward Models (MM-RMs) are crucial for aligning Large Language\nModels (LLMs) with human preferences, particularly as LLMs increasingly\ninteract with multimodal data. However, we find that MM-RMs trained on existing\ndatasets often struggle to generalize to out-of-distribution data due to their\nreliance on unimodal spurious correlations, primarily text-only shortcuts\nwithin the training distribution, which prevents them from leveraging true\nmultimodal reward functions. To address this, we introduce a Shortcut-aware\nMM-RM learning algorithm that mitigates this issue by dynamically reweighting\ntraining samples, shifting the distribution toward better multimodal\nunderstanding, and reducing dependence on unimodal spurious correlations. Our\nexperiments demonstrate significant improvements in generalization, downstream\ntask performance, and scalability, establishing a more robust framework for\nmultimodal reward modeling.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

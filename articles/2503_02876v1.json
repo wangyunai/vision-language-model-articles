@@ -1,0 +1,18 @@
+{
+  "id": "2503_02876v1",
+  "title": "SPIDER: A Comprehensive Multi-Organ Supervised Pathology Dataset and\n  Baseline Models",
+  "url": "http://arxiv.org/abs/2503.02876v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02876v1",
+  "authors": [
+    "Dmitry Nechaev",
+    "Alexey Pchelnikov",
+    "Ekaterina Ivanova"
+  ],
+  "date": "2025-03-04",
+  "summary": "Advancing AI in computational pathology requires large, high-quality, and\ndiverse datasets, yet existing public datasets are often limited in organ\ndiversity, class coverage, or annotation quality. To bridge this gap, we\nintroduce SPIDER (Supervised Pathology Image-DEscription Repository), the\nlargest publicly available patch-level dataset covering multiple organ types,\nincluding Skin, Colorectal, and Thorax, with comprehensive class coverage for\neach organ. SPIDER provides high-quality annotations verified by expert\npathologists and includes surrounding context patches, which enhance\nclassification performance by providing spatial context.\n  Alongside the dataset, we present baseline models trained on SPIDER using the\nHibou-L foundation model as a feature extractor combined with an\nattention-based classification head. The models achieve state-of-the-art\nperformance across multiple tissue categories and serve as strong benchmarks\nfor future digital pathology research. Beyond patch classification, the model\nenables rapid identification of significant areas, quantitative tissue metrics,\nand establishes a foundation for multimodal approaches.\n  Both the dataset and trained models are publicly available to advance\nresearch, reproducibility, and AI-driven pathology development. Access them at:\nhttps://github.com/HistAI/SPIDER",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "2503_02600v1",
+  "title": "Resource-Efficient Affordance Grounding with Complementary Depth and\n  Semantic Prompts",
+  "url": "http://arxiv.org/abs/2503.02600v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02600v1",
+  "authors": [
+    "Yizhou Huang",
+    "Fan Yang",
+    "Guoliang Zhu",
+    "Gen Li",
+    "Hao Shi",
+    "Yukun Zuo",
+    "Wenrui Chen",
+    "Zhiyong Li",
+    "Kailun Yang"
+  ],
+  "date": "2025-03-04",
+  "summary": "Affordance refers to the functional properties that an agent perceives and\nutilizes from its environment, and is key perceptual information required for\nrobots to perform actions. This information is rich and multimodal in nature.\nExisting multimodal affordance methods face limitations in extracting useful\ninformation, mainly due to simple structural designs, basic fusion methods, and\nlarge model parameters, making it difficult to meet the performance\nrequirements for practical deployment. To address these issues, this paper\nproposes the BiT-Align image-depth-text affordance mapping framework. The\nframework includes a Bypass Prompt Module (BPM) and a Text Feature Guidance\n(TFG) attention selection mechanism. BPM integrates the auxiliary modality\ndepth image directly as a prompt to the primary modality RGB image, embedding\nit into the primary modality encoder without introducing additional encoders.\nThis reduces the model's parameter count and effectively improves functional\nregion localization accuracy. The TFG mechanism guides the selection and\nenhancement of attention heads in the image encoder using textual features,\nimproving the understanding of affordance characteristics. Experimental results\ndemonstrate that the proposed method achieves significant performance\nimprovements on public AGD20K and HICO-IIF datasets. On the AGD20K dataset,\ncompared with the current state-of-the-art method, we achieve a 6.0%\nimprovement in the KLD metric, while reducing model parameters by 88.8%,\ndemonstrating practical application values. The source code will be made\npublicly available at https://github.com/DAWDSE/BiT-Align.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

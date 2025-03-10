@@ -1,0 +1,22 @@
+{
+  "id": "2503_04229v1",
+  "title": "Synthetic Data is an Elegant GIFT for Continual Vision-Language Models",
+  "url": "http://arxiv.org/abs/2503.04229v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04229v1",
+  "authors": [
+    "Bin Wu",
+    "Wuxuan Shi",
+    "Jinqiao Wang",
+    "Mang Ye"
+  ],
+  "date": "2025-03-06",
+  "summary": "Pre-trained Vision-Language Models (VLMs) require Continual Learning (CL) to\nefficiently update their knowledge and adapt to various downstream tasks\nwithout retraining from scratch. However, for VLMs, in addition to the loss of\nknowledge previously learned from downstream tasks, pre-training knowledge is\nalso corrupted during continual fine-tuning. This issue is exacerbated by the\nunavailability of original pre-training data, leaving VLM's generalization\nability degrading. In this paper, we propose GIFT, a novel continual\nfine-tuning approach that utilizes synthetic data to overcome catastrophic\nforgetting in VLMs. Taking advantage of recent advances in text-to-image\nsynthesis, we employ a pre-trained diffusion model to recreate both\npre-training and learned downstream task data. In this way, the VLM can revisit\nprevious knowledge through distillation on matching diffusion-generated images\nand corresponding text prompts. Leveraging the broad distribution and high\nalignment between synthetic image-text pairs in VLM's feature space, we propose\na contrastive distillation loss along with an image-text alignment constraint.\nTo further combat in-distribution overfitting and enhance distillation\nperformance with limited amount of generated data, we incorporate adaptive\nweight consolidation, utilizing Fisher information from these synthetic\nimage-text pairs and achieving a better stability-plasticity balance. Extensive\nexperiments demonstrate that our method consistently outperforms previous\nstate-of-the-art approaches across various settings.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language",
+    "image-text",
+    "text-to-image"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "2503_04280v2",
+  "title": "Towards Autonomous Reinforcement Learning for Real-World Robotic\n  Manipulation with Large Language Models",
+  "url": "http://arxiv.org/abs/2503.04280v2",
+  "pdf_url": "http://arxiv.org/pdf/2503.04280v2",
+  "authors": [
+    "Niccol\u00f2 Turcato",
+    "Matteo Iovino",
+    "Aris Synodinos",
+    "Alberto Dalla Libera",
+    "Ruggero Carli",
+    "Pietro Falco"
+  ],
+  "date": "2025-03-06",
+  "summary": "Recent advancements in Large Language Models (LLMs) and Visual Language\nModels (VLMs) have significantly impacted robotics, enabling high-level\nsemantic motion planning applications. Reinforcement Learning (RL), a\ncomplementary paradigm, enables agents to autonomously optimize complex\nbehaviors through interaction and reward signals. However, designing effective\nreward functions for RL remains challenging, especially in real-world tasks\nwhere sparse rewards are insufficient and dense rewards require elaborate\ndesign. In this work, we propose Autonomous Reinforcement learning for Complex\nHumanInformed Environments (ARCHIE), an unsupervised pipeline leveraging GPT-4,\na pre-trained LLM, to generate reward functions directly from natural language\ntask descriptions. The rewards are used to train RL agents in simulated\nenvironments, where we formalize the reward generation process to enhance\nfeasibility. Additionally, GPT-4 automates the coding of task success criteria,\ncreating a fully automated, one-shot procedure for translating human-readable\ntext into deployable robot skills. Our approach is validated through extensive\nsimulated experiments on single-arm and bi-manual manipulation tasks using an\nABB YuMi collaborative robot, highlighting its practicality and effectiveness.\nTasks are demonstrated on the real robot setup.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "2503_03792v1",
+  "title": "Rebalanced Multimodal Learning with Data-aware Unimodal Sampling",
+  "url": "http://arxiv.org/abs/2503.03792v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03792v1",
+  "authors": [
+    "Qingyuan Jiang",
+    "Zhouyang Chi",
+    "Xiao Ma",
+    "Qirong Mao",
+    "Yang Yang",
+    "Jinhui Tang"
+  ],
+  "date": "2025-03-05",
+  "summary": "To address the modality learning degeneration caused by modality imbalance,\nexisting multimodal learning~(MML) approaches primarily attempt to balance the\noptimization process of each modality from the perspective of model learning.\nHowever, almost all existing methods ignore the modality imbalance caused by\nunimodal data sampling, i.e., equal unimodal data sampling often results in\ndiscrepancies in informational content, leading to modality imbalance.\nTherefore, in this paper, we propose a novel MML approach called\n\\underline{D}ata-aware \\underline{U}nimodal \\underline{S}ampling~(\\method),\nwhich aims to dynamically alleviate the modality imbalance caused by sampling.\nSpecifically, we first propose a novel cumulative modality discrepancy to\nmonitor the multimodal learning process. Based on the learning status, we\npropose a heuristic and a reinforcement learning~(RL)-based data-aware unimodal\nsampling approaches to adaptively determine the quantity of sampled data at\neach iteration, thus alleviating the modality imbalance from the perspective of\nsampling. Meanwhile, our method can be seamlessly incorporated into almost all\nexisting multimodal learning approaches as a plugin. Experiments demonstrate\nthat \\method~can achieve the best performance by comparing with diverse\nstate-of-the-art~(SOTA) baselines.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

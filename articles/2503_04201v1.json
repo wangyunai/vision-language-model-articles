@@ -1,0 +1,20 @@
+{
+  "id": "2503_04201v1",
+  "title": "Knowledge-Decoupled Synergetic Learning: An MLLM based Collaborative\n  Approach to Few-shot Multimodal Dialogue Intention Recognition",
+  "url": "http://arxiv.org/abs/2503.04201v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04201v1",
+  "authors": [
+    "Bin Chen",
+    "Yu Zhang",
+    "Hongfei Ye",
+    "Ziyi Huang",
+    "Hongyang Chen"
+  ],
+  "date": "2025-03-06",
+  "summary": "Few-shot multimodal dialogue intention recognition is a critical challenge in\nthe e-commerce domainn. Previous methods have primarily enhanced model\nclassification capabilities through post-training techniques. However, our\nanalysis reveals that training for few-shot multimodal dialogue intention\nrecognition involves two interconnected tasks, leading to a seesaw effect in\nmulti-task learning. This phenomenon is attributed to knowledge interference\nstemming from the superposition of weight matrix updates during the training\nprocess. To address these challenges, we propose Knowledge-Decoupled Synergetic\nLearning (KDSL), which mitigates these issues by utilizing smaller models to\ntransform knowledge into interpretable rules, while applying the post-training\nof larger models. By facilitating collaboration between the large and small\nmultimodal large language models for prediction, our approach demonstrates\nsignificant improvements. Notably, we achieve outstanding results on two real\nTaobao datasets, with enhancements of 6.37\\% and 6.28\\% in online weighted F1\nscores compared to the state-of-the-art method, thereby validating the efficacy\nof our framework.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

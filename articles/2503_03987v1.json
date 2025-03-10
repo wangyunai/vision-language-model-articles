@@ -1,0 +1,27 @@
+{
+  "id": "2503_03987v1",
+  "title": "RetinalGPT: A Retinal Clinical Preference Conversational Assistant\n  Powered by Large Vision-Language Models",
+  "url": "http://arxiv.org/abs/2503.03987v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03987v1",
+  "authors": [
+    "Wenhui Zhu",
+    "Xin Li",
+    "Xiwen Chen",
+    "Peijie Qiu",
+    "Vamsi Krishna Vasa",
+    "Xuanzhao Dong",
+    "Yanxi Chen",
+    "Natasha Lepore",
+    "Oana Dumitrascu",
+    "Yi Su",
+    "Yalin Wang"
+  ],
+  "date": "2025-03-06",
+  "summary": "Recently, Multimodal Large Language Models (MLLMs) have gained significant\nattention for their remarkable ability to process and analyze non-textual data,\nsuch as images, videos, and audio. Notably, several adaptations of\ngeneral-domain MLLMs to the medical field have been explored, including\nLLaVA-Med. However, these medical adaptations remain insufficiently advanced in\nunderstanding and interpreting retinal images. In contrast, medical experts\nemphasize the importance of quantitative analyses for disease detection and\ninterpretation. This underscores a gap between general-domain and\nmedical-domain MLLMs: while general-domain MLLMs excel in broad applications,\nthey lack the specialized knowledge necessary for precise diagnostic and\ninterpretative tasks in the medical field. To address these challenges, we\nintroduce \\textit{RetinalGPT}, a multimodal conversational assistant for\nclinically preferred quantitative analysis of retinal images. Specifically, we\nachieve this by compiling a large retinal image dataset, developing a novel\ndata pipeline, and employing customized visual instruction tuning to enhance\nboth retinal analysis and enrich medical knowledge. In particular, RetinalGPT\noutperforms MLLM in the generic domain by a large margin in the diagnosis of\nretinal diseases in 8 benchmark retinal datasets. Beyond disease diagnosis,\nRetinalGPT features quantitative analyses and lesion localization, representing\na pioneering step in leveraging LLMs for an interpretable and end-to-end\nclinical research framework. The code is available at\nhttps://github.com/Retinal-Research/RetinalGPT",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "vision-language"
+  ]
+}

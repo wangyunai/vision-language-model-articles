@@ -1,0 +1,23 @@
+{
+  "id": "2503_02476v1",
+  "title": "BioD2C: A Dual-level Semantic Consistency Constraint Framework for\n  Biomedical VQA",
+  "url": "http://arxiv.org/abs/2503.02476v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.02476v1",
+  "authors": [
+    "Zhengyang Ji",
+    "Shang Gao",
+    "Li Liu",
+    "Yifan Jia",
+    "Yutao Yue"
+  ],
+  "date": "2025-03-04",
+  "summary": "Biomedical visual question answering (VQA) has been widely studied and has\ndemonstrated significant application value and potential in fields such as\nassistive medical diagnosis. Despite their success, current biomedical VQA\nmodels perform multimodal information interaction only at the model level\nwithin large language models (LLMs), leading to suboptimal multimodal semantic\nalignment when dealing with complex tasks. To address this issue, we propose\nBioD2C: a novel Dual-level Semantic Consistency Constraint Framework for\nBiomedical VQA, which achieves dual-level semantic interaction alignment at\nboth the model and feature levels, enabling the model to adaptively learn\nvisual features based on the question. Specifically, we firstly integrate\ntextual features into visual features via an image-text fusion mechanism as\nfeature-level semantic interaction, obtaining visual features conditioned on\nthe given text; and then introduce a text-queue-based cross-modal soft semantic\nloss function to further align the image semantics with the question semantics.\nSpecifically, in this work, we establish a new dataset, BioVGQ, to address\ninherent biases in prior datasets by filtering manually-altered images and\naligning question-answer pairs with multimodal context, and train our model on\nthis dataset. Extensive experimental results demonstrate that BioD2C achieves\nstate-of-the-art (SOTA) performance across multiple downstream datasets,\nshowcasing its robustness, generalizability, and potential to advance\nbiomedical VQA research.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "image-text",
+    "visual question answering",
+    "VQA"
+  ]
+}

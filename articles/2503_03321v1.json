@@ -1,0 +1,20 @@
+{
+  "id": "2503_03321v1",
+  "title": "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+  "url": "http://arxiv.org/abs/2503.03321v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03321v1",
+  "authors": [
+    "Seil Kang",
+    "Jinyeong Kim",
+    "Junhyeok Kim",
+    "Seong Jae Hwang"
+  ],
+  "date": "2025-03-05",
+  "summary": "Large multimodal models (LMMs) \"see\" images by leveraging the attention\nmechanism between text and visual tokens in the transformer decoder. Ideally,\nthese models should focus on key visual information relevant to the text token.\nHowever, recent findings indicate that LMMs have an extraordinary tendency to\nconsistently allocate high attention weights to specific visual tokens, even\nwhen these tokens are irrelevant to the corresponding text. In this study, we\ninvestigate the property behind the appearance of these irrelevant visual\ntokens and examine their characteristics. Our findings show that this behavior\narises due to the massive activation of certain hidden state dimensions, which\nresembles the attention sink found in language models. Hence, we refer to this\nphenomenon as the visual attention sink. In particular, our analysis reveals\nthat removing the irrelevant visual sink tokens does not impact model\nperformance, despite receiving high attention weights. Consequently, we recycle\nthe attention to these tokens as surplus resources, redistributing the\nattention budget to enhance focus on the image. To achieve this, we introduce\nVisual Attention Redistribution (VAR), a method that redistributes attention in\nimage-centric heads, which we identify as innately focusing on visual\ninformation. VAR can be seamlessly applied across different LMMs to improve\nperformance on a wide range of tasks, including general vision-language tasks,\nvisual hallucination tasks, and vision-centric tasks, all without the need for\nadditional training, models, or inference steps. Experimental results\ndemonstrate that VAR enables LMMs to process visual information more\neffectively by adjusting their internal attention mechanisms, offering a new\ndirection to enhancing the multimodal capabilities of LMMs.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal",
+    "vision-language"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2503_03107v1",
+  "title": "External Reliable Information-enhanced Multimodal Contrastive Learning\n  for Fake News Detection",
+  "url": "http://arxiv.org/abs/2503.03107v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.03107v1",
+  "authors": [
+    "Biwei Cao",
+    "Qihang Wu",
+    "Jiuxin Cao",
+    "Bo Liu",
+    "Jie Gui"
+  ],
+  "date": "2025-03-05",
+  "summary": "With the rapid development of the Internet, the information dissemination\nparadigm has changed and the efficiency has been improved greatly. While this\nalso brings the quick spread of fake news and leads to negative impacts on\ncyberspace. Currently, the information presentation formats have evolved\ngradually, with the news formats shifting from texts to multimodal contents. As\na result, detecting multimodal fake news has become one of the research\nhotspots. However, multimodal fake news detection research field still faces\ntwo main challenges: the inability to fully and effectively utilize multimodal\ninformation for detection, and the low credibility or static nature of the\nintroduced external information, which limits dynamic updates. To bridge the\ngaps, we propose ERIC-FND, an external reliable information-enhanced multimodal\ncontrastive learning framework for fake news detection. ERIC-FND strengthens\nthe representation of news contents by entity-enriched external information\nenhancement method. It also enriches the multimodal news information via\nmultimodal semantic interaction method where the multimodal constrative\nlearning is employed to make different modality representations learn from each\nother. Moreover, an adaptive fusion method is taken to integrate the news\nrepresentations from different dimensions for the eventual classification.\nExperiments are done on two commonly used datasets in different languages, X\n(Twitter) and Weibo. Experiment results demonstrate that our proposed model\nERIC-FND outperforms existing state-of-the-art fake news detection methods\nunder the same settings.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

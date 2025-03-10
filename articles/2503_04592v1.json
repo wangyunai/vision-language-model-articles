@@ -1,0 +1,23 @@
+{
+  "id": "2503_04592v1",
+  "title": "A Benchmark for Multi-Lingual Vision-Language Learning in Remote Sensing\n  Image Captioning",
+  "url": "http://arxiv.org/abs/2503.04592v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04592v1",
+  "authors": [
+    "Qing Zhou",
+    "Tao Yang",
+    "Junyu Gao",
+    "Weiping Ni",
+    "Junzheng Wu",
+    "Qi Wang"
+  ],
+  "date": "2025-03-06",
+  "summary": "Remote Sensing Image Captioning (RSIC) is a cross-modal field bridging vision\nand language, aimed at automatically generating natural language descriptions\nof features and scenes in remote sensing imagery. Despite significant advances\nin developing sophisticated methods and large-scale datasets for training\nvision-language models (VLMs), two critical challenges persist: the scarcity of\nnon-English descriptive datasets and the lack of multilingual capability\nevaluation for models. These limitations fundamentally impede the progress and\npractical deployment of RSIC, particularly in the era of large VLMs. To address\nthese challenges, this paper presents several significant contributions to the\nfield. First, we introduce and analyze BRSIC (Bilingual Remote Sensing Image\nCaptioning), a comprehensive bilingual dataset that enriches three established\nEnglish RSIC datasets with Chinese descriptions, encompassing 13,634 images\npaired with 68,170 bilingual captions. Building upon this foundation, we\ndevelop a systematic evaluation framework that addresses the prevalent\ninconsistency in evaluation protocols, enabling rigorous assessment of model\nperformance through standardized retraining procedures on BRSIC. Furthermore,\nwe present an extensive empirical study of eight state-of-the-art large\nvision-language models (LVLMs), examining their capabilities across multiple\nparadigms including zero-shot inference, supervised fine-tuning, and\nmulti-lingual training. This comprehensive evaluation provides crucial insights\ninto the strengths and limitations of current LVLMs in handling multilingual\nremote sensing tasks. Additionally, our cross-dataset transfer experiments\nreveal interesting findings. The code and data will be available at\nhttps://github.com/mrazhou/BRSIC.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language",
+    "image captioning"
+  ]
+}
