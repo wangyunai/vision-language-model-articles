@@ -51,149 +51,172 @@
             </div>
         </section>
 
-        <!-- Add Keyword Attention Rankings Section -->
-        <section class="attention-section">
-            <h2><i class="fas fa-fire"></i> Trending Papers in VLM Research</h2>
-            <div class="attention-controls">
-                <div class="view-selector">
-                    <label for="attention-view">View:</label>
-                    <select id="attention-view">
-                        <option value="attention">Highest Impact</option>
-                        <option value="recent">Recent Impact</option>
-                        <option value="velocity">Fastest Growing</option>
-                    </select>
-                </div>
-                <div class="count-selector">
-                    <label for="attention-count">Show:</label>
-                    <select id="attention-count">
-                        <option value="10">Top 10</option>
-                        <option value="20">Top 20</option>
-                        <option value="50">Top 50</option>
-                    </select>
-                </div>
+        <!-- Tab Navigation -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="articles-tab">
+                    <i class="fas fa-newspaper"></i> Articles
+                </button>
+                <button class="tab-button" data-tab="trends-tab">
+                    <i class="fas fa-chart-line"></i> Research Trends
+                </button>
+                <button class="tab-button" data-tab="impact-tab">
+                    <i class="fas fa-fire"></i> Impact Rankings
+                </button>
             </div>
-            
-            <div class="attention-visualization">
-                <canvas id="attention-chart"></canvas>
-            </div>
-            
-            <div class="keyword-ranking">
-                <h3>Paper Rankings by Community Attention</h3>
-                <div class="keyword-ranking-list" id="paper-ranking-list">
-                    <!-- Will be populated by JavaScript -->
-                    <div class="loading-spinner">
-                        <div class="spinner"></div>
-                        <p>Loading paper rankings...</p>
+        </div>
+
+        <!-- Articles Tab Content -->
+        <div class="tab-content active" id="articles-tab">
+            <section class="search-section">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search articles by title, author, or keyword...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="filter-sorting-container">
+                    <div class="filter-container">
+                        <label for="source-filter">Source:</label>
+                        <select id="source-filter">
+                            <option value="all">All Sources</option>
+                            <option value="arXiv">arXiv</option>
+                            <option value="Google AI Blog">Google AI Blog</option>
+                            <option value="OpenAI Blog">OpenAI Blog</option>
+                            <option value="Meta AI Research">Meta AI Research</option>
+                            <option value="Microsoft Research">Microsoft Research</option>
+                            <option value="HuggingFace Blog">HuggingFace Blog</option>
+                            <option value="Papers With Code">Papers With Code</option>
+                        </select>
+                        
+                        <label for="date-filter">Date:</label>
+                        <select id="date-filter">
+                            <option value="all">All Time</option>
+                            <option value="week">Past Week</option>
+                            <option value="month">Past Month</option>
+                            <option value="year">Past Year</option>
+                        </select>
+                        
+                        <label for="keyword-filter">Keyword:</label>
+                        <select id="keyword-filter">
+                            <option value="all">All Keywords</option>
+                            <!-- Keywords will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <div class="sorting-container">
+                        <label for="sort-option">Sort By:</label>
+                        <select id="sort-option">
+                            <option value="date-desc">Date (Newest First)</option>
+                            <option value="date-asc">Date (Oldest First)</option>
+                            <option value="title-asc">Title (A-Z)</option>
+                            <option value="title-desc">Title (Z-A)</option>
+                            <option value="source">Source</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="trends-section">
-            <h2><i class="fas fa-chart-line"></i> VLM Research Trends</h2>
-            
-            <div class="trends-controls">
-                <div class="time-range-selector">
-                    <label for="time-range">Time Range:</label>
-                    <select id="time-range">
-                        <option value="6">Last 6 Months</option>
-                        <option value="12" selected>Last 12 Months</option>
-                        <option value="24">Last 2 Years</option>
-                        <option value="all">All Time</option>
-                    </select>
+            <section class="articles-section">
+                <div class="loading-spinner" id="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading articles...</p>
+                </div>
+                <div id="articles-container"></div>
+                <div id="no-results" class="hidden">
+                    <p>No articles found matching your search criteria.</p>
+                </div>
+                <div class="pagination" id="pagination">
+                    <!-- Pagination controls will be added by JavaScript -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Trends Tab Content -->
+        <div class="tab-content" id="trends-tab">
+            <section class="trends-section">
+                <h2><i class="fas fa-chart-line"></i> VLM Research Trends</h2>
+                
+                <div class="trends-controls">
+                    <div class="time-range-selector">
+                        <label for="time-range">Time Range:</label>
+                        <select id="time-range">
+                            <option value="6">Last 6 Months</option>
+                            <option value="12" selected>Last 12 Months</option>
+                            <option value="24">Last 2 Years</option>
+                            <option value="all">All Time</option>
+                        </select>
+                    </div>
+                    
+                    <div class="trend-type-selector">
+                        <label for="trend-type">Trend Type:</label>
+                        <select id="trend-type">
+                            <option value="volume">Article Volume</option>
+                            <option value="keywords">Keyword Popularity</option>
+                            <option value="sources">Source Activity</option>
+                        </select>
+                    </div>
+                    
+                    <div id="keyword-trend-selector" class="hidden">
+                        <label for="trend-keywords">Keywords:</label>
+                        <select id="trend-keywords" multiple>
+                            <!-- Will be populated by JavaScript -->
+                        </select>
+                    </div>
                 </div>
                 
-                <div class="trend-type-selector">
-                    <label for="trend-type">Trend Type:</label>
-                    <select id="trend-type">
-                        <option value="volume">Article Volume</option>
-                        <option value="keywords">Keyword Popularity</option>
-                        <option value="sources">Source Activity</option>
-                    </select>
+                <div class="trend-visualization">
+                    <canvas id="trend-chart"></canvas>
                 </div>
                 
-                <div id="keyword-trend-selector" class="hidden">
-                    <label for="trend-keywords">Keywords:</label>
-                    <select id="trend-keywords" multiple>
+                <div class="trend-insights">
+                    <h3>Key Insights</h3>
+                    <ul id="trend-insights-list">
                         <!-- Will be populated by JavaScript -->
-                    </select>
+                        <li>Loading trend insights...</li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div class="trend-visualization">
-                <canvas id="trend-chart"></canvas>
-            </div>
-            
-            <div class="trend-insights">
-                <h3>Key Insights</h3>
-                <ul id="trend-insights-list">
-                    <!-- Will be populated by JavaScript -->
-                    <li>Loading trend insights...</li>
-                </ul>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section class="search-section">
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search articles by title, author, or keyword...">
-                <button id="search-button"><i class="fas fa-search"></i></button>
-            </div>
-            
-            <div class="filter-sorting-container">
-                <div class="filter-container">
-                    <label for="source-filter">Source:</label>
-                    <select id="source-filter">
-                        <option value="all">All Sources</option>
-                        <option value="arXiv">arXiv</option>
-                        <option value="Google AI Blog">Google AI Blog</option>
-                        <option value="OpenAI Blog">OpenAI Blog</option>
-                        <option value="Meta AI Research">Meta AI Research</option>
-                        <option value="Microsoft Research">Microsoft Research</option>
-                        <option value="HuggingFace Blog">HuggingFace Blog</option>
-                        <option value="Papers With Code">Papers With Code</option>
-                    </select>
-                    
-                    <label for="date-filter">Date:</label>
-                    <select id="date-filter">
-                        <option value="all">All Time</option>
-                        <option value="week">Past Week</option>
-                        <option value="month">Past Month</option>
-                        <option value="year">Past Year</option>
-                    </select>
-                    
-                    <label for="keyword-filter">Keyword:</label>
-                    <select id="keyword-filter">
-                        <option value="all">All Keywords</option>
-                        <!-- Keywords will be populated by JavaScript -->
-                    </select>
+        <!-- Impact Rankings Tab Content -->
+        <div class="tab-content" id="impact-tab">
+            <section class="attention-section">
+                <h2><i class="fas fa-fire"></i> Trending Papers in VLM Research</h2>
+                <div class="attention-controls">
+                    <div class="view-selector">
+                        <label for="attention-view">View:</label>
+                        <select id="attention-view">
+                            <option value="attention">Highest Impact</option>
+                            <option value="recent">Recent Impact</option>
+                            <option value="velocity">Fastest Growing</option>
+                        </select>
+                    </div>
+                    <div class="count-selector">
+                        <label for="attention-count">Show:</label>
+                        <select id="attention-count">
+                            <option value="10">Top 10</option>
+                            <option value="20">Top 20</option>
+                            <option value="50">Top 50</option>
+                        </select>
+                    </div>
                 </div>
                 
-                <div class="sorting-container">
-                    <label for="sort-option">Sort By:</label>
-                    <select id="sort-option">
-                        <option value="date-desc">Date (Newest First)</option>
-                        <option value="date-asc">Date (Oldest First)</option>
-                        <option value="title-asc">Title (A-Z)</option>
-                        <option value="title-desc">Title (Z-A)</option>
-                        <option value="source">Source</option>
-                    </select>
+                <div class="attention-visualization">
+                    <canvas id="attention-chart"></canvas>
                 </div>
-            </div>
-        </section>
-
-        <section class="articles-section">
-            <div class="loading-spinner" id="loading-spinner">
-                <div class="spinner"></div>
-                <p>Loading articles...</p>
-            </div>
-            <div id="articles-container"></div>
-            <div id="no-results" class="hidden">
-                <p>No articles found matching your search criteria.</p>
-            </div>
-            <div class="pagination" id="pagination">
-                <!-- Pagination controls will be added by JavaScript -->
-            </div>
-        </section>
+                
+                <div class="keyword-ranking">
+                    <h3>Paper Rankings by Community Attention</h3>
+                    <div class="keyword-ranking-list" id="paper-ranking-list">
+                        <!-- Will be populated by JavaScript -->
+                        <div class="loading-spinner">
+                            <div class="spinner"></div>
+                            <p>Loading paper rankings...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>

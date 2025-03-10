@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentPage = 1;
     let totalPages = 1;
     
+    // Tab state tracking
+    let activeTab = 'articles-tab';
+    let tabsInitialized = {
+        'articles-tab': false,
+        'trends-tab': false,
+        'impact-tab': false
+    };
+    
     // Source Icons - mapping source names to Font Awesome icons
     const sourceIcons = {
         'arXiv': 'fa-scroll',
@@ -44,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trend Analysis variables
     let trendChart = null;
     const colorPalette = [
-        '#4e79a7', '#f28e2c', '#e15759', '#76b7b2', 
-        '#59a14f', '#edc949', '#af7aa1', '#ff9da7', 
-        '#9c755f', '#bab0ab'
+        '#2196F3', '#FF5722', '#4CAF50', '#9C27B0', 
+        '#FF9800', '#795548', '#607D8B', '#E91E63',
+        '#00BCD4', '#FFEB3B', '#8BC34A', '#FFC107'
     ];
     
     // Fetch articles from the JSON file
@@ -64,57 +72,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the page
     async function init() {
         loadingSpinner.classList.remove('hidden');
-        articlesContainer.innerHTML = '';
         
         // Initialize dark/light mode
         initializeTheme();
         
-        // Fetch the articles
+        // Fetch the articles (needed for basic stats)
         allArticles = await fetchArticles();
-        filteredArticles = [...allArticles];
-        
-        // Calculate total pages
-        updatePagination();
-        
-        // Extract all unique keywords and sources
-        allArticles.forEach(article => {
-            // Extract keywords
-            if (article.keywords && Array.isArray(article.keywords)) {
-                article.keywords.forEach(keyword => allKeywords.add(keyword));
-            }
-            
-            // Extract sources
-            if (article.source) {
-                allSources.add(article.source);
-            }
-        });
         
         // Update dashboard statistics
         updateDashboardStats();
         
-        // Populate keyword filter
-        populateKeywordFilter();
-        
         // Set last updated date
         updateLastUpdatedDate();
         
-        // Display articles for first page
-        displayArticlesForCurrentPage();
+        // Set up tab navigation
+        setupTabNavigation();
         
-        // Initialize trend analysis
-        initTrendAnalysis();
-        
-        // Load and display trends
-        loadTrendsData();
-        
-        // Load and display paper attention data
-        loadPaperAttentionData();
-        
-        // Hide loading spinner
-        loadingSpinner.classList.add('hidden');
-        
-        // Set up event listeners
-        setupEventListeners();
+        // Initialize the default (first) tab
+        initializeTab(activeTab);
     }
     
     // Initialize theme based on user preference or system setting
@@ -1438,6 +1413,184 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+    }
+
+    // Set up tab navigation
+    function setupTabNavigation() {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                switchTab(tabId);
+            });
+        });
+    }
+    
+    // Switch tabs
+    function switchTab(tabId) {
+        // Don't do anything if it's already the active tab
+        if (tabId === activeTab) return;
+        
+        // Update active tab
+        activeTab = tabId;
+        
+        // Update UI: tab buttons
+        document.querySelectorAll('.tab-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.querySelector(`.tab-button[data-tab="${tabId}"]`).classList.add('active');
+        
+        // Update UI: tab content
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+        
+        // Initialize tab content if it hasn't been loaded yet
+        if (!tabsInitialized[tabId]) {
+            initializeTab(tabId);
+        }
+    }
+    
+    // Initialize tab content based on tab ID
+    function initializeTab(tabId) {
+        switch(tabId) {
+            case 'articles-tab':
+                initializeArticlesTab();
+                break;
+            case 'trends-tab':
+                initializeTrendsTab();
+                break;
+            case 'impact-tab':
+                initializeImpactTab();
+                break;
+        }
+        
+        // Mark tab as initialized
+        tabsInitialized[tabId] = true;
+    }
+    
+    // Initialize articles tab
+    function initializeArticlesTab() {
+        // Show loading spinner
+        loadingSpinner.classList.remove('hidden');
+        articlesContainer.innerHTML = '';
+        
+        // Prepare articles for display
+        filteredArticles = [...allArticles];
+        
+        // Calculate total pages
+        updatePagination();
+        
+        // Extract all unique keywords and sources
+        allArticles.forEach(article => {
+            // Extract keywords
+            if (article.keywords && Array.isArray(article.keywords)) {
+                article.keywords.forEach(keyword => allKeywords.add(keyword));
+            }
+            
+            // Extract sources
+            if (article.source) {
+                allSources.add(article.source);
+            }
+        });
+        
+        // Populate keyword filter
+        populateKeywordFilter();
+        
+        // Set up event listeners for article search and filters
+        setupArticleEventListeners();
+        
+        // Display articles
+        displayArticlesForCurrentPage();
+    }
+    
+    // Initialize trends tab
+    function initializeTrendsTab() {
+        // Show loading message in the trends area
+        document.getElementById('trend-insights-list').innerHTML = '<li>Loading trend data...</li>';
+        
+        // Initialize the trend visualization
+        initTrendAnalysis();
+        
+        // Set up trend-specific event listeners
+        setupTrendEventListeners();
+        
+        // Generate and display trends
+        updateTrendChart();
+    }
+    
+    // Initialize impact tab
+    function initializeImpactTab() {
+        // Show loading spinner in the paper ranking area
+        document.getElementById('paper-ranking-list').innerHTML = `
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading paper rankings...</p>
+            </div>
+        `;
+        
+        // Load paper attention data
+        loadPaperAttentionData();
+        
+        // Set up impact-specific event listeners
+        setupImpactEventListeners();
+    }
+    
+    // Set up event listeners for article search and filters
+    function setupArticleEventListeners() {
+        // Only set up these listeners once
+        if (tabsInitialized['articles-tab']) return;
+        
+        searchButton.addEventListener('click', filterAndDisplayArticles);
+        
+        searchInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                filterAndDisplayArticles();
+            }
+        });
+        
+        sourceFilter.addEventListener('change', filterAndDisplayArticles);
+        dateFilter.addEventListener('change', filterAndDisplayArticles);
+        keywordFilter.addEventListener('change', filterAndDisplayArticles);
+        sortOption.addEventListener('change', filterAndDisplayArticles);
+    }
+    
+    // Set up trend-specific event listeners
+    function setupTrendEventListeners() {
+        // Only set up these listeners once
+        if (tabsInitialized['trends-tab']) return;
+        
+        const timeRangeSelect = document.getElementById('time-range');
+        const trendTypeSelect = document.getElementById('trend-type');
+        const trendKeywordsSelect = document.getElementById('trend-keywords');
+        
+        timeRangeSelect.addEventListener('change', updateTrendChart);
+        
+        trendTypeSelect.addEventListener('change', function() {
+            const keywordSelector = document.getElementById('keyword-trend-selector');
+            if (this.value === 'keywords') {
+                keywordSelector.classList.remove('hidden');
+            } else {
+                keywordSelector.classList.add('hidden');
+            }
+            updateTrendChart();
+        });
+        
+        trendKeywordsSelect.addEventListener('change', updateTrendChart);
+    }
+    
+    // Set up impact-specific event listeners
+    function setupImpactEventListeners() {
+        // Only set up these listeners once
+        if (tabsInitialized['impact-tab']) return;
+        
+        const attentionViewSelect = document.getElementById('attention-view');
+        const attentionCountSelect = document.getElementById('attention-count');
+        
+        attentionViewSelect.addEventListener('change', loadPaperAttentionData);
+        attentionCountSelect.addEventListener('change', loadPaperAttentionData);
     }
 
     // Initialize the page
