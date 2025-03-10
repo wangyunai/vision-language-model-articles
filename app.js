@@ -75,39 +75,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize the page
     async function init() {
-        // Initialize dark/light mode
-        initializeTheme();
-        
-        // Fetch the articles (needed for basic stats)
-        allArticles = await fetchArticles();
-        
-        // Extract keywords and sources (need to be done once, not per tab)
-        console.log("Extracting keywords and sources...");
-        allArticles.forEach(article => {
-            // Extract keywords
-            if (article.keywords && Array.isArray(article.keywords)) {
-                article.keywords.forEach(keyword => allKeywords.add(keyword));
-            }
+        try {
+            // Initialize dark/light mode
+            initializeTheme();
             
-            // Extract sources
-            if (article.source) {
-                allSources.add(article.source);
-            }
-        });
-        
-        console.log(`Found ${allKeywords.size} unique keywords and ${allSources.size} sources`);
-        
-        // Update dashboard statistics now that we have all the data
-        updateDashboardStats();
-        
-        // Set last updated date
-        updateLastUpdatedDate();
-        
-        // Set up tab navigation
-        setupTabNavigation();
-        
-        // Initialize the default (first) tab
-        initializeTab(activeTab);
+            // Fetch the articles (needed for basic stats)
+            allArticles = await fetchArticles();
+            
+            // Extract keywords and sources (need to be done once, not per tab)
+            console.log("Extracting keywords and sources...");
+            allArticles.forEach(article => {
+                // Extract keywords
+                if (article.keywords && Array.isArray(article.keywords)) {
+                    article.keywords.forEach(keyword => allKeywords.add(keyword));
+                }
+                
+                // Extract sources
+                if (article.source) {
+                    allSources.add(article.source);
+                }
+            });
+            
+            console.log(`Found ${allKeywords.size} unique keywords and ${allSources.size} sources`);
+            
+            // Update dashboard statistics now that we have all the data
+            updateDashboardStats();
+            
+            // Set last updated date
+            updateLastUpdatedDate();
+            
+            // Set up tab navigation
+            setupTabNavigation();
+            
+            // Initialize the default (first) tab
+            initializeTab(activeTab);
+        } catch (error) {
+            console.error("Error during initialization:", error);
+            // Make sure spinner is hidden even on errors
+            loadingSpinner.classList.add('hidden');
+            
+            // Show error message
+            articlesContainer.innerHTML = `
+                <div class="error-message">
+                    <p>Error loading articles. Please try refreshing the page.</p>
+                    <p>Details: ${error.message}</p>
+                </div>
+            `;
+        }
     }
     
     // Initialize theme based on user preference or system setting
@@ -339,15 +353,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const endIndex = startIndex + articlesPerPage;
         const paginatedArticles = filteredArticles.slice(startIndex, endIndex);
         
+        // Hide spinner regardless of whether we have articles
+        loadingSpinner.classList.add('hidden');
+        
         displayArticles(paginatedArticles);
     }
 
     // Display articles
     function displayArticles(articles) {
-        articlesContainer.innerHTML = '';
-        
-        // Hide loading spinner
+        // Always hide the loading spinner first thing
         loadingSpinner.classList.add('hidden');
+        
+        articlesContainer.innerHTML = '';
         
         if (articles.length === 0) {
             noResults.classList.remove('hidden');
@@ -499,68 +516,70 @@ document.addEventListener('DOMContentLoaded', () => {
         return cleanSummary;
     }
 
-    // Filter articles based on search and filter criteria
+    // Filter articles based on search, source, date, and keyword
     function filterArticles() {
-        const searchTerm = searchInput.value.toLowerCase();
-        const selectedSource = sourceFilter.value;
-        const selectedDate = dateFilter.value;
-        const selectedKeyword = keywordFilter.value;
+        // Show loading spinner during filtering
+        loadingSpinner.classList.remove('hidden');
         
+        // Get filter values
+        const searchText = searchInput.value.toLowerCase();
+        const sourceValue = sourceFilter.value;
+        const dateValue = dateFilter.value;
+        const keywordValue = keywordFilter.value;
+        
+        // Filter articles based on criteria
         filteredArticles = allArticles.filter(article => {
-            // Search term filter
-            const titleMatch = article.title && article.title.toLowerCase().includes(searchTerm);
-            const summaryMatch = article.summary && article.summary.toLowerCase().includes(searchTerm);
-            const authorMatch = article.authors && article.authors.some(author => 
-                author.toLowerCase().includes(searchTerm)
-            );
-            const keywordMatch = article.keywords && article.keywords.some(keyword => 
-                keyword.toLowerCase().includes(searchTerm)
-            );
-            
-            const searchMatch = titleMatch || summaryMatch || authorMatch || keywordMatch || searchTerm === '';
+            // Search text filter
+            const matchesSearch = searchText === '' || 
+                (article.title && article.title.toLowerCase().includes(searchText)) ||
+                (article.summary && article.summary.toLowerCase().includes(searchText)) ||
+                (article.authors && article.authors.some(author => author.toLowerCase().includes(searchText)));
             
             // Source filter
-            const sourceMatch = selectedSource === 'all' || article.source === selectedSource;
+            const matchesSource = sourceValue === 'all' || article.source === sourceValue;
             
             // Date filter
-            let dateMatch = true;
-            if (selectedDate !== 'all' && article.date) {
+            let matchesDate = true;
+            if (dateValue !== 'all' && article.date) {
                 const articleDate = new Date(article.date);
                 const now = new Date();
                 
-                if (selectedDate === 'week') {
+                if (dateValue === 'week') {
                     const oneWeekAgo = new Date();
                     oneWeekAgo.setDate(now.getDate() - 7);
-                    dateMatch = articleDate >= oneWeekAgo;
-                } else if (selectedDate === 'month') {
+                    matchesDate = articleDate >= oneWeekAgo;
+                } else if (dateValue === 'month') {
                     const oneMonthAgo = new Date();
                     oneMonthAgo.setMonth(now.getMonth() - 1);
-                    dateMatch = articleDate >= oneMonthAgo;
-                } else if (selectedDate === 'year') {
+                    matchesDate = articleDate >= oneMonthAgo;
+                } else if (dateValue === 'year') {
                     const oneYearAgo = new Date();
                     oneYearAgo.setFullYear(now.getFullYear() - 1);
-                    dateMatch = articleDate >= oneYearAgo;
+                    matchesDate = articleDate >= oneYearAgo;
                 }
             }
             
             // Keyword filter
-            const keywordFilterMatch = selectedKeyword === 'all' || 
-                (article.keywords && article.keywords.includes(selectedKeyword));
+            const matchesKeyword = keywordValue === 'all' || 
+                (article.keywords && article.keywords.includes(keywordValue));
             
-            return searchMatch && sourceMatch && dateMatch && keywordFilterMatch;
+            return matchesSearch && matchesSource && matchesDate && matchesKeyword;
         });
         
-        // Sort filtered articles
-        filteredArticles = sortArticles(filteredArticles);
+        // Sort the filtered articles
+        sortArticles(filteredArticles);
         
-        // Reset to first page when filter changes
+        // Reset pagination to first page
         currentPage = 1;
         
         // Update pagination
         updatePagination();
         
-        // Display articles for current page
+        // Display the articles
         displayArticlesForCurrentPage();
+        
+        // Ensure spinner is hidden after filtering
+        loadingSpinner.classList.add('hidden');
     }
     
     // Initialize trend analysis
@@ -1513,6 +1532,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Display articles
         displayArticlesForCurrentPage();
+        
+        // Safety mechanism: hide spinner after a short delay even if something fails
+        setTimeout(() => {
+            loadingSpinner.classList.add('hidden');
+        }, 2000);
     }
     
     // Initialize trends tab
