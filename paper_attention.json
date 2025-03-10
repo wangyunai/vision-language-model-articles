@@ -1,3844 +1,1302 @@
 [
   {
-    "id": "paperswithcode_ArtVLM__Attribute_Recognition_Through_Vision_Based",
-    "title": "ArtVLM: Attribute Recognition Through Vision-Based Prefix Language Modeling",
-    "authors": [],
-    "date": "2024-03-28",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/artvlm-attribute-recognition-through-vision",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
+    "id": "2503.03987v1",
+    "title": "RetinalGPT: A Retinal Clinical Preference Conversational Assistant\n  Powered by Large Vision-Language Models",
+    "date": "2025-03-06",
+    "attention_score": 3.87,
+    "attention_components": {
+      "base_score": 2.0,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_ViLT__Vision_and_Language_Transformer_Without_Conv",
-    "title": "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision",
-    "authors": [],
-    "date": "2024-03-27",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/vilt-vision-and-language-transformer-without",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
+    "id": "2503.04839v1",
+    "title": "Advancing Multimodal In-Context Learning in Large Vision-Language Models\n  with Task-aware Demonstrations",
+    "date": "2025-03-05",
+    "attention_score": 3.84,
+    "attention_components": {
+      "base_score": 2.0,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_BLIP__Bootstrapping_Language_Image_Pre_training_fo",
-    "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
-    "authors": [],
-    "date": "2024-03-26",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/blip-bootstrapping-language-image-pre",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
+    "id": "2503.04543v1",
+    "title": "Keeping Yourself is Important in Downstream Tuning Multimodal Large\n  Language Model",
+    "date": "2025-03-06",
+    "attention_score": 3.48,
+    "attention_components": {
+      "base_score": 1.8,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "2503_05093v1",
+    "id": "2503.04229v1",
+    "title": "Synthetic Data is an Elegant GIFT for Continual Vision-Language Models",
+    "date": "2025-03-06",
+    "attention_score": 3.48,
+    "attention_components": {
+      "base_score": 1.8,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03651v1",
+    "title": "DoraCycle: Domain-Oriented Adaptation of Unified Generative Model in\n  Multimodal Cycles",
+    "date": "2025-03-05",
+    "attention_score": 3.45,
+    "attention_components": {
+      "base_score": 1.8,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05543v1",
+    "title": "Pi-GPS: Enhancing Geometry Problem Solving by Unleashing the Power of\n  Diagrammatic Information",
+    "date": "2025-03-07",
+    "attention_score": 3.12,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05093v1",
     "title": "Visual Cues of Gender and Race are Associated with Stereotyping in\n  Vision-Language Models",
-    "authors": [
-      "Messi H. J. Lee",
-      "Soyeon Jeon",
-      "Jacob M. Montgomery",
-      "Calvin K. Lai"
-    ],
-    "date": "2024-03-25",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05093v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "date": "2025-03-07",
+    "attention_score": 3.12,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.9917808219178083,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "2503_05132v1",
-    "title": "R1-Zero's \"Aha Moment\" in Visual Reasoning on a 2B Non-SFT Model",
-    "authors": [
-      "Hengguang Zhou",
-      "Xirui Li",
-      "Ruochen Wang",
-      "Minhao Cheng",
-      "Tianyi Zhou",
-      "Cho-Jui Hsieh"
-    ],
-    "date": "2024-03-24",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05132v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05149v1",
-    "title": "Development and Enhancement of Text-to-Image Diffusion Models",
-    "authors": [
-      "Rajdeep Roshan Sahu"
-    ],
-    "date": "2024-03-23",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05149v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_LlavaGuard__An_Open_VLM_based_Framework_for_Safegu",
-    "title": "LlavaGuard: An Open VLM-based Framework for Safeguarding Vision Datasets and Models",
-    "authors": [],
-    "date": "2024-03-23",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/llavaguard-vlm-based-safeguards-for-vision",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05179v1",
-    "title": "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive\n  Cognitive-Inspired Sketching",
-    "authors": [
-      "Simon A. Aytes",
-      "Jinheon Baek",
-      "Sung Ju Hwang"
-    ],
-    "date": "2024-03-22",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05179v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_Open6DOR__Benchmarking_Open_instruction_6_DoF_Obje",
-    "title": "Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach",
-    "authors": [],
-    "date": "2024-03-22",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/open6dor-benchmarking-open-instruction-6-dof",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05186v1",
-    "title": "Narrating the Video: Boosting Text-Video Retrieval via Comprehensive\n  Utilization of Frame-Level Captions",
-    "authors": [
-      "Chan hur",
-      "Jeong-hun Hong",
-      "Dong-hun Lee",
-      "Dabin Kang",
-      "Semin Myeong",
-      "Sang-hyo Park",
-      "Hyeyoung Park"
-    ],
-    "date": "2024-03-21",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05186v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_RL_VLM_F__Reinforcement_Learning_from_Vision_Langu",
-    "title": "RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback",
-    "authors": [],
-    "date": "2024-03-21",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/rl-vlm-f-reinforcement-learning-from-vision",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05204v1",
+    "id": "2503.05204v1",
     "title": "Data-Efficient Generalization for Zero-shot Composed Image Retrieval",
-    "authors": [
-      "Zining Chen",
-      "Zhicheng Zhao",
-      "Fei Su",
-      "Xiaoqin Zhang",
-      "Shijian Lu"
-    ],
-    "date": "2024-03-20",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05204v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "date": "2025-03-07",
+    "attention_score": 3.12,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.9917808219178083,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_An_Image_Grid_Can_Be_Worth_a_Video__Zero_shot_Vide",
-    "title": "An Image Grid Can Be Worth a Video: Zero-shot Video Question Answering Using a VLM",
-    "authors": [],
-    "date": "2024-03-20",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/an-image-grid-can-be-worth-a-video-zero-shot",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05214v1",
-    "title": "Gaussian Random Fields as an Abstract Representation of Patient Metadata\n  for Multimodal Medical Image Segmentation",
-    "authors": [
-      "Bill Cassidy",
-      "Christian McBride",
-      "Connah Kendrick",
-      "Neil D. Reeves",
-      "Joseph M. Pappachan",
-      "Shaghayegh Raad",
-      "Moi Hoon Yap"
-    ],
-    "date": "2024-03-19",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05214v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "id": "2503.05383v1",
+    "title": "VLMs Play StarCraft II: A Benchmark and Multimodal Decision Method",
+    "date": "2025-03-07",
+    "attention_score": 3.12,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.9917808219178083,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_G_LLaVA__Solving_Geometric_Problem_with_Multi_Moda",
-    "title": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
-    "authors": [],
-    "date": "2024-03-19",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/g-llava-solving-geometric-problem-with-multi",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05228v1",
-    "title": "RecipeGen: A Benchmark for Real-World Recipe Image Generation",
-    "authors": [
-      "Ruoxuan Zhang",
-      "Hongxia Xie",
-      "Yi Yao",
-      "Jian-Yu Jiang-Lin",
-      "Bin Wen",
-      "Ling Lo",
-      "Hong-Han Shuai",
-      "Yung-Hui Li",
-      "Wen-Huang Cheng"
-    ],
-    "date": "2024-03-18",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05228v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "id": "2503.04592v1",
+    "title": "A Benchmark for Multi-Lingual Vision-Language Learning in Remote Sensing\n  Image Captioning",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_ConceptLab__Creative_Concept_Generation_using_VLM_",
-    "title": "ConceptLab: Creative Concept Generation using VLM-Guided Diffusion Prior Constraints",
-    "authors": [],
-    "date": "2024-03-18",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/conceptlab-creative-generation-using",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05231v1",
-    "title": "Kaiwu: A Multimodal Manipulation Dataset and Framework for Robot\n  Learning and Human-Robot Interaction",
-    "authors": [
-      "Shuo Jiang",
-      "Haonan Li",
-      "Ruochen Ren",
-      "Yanmin Zhou",
-      "Zhipeng Wang",
-      "Bin He"
-    ],
-    "date": "2024-03-17",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05231v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "id": "2503.04353v1",
+    "title": "ObjMST: An Object-Focused Multimodal Style Transfer Framework",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_X__2__VLM__All_In_One_Pre_trained_Model_For_Vision",
-    "title": "X$^2$-VLM: All-In-One Pre-trained Model For Vision-Language Tasks",
-    "authors": [],
-    "date": "2024-03-17",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/x-2-vlm-all-in-one-pre-trained-model-for",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05236v1",
-    "title": "Unified Reward Model for Multimodal Understanding and Generation",
-    "authors": [
-      "Yibin Wang",
-      "Yuhang Zang",
-      "Hao Li",
-      "Cheng Jin",
-      "Jiaqi Wang"
-    ],
-    "date": "2024-03-16",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05236v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "id": "2503.04325v2",
+    "title": "GBT-SAM: A Parameter-Efficient Depth-Aware Model for Generalizable Brain\n  tumour Segmentation on mp-MRI",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_PaliGemma__A_versatile_3B_VLM_for_transfer",
-    "title": "PaliGemma: A versatile 3B VLM for transfer",
-    "authors": [],
-    "date": "2024-03-16",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/paligemma-a-versatile-3b-vlm-for-transfer",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05255v1",
-    "title": "CMMCoT: Enhancing Complex Multi-Image Comprehension via Multi-Modal\n  Chain-of-Thought and Memory Augmentation",
-    "authors": [
-      "Guanghao Zhang",
-      "Tao Zhong",
-      "Yan Xia",
-      "Zhelun Yu",
-      "Haoyuan Li",
-      "Wanggui He",
-      "Fangxun Shu",
-      "Mushui Liu",
-      "Dong She",
-      "Yi Wang",
-      "Hao Jiang"
-    ],
-    "date": "2024-03-15",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05255v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "id": "2503.04982v1",
+    "title": "LVLM-Compress-Bench: Benchmarking the Broader Impact of Large\n  Vision-Language Model Compression",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_VLM__Task_agnostic_Video_Language_Model_Pre_traini",
-    "title": "VLM: Task-agnostic Video-Language Model Pre-training for Video Understanding",
-    "authors": [],
-    "date": "2024-03-15",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/vlm-task-agnostic-video-language-model-pre",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05298v1",
-    "title": "Coreference as an indicator of context scope in multimodal narrative",
-    "authors": [
-      "Nikolai Ilinykh",
-      "Shalom Lappin",
-      "Asad Sayeed",
-      "Sharid Lo\u00e1iciga"
-    ],
-    "date": "2024-03-14",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05298v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "id": "2503.04871v1",
+    "title": "Toward Lightweight and Fast Decoders for Diffusion Models in Image and\n  Video Generation",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_MME__A_Comprehensive_Evaluation_Benchmark_for_Mult",
-    "title": "MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models",
-    "authors": [],
-    "date": "2024-03-14",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/mme-a-comprehensive-evaluation-benchmark-for",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
+    "id": "2503.04919v1",
+    "title": "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D\n  Object Placement",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "2503_05305v1",
+    "id": "2503.04852v1",
+    "title": "CAUSAL3D: A Comprehensive Benchmark for Causal Learning from Visual Data",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04205v1",
+    "title": "Learning 3D Medical Image Models From Brain Functional Connectivity\n  Network Supervision For Mental Disorder Diagnosis",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04459v2",
+    "title": "Question-Aware Gaussian Experts for Audio-Visual Question Answering",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04095v2",
+    "title": "Chart-HQA: A Benchmark for Hypothetical Question Answering in Charts",
+    "date": "2025-03-06",
+    "attention_score": 3.09,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03854v1",
+    "title": "Vision-Language Models Struggle to Align Entities across Modalities",
+    "date": "2025-03-05",
+    "attention_score": 3.07,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03840v1",
+    "title": "Decoupling the components of geometric understanding in Vision Language\n  Models",
+    "date": "2025-03-05",
+    "attention_score": 3.07,
+    "attention_components": {
+      "base_score": 1.6,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05064v1",
+    "title": "Perceiving, Reasoning, Adapting: A Dual-Layer Framework for VLM-Guided\n  Precision Robotic Manipulation",
+    "date": "2025-03-07",
+    "attention_score": 2.73,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05149v1",
+    "title": "Development and Enhancement of Text-to-Image Diffusion Models",
+    "date": "2025-03-07",
+    "attention_score": 2.73,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05132v1",
+    "title": "R1-Zero's \"Aha Moment\" in Visual Reasoning on a 2B Non-SFT Model",
+    "date": "2025-03-07",
+    "attention_score": 2.73,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05305v1",
     "title": "Frequency Autoregressive Image Generation with Continuous Tokens",
-    "authors": [
-      "Hu Yu",
-      "Hao Luo",
-      "Hangjie Yuan",
-      "Yu Rong",
-      "Feng Zhao"
-    ],
-    "date": "2024-03-13",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05305v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "date": "2025-03-07",
+    "attention_score": 2.73,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9917808219178083,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_Kosmos_G__Generating_Images_in_Context_with_Multim",
-    "title": "Kosmos-G: Generating Images in Context with Multimodal Large Language Models",
-    "authors": [],
-    "date": "2024-03-13",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/kosmos-g-generating-images-in-context-with",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05319v1",
-    "title": "Robust Multimodal Learning for Ophthalmic Disease Grading via\n  Disentangled Representation",
-    "authors": [
-      "Xinkun Wang",
-      "Yifang Wang",
-      "Senwei Liang",
-      "Feilong Tang",
-      "Chengzhi Liu",
-      "Ming Hu",
-      "Chao Hu",
-      "Junjun He",
-      "Zongyuan Ge",
-      "Imran Razzak"
-    ],
-    "date": "2024-03-12",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05319v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "id": "2503.04078v1",
+    "title": "Spatial-Temporal Perception with Causal Inference for Naturalistic\n  Driving Action Recognition",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "paperswithcode_VATT__Transformers_for_Multimodal_Self_Supervised_",
-    "title": "VATT: Transformers for Multimodal Self-Supervised Learning from Raw Video, Audio and Text",
-    "authors": [],
-    "date": "2024-03-12",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/vatt-transformers-for-multimodal-self",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
+    "id": "2503.04918v1",
+    "title": "Fine-Tuning Florence2 for Enhanced Object Detection in Un-constructed\n  Environments: Vision-Language Model Approach",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
     }
   },
   {
-    "id": "2503_05335v1",
+    "id": "2503.04121v1",
+    "title": "Simple Self Organizing Map with Visual Transformer",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04457v1",
+    "title": "TPC: Cross-Temporal Prediction Connection for Vision-Language Model\n  Hallucination Reduction",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04545v1",
+    "title": "ViT-VS: On the Applicability of Pretrained Vision Transformer Features\n  for Generalizable Visual Servoing",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04639v1",
+    "title": "Enhancing SAM with Efficient Prompting and Preference Optimization for\n  Semi-supervised Medical Image Segmentation",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04504v1",
+    "title": "AnyAnomaly: Zero-Shot Customizable Video Anomaly Detection with LVLM",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04144v1",
+    "title": "DM-Adapter: Domain-Aware Mixture-of-Adapters for Text-Based Person\n  Retrieval",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04058v1",
+    "title": "EVE: Towards End-to-End Video Subtitle Extraction with Vision-Language\n  Models",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04506v1",
+    "title": "Multi-modal Summarization in Model-Based Engineering: Automotive\n  Software Development Case Study",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04215v1",
+    "title": "Energy-Guided Optimization for Personalized Image Editing with\n  Pretrained Text-to-Image Diffusion Models",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04724v1",
+    "title": "LLMVoX: Autoregressive Streaming Text-to-Speech Model for Any LLM",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04167v1",
+    "title": "The Role of Visual Modality in Multimodal Mathematical Reasoning:\n  Challenges and Insights",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04130v1",
+    "title": "Token-Efficient Long Video Understanding for Multimodal LLMs",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04006v1",
+    "title": "DSV-LFS: Unifying LLM-Driven Semantic Cues with Visual Features for\n  Robust Few-Shot Segmentation",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04858v1",
+    "title": "SHAPE : Self-Improved Visual Preference Alignment by Iteratively\n  Generating Holistic Winner",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04606v1",
+    "title": "The Best of Both Worlds: Integrating Language Models and Diffusion\n  Models for Video Generation",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04417v1",
+    "title": "From Idea to CAD: A Language Model-Driven Multi-Agent System for\n  Collaborative Design",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04201v1",
+    "title": "Knowledge-Decoupled Synergetic Learning: An MLLM based Collaborative\n  Approach to Few-shot Multimodal Dialogue Intention Recognition",
+    "date": "2025-03-06",
+    "attention_score": 2.71,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03664v1",
+    "title": "A Generative Approach to High Fidelity 3D Reconstruction from Text Data",
+    "date": "2025-03-05",
+    "attention_score": 2.68,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03613v1",
+    "title": "CLIP is Strong Enough to Fight Back: Test-time Counterattacks towards\n  Zero-shot Adversarial Robustness of CLIP",
+    "date": "2025-03-05",
+    "attention_score": 2.68,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03803v1",
+    "title": "EgoLife: Towards Egocentric Life Assistant",
+    "date": "2025-03-05",
+    "attention_score": 2.68,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03935v1",
+    "title": "GlucoLens: Explainable Postprandial Blood Glucose Prediction from Diet\n  and Physical Activity",
+    "date": "2025-03-05",
+    "attention_score": 2.68,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03734v1",
+    "title": "OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature\n  Extraction",
+    "date": "2025-03-05",
+    "attention_score": 2.68,
+    "attention_components": {
+      "base_score": 1.4,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05689v1",
+    "title": "GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories\n  Generation in End-to-End Autonomous Driving",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05228v1",
+    "title": "RecipeGen: A Benchmark for Real-World Recipe Image Generation",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05255v1",
+    "title": "CMMCoT: Enhancing Complex Multi-Image Comprehension via Multi-Modal\n  Chain-of-Thought and Memory Augmentation",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05236v1",
+    "title": "Unified Reward Model for Multimodal Understanding and Generation",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05214v1",
+    "title": "Gaussian Random Fields as an Abstract Representation of Patient Metadata\n  for Multimodal Medical Image Segmentation",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05534v1",
+    "title": "S4M: Segment Anything with 4 Extreme Points",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05379v1",
+    "title": "R1-Omni: Explainable Omni-Multimodal Emotion Recognition with\n  Reinforcing Learning",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05424v1",
+    "title": "Towards Locally Explaining Prediction Behavior via Gradual Interventions\n  and Measuring Property Gradients",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05639v1",
+    "title": "VideoPainter: Any-length Video Inpainting and Editing with Plug-and-Play\n  Context Control",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05298v1",
+    "title": "Coreference as an indicator of context scope in multimodal narrative",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05595v1",
+    "title": "Anti-Diffusion: Preventing Abuse of Modifications of Diffusion-Based\n  Models",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05684v1",
+    "title": "Fairness-Aware Low-Rank Adaptation Under Demographic Privacy Constraints",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05335v1",
     "title": "New multimodal similarity measure for image registration via modeling\n  local functional dependence with linear combination of learned basis\n  functions",
-    "authors": [
-      "Joel Honkamaa",
-      "Pekka Marttinen"
-    ],
-    "date": "2024-03-11",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05335v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
       "source_weight": 1.0,
       "age_months": 0.1,
-      "citation_velocity": 0.0
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05319v1",
+    "title": "Robust Multimodal Learning for Ophthalmic Disease Grading via\n  Disentangled Representation",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05231v1",
+    "title": "Kaiwu: A Multimodal Manipulation Dataset and Framework for Robot\n  Learning and Human-Robot Interaction",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05186v1",
+    "title": "Narrating the Video: Boosting Text-Video Retrieval via Comprehensive\n  Utilization of Frame-Level Captions",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05179v1",
+    "title": "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive\n  Cognitive-Inspired Sketching",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.05626v1",
+    "title": "FMT:A Multimodal Pneumonia Detection Model Based on Stacking MOE\n  Framework",
+    "date": "2025-03-07",
+    "attention_score": 2.34,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9917808219178083,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04050v1",
+    "title": "Underlying Semantic Diffusion for Effective and Efficient In-Context\n  Learning",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04199v1",
+    "title": "MASTER: Multimodal Segmentation with Text Prompts",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04308v1",
+    "title": "Shaken, Not Stirred: A Novel Dataset for Visual Understanding of Glasses\n  in Human-Robot Bartending Tasks",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04528v1",
+    "title": "Federated Dynamic Modeling and Learning for Spatiotemporal Data\n  Forecasting",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04107v1",
+    "title": "Fractional Correspondence Framework in Detection Transformer",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04490v1",
+    "title": "Large Language Models in Bioinformatics: A Survey",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04971v1",
+    "title": "Incentivizing Multi-Tenant Split Federated Learning for Foundation\n  Models at the Network Edge",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04135v1",
+    "title": "Biological Sequence with Language Model Prompting: A Survey",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04900v1",
+    "title": "Extracting Symbolic Sequences from Visual Representations via\n  Self-Supervised Learning",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04154v1",
+    "title": "CA-W3D: Leveraging Context-Aware Knowledge for Weakly Supervised\n  Monocular 3D Detection",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04170v1",
+    "title": "Towards Intelligent Transportation with Pedestrians and Vehicles\n  In-the-Loop: A Surveillance Video-Assisted Federated Digital Twin Framework",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04406v1",
+    "title": "Training-Free Graph Filtering via Multimodal Feature Refinement for\n  Extremely Fast Multimodal Recommendation",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04444v1",
+    "title": "ToFu: Visual Tokens Reduction via Fusion for Multi-modal, Multi-patch,\n  Multi-image Task",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04252v1",
+    "title": "RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud\n  Database Systems",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04280v2",
+    "title": "Towards Autonomous Reinforcement Learning for Real-World Robotic\n  Manipulation with Large Language Models",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04065v1",
+    "title": "PP-DocBee: Improving Multimodal Document Understanding Through a Bag of\n  Tricks",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04250v1",
+    "title": "An Egocentric Vision-Language Model based Portable Real-time Smart\n  Assistant",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04470v1",
+    "title": "Gate-Shift-Pose: Enhancing Action Recognition in Sports with Skeleton\n  Information",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04110v1",
+    "title": "InterChat: Enhancing Generative Visual Analytics using Multimodal\n  Interactions",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04641v1",
+    "title": "Simulating the Real World: A Unified Survey of Multimodal Generative\n  Models",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04034v1",
+    "title": "GaussianGraph: 3D Gaussian-based Scene Graph Generation for Open-world\n  Scene Understanding",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04478v1",
+    "title": "Semantic Alignment of Unimodal Medical Text and Vision Representations",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04643v1",
+    "title": "Adaptive Prototype Learning for Multimodal Cancer Survival Analysis",
+    "date": "2025-03-06",
+    "attention_score": 2.32,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.989041095890411,
+      "source_weight": 1.0,
+      "age_months": 0.1,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03663v2",
+    "title": "LION-FS: Fast & Slow Video-Language Thinker as Online Video Assistant",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03579v1",
+    "title": "A Generative System for Robot-to-Human Handovers: from Intent Inference\n  to Spatial Configuration Imagery",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03689v1",
+    "title": "DualDiff+: Dual-Branch Diffusion for High-Fidelity Video Generation with\n  Reward Guidance",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03947v1",
+    "title": "COARSE: Collaborative Pseudo-Labeling with Coarse Real Labels for\n  Off-Road Semantic Segmentation",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03743v1",
+    "title": "CHOP: Mobile Operating Assistant with Constrained High-frequency\n  Optimized Subtask Planning",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03848v1",
+    "title": "Nexar Dashcam Collision Prediction Dataset and Challenge",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.04842v1",
+    "title": "Replicating Human Social Perception in Generative AI: Evaluating the\n  Valence-Dominance Model",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
+    }
+  },
+  {
+    "id": "2503.03644v2",
+    "title": "DongbaMIE: A Multimodal Information Extraction Dataset for Evaluating\n  Semantic Understanding of Dongba Pictograms",
+    "date": "2025-03-05",
+    "attention_score": 2.3,
+    "attention_components": {
+      "base_score": 1.2,
+      "recency_factor": 0.9863013698630136,
+      "source_weight": 1.0,
+      "age_months": 0.2,
+      "citation_velocity": 0
     }
   },
   {
     "id": "paperswithcode_MME_Survey__A_Comprehensive_Survey_on_Evaluation_o",
     "title": "MME-Survey: A Comprehensive Survey on Evaluation of Multimodal LLMs",
-    "authors": [],
     "date": "2024-03-11",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/mme-survey-a-comprehensive-survey-on",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
+    "attention_score": 0.22,
+    "attention_components": {
+      "base_score": 1.8,
+      "recency_factor": 0.1,
       "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
+      "age_months": 12.1,
+      "citation_velocity": 0
     }
   },
   {
-    "id": "2503_05379v1",
-    "title": "R1-Omni: Explainable Omni-Multimodal Emotion Recognition with\n  Reinforcing Learning",
-    "authors": [
-      "Jiaxing Zhao",
-      "Xihan Wei",
-      "Liefeng Bo"
-    ],
-    "date": "2024-03-10",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05379v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_A_Survey_on_Multimodal_Large_Language_Models",
-    "title": "A Survey on Multimodal Large Language Models",
-    "authors": [],
-    "date": "2024-03-10",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/a-survey-on-multimodal-large-language-models",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05383v1",
-    "title": "VLMs Play StarCraft II: A Benchmark and Multimodal Decision Method",
-    "authors": [
-      "Weiyu Ma",
-      "Yuqian Fu",
-      "Zecheng Zhang",
-      "Guohao Li"
-    ],
+    "id": "2403.05916v2",
+    "title": "GPT as Psychologist? Preliminary Evaluations for GPT-4V on Visual\n  Affective Computing",
     "date": "2024-03-09",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05383v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_Screen2Words__Automatic_Mobile_UI_Summarization_wi",
-    "title": "Screen2Words: Automatic Mobile UI Summarization with Multimodal Learning",
-    "authors": [],
-    "date": "2024-03-09",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/screen2words-automatic-mobile-ui",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05424v1",
-    "title": "Towards Locally Explaining Prediction Behavior via Gradual Interventions\n  and Measuring Property Gradients",
-    "authors": [
-      "Niklas Penzel",
-      "Joachim Denzler"
-    ],
-    "date": "2024-03-08",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05424v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_Multimodal_Latent_Language_Modeling_with_Next_Toke",
-    "title": "Multimodal Latent Language Modeling with Next-Token Diffusion",
-    "authors": [],
-    "date": "2024-03-08",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/multimodal-latent-language-modeling-with-next",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05534v1",
-    "title": "S4M: Segment Anything with 4 Extreme Points",
-    "authors": [
-      "Adrien Meyer",
-      "Lorenzo Arboit",
-      "Giuseppe Massimiani",
-      "Francesco Brucchi",
-      "Luca Emanuele Amodio",
-      "Didier Mutter",
-      "Nicolas Padoy"
-    ],
-    "date": "2024-03-07",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05534v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_Socratic_Models__Composing_Zero_Shot_Multimodal_Re",
-    "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
-    "authors": [],
-    "date": "2024-03-07",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/socratic-models-composing-zero-shot",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.2,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05064v1",
-    "title": "Perceiving, Reasoning, Adapting: A Dual-Layer Framework for VLM-Guided\n  Precision Robotic Manipulation",
-    "authors": [
-      "Qingxuan Jia",
-      "Guoqin Tang",
-      "Zeyuan Huang",
-      "Zixuan Hao",
-      "Ning Ji",
-      "Shihang",
-      "Yin",
-      "Gang Chen"
-    ],
-    "date": "2024-03-07",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05064v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9971042009381119,
-      "source_weight": 1.0,
-      "age_months": 0.1,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04724v1",
-    "title": "LLMVoX: Autoregressive Streaming Text-to-Speech Model for Any LLM",
-    "authors": [
-      "Sambal Shikhar",
-      "Mohammed Irfan Kurpath",
-      "Sahal Shaji Mullappilly",
-      "Jean Lahoud",
-      "Fahad Khan",
-      "Rao Muhammad Anwer",
-      "Salman Khan",
-      "Hisham Cholakkal"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04724v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04643v1",
-    "title": "Adaptive Prototype Learning for Multimodal Cancer Survival Analysis",
-    "authors": [
-      "Hong Liu",
-      "Haosen Yang",
-      "Federica Eduati",
-      "Josien P. W. Pluim",
-      "Mitko Veta"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04643v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04641v1",
-    "title": "Simulating the Real World: A Unified Survey of Multimodal Generative\n  Models",
-    "authors": [
-      "Yuqi Hu",
-      "Longguang Wang",
-      "Xian Liu",
-      "Ling-Hao Chen",
-      "Yuwei Guo",
-      "Yukai Shi",
-      "Ce Liu",
-      "Anyi Rao",
-      "Zeyu Wang",
-      "Hui Xiong"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04641v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04639v1",
-    "title": "Enhancing SAM with Efficient Prompting and Preference Optimization for\n  Semi-supervised Medical Image Segmentation",
-    "authors": [
-      "Aishik Konwer",
-      "Zhijian Yang",
-      "Erhan Bas",
-      "Cao Xiao",
-      "Prateek Prasanna",
-      "Parminder Bhatia",
-      "Taha Kass-Hout"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04639v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04592v1",
-    "title": "A Benchmark for Multi-Lingual Vision-Language Learning in Remote Sensing\n  Image Captioning",
-    "authors": [
-      "Qing Zhou",
-      "Tao Yang",
-      "Junyu Gao",
-      "Weiping Ni",
-      "Junzheng Wu",
-      "Qi Wang"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04592v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04545v1",
-    "title": "ViT-VS: On the Applicability of Pretrained Vision Transformer Features\n  for Generalizable Visual Servoing",
-    "authors": [
-      "Alessandro Scherl",
-      "Stefan Thalhammer",
-      "Bernhard Neuberger",
-      "Wilfried W\u00f6ber",
-      "Jos\u00e9 Grac\u00eda-Rodr\u00edguez"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04545v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04543v1",
-    "title": "Keeping Yourself is Important in Downstream Tuning Multimodal Large\n  Language Model",
-    "authors": [
-      "Wenke Huang",
-      "Jian Liang",
-      "Xianda Guo",
-      "Yiyang Fang",
-      "Guancheng Wan",
-      "Xuankun Rong",
-      "Chi Wen",
-      "Zekun Shi",
-      "Qingyun Li",
-      "Didi Zhu",
-      "Yanbiao Ma",
-      "Ke Liang",
-      "Bin Yang",
-      "He Li",
-      "Jiawei Shao",
-      "Mang Ye",
-      "Bo Du"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04543v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04528v1",
-    "title": "Federated Dynamic Modeling and Learning for Spatiotemporal Data\n  Forecasting",
-    "authors": [
-      "Thien Pham",
-      "Angelo Furno",
-      "Fa\u00efcel Chamroukhi",
-      "Latifa Oukhellou"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04528v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04506v1",
-    "title": "Multi-modal Summarization in Model-Based Engineering: Automotive\n  Software Development Case Study",
-    "authors": [
-      "Nenad Petrovic",
-      "Yurui Zhang",
-      "Moaad Maaroufi",
-      "Kuo-Yi Chao",
-      "Lukasz Mazur",
-      "Fengjunjie Pan",
-      "Vahid Zolfaghari",
-      "Alois Knoll"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04506v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04504v1",
-    "title": "AnyAnomaly: Zero-Shot Customizable Video Anomaly Detection with LVLM",
-    "authors": [
-      "Sunghyun Ahn",
-      "Youngwan Jo",
-      "Kijung Lee",
-      "Sein Kwon",
-      "Inpyo Hong",
-      "Sanghyun Park"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04504v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04490v1",
-    "title": "Large Language Models in Bioinformatics: A Survey",
-    "authors": [
-      "Zhenyu Wang",
-      "Zikang Wang",
-      "Jiyue Jiang",
-      "Pengan Chen",
-      "Xiangyu Shi",
-      "Yu Li"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04490v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04478v1",
-    "title": "Semantic Alignment of Unimodal Medical Text and Vision Representations",
-    "authors": [
-      "Maxime Di Folco",
-      "Emily Chan",
-      "Marta Hasny",
-      "Cosmin I. Bercea",
-      "Julia A. Schnabel"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04478v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04470v1",
-    "title": "Gate-Shift-Pose: Enhancing Action Recognition in Sports with Skeleton\n  Information",
-    "authors": [
-      "Edoardo Bianchi",
-      "Oswald Lanz"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04470v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04459v2",
-    "title": "Question-Aware Gaussian Experts for Audio-Visual Question Answering",
-    "authors": [
-      "Hongyeob Kim",
-      "Inyoung Jung",
-      "Dayoon Suh",
-      "Youjia Zhang",
-      "Sangmin Lee",
-      "Sungeun Hong"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04459v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04457v1",
-    "title": "TPC: Cross-Temporal Prediction Connection for Vision-Language Model\n  Hallucination Reduction",
-    "authors": [
-      "Chao Wang",
-      "Weiwei Fu",
-      "Yang Zhou"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04457v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04444v1",
-    "title": "ToFu: Visual Tokens Reduction via Fusion for Multi-modal, Multi-patch,\n  Multi-image Task",
-    "authors": [
-      "Vittorio Pippi",
-      "Matthieu Guillaumin",
-      "Silvia Cascianelli",
-      "Rita Cucchiara",
-      "Maximilian Jaritz",
-      "Loris Bazzani"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04444v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04417v1",
-    "title": "From Idea to CAD: A Language Model-Driven Multi-Agent System for\n  Collaborative Design",
-    "authors": [
-      "Felix Ocker",
-      "Stefan Menzel",
-      "Ahmed Sadik",
-      "Thiago Rios"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04417v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04406v1",
-    "title": "Training-Free Graph Filtering via Multimodal Feature Refinement for\n  Extremely Fast Multimodal Recommendation",
-    "authors": [
-      "Yu-Seung Roh",
-      "Joo-Young Kim",
-      "Jin-Duk Park",
-      "Won-Yong Shin"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04406v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04353v1",
-    "title": "ObjMST: An Object-Focused Multimodal Style Transfer Framework",
-    "authors": [
-      "Chanda Grover Kamra",
-      "Indra Deep Mastan",
-      "Debayan Gupta"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04353v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04325v2",
-    "title": "GBT-SAM: A Parameter-Efficient Depth-Aware Model for Generalizable Brain\n  tumour Segmentation on mp-MRI",
-    "authors": [
-      "Cecilia Diana-Albelda",
-      "Roberto Alcover-Couso",
-      "\u00c1lvaro Garc\u00eda-Mart\u00edn",
-      "Jesus Bescos",
-      "Marcos Escudero-Vi\u00f1olo"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04325v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04280v2",
-    "title": "Towards Autonomous Reinforcement Learning for Real-World Robotic\n  Manipulation with Large Language Models",
-    "authors": [
-      "Niccol\u00f2 Turcato",
-      "Matteo Iovino",
-      "Aris Synodinos",
-      "Alberto Dalla Libera",
-      "Ruggero Carli",
-      "Pietro Falco"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04280v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04252v1",
-    "title": "RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud\n  Database Systems",
-    "authors": [
-      "Biao Ouyang",
-      "Yingying Zhang",
-      "Hanyin Cheng",
-      "Yang Shu",
-      "Chenjuan Guo",
-      "Bin Yang",
-      "Qingsong Wen",
-      "Lunting Fan",
-      "Christian S. Jensen"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04252v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04250v1",
-    "title": "An Egocentric Vision-Language Model based Portable Real-time Smart\n  Assistant",
-    "authors": [
-      "Yifei Huang",
-      "Jilan Xu",
-      "Baoqi Pei",
-      "Yuping He",
-      "Guo Chen",
-      "Mingfang Zhang",
-      "Lijin Yang",
-      "Zheng Nie",
-      "Jinyao Liu",
-      "Guoshun Fan",
-      "Dechen Lin",
-      "Fang Fang",
-      "Kunpeng Li",
-      "Chang Yuan",
-      "Xinyuan Chen",
-      "Yaohui Wang",
-      "Yali Wang",
-      "Yu Qiao",
-      "Limin Wang"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04250v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04229v1",
-    "title": "Synthetic Data is an Elegant GIFT for Continual Vision-Language Models",
-    "authors": [
-      "Bin Wu",
-      "Wuxuan Shi",
-      "Jinqiao Wang",
-      "Mang Ye"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04229v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04205v1",
-    "title": "Learning 3D Medical Image Models From Brain Functional Connectivity\n  Network Supervision For Mental Disorder Diagnosis",
-    "authors": [
-      "Xingcan Hu",
-      "Wei Wang",
-      "Li Xiao"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04205v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04201v1",
-    "title": "Knowledge-Decoupled Synergetic Learning: An MLLM based Collaborative\n  Approach to Few-shot Multimodal Dialogue Intention Recognition",
-    "authors": [
-      "Bin Chen",
-      "Yu Zhang",
-      "Hongfei Ye",
-      "Ziyi Huang",
-      "Hongyang Chen"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04201v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04199v1",
-    "title": "MASTER: Multimodal Segmentation with Text Prompts",
-    "authors": [
-      "Fuyang Liu",
-      "Shun Lu",
-      "Jilin Mei",
-      "Yu Hu"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04199v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04167v1",
-    "title": "The Role of Visual Modality in Multimodal Mathematical Reasoning:\n  Challenges and Insights",
-    "authors": [
-      "Yufang Liu",
-      "Yao Du",
-      "Tao Ji",
-      "Jianing Wang",
-      "Yang Liu",
-      "Yuanbin Wu",
-      "Aimin Zhou",
-      "Mengdi Zhang",
-      "Xunliang Cai"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04167v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04144v1",
-    "title": "DM-Adapter: Domain-Aware Mixture-of-Adapters for Text-Based Person\n  Retrieval",
-    "authors": [
-      "Yating Liu",
-      "Zimo Liu",
-      "Xiangyuan Lan",
-      "Wenming Yang",
-      "Yaowei Li",
-      "Qingmin Liao"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04144v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04135v1",
-    "title": "Biological Sequence with Language Model Prompting: A Survey",
-    "authors": [
-      "Jiyue Jiang",
-      "Zikang Wang",
-      "Yuheng Shan",
-      "Heyan Chai",
-      "Jiayi Li",
-      "Zixian Ma",
-      "Xinrui Zhang",
-      "Yu Li"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04135v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04130v1",
-    "title": "Token-Efficient Long Video Understanding for Multimodal LLMs",
-    "authors": [
-      "Jindong Jiang",
-      "Xiuyu Li",
-      "Zhijian Liu",
-      "Muyang Li",
-      "Guo Chen",
-      "Zhiqi Li",
-      "De-An Huang",
-      "Guilin Liu",
-      "Zhiding Yu",
-      "Kurt Keutzer",
-      "Sungjin Ahn",
-      "Jan Kautz",
-      "Hongxu Yin",
-      "Yao Lu",
-      "Song Han",
-      "Wonmin Byeon"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04130v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04121v1",
-    "title": "Simple Self Organizing Map with Visual Transformer",
-    "authors": [
-      "Alan Luo",
-      "Kaiwen Yuan"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04121v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04110v1",
-    "title": "InterChat: Enhancing Generative Visual Analytics using Multimodal\n  Interactions",
-    "authors": [
-      "Juntong Chen",
-      "Jiang Wu",
-      "Jiajing Guo",
-      "Vikram Mohanty",
-      "Xueming Li",
-      "Jorge Piazentin Ono",
-      "Wenbin He",
-      "Liu Ren",
-      "Dongyu Liu"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04110v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04095v2",
-    "title": "Chart-HQA: A Benchmark for Hypothetical Question Answering in Charts",
-    "authors": [
-      "Xiangnan Chen",
-      "Yuancheng Fang",
-      "Qian Xiao",
-      "Juncheng Li",
-      "Jun Lin",
-      "Siliang Tang",
-      "Yi Yang",
-      "Yueting Zhuang"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04095v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04078v1",
-    "title": "Spatial-Temporal Perception with Causal Inference for Naturalistic\n  Driving Action Recognition",
-    "authors": [
-      "Qing Chang",
-      "Wei Dai",
-      "Zhihao Shuai",
-      "Limin Yu",
-      "Yutao Yue"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04078v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04065v1",
-    "title": "PP-DocBee: Improving Multimodal Document Understanding Through a Bag of\n  Tricks",
-    "authors": [
-      "Feng Ni",
-      "Kui Huang",
-      "Yao Lu",
-      "Wenyu Lv",
-      "Guanzhong Wang",
-      "Zeyu Chen",
-      "Yi Liu"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04065v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04058v1",
-    "title": "EVE: Towards End-to-End Video Subtitle Extraction with Vision-Language\n  Models",
-    "authors": [
-      "Haiyang Yu",
-      "Jinghui Lu",
-      "Yanjie Wang",
-      "Yang Li",
-      "Han Wang",
-      "Can Huang",
-      "Bin Li"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04058v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04034v1",
-    "title": "GaussianGraph: 3D Gaussian-based Scene Graph Generation for Open-world\n  Scene Understanding",
-    "authors": [
-      "Xihan Wang",
-      "Dianyi Yang",
-      "Yu Gao",
-      "Yufeng Yue",
-      "Yi Yang",
-      "Mengyin Fu"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04034v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04006v1",
-    "title": "DSV-LFS: Unifying LLM-Driven Semantic Cues with Visual Features for\n  Robust Few-Shot Segmentation",
-    "authors": [
-      "Amin Karimi",
-      "Charalambos Poullis"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04006v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03987v1",
-    "title": "RetinalGPT: A Retinal Clinical Preference Conversational Assistant\n  Powered by Large Vision-Language Models",
-    "authors": [
-      "Wenhui Zhu",
-      "Xin Li",
-      "Xiwen Chen",
-      "Peijie Qiu",
-      "Vamsi Krishna Vasa",
-      "Xuanzhao Dong",
-      "Yanxi Chen",
-      "Natasha Lepore",
-      "Oana Dumitrascu",
-      "Yi Su",
-      "Yalin Wang"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03987v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05543v1",
-    "title": "Pi-GPS: Enhancing Geometry Problem Solving by Unleashing the Power of\n  Diagrammatic Information",
-    "authors": [
-      "Junbo Zhao",
-      "Ting Zhang",
-      "Jiayu Sun",
-      "Mi Tian",
-      "Hua Huang"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05543v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_Supervised_Multimodal_Bitransformers_for_Classifyi",
-    "title": "Supervised Multimodal Bitransformers for Classifying Images and Text",
-    "authors": [],
-    "date": "2024-03-06",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/supervised-multimodal-bitransformers-for",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.2,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04982v1",
-    "title": "LVLM-Compress-Bench: Benchmarking the Broader Impact of Large\n  Vision-Language Model Compression",
-    "authors": [
-      "Souvik Kundu",
-      "Anahita Bhiwandiwalla",
-      "Sungduk Yu",
-      "Phillip Howard",
-      "Tiep Le",
-      "Sharath Nittur Sridhar",
-      "David Cobbley",
-      "Hao Kang",
-      "Vasudev Lal"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04982v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04971v1",
-    "title": "Incentivizing Multi-Tenant Split Federated Learning for Foundation\n  Models at the Network Edge",
-    "authors": [
-      "Songyuan Li",
-      "Jia Hu",
-      "Geyong Min",
-      "Haojun Huang"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04971v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04919v1",
-    "title": "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D\n  Object Placement",
-    "authors": [
-      "Ian Huang",
-      "Yanan Bao",
-      "Karen Truong",
-      "Howard Zhou",
-      "Cordelia Schmid",
-      "Leonidas Guibas",
-      "Alireza Fathi"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04919v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04918v1",
-    "title": "Fine-Tuning Florence2 for Enhanced Object Detection in Un-constructed\n  Environments: Vision-Language Model Approach",
-    "authors": [
-      "Soumyadeep Ro",
-      "Sanapala Satwika",
-      "Pamarthi Yasoda Gayathri",
-      "Mohmmad Ghaith Balsha",
-      "Aysegul Ucar"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04918v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04900v1",
-    "title": "Extracting Symbolic Sequences from Visual Representations via\n  Self-Supervised Learning",
-    "authors": [
-      "Victor Sebastian Martinez Pozos",
-      "Ivan Vladimir Meza Ruiz"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04900v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04606v1",
-    "title": "The Best of Both Worlds: Integrating Language Models and Diffusion\n  Models for Video Generation",
-    "authors": [
-      "Aoxiong Yin",
-      "Kai Shen",
-      "Yichong Leng",
-      "Xu Tan",
-      "Xinyu Zhou",
-      "Juncheng Li",
-      "Siliang Tang"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04606v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04871v1",
-    "title": "Toward Lightweight and Fast Decoders for Diffusion Models in Image and\n  Video Generation",
-    "authors": [
-      "Alexey Buzovkin",
-      "Evgeny Shilov"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04871v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04308v1",
-    "title": "Shaken, Not Stirred: A Novel Dataset for Visual Understanding of Glasses\n  in Human-Robot Bartending Tasks",
-    "authors": [
-      "Luk\u00e1\u0161 Gajdo\u0161ech",
-      "Hassan Ali",
-      "Jan-Gerrit Habekost",
-      "Martin Madaras",
-      "Matthias Kerzel",
-      "Stefan Wermter"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04308v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04215v1",
-    "title": "Energy-Guided Optimization for Personalized Image Editing with\n  Pretrained Text-to-Image Diffusion Models",
-    "authors": [
-      "Rui Jiang",
-      "Xinghe Fu",
-      "Guangcong Zheng",
-      "Teng Li",
-      "Taiping Yao",
-      "Xi Li"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04215v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04858v1",
-    "title": "SHAPE : Self-Improved Visual Preference Alignment by Iteratively\n  Generating Holistic Winner",
-    "authors": [
-      "Kejia Chen",
-      "Jiawen Zhang",
-      "Jiacong Hu",
-      "Jiazhen Yang",
-      "Jian Lou",
-      "Zunlei Feng",
-      "Mingli Song"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04858v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04170v1",
-    "title": "Towards Intelligent Transportation with Pedestrians and Vehicles\n  In-the-Loop: A Surveillance Video-Assisted Federated Digital Twin Framework",
-    "authors": [
-      "Xiaolong Li",
-      "Jianhao Wei",
-      "Haidong Wang",
-      "Li Dong",
-      "Ruoyang Chen",
-      "Changyan Yi",
-      "Jun Cai",
-      "Dusit Niyato",
-      "Xuemin",
-      "Shen"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04170v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04154v1",
-    "title": "CA-W3D: Leveraging Context-Aware Knowledge for Weakly Supervised\n  Monocular 3D Detection",
-    "authors": [
-      "Chupeng Liu",
-      "Runkai Zhao",
-      "Weidong Cai"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04154v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04107v1",
-    "title": "Fractional Correspondence Framework in Detection Transformer",
-    "authors": [
-      "Masoumeh Zareapoor",
-      "Pourya Shamsolmoali",
-      "Huiyu Zhou",
-      "Yue Lu",
-      "Salvador Garc\u00eda"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04107v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04852v1",
-    "title": "CAUSAL3D: A Comprehensive Benchmark for Causal Learning from Visual Data",
-    "authors": [
-      "Disheng Liu",
-      "Yiran Qiao",
-      "Wuche Liu",
-      "Yiren Lu",
-      "Yunlai Zhou",
-      "Tuo Liang",
-      "Yu Yin",
-      "Jing Ma"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04852v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04050v1",
-    "title": "Underlying Semantic Diffusion for Effective and Efficient In-Context\n  Learning",
-    "authors": [
-      "Zhong Ji",
-      "Weilong Cao",
-      "Yan Zhang",
-      "Yanwei Pang",
-      "Jungong Han",
-      "Xuelong Li"
-    ],
-    "date": "2024-03-06",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04050v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9961407992630352,
-      "source_weight": 1.0,
-      "age_months": 0.13333333333333333,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03947v1",
-    "title": "COARSE: Collaborative Pseudo-Labeling with Coarse Real Labels for\n  Off-Road Semantic Segmentation",
-    "authors": [
-      "Aurelio Noca",
-      "Xianmei Lei",
-      "Jonathan Becktor",
-      "Jeffrey Edlund",
-      "Anna Sabel",
-      "Patrick Spieler",
-      "Curtis Padgett",
-      "Alexandre Alahi",
-      "Deegan Atha"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03947v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03935v1",
-    "title": "GlucoLens: Explainable Postprandial Blood Glucose Prediction from Diet\n  and Physical Activity",
-    "authors": [
-      "Abdullah Mamun",
-      "Asiful Arefeen",
-      "Susan B. Racette",
-      "Dorothy D. Sears",
-      "Corrie M. Whisner",
-      "Matthew P. Buman",
-      "Hassan Ghasemzadeh"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03935v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03854v1",
-    "title": "Vision-Language Models Struggle to Align Entities across Modalities",
-    "authors": [
-      "I\u00f1igo Alonso",
-      "Ander Salaberria",
-      "Gorka Azkune",
-      "Jeremy Barnes",
-      "Oier Lopez de Lacalle"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03854v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03848v1",
-    "title": "Nexar Dashcam Collision Prediction Dataset and Challenge",
-    "authors": [
-      "Daniel C. Moura",
-      "Shizhan Zhu",
-      "Orly Zvitia"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03848v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03840v1",
-    "title": "Decoupling the components of geometric understanding in Vision Language\n  Models",
-    "authors": [
-      "Eliza Kosoy",
-      "Annya Dahmani",
-      "Andrew K. Lampinen",
-      "Iulia M. Comsa",
-      "Soojin Jeong",
-      "Ishita Dasgupta",
-      "Kelsey Allen"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03840v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03743v1",
-    "title": "CHOP: Mobile Operating Assistant with Constrained High-frequency\n  Optimized Subtask Planning",
-    "authors": [
-      "Yuqi Zhou",
-      "Shuai Wang",
-      "Sunhao Dai",
-      "Qinglin Jia",
-      "Zhaocheng Du",
-      "Zhenhua Dong",
-      "Jun Xu"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03743v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03803v1",
-    "title": "EgoLife: Towards Egocentric Life Assistant",
-    "authors": [
-      "Jingkang Yang",
-      "Shuai Liu",
-      "Hongming Guo",
-      "Yuhao Dong",
-      "Xiamengwei Zhang",
-      "Sicheng Zhang",
-      "Pengyun Wang",
-      "Zitang Zhou",
-      "Binzhu Xie",
-      "Ziyue Wang",
-      "Bei Ouyang",
-      "Zhengyu Lin",
-      "Marco Cominelli",
-      "Zhongang Cai",
-      "Yuanhan Zhang",
-      "Peiyuan Zhang",
-      "Fangzhou Hong",
-      "Joerg Widmer",
-      "Francesco Gringoli",
-      "Lei Yang",
-      "Bo Li",
-      "Ziwei Liu"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03803v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03734v1",
-    "title": "OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature\n  Extraction",
-    "authors": [
-      "Huang Huang",
-      "Fangchen Liu",
-      "Letian Fu",
-      "Tingfan Wu",
-      "Mustafa Mukadam",
-      "Jitendra Malik",
-      "Ken Goldberg",
-      "Pieter Abbeel"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03734v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03689v1",
-    "title": "DualDiff+: Dual-Branch Diffusion for High-Fidelity Video Generation with\n  Reward Guidance",
-    "authors": [
-      "Zhao Yang",
-      "Zezhong Qian",
-      "Xiaofan Li",
-      "Weixiang Xu",
-      "Gongpeng Zhao",
-      "Ruohong Yu",
-      "Lingsi Zhu",
-      "Longjun Liu"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03689v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03664v1",
-    "title": "A Generative Approach to High Fidelity 3D Reconstruction from Text Data",
-    "authors": [
-      "Venkat Kumar R",
-      "Deepak Saravanan"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03664v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03663v2",
-    "title": "LION-FS: Fast & Slow Video-Language Thinker as Online Video Assistant",
-    "authors": [
-      "Wei Li",
-      "Bing Hu",
-      "Rui Shao",
-      "Leyang Shen",
-      "Liqiang Nie"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03663v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03651v1",
-    "title": "DoraCycle: Domain-Oriented Adaptation of Unified Generative Model in\n  Multimodal Cycles",
-    "authors": [
-      "Rui Zhao",
-      "Weijia Mao",
-      "Mike Zheng Shou"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03651v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03644v2",
-    "title": "DongbaMIE: A Multimodal Information Extraction Dataset for Evaluating\n  Semantic Understanding of Dongba Pictograms",
-    "authors": [
-      "Xiaojun Bi",
-      "Shuo Li",
-      "Ziyue Wang",
-      "Fuwen Luo",
-      "Weizheng Qiao",
-      "Lu Han",
-      "Ziwei Sun",
-      "Peng Li",
-      "Yang Liu"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03644v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03613v1",
-    "title": "CLIP is Strong Enough to Fight Back: Test-time Counterattacks towards\n  Zero-shot Adversarial Robustness of CLIP",
-    "authors": [
-      "Songlong Xing",
-      "Zhengyu Zhao",
-      "Nicu Sebe"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03613v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03579v1",
-    "title": "A Generative System for Robot-to-Human Handovers: from Intent Inference\n  to Spatial Configuration Imagery",
-    "authors": [
-      "Hanxin Zhang",
-      "Abdulqader Dhafer",
-      "Zhou Daniel Hao",
-      "Hongbiao Dong"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03579v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03507v1",
-    "title": "Mineral segmentation using electron microscope images and spectral\n  sampling through multimodal graph neural networks",
-    "authors": [
-      "Samuel Repka",
-      "Bo\u0159ek Reich",
-      "Fedor Zolotarev",
-      "Tuomas Eerola",
-      "Pavel Zem\u010d\u00edk"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03507v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03465v2",
-    "title": "DTU-Net: A Multi-Scale Dilated Transformer Network for Nonlinear\n  Hyperspectral Unmixing",
-    "authors": [
-      "ChenTong Wang",
-      "Jincheng Gao",
-      "Fei Zhu",
-      "Abderrahim Halimi",
-      "C\u00e9dric Richard"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03465v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03335v1",
-    "title": "iNews: A Multimodal Dataset for Modeling Personalized Affective\n  Responses to News",
-    "authors": [
-      "Tiancheng Hu",
-      "Nigel Collier"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03335v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03321v1",
-    "title": "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
-    "authors": [
-      "Seil Kang",
-      "Jinyeong Kim",
-      "Junhyeok Kim",
-      "Seong Jae Hwang"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03321v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03285v2",
-    "title": "Enhancing Vietnamese VQA through Curriculum Learning on Raw and\n  Augmented Text Representations",
-    "authors": [
-      "Khoi Anh Nguyen",
-      "Linh Yen Vu",
-      "Thang Dinh Duong",
-      "Thuan Nguyen Duong",
-      "Huy Thanh Nguyen",
-      "Vinh Quang Dinh"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03285v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03280v1",
-    "title": "BEVMOSNet: Multimodal Fusion for BEV Moving Object Segmentation",
-    "authors": [
-      "Hiep Truong Cong",
-      "Ajay Kumar Sigatapu",
-      "Arindam Das",
-      "Yashwanth Sharma",
-      "Venkatesh Satagopan",
-      "Ganesh Sistu",
-      "Ciaran Eising"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03280v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03278v1",
-    "title": "Enhancing Abnormality Grounding for Vision Language Models with\n  Knowledge Descriptions",
-    "authors": [
-      "Jun Li",
-      "Che Liu",
-      "Wenjia Bai",
-      "Rossella Arcucci",
-      "Cosmin I. Bercea",
-      "Julia A. Schnabel"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03278v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03792v1",
-    "title": "Rebalanced Multimodal Learning with Data-aware Unimodal Sampling",
-    "authors": [
-      "Qingyuan Jiang",
-      "Zhouyang Chi",
-      "Xiao Ma",
-      "Qirong Mao",
-      "Yang Yang",
-      "Jinhui Tang"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03792v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03244v1",
-    "title": "Two-Stream Thermal Imaging Fusion for Enhanced Time of Birth Detection\n  in Neonatal Care",
-    "authors": [
-      "Jorge Garc\u00eda-Torres",
-      "\u00d8yvind Meinich-Bache",
-      "Sara Brunner",
-      "Siren Rettedal",
-      "Vilde Kolstad",
-      "Kjersti Engan"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03244v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03215v1",
-    "title": "COSINT-Agent: A Knowledge-Driven Multimodal Agent for Chinese Open\n  Source Intelligence",
-    "authors": [
-      "Wentao Li",
-      "Congcong Wang",
-      "Xiaoxiao Cui",
-      "Zhi Liu",
-      "Wei Guo",
-      "Lizhen Cui"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03215v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03202v1",
-    "title": "Variance-Aware Loss Scheduling for Multimodal Alignment in Low-Data\n  Settings",
-    "authors": [
-      "Sneh Pillai"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03202v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03196v1",
-    "title": "SpiritSight Agent: Advanced GUI Agent with One Look",
-    "authors": [
-      "Zhiyuan Huang",
-      "Ziming Cheng",
-      "Junting Pan",
-      "Zhaohui Hou",
-      "Mingjie Zhan"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03196v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03190v2",
-    "title": "DSPNet: Dual-vision Scene Perception for Robust 3D Question Answering",
-    "authors": [
-      "Jingzhou Luo",
-      "Yang Liu",
-      "Weixing Chen",
-      "Zhen Li",
-      "Yaowei Wang",
-      "Guanbin Li",
-      "Liang Lin"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03190v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03122v1",
-    "title": "The Devil Is in the Details: Tackling Unimodal Spurious Correlations for\n  Generalizable Multimodal Reward Models",
-    "authors": [
-      "Zichao Li",
-      "Xueru Wen",
-      "Jie Lou",
-      "Yuqiu Ji",
-      "Yaojie Lu",
-      "Xianpei Han",
-      "Debing Zhang",
-      "Le Sun"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03122v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03112v1",
-    "title": "A Multimodal Framework for Topic Propagation Classification in Social\n  Networks",
-    "authors": [
-      "Yuchuan Jiang",
-      "Chaolong Jia",
-      "Yunyi Qin",
-      "Wei Cai",
-      "Yongsen Qian"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03112v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_03107v1",
-    "title": "External Reliable Information-enhanced Multimodal Contrastive Learning\n  for Fake News Detection",
-    "authors": [
-      "Biwei Cao",
-      "Qihang Wu",
-      "Jiuxin Cao",
-      "Bo Liu",
-      "Jie Gui"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.03107v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05595v1",
-    "title": "Anti-Diffusion: Preventing Abuse of Modifications of Diffusion-Based\n  Models",
-    "authors": [
-      "Zheng Li",
-      "Liangbin Xie",
-      "Jiantao Zhou",
-      "Xintao Wang",
-      "Haiwei Wu",
-      "Jinyu Tian"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05595v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_LayoutXLM__Multimodal_Pre_training_for_Multilingua",
-    "title": "LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding",
-    "authors": [],
-    "date": "2024-03-05",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/layoutxlm-multimodal-pre-training-for",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.2,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04842v1",
-    "title": "Replicating Human Social Perception in Generative AI: Evaluating the\n  Valence-Dominance Model",
-    "authors": [
-      "Necdet Gurkan",
-      "Kimathi Njoki",
-      "Jordan W. Suchow"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04842v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_04839v1",
-    "title": "Advancing Multimodal In-Context Learning in Large Vision-Language Models\n  with Task-aware Demonstrations",
-    "authors": [
-      "Yanshu Li"
-    ],
-    "date": "2024-03-05",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.04839v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9951783284262666,
-      "source_weight": 1.0,
-      "age_months": 0.16666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02950v1",
-    "title": "LiteWebAgent: The Open-Source Suite for VLM-Based Web-Agent Applications",
-    "authors": [
-      "Danqing Zhang",
-      "Balaji Rama",
-      "Jingyi Ni",
-      "Shiying He",
-      "Fu Zhao",
-      "Kunyu Chen",
-      "Arnold Chen",
-      "Junyu Cao"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02950v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02876v1",
-    "title": "SPIDER: A Comprehensive Multi-Organ Supervised Pathology Dataset and\n  Baseline Models",
-    "authors": [
-      "Dmitry Nechaev",
-      "Alexey Pchelnikov",
-      "Ekaterina Ivanova"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02876v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02865v2",
-    "title": "FairSense-AI: Responsible AI Meets Sustainability",
-    "authors": [
-      "Shaina Raza",
-      "Mukund Sayeeganesh Chettiar",
-      "Matin Yousefabadi",
-      "Tahniat Khan",
-      "Marcelo Lotif"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02865v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02861v1",
-    "title": "Evaluation of Architectural Synthesis Using Generative AI",
-    "authors": [
-      "Jingfei Huang",
-      "Alexandros Haridis"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02861v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02853v1",
-    "title": "CADDI: An in-Class Activity Detection Dataset using IMU data from\n  low-cost sensors",
-    "authors": [
-      "Luis Marquez-Carpintero",
-      "Sergio Suescun-Ferrandiz",
-      "Monica Pina-Navarro",
-      "Miguel Cazorla",
-      "Francisco Gomez-Donoso"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02853v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02849v1",
-    "title": "Multimodal Deep Learning for Subtype Classification in Breast Cancer\n  Using Histopathological Images and Gene Expression Data",
-    "authors": [
-      "Amin Honarmandi Shandiz"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02849v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02824v1",
-    "title": "Developing a PET/CT Foundation Model for Cross-Modal Anatomical and\n  Functional Imaging",
-    "authors": [
-      "Yujin Oh",
-      "Robert Seifert",
-      "Yihan Cao",
-      "Christoph Clement",
-      "Justin Ferdinandus",
-      "Constantin Lapa",
-      "Alessandro Liebich",
-      "Michelle Amon",
-      "Johanna Enke",
-      "Sifan Song",
-      "Runqi Meng",
-      "Fang Zeng",
-      "Ning Guo",
-      "Xiang Li",
-      "Pedram Heidari",
-      "Axel Rominger",
-      "Kuangyu Shi",
-      "Quanzheng Li"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02824v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02823v1",
-    "title": "A Multimodal Symphony: Integrating Taste and Sound through Generative AI",
-    "authors": [
-      "Matteo Spanio",
-      "Massimiliano Zampini",
-      "Antonio Rod\u00e0",
-      "Franco Pierucci"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02823v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02800v2",
-    "title": "RAAD-LLM: Adaptive Anomaly Detection Using LLMs and RAG Integration",
-    "authors": [
-      "Alicia Russell-Gilbert",
-      "Sudip Mittal",
-      "Shahram Rahimi",
-      "Maria Seale",
-      "Joseph Jabour",
-      "Thomas Arnold",
-      "Joshua Church"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02800v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02798v1",
-    "title": "Spike-and-Slab Posterior Sampling in High Dimensions",
-    "authors": [
-      "Syamantak Kumar",
-      "Purnamrita Sarkar",
-      "Kevin Tian",
-      "Yusong Zhu"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02798v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02781v1",
-    "title": "Multimodal AI predicts clinical outcomes of drug combinations from\n  preclinical data",
-    "authors": [
-      "Yepeng Huang",
-      "Xiaorui Su",
-      "Varun Ullanat",
-      "Ivy Liang",
-      "Lindsay Clegg",
-      "Damilola Olabode",
-      "Nicholas Ho",
-      "Bino John",
-      "Megan Gibbs",
-      "Marinka Zitnik"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02781v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02733v1",
-    "title": "UAR-NVC: A Unified AutoRegressive Framework for Memory-Efficient Neural\n  Video Compression",
-    "authors": [
-      "Jia Wang",
-      "Xinfeng Zhang",
-      "Gai Zhang",
-      "Jun Zhu",
-      "Lv Tang",
-      "Li Zhang"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02733v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02616v1",
-    "title": "Smoothing the Shift: Towards Stable Test-Time Adaptation under Complex\n  Multimodal Noises",
-    "authors": [
-      "Zirun Guo",
-      "Tao Jin"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02616v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02600v1",
-    "title": "Resource-Efficient Affordance Grounding with Complementary Depth and\n  Semantic Prompts",
-    "authors": [
-      "Yizhou Huang",
-      "Fan Yang",
-      "Guoliang Zhu",
-      "Gen Li",
-      "Hao Shi",
-      "Yukun Zuo",
-      "Wenrui Chen",
-      "Zhiyong Li",
-      "Kailun Yang"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02600v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02597v1",
-    "title": "Seeing is Understanding: Unlocking Causal Attention into Modality-Mutual\n  Attention for Multimodal LLMs",
-    "authors": [
-      "Wei-Yao Wang",
-      "Zhao Wang",
-      "Helen Suzuki",
-      "Yoshiyuki Kobayashi"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02597v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02589v2",
-    "title": "MCiteBench: A Benchmark for Multimodal Citation Text Generation in MLLMs",
-    "authors": [
-      "Caiyu Hu",
-      "Yikai Zhang",
-      "Tinghui Zhu",
-      "Yiwei Ye",
-      "Yanghua Xiao"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02589v2",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02579v1",
-    "title": "MM-OR: A Large Multimodal Operating Room Dataset for Semantic\n  Understanding of High-Intensity Surgical Environments",
-    "authors": [
-      "Ege \u00d6zsoy",
-      "Chantal Pellegrini",
-      "Tobias Czempiel",
-      "Felix Tristram",
-      "Kun Yuan",
-      "David Bani-Harouni",
-      "Ulrich Eck",
-      "Benjamin Busam",
-      "Matthias Keicher",
-      "Nassir Navab"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02579v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02917v1",
-    "title": "Interpretable Few-Shot Retinal Disease Diagnosis with Concept-Guided\n  Prompting of Vision-Language Models",
-    "authors": [
-      "Deval Mehta",
-      "Yiwen Jiang",
-      "Catherine L Jan",
-      "Mingguang He",
-      "Kshitij Jadhav",
-      "Zongyuan Ge"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02917v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02511v1",
-    "title": "TeTRA-VPR: A Ternary Transformer Approach for Compact Visual Place\n  Recognition",
-    "authors": [
-      "Oliver Grainge",
-      "Michael Milford",
-      "Indu Bodala",
-      "Sarvapali D. Ramchurn",
-      "Shoaib Ehsan"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02511v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02476v1",
-    "title": "BioD2C: A Dual-level Semantic Consistency Constraint Framework for\n  Biomedical VQA",
-    "authors": [
-      "Zhengyang Ji",
-      "Shang Gao",
-      "Li Liu",
-      "Yifan Jia",
-      "Yutao Yue"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02476v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02459v1",
-    "title": "Exploring Token-Level Augmentation in Vision Transformer for\n  Semi-Supervised Semantic Segmentation",
-    "authors": [
-      "Dengke Zhang",
-      "Quan Tang",
-      "Fagui Liu",
-      "C. L. Philip Chen",
-      "Haiqing Mei"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02459v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02420v1",
-    "title": "Exploring Model Quantization in GenAI-based Image Inpainting and\n  Detection of Arable Plants",
-    "authors": [
-      "Sourav Modak",
-      "Ahmet O\u011fuz Salt\u0131k",
-      "Anthony Stein"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02420v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02394v3",
-    "title": "BHViT: Binarized Hybrid Vision Transformer",
-    "authors": [
-      "Tian Gao",
-      "Zhiyuan Zhang",
-      "Yu Zhang",
-      "Huajun Liu",
-      "Kaijie Yin",
-      "Chengzhong Xu",
-      "Hui Kong"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02394v3",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02393v1",
-    "title": "Vision-Language Model IP Protection via Prompt-based Learning",
-    "authors": [
-      "Lianyu Wang",
-      "Meng Wang",
-      "Huazhu Fu",
-      "Daoqiang Zhang"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02393v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02379v1",
-    "title": "Teaching Metric Distance to Autoregressive Multimodal Foundational\n  Models",
-    "authors": [
-      "Jiwan Chung",
-      "Saejin Kim",
-      "Yongrae Jo",
-      "Jaewoo Park",
-      "Dongjun Min",
-      "Youngjae Yu"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02379v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02358v1",
-    "title": "Are Large Vision Language Models Good Game Players?",
-    "authors": [
-      "Xinyu Wang",
-      "Bohan Zhuang",
-      "Qi Wu"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02358v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02334v1",
-    "title": "BiasICL: In-Context Learning and Demographic Biases of Vision Language\n  Models",
-    "authors": [
-      "Sonnet Xu",
-      "Joseph Janizek",
-      "Yixing Jiang",
-      "Roxana Daneshjou"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02334v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_02330v1",
-    "title": "Exploring Simple Siamese Network for High-Resolution Video Quality\n  Assessment",
-    "authors": [
-      "Guotao Shen",
-      "Ziheng Yan",
-      "Xin Jin",
-      "Longhai Wu",
-      "Jie Chen",
-      "Ilhyun Cho",
-      "Cheul-Hee Hahm"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.02330v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05626v1",
-    "title": "FMT:A Multimodal Pneumonia Detection Model Based on Stacking MOE\n  Framework",
-    "authors": [
-      "Jingyu Xu",
-      "Yang Wang"
-    ],
-    "date": "2024-03-04",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05626v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.0,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_MiniGPT_v2__large_language_model_as_a_unified_inte",
-    "title": "MiniGPT-v2: large language model as a unified interface for vision-language multi-task learning",
-    "authors": [],
-    "date": "2024-03-04",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/minigpt-v2-large-language-model-as-a-unified",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9942167875284308,
-      "source_weight": 1.2,
-      "age_months": 0.2,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05639v1",
-    "title": "VideoPainter: Any-length Video Inpainting and Editing with Plug-and-Play\n  Context Control",
-    "authors": [
-      "Yuxuan Bian",
-      "Zhaoyang Zhang",
-      "Xuan Ju",
-      "Mingdeng Cao",
-      "Liangbin Xie",
-      "Ying Shan",
-      "Qiang Xu"
-    ],
-    "date": "2024-03-03",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05639v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9932561756710209,
-      "source_weight": 1.0,
-      "age_months": 0.23333333333333334,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_F_VLM__Open_Vocabulary_Object_Detection_upon_Froze",
-    "title": "F-VLM: Open-Vocabulary Object Detection upon Frozen Vision and Language Models",
-    "authors": [],
-    "date": "2024-03-03",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/f-vlm-open-vocabulary-object-detection-upon",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9932561756710209,
-      "source_weight": 1.2,
-      "age_months": 0.23333333333333334,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05684v1",
-    "title": "Fairness-Aware Low-Rank Adaptation Under Demographic Privacy Constraints",
-    "authors": [
-      "Parameswaran Kamalaruban",
-      "Mark Anderson",
-      "Stuart Burrell",
-      "Maeve Madigan",
-      "Piotr Skalski",
-      "David Sutton"
-    ],
-    "date": "2024-03-02",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05684v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9922964919563986,
-      "source_weight": 1.0,
-      "age_months": 0.26666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_VILA__Learning_Image_Aesthetics_from_User_Comments",
-    "title": "VILA: Learning Image Aesthetics from User Comments with Vision-Language Pretraining",
-    "authors": [],
-    "date": "2024-03-02",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/vila-learning-image-aesthetics-from-user",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9922964919563986,
-      "source_weight": 1.2,
-      "age_months": 0.26666666666666666,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "2503_05689v1",
-    "title": "GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories\n  Generation in End-to-End Autonomous Driving",
-    "authors": [
-      "Zebin Xing",
-      "Xingyu Zhang",
-      "Yang Hu",
-      "Bo Jiang",
-      "Tong He",
-      "Qian Zhang",
-      "Xiaoxiao Long",
-      "Wei Yin"
-    ],
-    "date": "2024-03-01",
-    "source": "arXiv",
-    "url": "http://arxiv.org/abs/2503.05689v1",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9913377354877926,
-      "source_weight": 1.0,
-      "age_months": 0.3,
-      "citation_velocity": 0.0
-    }
-  },
-  {
-    "id": "paperswithcode_MiniGPT_4__Enhancing_Vision_Language_Understanding",
-    "title": "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
-    "authors": [],
-    "date": "2024-03-01",
-    "source": "Papers With Code",
-    "url": "https://paperswithcode.com/paper/minigpt-4-enhancing-vision-language",
-    "citation_count": 0,
-    "attention_score": 0.0,
-    "components": {
-      "base_score": 0.0,
-      "recency_factor": 0.9913377354877926,
-      "source_weight": 1.2,
-      "age_months": 0.3,
-      "citation_velocity": 0.0
+    "attention_score": 0.2,
+    "attention_components": {
+      "base_score": 2.0,
+      "recency_factor": 0.1,
+      "source_weight": 1.0,
+      "age_months": 12.2,
+      "citation_velocity": 0
     }
   }
 ]
