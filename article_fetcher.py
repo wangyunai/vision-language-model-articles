@@ -839,19 +839,24 @@ class ArticleFetcher:
         current_year = datetime.datetime.now().year
         year_range = f"{current_year-2}-{current_year}"
         
+        # Add your Semantic Scholar API key here (get one from https://www.semanticscholar.org/product/api)
+        # If you don't have an API key, you'll be limited to 100 requests per day
+        api_key = ""  # Replace with your API key
+        
         # Process each conference venue separately for better results
+        successful_venues = 0
         for venue in venues:
             logger.info(f"Searching for papers in {venue}...")
             
             # Exponential backoff parameters for rate limiting
-            max_retries = 3
-            base_wait = 5  # seconds
+            max_retries = 5  # Increased from 3
+            base_wait = 10   # Increased from 5 seconds
             
             for attempt in range(max_retries + 1):
                 try:
                     params = {
                         "query": f"venue:{venue} AND (vision language model OR VLM OR CLIP OR multimodal OR vision-language)",
-                        "limit": 50,  # Get more papers per venue
+                        "limit": 25,  # Reduced from 50 to avoid rate limiting
                         "fields": "title,authors,venue,year,abstract,url,citationCount",
                         "year": year_range
                     }
@@ -860,6 +865,10 @@ class ArticleFetcher:
                         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
                     }
                     
+                    # Add API key to headers if available
+                    if api_key:
+                        headers["x-api-key"] = api_key
+                    
                     response = requests.get(SEMANTIC_SCHOLAR_API_URL, params=params, headers=headers)
                     status_code = response.status_code
                     logger.info(f"Semantic Scholar API response status for {venue}: {status_code}")
@@ -867,8 +876,8 @@ class ArticleFetcher:
                     # Handle rate limiting with exponential backoff
                     if status_code == 429:
                         if attempt < max_retries:
-                            wait_time = base_wait * (2 ** attempt)
-                            logger.warning(f"Rate limited. Waiting {wait_time}s before retry...")
+                            wait_time = base_wait * (2 ** attempt) + random.uniform(1, 5)  # Add randomness
+                            logger.warning(f"Rate limited. Waiting {wait_time:.2f}s before retry...")
                             time.sleep(wait_time)
                             continue
                         else:
@@ -882,6 +891,7 @@ class ArticleFetcher:
                             papers = data["data"]
                             logger.info(f"Found {len(papers)} papers for venue '{venue}'")
                             
+                            papers_added = 0
                             for paper in papers:
                                 # Skip if title is missing
                                 if not paper.get("title"):
@@ -948,7 +958,12 @@ class ArticleFetcher:
                                 }
                                 
                                 self.articles.append(article_obj)
+                                papers_added += 1
                                 logger.info(f"Found new conference paper: {title}")
+                            
+                            logger.info(f"Added {papers_added} papers from {venue}")
+                            if papers_added > 0:
+                                successful_venues += 1
                         else:
                             logger.warning(f"No data found in Semantic Scholar response for '{venue}'")
                         
@@ -967,8 +982,10 @@ class ArticleFetcher:
                     else:
                         logger.error(f"Max retries exceeded for {venue}. Skipping.")
                 
-            # Always be nice to the API between venues
-            time.sleep(2)
+            # Always be nice to the API between venues - increased wait time
+            time.sleep(5)  # Increased from 2 seconds
+        
+        logger.info(f"Successfully fetched papers from {successful_venues} out of {len(venues)} conference venues")
     
     def calculate_keyword_statistics(self):
         """Calculate statistics and attention scores for keywords"""
