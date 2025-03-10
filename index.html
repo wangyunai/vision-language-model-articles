@@ -133,38 +133,29 @@
                     <div class="time-range-selector">
                         <label for="time-range">Time Range:</label>
                         <select id="time-range">
-                            <option value="6">Last 6 Months</option>
-                            <option value="12" selected>Last 12 Months</option>
-                            <option value="24">Last 2 Years</option>
-                            <option value="all">All Time</option>
+                            <option value="last-3-months">Last 3 Months</option>
+                            <option value="last-6-months">Last 6 Months</option>
+                            <option value="last-12-months" selected>Last 12 Months</option>
                         </select>
                     </div>
                     
                     <div class="trend-type-selector">
                         <label for="trend-type">Trend Type:</label>
                         <select id="trend-type">
-                            <option value="volume">Article Volume</option>
-                            <option value="keywords">Keyword Popularity</option>
-                            <option value="sources">Source Activity</option>
-                        </select>
-                    </div>
-                    
-                    <div id="keyword-trend-selector" class="hidden">
-                        <label for="trend-keywords">Keywords:</label>
-                        <select id="trend-keywords" multiple>
-                            <!-- Will be populated by JavaScript -->
+                            <option value="article-volume">Article Volume</option>
+                            <option value="keyword-popularity">Keyword Popularity</option>
+                            <option value="source-distribution">Source Distribution</option>
                         </select>
                     </div>
                 </div>
                 
-                <div class="trend-visualization">
+                <div id="trend-chart-container" class="trend-visualization">
                     <canvas id="trend-chart"></canvas>
                 </div>
                 
-                <div class="trend-insights">
+                <div class="trend-insights" id="trend-insights">
                     <h3>Key Insights</h3>
-                    <ul id="trend-insights-list">
-                        <!-- Will be populated by JavaScript -->
+                    <ul>
                         <li>Loading trend insights...</li>
                     </ul>
                 </div>

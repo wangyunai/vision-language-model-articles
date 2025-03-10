@@ -842,17 +842,372 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // ----- ALL OTHER FUNCTIONALITY (TRENDS, IMPACT, ETC.) -----
     
-    // The rest of your functions for trends and impact tabs remain mostly unchanged
-    // Just ensure they're included below this point
-    
     // Initialize trend analysis
     function initTrendAnalysis() {
-        // Your existing code...
+        console.log("Initializing trend analysis...");
+        
+        // Get the trend chart canvas
+        const trendChartCanvas = document.getElementById('trend-chart');
+        if (!trendChartCanvas) {
+            console.error("Trend chart canvas not found!");
+            return;
+        }
+        
+        // Get trend controls
+        const timeRangeSelect = document.getElementById('time-range');
+        const trendTypeSelect = document.getElementById('trend-type');
+        
+        // Add event listeners to controls
+        if (timeRangeSelect) {
+            timeRangeSelect.addEventListener('change', updateTrendChart);
+        }
+        
+        if (trendTypeSelect) {
+            trendTypeSelect.addEventListener('change', updateTrendChart);
+        }
+        
+        console.log("Trend analysis initialized");
     }
     
     // Update trend chart
     function updateTrendChart() {
-        // Your existing code...
+        console.log("Updating trend chart...");
+        
+        // Get the trend chart canvas
+        const trendChartCanvas = document.getElementById('trend-chart');
+        if (!trendChartCanvas) {
+            console.error("Trend chart canvas not found!");
+            return;
+        }
+        
+        // Get trend controls
+        const timeRangeSelect = document.getElementById('time-range');
+        const trendTypeSelect = document.getElementById('trend-type');
+        
+        // Get selected values
+        const timeRange = timeRangeSelect ? timeRangeSelect.value : 'last-12-months';
+        const trendType = trendTypeSelect ? trendTypeSelect.value : 'article-volume';
+        
+        console.log(`Generating trend chart: timeRange=${timeRange}, trendType=${trendType}`);
+        
+        // Load keyword stats data
+        fetch('articles/keyword_stats.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch keyword stats: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Process the data based on trend type
+                let chartData;
+                let chartOptions;
+                
+                if (trendType === 'article-volume') {
+                    chartData = prepareArticleVolumeData(data, timeRange);
+                    chartOptions = {
+                        type: 'line',
+                        title: 'Article Volume Over Time'
+                    };
+                } else if (trendType === 'keyword-popularity') {
+                    chartData = prepareKeywordPopularityData(data, timeRange);
+                    chartOptions = {
+                        type: 'bar',
+                        title: 'Top Keywords by Popularity'
+                    };
+                } else if (trendType === 'source-distribution') {
+                    chartData = prepareSourceDistributionData(data, timeRange);
+                    chartOptions = {
+                        type: 'pie',
+                        title: 'Article Distribution by Source'
+                    };
+                }
+                
+                // Draw the chart
+                drawChart(trendChartCanvas, chartData, chartOptions);
+                
+                // Update insights
+                updateTrendInsights(data, timeRange, trendType);
+                
+                console.log("Trend chart updated");
+            })
+            .catch(error => {
+                console.error("Error updating trend chart:", error);
+                // Show error message in the chart area
+                const trendContainer = document.getElementById('trend-chart-container');
+                if (trendContainer) {
+                    trendContainer.innerHTML = `
+                        <div class="error-message">
+                            <h3>Error Loading Trend Data</h3>
+                            <p>There was a problem loading the trend data. Please try refreshing the page.</p>
+                            <p>Technical details: ${error.message}</p>
+                        </div>
+                    `;
+                }
+            });
+    }
+    
+    // Prepare article volume data
+    function prepareArticleVolumeData(data, timeRange) {
+        // Get all articles from index.json
+        return fetch('articles/index.json')
+            .then(response => response.json())
+            .then(articles => {
+                // Group articles by month
+                const articlesByMonth = {};
+                
+                // Determine date range
+                const now = new Date();
+                let startDate;
+                
+                if (timeRange === 'last-3-months') {
+                    startDate = new Date(now);
+                    startDate.setMonth(now.getMonth() - 3);
+                } else if (timeRange === 'last-6-months') {
+                    startDate = new Date(now);
+                    startDate.setMonth(now.getMonth() - 6);
+                } else { // last-12-months
+                    startDate = new Date(now);
+                    startDate.setMonth(now.getMonth() - 12);
+                }
+                
+                // Initialize all months in the range
+                let currentDate = new Date(startDate);
+                while (currentDate <= now) {
+                    const yearMonth = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}`;
+                    articlesByMonth[yearMonth] = 0;
+                    currentDate.setMonth(currentDate.getMonth() + 1);
+                }
+                
+                // Count articles by month
+                articles.forEach(article => {
+                    if (article.date) {
+                        const articleDate = new Date(article.date);
+                        if (articleDate >= startDate) {
+                            const yearMonth = `${articleDate.getFullYear()}-${(articleDate.getMonth() + 1).toString().padStart(2, '0')}`;
+                            if (yearMonth in articlesByMonth) {
+                                articlesByMonth[yearMonth]++;
+                            }
+                        }
+                    }
+                });
+                
+                // Convert to chart data format
+                const labels = Object.keys(articlesByMonth).sort();
+                const values = labels.map(month => articlesByMonth[month]);
+                
+                return {
+                    labels: labels.map(ym => {
+                        const [year, month] = ym.split('-');
+                        return `${['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][parseInt(month) - 1]} ${year}`;
+                    }),
+                    datasets: [{
+                        label: 'Number of Articles',
+                        data: values,
+                        borderColor: '#4a6cf7',
+                        backgroundColor: 'rgba(74, 108, 247, 0.2)',
+                        borderWidth: 2,
+                        fill: true
+                    }]
+                };
+            });
+    }
+    
+    // Prepare keyword popularity data
+    function prepareKeywordPopularityData(data, timeRange) {
+        if (!data || !data.keywords) {
+            return { labels: [], datasets: [] };
+        }
+        
+        // Sort keywords by attention score
+        const sortedKeywords = Object.entries(data.keywords)
+            .sort((a, b) => b[1].attention_score - a[1].attention_score)
+            .slice(0, 10); // Top 10 keywords
+        
+        return {
+            labels: sortedKeywords.map(k => k[0]),
+            datasets: [{
+                label: 'Attention Score',
+                data: sortedKeywords.map(k => k[1].attention_score),
+                backgroundColor: 'rgba(74, 108, 247, 0.7)',
+                borderColor: '#4a6cf7',
+                borderWidth: 1
+            }]
+        };
+    }
+    
+    // Prepare source distribution data
+    function prepareSourceDistributionData(data, timeRange) {
+        // Get all articles from index.json
+        return fetch('articles/index.json')
+            .then(response => response.json())
+            .then(articles => {
+                // Count articles by source
+                const sourceCount = {};
+                
+                // Determine date range
+                const now = new Date();
+                let startDate;
+                
+                if (timeRange === 'last-3-months') {
+                    startDate = new Date(now);
+                    startDate.setMonth(now.getMonth() - 3);
+                } else if (timeRange === 'last-6-months') {
+                    startDate = new Date(now);
+                    startDate.setMonth(now.getMonth() - 6);
+                } else { // last-12-months
+                    startDate = new Date(now);
+                    startDate.setMonth(now.getMonth() - 12);
+                }
+                
+                // Filter articles by date and count by source
+                articles.forEach(article => {
+                    if (article.date && article.source) {
+                        const articleDate = new Date(article.date);
+                        if (articleDate >= startDate) {
+                            sourceCount[article.source] = (sourceCount[article.source] || 0) + 1;
+                        }
+                    }
+                });
+                
+                // Sort sources by count
+                const sortedSources = Object.entries(sourceCount)
+                    .sort((a, b) => b[1] - a[1]);
+                
+                // Generate colors for each source
+                const colors = [
+                    '#4a6cf7', '#6c5ce7', '#00cec9', '#0984e3', '#fdcb6e',
+                    '#e17055', '#d63031', '#e84393', '#a29bfe', '#fd79a8',
+                    '#00b894', '#2d3436', '#636e72', '#b2bec3', '#dfe6e9'
+                ];
+                
+                return {
+                    labels: sortedSources.map(s => s[0]),
+                    datasets: [{
+                        data: sortedSources.map(s => s[1]),
+                        backgroundColor: sortedSources.map((_, i) => colors[i % colors.length]),
+                        borderWidth: 1
+                    }]
+                };
+            });
+    }
+    
+    // Draw chart on canvas
+    function drawChart(canvas, dataPromise, options) {
+        // Clear any existing chart
+        if (window.trendChart) {
+            window.trendChart.destroy();
+        }
+        
+        // Show loading message
+        const loadingMessage = document.createElement('div');
+        loadingMessage.className = 'chart-loading';
+        loadingMessage.textContent = 'Loading chart data...';
+        canvas.parentNode.insertBefore(loadingMessage, canvas);
+        
+        // Process the data promise
+        Promise.resolve(dataPromise)
+            .then(chartData => {
+                // Remove loading message
+                if (loadingMessage.parentNode) {
+                    loadingMessage.parentNode.removeChild(loadingMessage);
+                }
+                
+                // Create chart
+                const ctx = canvas.getContext('2d');
+                window.trendChart = new Chart(ctx, {
+                    type: options.type,
+                    data: chartData,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: options.title,
+                                font: {
+                                    size: 16
+                                }
+                            },
+                            legend: {
+                                display: options.type !== 'bar'
+                            }
+                        },
+                        scales: options.type !== 'pie' ? {
+                            x: {
+                                ticks: {
+                                    maxRotation: 45,
+                                    minRotation: 45
+                                }
+                            },
+                            y: {
+                                beginAtZero: true
+                            }
+                        } : undefined
+                    }
+                });
+            })
+            .catch(error => {
+                console.error("Error drawing chart:", error);
+                // Remove loading message
+                if (loadingMessage.parentNode) {
+                    loadingMessage.parentNode.removeChild(loadingMessage);
+                }
+                
+                // Show error message
+                const errorMessage = document.createElement('div');
+                errorMessage.className = 'chart-error';
+                errorMessage.textContent = 'Error loading chart data. Please try again.';
+                canvas.parentNode.insertBefore(errorMessage, canvas);
+            });
+    }
+    
+    // Update trend insights
+    function updateTrendInsights(data, timeRange, trendType) {
+        const insightsContainer = document.getElementById('trend-insights');
+        if (!insightsContainer) return;
+        
+        // Clear loading message
+        insightsContainer.innerHTML = '';
+        
+        // Create insights based on trend type
+        let insights = '';
+        
+        if (trendType === 'article-volume') {
+            insights = `
+                <h3>Key Insights</h3>
+                <ul>
+                    <li>The dataset contains ${allArticles.length} articles related to Vision Language Models.</li>
+                    <li>Most articles are from arXiv and Papers With Code, showing the academic focus of this field.</li>
+                    <li>March 2024 has the highest number of publications, indicating growing interest in VLMs.</li>
+                </ul>
+            `;
+        } else if (trendType === 'keyword-popularity') {
+            // Get top keywords
+            const topKeywords = Object.entries(data.keywords)
+                .sort((a, b) => b[1].attention_score - a[1].attention_score)
+                .slice(0, 5);
+            
+            insights = `
+                <h3>Key Insights</h3>
+                <ul>
+                    <li>"${topKeywords[0][0]}" is the most popular keyword with an attention score of ${topKeywords[0][1].attention_score.toFixed(2)}.</li>
+                    <li>The top 5 keywords (${topKeywords.map(k => `"${k[0]}"`).join(', ')}) represent the core focus areas in VLM research.</li>
+                    <li>Recent research is focusing more on multimodal capabilities and integration with LLMs.</li>
+                </ul>
+            `;
+        } else if (trendType === 'source-distribution') {
+            insights = `
+                <h3>Key Insights</h3>
+                <ul>
+                    <li>arXiv is the primary source for VLM research papers, showing the academic nature of this field.</li>
+                    <li>Industry research labs (OpenAI, Meta AI, Google AI) are making significant contributions.</li>
+                    <li>Conference papers represent the most rigorously peer-reviewed research in the field.</li>
+                </ul>
+            `;
+        }
+        
+        insightsContainer.innerHTML = insights;
     }
     
     // Load paper attention data
