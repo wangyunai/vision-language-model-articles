@@ -72,6 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
             allArticles = await articlesData.json();
             console.log(`Successfully loaded ${allArticles.length} articles.`);
             
+            // DEBUG: Log sources to console
+            console.log("Article sources:", allArticles.map(a => a.source));
+            console.log("Unique sources:", new Set(allArticles.map(a => a.source)));
+            
             // Process article data
             processArticleData();
             
@@ -135,8 +139,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set filteredArticles initially to all articles
         filteredArticles = [...allArticles];
         
-        // Populate keyword filter dropdown
+        // Populate filters
         populateKeywordFilter();
+        populateSourceFilter();
+    }
+    
+    // Populate the source filter dropdown
+    function populateSourceFilter() {
+        if (!sourceFilter) return;
+        
+        console.log("Populating source filter with options:", Array.from(allSources));
+        
+        // Clear existing options except "All Sources"
+        while (sourceFilter.options.length > 1) {
+            sourceFilter.remove(1);
+        }
+        
+        // Sort sources alphabetically
+        const sortedSources = Array.from(allSources).sort();
+        
+        // Add sources to the dropdown
+        sortedSources.forEach(source => {
+            const option = document.createElement('option');
+            option.value = source;
+            option.textContent = source;
+            sourceFilter.appendChild(option);
+        });
     }
     
     // Update dashboard statistics
@@ -587,6 +615,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedDate = dateFilter ? dateFilter.value : 'all';
         const selectedKeyword = keywordFilter ? keywordFilter.value : 'all';
         
+        console.log("Filter values:", { searchTerm, selectedSource, selectedDate, selectedKeyword });
+        
         // Filter articles
         filteredArticles = allArticles.filter(article => {
             // Search filter
@@ -602,7 +632,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const searchMatch = titleMatch || summaryMatch || authorMatch || keywordMatch || searchTerm === '';
             
             // Source filter
-            const sourceMatch = selectedSource === 'all' || article.source === selectedSource;
+            const sourceMatch = selectedSource === 'all' || 
+                (article.source && article.source === selectedSource);
             
             // Date filter
             let dateMatch = true;
@@ -629,8 +660,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const keywordFilterMatch = selectedKeyword === 'all' || 
                 (article.keywords && article.keywords.includes(selectedKeyword));
             
+            // Debug source matching
+            if (selectedSource !== 'all' && article.source === selectedSource) {
+                console.log("Source match found:", article.title, article.source);
+            }
+            
             return searchMatch && sourceMatch && dateMatch && keywordFilterMatch;
         });
+        
+        console.log(`Filtered down to ${filteredArticles.length} articles`);
         
         // Sort filtered articles
         sortArticles(filteredArticles);
