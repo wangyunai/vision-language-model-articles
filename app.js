@@ -1212,7 +1212,183 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load paper attention data
     function loadPaperAttentionData() {
-        // Your existing code...
+        console.log("Loading paper attention data...");
+        
+        const attentionChart = document.getElementById('attention-chart');
+        const paperRankingList = document.getElementById('paper-ranking-list');
+        const attentionView = document.getElementById('attention-view');
+        const attentionCount = document.getElementById('attention-count');
+        
+        if (!paperRankingList) {
+            console.error("Paper ranking list element not found!");
+            return;
+        }
+        
+        // Show loading state
+        paperRankingList.innerHTML = `
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading paper rankings...</p>
+            </div>
+        `;
+        
+        // Get selected values
+        const viewType = attentionView ? attentionView.value : 'attention';
+        const count = attentionCount ? parseInt(attentionCount.value) : 10;
+        
+        // Load paper attention data
+        fetch('paper_attention.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch paper attention data: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(papers => {
+                console.log(`Loaded ${papers.length} papers with attention data`);
+                
+                // Sort papers based on view type
+                let sortedPapers;
+                
+                if (viewType === 'attention') {
+                    // Sort by overall attention score
+                    sortedPapers = papers.sort((a, b) => b.attention_score - a.attention_score);
+                } else if (viewType === 'recent') {
+                    // Sort by recency-weighted attention
+                    sortedPapers = papers.sort((a, b) => {
+                        const aDate = new Date(a.date);
+                        const bDate = new Date(b.date);
+                        // Weight: 70% attention score, 30% recency
+                        const aScore = 0.7 * a.attention_score + 0.3 * (aDate.getTime() / 1000000000);
+                        const bScore = 0.7 * b.attention_score + 0.3 * (bDate.getTime() / 1000000000);
+                        return bScore - aScore;
+                    });
+                } else if (viewType === 'velocity') {
+                    // Sort by velocity (citation velocity if available, otherwise attention score)
+                    sortedPapers = papers.sort((a, b) => {
+                        const aVelocity = a.components?.citation_velocity || 0;
+                        const bVelocity = b.components?.citation_velocity || 0;
+                        return bVelocity - aVelocity || b.attention_score - a.attention_score;
+                    });
+                }
+                
+                // Limit to the requested count
+                const topPapers = sortedPapers.slice(0, count);
+                
+                // Display in the ranking list
+                paperRankingList.innerHTML = '';
+                
+                if (topPapers.length === 0) {
+                    paperRankingList.innerHTML = `<p class="no-data">No paper attention data available.</p>`;
+                    return;
+                }
+                
+                // Create ranking list
+                topPapers.forEach((paper, index) => {
+                    const paperItem = document.createElement('div');
+                    paperItem.className = 'ranking-item';
+                    
+                    // Format attention score for display
+                    const displayScore = Math.round(paper.attention_score * 10) / 10;
+                    
+                    // Create paper ranking item
+                    paperItem.innerHTML = `
+                        <div class="ranking-number">#${index + 1}</div>
+                        <div class="ranking-content">
+                            <h4 class="paper-title">
+                                <a href="${paper.url}" target="_blank">${paper.title}</a>
+                            </h4>
+                            <div class="paper-meta">
+                                <span class="paper-authors">${paper.authors.join(', ')}</span>
+                                <span class="paper-source">${paper.source}</span>
+                                <span class="paper-date">${formatDate(paper.date)}</span>
+                            </div>
+                            <div class="paper-metrics">
+                                <span class="attention-score">Attention Score: <strong>${displayScore}</strong></span>
+                                ${paper.citation_count ? `<span class="citation-count">Citations: <strong>${paper.citation_count}</strong></span>` : ''}
+                            </div>
+                        </div>
+                    `;
+                    
+                    paperRankingList.appendChild(paperItem);
+                });
+                
+                // Draw chart if canvas exists
+                if (attentionChart) {
+                    // Prepare chart data
+                    const chartData = {
+                        labels: topPapers.slice(0, 10).map(p => {
+                            // Truncate long titles
+                            const title = p.title.length > 40 ? p.title.substring(0, 40) + '...' : p.title;
+                            return title;
+                        }),
+                        datasets: [{
+                            label: 'Attention Score',
+                            data: topPapers.slice(0, 10).map(p => p.attention_score),
+                            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                            borderColor: 'rgb(255, 99, 132)',
+                            borderWidth: 1
+                        }]
+                    };
+                    
+                    // Create chart
+                    if (window.attentionChart) {
+                        window.attentionChart.destroy();
+                    }
+                    
+                    const ctx = attentionChart.getContext('2d');
+                    window.attentionChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: chartData,
+                        options: {
+                            indexAxis: 'y',
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: 'Paper Attention Scores',
+                                    font: { size: 16 }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    beginAtZero: true,
+                                    title: {
+                                        display: true,
+                                        text: 'Attention Score'
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+                
+                // Add event listeners to controls
+                if (attentionView) {
+                    attentionView.addEventListener('change', loadPaperAttentionData);
+                }
+                if (attentionCount) {
+                    attentionCount.addEventListener('change', loadPaperAttentionData);
+                }
+            })
+            .catch(error => {
+                console.error("Error loading paper attention data:", error);
+                
+                // Show error in ranking list
+                if (paperRankingList) {
+                    paperRankingList.innerHTML = `
+                        <div class="error-message">
+                            <h3>Error Loading Paper Rankings</h3>
+                            <p>There was a problem loading the paper rankings. Please try refreshing the page.</p>
+                            <p>Technical details: ${error.message}</p>
+                        </div>
+                    `;
+                }
+            });
     }
     
     // End of code
