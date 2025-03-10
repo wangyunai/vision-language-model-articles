@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         'Papers With Code': 'fa-code'
     };
     
+    // Trend Analysis variables
+    let trendChart = null;
+    const colorPalette = [
+        '#4e79a7', '#f28e2c', '#e15759', '#76b7b2', 
+        '#59a14f', '#edc949', '#af7aa1', '#ff9da7', 
+        '#9c755f', '#bab0ab'
+    ];
+    
     // Fetch articles from the JSON file
     async function fetchArticles() {
         try {
@@ -93,6 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Display articles for first page
         displayArticlesForCurrentPage();
         
+        // Initialize trend analysis
+        initTrendAnalysis();
+        
         // Hide loading spinner
         loadingSpinner.classList.add('hidden');
         
@@ -119,6 +130,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
+        
+        // Update chart colors if trend chart exists
+        if (trendChart) {
+            updateTrendChart();
+        }
     }
     
     // Update dashboard statistics
@@ -543,6 +559,439 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Display articles for current page
         displayArticlesForCurrentPage();
+    }
+    
+    // Initialize trend analysis
+    function initTrendAnalysis() {
+        const timeRangeSelect = document.getElementById('time-range');
+        const trendTypeSelect = document.getElementById('trend-type');
+        const keywordTrendSelect = document.getElementById('trend-keywords');
+        const keywordTrendSelector = document.getElementById('keyword-trend-selector');
+        
+        // Populate keyword options for trend analysis
+        populateKeywordTrendOptions();
+        
+        // Set up event listeners
+        timeRangeSelect.addEventListener('change', updateTrendChart);
+        trendTypeSelect.addEventListener('change', () => {
+            // Show/hide keyword selector based on trend type
+            if (trendTypeSelect.value === 'keywords') {
+                keywordTrendSelector.classList.remove('hidden');
+            } else {
+                keywordTrendSelector.classList.add('hidden');
+            }
+            updateTrendChart();
+        });
+        
+        // For the multi-select keyword box
+        keywordTrendSelect.addEventListener('change', updateTrendChart);
+        
+        // Initial chart
+        updateTrendChart();
+    }
+    
+    // Populate keyword options for trend analysis
+    function populateKeywordTrendOptions() {
+        const keywordTrendSelect = document.getElementById('trend-keywords');
+        keywordTrendSelect.innerHTML = '';
+        
+        // Get most frequent keywords (top 20)
+        const keywordFrequency = {};
+        allArticles.forEach(article => {
+            if (article.keywords && Array.isArray(article.keywords)) {
+                article.keywords.forEach(keyword => {
+                    keywordFrequency[keyword] = (keywordFrequency[keyword] || 0) + 1;
+                });
+            }
+        });
+        
+        // Sort by frequency
+        const sortedKeywords = Object.entries(keywordFrequency)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 20)
+            .map(entry => entry[0]);
+        
+        // Add options
+        sortedKeywords.forEach(keyword => {
+            const option = document.createElement('option');
+            option.value = keyword;
+            option.textContent = `${keyword} (${keywordFrequency[keyword]})`;
+            keywordTrendSelect.appendChild(option);
+        });
+        
+        // Select top 5 by default
+        for (let i = 0; i < Math.min(5, sortedKeywords.length); i++) {
+            keywordTrendSelect.options[i].selected = true;
+        }
+    }
+    
+    // Update trend chart based on current selections
+    function updateTrendChart() {
+        const timeRangeSelect = document.getElementById('time-range');
+        const trendTypeSelect = document.getElementById('trend-type');
+        const keywordTrendSelect = document.getElementById('trend-keywords');
+        const trendInsightsList = document.getElementById('trend-insights-list');
+        
+        // Get selected values
+        const timeRange = timeRangeSelect.value;
+        const trendType = trendTypeSelect.value;
+        
+        // Prepare data based on timeRange
+        let filteredArticles = [...allArticles];
+        if (timeRange !== 'all') {
+            const months = parseInt(timeRange);
+            const cutoffDate = new Date();
+            cutoffDate.setMonth(cutoffDate.getMonth() - months);
+            
+            filteredArticles = filteredArticles.filter(article => {
+                const articleDate = new Date(article.date);
+                return !isNaN(articleDate.getTime()) && articleDate >= cutoffDate;
+            });
+        }
+        
+        // Get chart data based on trend type
+        let chartData = {};
+        let insights = [];
+        
+        switch(trendType) {
+            case 'volume':
+                chartData = getArticleVolumeData(filteredArticles);
+                insights = generateVolumeInsights(chartData);
+                break;
+            case 'keywords':
+                const selectedKeywords = Array.from(keywordTrendSelect.selectedOptions)
+                    .map(option => option.value);
+                chartData = getKeywordTrendData(filteredArticles, selectedKeywords);
+                insights = generateKeywordInsights(chartData);
+                break;
+            case 'sources':
+                chartData = getSourceActivityData(filteredArticles);
+                insights = generateSourceInsights(chartData);
+                break;
+        }
+        
+        // Display insights
+        displayInsights(insights);
+        
+        // Create/update chart
+        createTrendChart(chartData, trendType);
+    }
+    
+    // Process data for article volume trend
+    function getArticleVolumeData(articles) {
+        // Group articles by month
+        const monthlyData = {};
+        
+        articles.forEach(article => {
+            const date = new Date(article.date);
+            if (!isNaN(date.getTime())) {
+                const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                monthlyData[yearMonth] = (monthlyData[yearMonth] || 0) + 1;
+            }
+        });
+        
+        // Sort months chronologically
+        const sortedMonths = Object.keys(monthlyData).sort();
+        
+        return {
+            labels: sortedMonths.map(ym => {
+                const [year, month] = ym.split('-');
+                return `${getMonthName(parseInt(month) - 1)} ${year}`;
+            }),
+            datasets: [{
+                label: 'Number of Articles',
+                data: sortedMonths.map(ym => monthlyData[ym]),
+                backgroundColor: colorPalette[0],
+                borderColor: colorPalette[0],
+                borderWidth: 2,
+                fill: false
+            }]
+        };
+    }
+    
+    // Process data for keyword trends
+    function getKeywordTrendData(articles, keywords) {
+        // First, group articles by month
+        const monthlyKeywordData = {};
+        
+        articles.forEach(article => {
+            const date = new Date(article.date);
+            if (!isNaN(date.getTime())) {
+                const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                
+                if (!monthlyKeywordData[yearMonth]) {
+                    monthlyKeywordData[yearMonth] = {};
+                    keywords.forEach(kw => monthlyKeywordData[yearMonth][kw] = 0);
+                }
+                
+                // Check for each keyword in the article
+                if (article.keywords && Array.isArray(article.keywords)) {
+                    article.keywords.forEach(kw => {
+                        if (keywords.includes(kw)) {
+                            monthlyKeywordData[yearMonth][kw]++;
+                        }
+                    });
+                }
+            }
+        });
+        
+        // Sort months chronologically
+        const sortedMonths = Object.keys(monthlyKeywordData).sort();
+        
+        // Prepare dataset for each keyword
+        const datasets = keywords.map((keyword, index) => {
+            return {
+                label: keyword,
+                data: sortedMonths.map(ym => monthlyKeywordData[ym][keyword]),
+                backgroundColor: colorPalette[index % colorPalette.length],
+                borderColor: colorPalette[index % colorPalette.length],
+                borderWidth: 2,
+                fill: false
+            };
+        });
+        
+        return {
+            labels: sortedMonths.map(ym => {
+                const [year, month] = ym.split('-');
+                return `${getMonthName(parseInt(month) - 1)} ${year}`;
+            }),
+            datasets: datasets
+        };
+    }
+    
+    // Process data for source activity
+    function getSourceActivityData(articles) {
+        // Count articles per source
+        const sourceData = {};
+        
+        articles.forEach(article => {
+            if (article.source) {
+                sourceData[article.source] = (sourceData[article.source] || 0) + 1;
+            }
+        });
+        
+        // Sort sources by article count (descending)
+        const sortedSources = Object.entries(sourceData)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10); // Top 10 sources
+        
+        return {
+            labels: sortedSources.map(entry => entry[0]),
+            datasets: [{
+                label: 'Number of Articles',
+                data: sortedSources.map(entry => entry[1]),
+                backgroundColor: sortedSources.map((_, i) => colorPalette[i % colorPalette.length]),
+                borderWidth: 1
+            }]
+        };
+    }
+    
+    // Generate insights for article volume trends
+    function generateVolumeInsights(chartData) {
+        const insights = [];
+        const data = chartData.datasets[0].data;
+        const labels = chartData.labels;
+        
+        if (data.length === 0) {
+            return ["No data available for the selected time period."];
+        }
+        
+        // Total articles
+        const totalArticles = data.reduce((sum, count) => sum + count, 0);
+        insights.push(`Total of ${totalArticles} articles were published in the selected period.`);
+        
+        // Find peak month
+        const peakIndex = data.indexOf(Math.max(...data));
+        if (peakIndex >= 0) {
+            insights.push(`Peak publishing month was ${labels[peakIndex]} with ${data[peakIndex]} articles.`);
+        }
+        
+        // Calculate growth trend
+        if (data.length > 1) {
+            // Simple linear regression to detect trend
+            const xValues = Array.from({length: data.length}, (_, i) => i);
+            const xMean = xValues.reduce((sum, x) => sum + x, 0) / xValues.length;
+            const yMean = data.reduce((sum, y) => sum + y, 0) / data.length;
+            
+            const numerator = xValues.reduce((sum, x, i) => sum + (x - xMean) * (data[i] - yMean), 0);
+            const denominator = xValues.reduce((sum, x) => sum + Math.pow(x - xMean, 2), 0);
+            
+            const slope = denominator ? numerator / denominator : 0;
+            
+            if (Math.abs(slope) < 0.1) {
+                insights.push("Publication volume has remained relatively stable in this period.");
+            } else if (slope > 0) {
+                insights.push(`Publication volume is trending upward by approximately ${(slope * 100).toFixed(1)}% per month.`);
+            } else {
+                insights.push(`Publication volume is trending downward by approximately ${(-slope * 100).toFixed(1)}% per month.`);
+            }
+        }
+        
+        return insights;
+    }
+    
+    // Generate insights for keyword trends
+    function generateKeywordInsights(chartData) {
+        const insights = [];
+        const datasets = chartData.datasets;
+        const labels = chartData.labels;
+        
+        if (datasets.length === 0 || labels.length === 0) {
+            return ["Not enough data to generate keyword insights."];
+        }
+        
+        // Find fastest growing keyword
+        const growthRates = datasets.map(dataset => {
+            // Need at least 2 data points to calculate growth
+            if (dataset.data.length < 2) return { keyword: dataset.label, growth: 0 };
+            
+            // Simple linear regression for growth rate
+            const xValues = Array.from({length: dataset.data.length}, (_, i) => i);
+            const xMean = xValues.reduce((sum, x) => sum + x, 0) / xValues.length;
+            const yMean = dataset.data.reduce((sum, y) => sum + y, 0) / dataset.data.length;
+            
+            const numerator = xValues.reduce((sum, x, i) => sum + (x - xMean) * (dataset.data[i] - yMean), 0);
+            const denominator = xValues.reduce((sum, x) => sum + Math.pow(x - xMean, 2), 0);
+            
+            const slope = denominator ? numerator / denominator : 0;
+            
+            return { keyword: dataset.label, growth: slope };
+        });
+        
+        // Sort by growth rate
+        growthRates.sort((a, b) => b.growth - a.growth);
+        
+        // Add insights about growing keywords
+        if (growthRates.length > 0 && growthRates[0].growth > 0) {
+            insights.push(`"${growthRates[0].keyword}" is the fastest growing keyword.`);
+        }
+        
+        // Add insights about declining keywords
+        const decliningKeywords = growthRates.filter(item => item.growth < 0);
+        if (decliningKeywords.length > 0) {
+            insights.push(`"${decliningKeywords[0].keyword}" is showing the most pronounced decline.`);
+        }
+        
+        // Most popular keyword
+        const totals = datasets.map(dataset => {
+            return {
+                keyword: dataset.label,
+                total: dataset.data.reduce((sum, count) => sum + count, 0)
+            };
+        });
+        
+        totals.sort((a, b) => b.total - a.total);
+        
+        if (totals.length > 0) {
+            insights.push(`"${totals[0].keyword}" is the most prevalent keyword with ${totals[0].total} total mentions.`);
+        }
+        
+        return insights;
+    }
+    
+    // Generate insights for source activity
+    function generateSourceInsights(chartData) {
+        const insights = [];
+        const data = chartData.datasets[0].data;
+        const labels = chartData.labels;
+        
+        if (data.length === 0) {
+            return ["Not enough data to generate source insights."];
+        }
+        
+        // Most active source
+        insights.push(`"${labels[0]}" is the most active source with ${data[0]} articles.`);
+        
+        // Calculate percentage from top source
+        const totalArticles = data.reduce((sum, count) => sum + count, 0);
+        const topSourcePercentage = ((data[0] / totalArticles) * 100).toFixed(1);
+        insights.push(`The top source represents ${topSourcePercentage}% of all articles in the selected period.`);
+        
+        // Diversity of sources
+        if (labels.length >= 3) {
+            const top3Percentage = ((data[0] + data[1] + data[2]) / totalArticles * 100).toFixed(1);
+            insights.push(`The top 3 sources account for ${top3Percentage}% of all articles.`);
+        }
+        
+        return insights;
+    }
+    
+    // Helper function to display insights
+    function displayInsights(insights) {
+        const insightsList = document.getElementById('trend-insights-list');
+        insightsList.innerHTML = '';
+        
+        insights.forEach(insight => {
+            const li = document.createElement('li');
+            li.textContent = insight;
+            insightsList.appendChild(li);
+        });
+    }
+    
+    // Create or update the trend chart
+    function createTrendChart(chartData, chartType) {
+        const ctx = document.getElementById('trend-chart').getContext('2d');
+        
+        // Destroy previous chart if it exists
+        if (trendChart) {
+            trendChart.destroy();
+        }
+        
+        // Determine chart type based on data
+        const chartStyle = chartType === 'sources' ? 'bar' : 'line';
+        
+        // Get text color based on current theme
+        const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+        const borderColor = getComputedStyle(document.documentElement).getPropertyValue('--border-color');
+        
+        // Create new chart
+        trendChart = new Chart(ctx, {
+            type: chartStyle,
+            data: chartData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: textColor
+                        },
+                        grid: {
+                            color: borderColor
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: textColor
+                        },
+                        grid: {
+                            color: borderColor
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: textColor
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        titleColor: '#fff',
+                        bodyColor: '#fff',
+                        borderColor: 'rgba(255, 255, 255, 0.2)',
+                        borderWidth: 1
+                    }
+                }
+            }
+        });
+    }
+    
+    // Helper: Get month name from index
+    function getMonthName(monthIndex) {
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        return months[monthIndex];
     }
 
     // Set up event listeners
