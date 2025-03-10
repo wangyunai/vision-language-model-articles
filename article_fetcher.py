@@ -1273,6 +1273,7 @@ class ArticleFetcher:
     def _save_paper_attention_scores(self, articles_with_scores):
         """
         Save the top papers by attention score to a separate file.
+        Also update individual article files with their attention scores.
         
         Args:
             articles_with_scores: List of articles with attention scores
@@ -1306,6 +1307,35 @@ class ArticleFetcher:
             json.dump(paper_attention, f, indent=2)
         
         logger.info(f"Saved {len(paper_attention)} papers with attention scores")
+        
+        # Update individual article files with attention scores
+        updated_count = 0
+        for article in articles_with_scores:
+            article_id = article.get('id', '')
+            if not article_id:
+                continue
+                
+            # Find the article file
+            article_file = f"articles/{article_id}.json"
+            if os.path.exists(article_file):
+                try:
+                    # Read the article file
+                    with open(article_file, 'r') as f:
+                        article_data = json.load(f)
+                    
+                    # Update with attention score and components
+                    article_data['attention_score'] = article.get('attention_score', 0)
+                    article_data['attention_components'] = article.get('attention_components', {})
+                    
+                    # Save the updated article
+                    with open(article_file, 'w') as f:
+                        json.dump(article_data, f, indent=2)
+                    
+                    updated_count += 1
+                except Exception as e:
+                    logger.error(f"Error updating {article_file}: {e}")
+        
+        logger.info(f"Updated {updated_count} individual article files with attention scores")
     
     def _save_keyword_stats(self):
         """Save keyword statistics to a JSON file"""
