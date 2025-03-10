@@ -1236,8 +1236,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const viewType = attentionView ? attentionView.value : 'attention';
         const count = attentionCount ? parseInt(attentionCount.value) : 10;
         
+        // Add timestamp to prevent caching
+        const timestamp = new Date().getTime();
+        
+        // Debug: log the request URL
+        console.log("Fetching paper_attention.json with timestamp:", timestamp);
+        
         // Load paper attention data
-        fetch('paper_attention.json')
+        fetch(`paper_attention.json?t=${timestamp}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Failed to fetch paper attention data: ${response.status}`);
@@ -1246,6 +1252,23 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(papers => {
                 console.log(`Loaded ${papers.length} papers with attention data`);
+                
+                // Debug: log the first paper's data
+                if (papers.length > 0) {
+                    console.log("First paper data:", papers[0]);
+                    console.log("First paper attention score:", papers[0].attention_score);
+                    console.log("First paper attention score type:", typeof papers[0].attention_score);
+                }
+                
+                // Ensure attention scores are numbers
+                papers = papers.map(paper => {
+                    if (paper.attention_score === undefined || paper.attention_score === null) {
+                        paper.attention_score = 0;
+                    } else if (typeof paper.attention_score === 'string') {
+                        paper.attention_score = parseFloat(paper.attention_score) || 0;
+                    }
+                    return paper;
+                });
                 
                 // Sort papers based on view type
                 let sortedPapers;
@@ -1266,8 +1289,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (viewType === 'velocity') {
                     // Sort by velocity (citation velocity if available, otherwise attention score)
                     sortedPapers = papers.sort((a, b) => {
-                        const aVelocity = a.components?.citation_velocity || 0;
-                        const bVelocity = b.components?.citation_velocity || 0;
+                        const aVelocity = a.attention_components?.citation_velocity || 0;
+                        const bVelocity = b.attention_components?.citation_velocity || 0;
                         return bVelocity - aVelocity || b.attention_score - a.attention_score;
                     });
                 }
@@ -1291,6 +1314,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Format attention score for display
                     const displayScore = Math.round(paper.attention_score * 10) / 10;
                     
+                    // Debug: log each paper's score
+                    console.log(`Paper #${index + 1}: "${paper.title.substring(0, 30)}..." - Score: ${displayScore}`);
+                    
                     // Create paper ranking item
                     paperItem.innerHTML = `
                         <div class="ranking-number">#${index + 1}</div>
@@ -1299,13 +1325,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <a href="${paper.url}" target="_blank">${paper.title}</a>
                             </h4>
                             <div class="paper-meta">
-                                <span class="paper-authors">${paper.authors.join(', ')}</span>
-                                <span class="paper-source">${paper.source}</span>
-                                <span class="paper-date">${formatDate(paper.date)}</span>
+                                <span class="paper-source">${paper.source || 'Unknown source'}</span>
+                                <span class="paper-date">${paper.date || 'Unknown date'}</span>
                             </div>
                             <div class="paper-metrics">
                                 <span class="attention-score">Attention Score: <strong>${displayScore}</strong></span>
-                                ${paper.citation_count ? `<span class="citation-count">Citations: <strong>${paper.citation_count}</strong></span>` : ''}
                             </div>
                         </div>
                     `;
@@ -1317,77 +1341,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (attentionChart) {
                     // Prepare chart data
                     const chartData = {
-                        labels: topPapers.slice(0, 10).map(p => {
-                            // Truncate long titles
-                            const title = p.title.length > 40 ? p.title.substring(0, 40) + '...' : p.title;
-                            return title;
-                        }),
+                        labels: topPapers.map(p => p.title.substring(0, 30) + '...'),
                         datasets: [{
                             label: 'Attention Score',
-                            data: topPapers.slice(0, 10).map(p => p.attention_score),
-                            backgroundColor: 'rgba(255, 99, 132, 0.7)',
-                            borderColor: 'rgb(255, 99, 132)',
+                            data: topPapers.map(p => p.attention_score),
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
                             borderWidth: 1
                         }]
                     };
                     
-                    // Create chart
-                    if (window.attentionChart) {
-                        window.attentionChart.destroy();
+                    // Clear any existing chart
+                    if (window.attentionScoreChart) {
+                        window.attentionScoreChart.destroy();
                     }
                     
-                    const ctx = attentionChart.getContext('2d');
-                    window.attentionChart = new Chart(ctx, {
+                    // Create chart
+                    window.attentionScoreChart = new Chart(attentionChart, {
                         type: 'bar',
                         data: chartData,
                         options: {
-                            indexAxis: 'y',
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            plugins: {
-                                title: {
-                                    display: true,
-                                    text: 'Paper Attention Scores',
-                                    font: { size: 16 }
-                                },
-                                legend: {
-                                    display: false
+                            scales: {
+                                y: {
+                                    beginAtZero: true
                                 }
                             },
-                            scales: {
-                                x: {
-                                    beginAtZero: true,
-                                    title: {
-                                        display: true,
-                                        text: 'Attention Score'
-                                    }
+                            plugins: {
+                                legend: {
+                                    display: false
                                 }
                             }
                         }
                     });
                 }
-                
-                // Add event listeners to controls
-                if (attentionView) {
-                    attentionView.addEventListener('change', loadPaperAttentionData);
-                }
-                if (attentionCount) {
-                    attentionCount.addEventListener('change', loadPaperAttentionData);
-                }
             })
             .catch(error => {
                 console.error("Error loading paper attention data:", error);
-                
-                // Show error in ranking list
-                if (paperRankingList) {
-                    paperRankingList.innerHTML = `
-                        <div class="error-message">
-                            <h3>Error Loading Paper Rankings</h3>
-                            <p>There was a problem loading the paper rankings. Please try refreshing the page.</p>
-                            <p>Technical details: ${error.message}</p>
-                        </div>
-                    `;
-                }
+                paperRankingList.innerHTML = `
+                    <div class="error-message">
+                        <p>Failed to load paper attention data: ${error.message}</p>
+                        <p>Check the browser console for details.</p>
+                    </div>
+                `;
             });
     }
     
