@@ -1,0 +1,19 @@
+{
+  "id": "2503_05298v1",
+  "title": "Coreference as an indicator of context scope in multimodal narrative",
+  "url": "http://arxiv.org/abs/2503.05298v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05298v1",
+  "authors": [
+    "Nikolai Ilinykh",
+    "Shalom Lappin",
+    "Asad Sayeed",
+    "Sharid Lo\u00e1iciga"
+  ],
+  "date": "2025-03-14",
+  "summary": "We demonstrate that large multimodal language models differ substantially\nfrom humans in the distribution of coreferential expressions in a visual\nstorytelling task. We introduce a number of metrics to quantify the\ncharacteristics of coreferential patterns in both human- and machine-written\ntexts. Humans distribute coreferential expressions in a way that maintains\nconsistency across texts and images, interleaving references to different\nentities in a highly varied way. Machines are less able to track mixed\nreferences, despite achieving perceived improvements in generation quality.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

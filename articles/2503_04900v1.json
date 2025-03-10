@@ -1,0 +1,17 @@
+{
+  "id": "2503_04900v1",
+  "title": "Extracting Symbolic Sequences from Visual Representations via\n  Self-Supervised Learning",
+  "url": "http://arxiv.org/abs/2503.04900v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04900v1",
+  "authors": [
+    "Victor Sebastian Martinez Pozos",
+    "Ivan Vladimir Meza Ruiz"
+  ],
+  "date": "2025-03-06",
+  "summary": "This paper explores the potential of abstracting complex visual information\ninto discrete, structured symbolic sequences using self-supervised learning\n(SSL). Inspired by how language abstracts and organizes information to enable\nbetter reasoning and generalization, we propose a novel approach for generating\nsymbolic representations from visual data. To learn these sequences, we extend\nthe DINO framework to handle visual and symbolic information. Initial\nexperiments suggest that the generated symbolic sequences capture a meaningful\nlevel of abstraction, though further refinement is required. An advantage of\nour method is its interpretability: the sequences are produced by a decoder\ntransformer using cross-attention, allowing attention maps to be linked to\nspecific symbols and offering insight into how these representations correspond\nto image regions. This approach lays the foundation for creating interpretable\nsymbolic representations with potential applications in high-level scene\nunderstanding.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "DINO"
+  ]
+}

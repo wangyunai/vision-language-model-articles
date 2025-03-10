@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_Supervised_Multimodal_Bitransformers_for_Classifyi",
+  "title": "Supervised Multimodal Bitransformers for Classifying Images and Text",
+  "url": "https://paperswithcode.com/paper/supervised-multimodal-bitransformers-for",
+  "authors": [],
+  "date": "2025-03-06",
+  "summary": "Self-supervised bidirectional transformer models such as BERT have led to dramatic improvements in a wide variety of textual classification tasks.",
+  "source": "Papers With Code",
+  "keywords": [
+    "multimodal"
+  ],
+  "code_url": null
+}

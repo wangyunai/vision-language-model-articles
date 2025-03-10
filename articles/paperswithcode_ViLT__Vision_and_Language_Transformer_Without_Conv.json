@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_ViLT__Vision_and_Language_Transformer_Without_Conv",
+  "title": "ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision",
+  "url": "https://paperswithcode.com/paper/vilt-vision-and-language-transformer-without",
+  "authors": [],
+  "date": "2025-03-27",
+  "summary": "Vision-and-Language Pre-training (VLP) has improved performance on various joint vision-and-language downstream tasks.",
+  "source": "Papers With Code",
+  "keywords": [
+    "vision-and-language"
+  ],
+  "code_url": null
+}

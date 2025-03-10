@@ -1,0 +1,19 @@
+{
+  "id": "2503_04871v1",
+  "title": "Toward Lightweight and Fast Decoders for Diffusion Models in Image and\n  Video Generation",
+  "url": "http://arxiv.org/abs/2503.04871v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04871v1",
+  "authors": [
+    "Alexey Buzovkin",
+    "Evgeny Shilov"
+  ],
+  "date": "2025-03-06",
+  "summary": "We investigate methods to reduce inference time and memory footprint in\nstable diffusion models by introducing lightweight decoders for both image and\nvideo synthesis. Traditional latent diffusion pipelines rely on large\nVariational Autoencoder decoders that can slow down generation and consume\nconsiderable GPU memory. We propose custom-trained decoders using lightweight\nVision Transformer and Taming Transformer architectures. Experiments show up to\n15% overall speed-ups for image generation on COCO2017 and up to 20 times\nfaster decoding in the sub-module, with additional gains on UCF-101 for video\ntasks. Memory requirements are moderately reduced, and while there is a small\ndrop in perceptual quality compared to the default decoder, the improvements in\nspeed and scalability are crucial for large-scale inference scenarios such as\ngenerating 100K images. Our work is further contextualized by advances in\nefficient video generation, including dual masking strategies, illustrating a\nbroader effort to improve the scalability and efficiency of generative models.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "Stable Diffusion",
+    "vision transformer",
+    "image generation"
+  ]
+}

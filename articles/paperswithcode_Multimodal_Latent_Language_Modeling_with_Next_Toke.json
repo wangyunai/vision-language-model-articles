@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_Multimodal_Latent_Language_Modeling_with_Next_Toke",
+  "title": "Multimodal Latent Language Modeling with Next-Token Diffusion",
+  "url": "https://paperswithcode.com/paper/multimodal-latent-language-modeling-with-next",
+  "authors": [],
+  "date": "2025-03-08",
+  "summary": "In this work, we propose Latent Language Modeling (LatentLM), which seamlessly integrates continuous and discrete data using causal Transformers.",
+  "source": "Papers With Code",
+  "keywords": [
+    "multimodal"
+  ],
+  "code_url": null
+}

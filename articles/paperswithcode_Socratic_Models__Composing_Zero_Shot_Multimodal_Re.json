@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_Socratic_Models__Composing_Zero_Shot_Multimodal_Re",
+  "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+  "url": "https://paperswithcode.com/paper/socratic-models-composing-zero-shot",
+  "authors": [],
+  "date": "2025-03-07",
+  "summary": "Large pretrained (e. g., \"foundation\") models exhibit distinct capabilities depending on the domain of data they are trained on.",
+  "source": "Papers With Code",
+  "keywords": [
+    "multimodal"
+  ],
+  "code_url": null
+}

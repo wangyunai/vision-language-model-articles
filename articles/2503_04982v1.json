@@ -1,0 +1,26 @@
+{
+  "id": "2503_04982v1",
+  "title": "LVLM-Compress-Bench: Benchmarking the Broader Impact of Large\n  Vision-Language Model Compression",
+  "url": "http://arxiv.org/abs/2503.04982v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04982v1",
+  "authors": [
+    "Souvik Kundu",
+    "Anahita Bhiwandiwalla",
+    "Sungduk Yu",
+    "Phillip Howard",
+    "Tiep Le",
+    "Sharath Nittur Sridhar",
+    "David Cobbley",
+    "Hao Kang",
+    "Vasudev Lal"
+  ],
+  "date": "2025-03-06",
+  "summary": "Despite recent efforts in understanding the compression impact on large\nlanguage models (LLMs) in terms of their downstream task performance and\ntrustworthiness on relatively simpler uni-modal benchmarks (for example,\nquestion answering, common sense reasoning), their detailed study on\nmulti-modal Large Vision-Language Models (LVLMs) is yet to be unveiled. Towards\nmitigating this gap, we present LVLM-Compress-Bench, a framework to first\nthoroughly study the broad impact of compression on the generative performance\nof LVLMs with multi-modal input driven tasks. In specific, we consider two\nmajor classes of compression for autoregressive models, namely KV cache and\nweight compression, for the dynamically growing intermediate cache and static\nweights, respectively.\n  We use four LVLM variants of the popular LLaVA framework to present our\nanalysis via integrating various state-of-the-art KV and weight compression\nmethods including uniform, outlier-reduced, and group quantization for the KV\ncache and weights. With this framework we demonstrate on ten different\nmulti-modal datasets with different capabilities including recognition,\nknowledge, language generation, spatial awareness, visual reasoning,\nhallucination and visual illusion identification, toxicity, stereotypes and\nbias. In specific, our framework demonstrates the compression impact on both\ngeneral and ethically critical metrics leveraging a combination of real world\nand synthetic datasets to encompass diverse societal intersectional attributes.\nExtensive experimental evaluations yield diverse and intriguing observations on\nthe behavior of LVLMs at different quantization budget of KV and weights, in\nboth maintaining and losing performance as compared to the baseline model with\nFP16 data format.\n  Code will be open-sourced at\nhttps://github.com/opengear-project/LVLM-compress-bench.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language",
+    "visual reasoning"
+  ]
+}

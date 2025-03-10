@@ -1,0 +1,14 @@
+{
+  "id": "paperswithcode_MME__A_Comprehensive_Evaluation_Benchmark_for_Mult",
+  "title": "MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models",
+  "url": "https://paperswithcode.com/paper/mme-a-comprehensive-evaluation-benchmark-for",
+  "authors": [],
+  "date": "2025-03-14",
+  "summary": "Multimodal Large Language Model (MLLM) relies on the powerful LLM to perform multimodal tasks, showing amazing emergent abilities in recent studies, such as writing poems based on an image.",
+  "source": "Papers With Code",
+  "keywords": [
+    "multimodal",
+    "MLLM"
+  ],
+  "code_url": null
+}

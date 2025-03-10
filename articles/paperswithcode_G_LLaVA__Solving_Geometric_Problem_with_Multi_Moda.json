@@ -1,0 +1,15 @@
+{
+  "id": "paperswithcode_G_LLaVA__Solving_Geometric_Problem_with_Multi_Moda",
+  "title": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+  "url": "https://paperswithcode.com/paper/g-llava-solving-geometric-problem-with-multi",
+  "authors": [],
+  "date": "2025-03-19",
+  "summary": "We first analyze the limitations of current Multimodal Large Language Models (MLLMs) in this area: they struggle to accurately comprehending basic geometric elements and their relationships.",
+  "source": "Papers With Code",
+  "keywords": [
+    "multimodal",
+    "MLLM",
+    "MLLMs"
+  ],
+  "code_url": null
+}

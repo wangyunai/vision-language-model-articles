@@ -1,0 +1,21 @@
+{
+  "id": "2503_04918v1",
+  "title": "Fine-Tuning Florence2 for Enhanced Object Detection in Un-constructed\n  Environments: Vision-Language Model Approach",
+  "url": "http://arxiv.org/abs/2503.04918v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04918v1",
+  "authors": [
+    "Soumyadeep Ro",
+    "Sanapala Satwika",
+    "Pamarthi Yasoda Gayathri",
+    "Mohmmad Ghaith Balsha",
+    "Aysegul Ucar"
+  ],
+  "date": "2025-03-06",
+  "summary": "Artificial intelligence has progressed through the development of\nVision-Language Models (VLMs), which integrate text and visual inputs to\nachieve comprehensive understanding and interaction in various contexts.\nEnhancing the performance of these models such as the transformer based\nFlorence 2 on specialized tasks like object detection in complex and\nunstructured environments requires fine-tuning. The goal of this paper is to\nimprove the efficiency of the Florence 2 model in challenging environments by\nfinetuning it. We accomplished this by experimenting with different\nconfigurations, using various GPU types (T4, L4, A100) and optimizers such as\nAdamW and SGD. We also employed a range of learning rates and LoRA (Low Rank\nAdaptation) settings. Analyzing the performance metrics, such as Mean Average\nPrecision (mAP) scores,reveals that the finetuned Florence 2 models performed\ncomparably to YOLO models, including YOLOv8, YOLOv9, and YOLOv10. This\ndemonstrates how transformer based VLMs can be adapted for detailed object\ndetection tasks. The paper emphasizes the capability of optimized transformer\nbased VLMs to address specific challenges in object detection within\nunstructured environments, opening up promising avenues for practical\napplications in demanding and complex settings.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language"
+  ]
+}

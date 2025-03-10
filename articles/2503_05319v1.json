@@ -1,0 +1,25 @@
+{
+  "id": "2503_05319v1",
+  "title": "Robust Multimodal Learning for Ophthalmic Disease Grading via\n  Disentangled Representation",
+  "url": "http://arxiv.org/abs/2503.05319v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05319v1",
+  "authors": [
+    "Xinkun Wang",
+    "Yifang Wang",
+    "Senwei Liang",
+    "Feilong Tang",
+    "Chengzhi Liu",
+    "Ming Hu",
+    "Chao Hu",
+    "Junjun He",
+    "Zongyuan Ge",
+    "Imran Razzak"
+  ],
+  "date": "2025-03-12",
+  "summary": "This paper discusses how ophthalmologists often rely on multimodal data to\nimprove diagnostic accuracy. However, complete multimodal data is rare in\nreal-world applications due to a lack of medical equipment and concerns about\ndata privacy. Traditional deep learning methods typically address these issues\nby learning representations in latent space. However, the paper highlights two\nkey limitations of these approaches: (i) Task-irrelevant redundant information\n(e.g., numerous slices) in complex modalities leads to significant redundancy\nin latent space representations. (ii) Overlapping multimodal representations\nmake it difficult to extract unique features for each modality. To overcome\nthese challenges, the authors propose the Essence-Point and Disentangle\nRepresentation Learning (EDRL) strategy, which integrates a self-distillation\nmechanism into an end-to-end framework to enhance feature selection and\ndisentanglement for more robust multimodal learning. Specifically, the\nEssence-Point Representation Learning module selects discriminative features\nthat improve disease grading performance. The Disentangled Representation\nLearning module separates multimodal data into modality-common and\nmodality-unique representations, reducing feature entanglement and enhancing\nboth robustness and interpretability in ophthalmic disease diagnosis.\nExperiments on multimodal ophthalmology datasets show that the proposed EDRL\nstrategy significantly outperforms current state-of-the-art methods.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}

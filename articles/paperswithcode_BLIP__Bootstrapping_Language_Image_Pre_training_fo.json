@@ -1,0 +1,15 @@
+{
+  "id": "paperswithcode_BLIP__Bootstrapping_Language_Image_Pre_training_fo",
+  "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
+  "url": "https://paperswithcode.com/paper/blip-bootstrapping-language-image-pre",
+  "authors": [],
+  "date": "2025-03-26",
+  "summary": "Furthermore, performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision.",
+  "source": "Papers With Code",
+  "keywords": [
+    "vision-language",
+    "image-text",
+    "BLIP"
+  ],
+  "code_url": null
+}

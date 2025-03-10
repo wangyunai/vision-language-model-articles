@@ -1,0 +1,24 @@
+{
+  "id": "2503_05064v1",
+  "title": "Perceiving, Reasoning, Adapting: A Dual-Layer Framework for VLM-Guided\n  Precision Robotic Manipulation",
+  "url": "http://arxiv.org/abs/2503.05064v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05064v1",
+  "authors": [
+    "Qingxuan Jia",
+    "Guoqin Tang",
+    "Zeyuan Huang",
+    "Zixuan Hao",
+    "Ning Ji",
+    "Shihang",
+    "Yin",
+    "Gang Chen"
+  ],
+  "date": "2025-03-07",
+  "summary": "Vision-Language Models (VLMs) demonstrate remarkable potential in robotic\nmanipulation, yet challenges persist in executing complex fine manipulation\ntasks with high speed and precision. While excelling at high-level planning,\nexisting VLM methods struggle to guide robots through precise sequences of fine\nmotor actions. To address this limitation, we introduce a progressive VLM\nplanning algorithm that empowers robots to perform fast, precise, and\nerror-correctable fine manipulation. Our method decomposes complex tasks into\nsub-actions and maintains three key data structures: task memory structure, 2D\ntopology graphs, and 3D spatial networks, achieving high-precision\nspatial-semantic fusion. These three components collectively accumulate and\nstore critical information throughout task execution, providing rich context\nfor our task-oriented VLM interaction mechanism. This enables VLMs to\ndynamically adjust guidance based on real-time feedback, generating precise\naction plans and facilitating step-wise error correction. Experimental\nvalidation on complex assembly tasks demonstrates that our algorithm\neffectively guides robots to rapidly and precisely accomplish fine manipulation\nin challenging scenarios, significantly advancing robot intelligence for\nprecision tasks.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "vision-language"
+  ]
+}

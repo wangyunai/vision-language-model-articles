@@ -1,0 +1,23 @@
+{
+  "id": "2503_04858v1",
+  "title": "SHAPE : Self-Improved Visual Preference Alignment by Iteratively\n  Generating Holistic Winner",
+  "url": "http://arxiv.org/abs/2503.04858v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04858v1",
+  "authors": [
+    "Kejia Chen",
+    "Jiawen Zhang",
+    "Jiacong Hu",
+    "Jiazhen Yang",
+    "Jian Lou",
+    "Zunlei Feng",
+    "Mingli Song"
+  ],
+  "date": "2025-03-06",
+  "summary": "Large Visual Language Models (LVLMs) increasingly rely on preference\nalignment to ensure reliability, which steers the model behavior via preference\nfine-tuning on preference data structured as ``image - winner text - loser\ntext'' triplets. However, existing approaches often suffer from limited\ndiversity and high costs associated with human-annotated preference data,\nhindering LVLMs from fully achieving their intended alignment capabilities. We\npresent \\projectname, a self-supervised framework capable of transforming the\nalready abundant supervised text-image pairs into holistic preference triplets\nfor more effective and cheaper LVLM alignment, eliminating the need for human\npreference annotations. Our approach facilitates LVLMs in progressively\nenhancing alignment capabilities through iterative self-improvement. The key\ndesign rationale is to devise preference triplets where the winner text\nconsistently improves in holisticness and outperforms the loser response in\nquality, thereby pushing the model to ``strive to the utmost'' of alignment\nperformance through preference fine-tuning. For each given text-image pair,\nSHAPE introduces multiple visual augmentations and pairs them with a summarized\ntext to serve as the winner response, while designating the original text as\nthe loser response. Experiments across \\textbf{12} benchmarks on various model\narchitectures and sizes, including LLaVA and DeepSeek-VL, show that SHAPE\nachieves significant gains, for example, achieving +11.3\\% on MMVet\n(comprehensive evaluation), +1.4\\% on MMBench (general VQA), and +8.0\\% on POPE\n(hallucination robustness) over baselines in 7B models. Notably, qualitative\nanalyses confirm enhanced attention to visual details and better alignment with\nhuman preferences for holistic descriptions.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "VQA"
+  ]
+}

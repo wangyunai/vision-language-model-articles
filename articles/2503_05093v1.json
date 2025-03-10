@@ -1,0 +1,21 @@
+{
+  "id": "2503_05093v1",
+  "title": "Visual Cues of Gender and Race are Associated with Stereotyping in\n  Vision-Language Models",
+  "url": "http://arxiv.org/abs/2503.05093v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05093v1",
+  "authors": [
+    "Messi H. J. Lee",
+    "Soyeon Jeon",
+    "Jacob M. Montgomery",
+    "Calvin K. Lai"
+  ],
+  "date": "2025-03-25",
+  "summary": "Current research on bias in Vision Language Models (VLMs) has important\nlimitations: it is focused exclusively on trait associations while ignoring\nother forms of stereotyping, it examines specific contexts where biases are\nexpected to appear, and it conceptualizes social categories like race and\ngender as binary, ignoring the multifaceted nature of these identities. Using\nstandardized facial images that vary in prototypicality, we test four VLMs for\nboth trait associations and homogeneity bias in open-ended contexts. We find\nthat VLMs consistently generate more uniform stories for women compared to men,\nwith people who are more gender prototypical in appearance being represented\nmore uniformly. By contrast, VLMs represent White Americans more uniformly than\nBlack Americans. Unlike with gender prototypicality, race prototypicality was\nnot related to stronger uniformity. In terms of trait associations, we find\nlimited evidence of stereotyping-Black Americans were consistently linked with\nbasketball across all models, while other racial associations (i.e., art,\nhealthcare, appearance) varied by specific VLM. These findings demonstrate that\nVLM stereotyping manifests in ways that go beyond simple group membership,\nsuggesting that conventional bias mitigation strategies may be insufficient to\naddress VLM stereotyping and that homogeneity bias persists even when trait\nassociations are less apparent in model outputs.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision language model",
+    "VLM",
+    "vision-language"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "2503_04215v1",
+  "title": "Energy-Guided Optimization for Personalized Image Editing with\n  Pretrained Text-to-Image Diffusion Models",
+  "url": "http://arxiv.org/abs/2503.04215v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04215v1",
+  "authors": [
+    "Rui Jiang",
+    "Xinghe Fu",
+    "Guangcong Zheng",
+    "Teng Li",
+    "Taiping Yao",
+    "Xi Li"
+  ],
+  "date": "2025-03-06",
+  "summary": "The rapid advancement of pretrained text-driven diffusion models has\nsignificantly enriched applications in image generation and editing. However,\nas the demand for personalized content editing increases, new challenges emerge\nespecially when dealing with arbitrary objects and complex scenes. Existing\nmethods usually mistakes mask as the object shape prior, which struggle to\nachieve a seamless integration result. The mostly used inversion noise\ninitialization also hinders the identity consistency towards the target object.\nTo address these challenges, we propose a novel training-free framework that\nformulates personalized content editing as the optimization of edited images in\nthe latent space, using diffusion models as the energy function guidance\nconditioned by reference text-image pairs. A coarse-to-fine strategy is\nproposed that employs text energy guidance at the early stage to achieve a\nnatural transition toward the target class and uses point-to-point\nfeature-level image energy guidance to perform fine-grained appearance\nalignment with the target object. Additionally, we introduce the latent space\ncontent composition to enhance overall identity consistency with the target.\nExtensive experiments demonstrate that our method excels in object replacement\neven with a large domain gap, highlighting its potential for high-quality,\npersonalized image editing.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-image",
+    "image generation"
+  ]
+}

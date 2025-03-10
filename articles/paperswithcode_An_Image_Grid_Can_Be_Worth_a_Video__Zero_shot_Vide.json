@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_An_Image_Grid_Can_Be_Worth_a_Video__Zero_shot_Vide",
+  "title": "An Image Grid Can Be Worth a Video: Zero-shot Video Question Answering Using a VLM",
+  "url": "https://paperswithcode.com/paper/an-image-grid-can-be-worth-a-video-zero-shot",
+  "authors": [],
+  "date": "2025-03-20",
+  "summary": "Recently, an alternative strategy has surfaced, employing readily available foundation models, such as VideoLMs and LLMs, across multiple stages for modality bridging.",
+  "source": "Papers With Code",
+  "keywords": [
+    "VLM"
+  ],
+  "code_url": null
+}

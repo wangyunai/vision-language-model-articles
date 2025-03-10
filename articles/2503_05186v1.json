@@ -1,0 +1,22 @@
+{
+  "id": "2503_05186v1",
+  "title": "Narrating the Video: Boosting Text-Video Retrieval via Comprehensive\n  Utilization of Frame-Level Captions",
+  "url": "http://arxiv.org/abs/2503.05186v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05186v1",
+  "authors": [
+    "Chan hur",
+    "Jeong-hun Hong",
+    "Dong-hun Lee",
+    "Dabin Kang",
+    "Semin Myeong",
+    "Sang-hyo Park",
+    "Hyeyoung Park"
+  ],
+  "date": "2025-03-21",
+  "summary": "In recent text-video retrieval, the use of additional captions from\nvision-language models has shown promising effects on the performance. However,\nexisting models using additional captions often have struggled to capture the\nrich semantics, including temporal changes, inherent in the video. In addition,\nincorrect information caused by generative models can lead to inaccurate\nretrieval. To address these issues, we propose a new framework, Narrating the\nVideo (NarVid), which strategically leverages the comprehensive information\navailable from frame-level captions, the narration. The proposed NarVid\nexploits narration in multiple ways: 1) feature enhancement through cross-modal\ninteractions between narration and video, 2) query-aware adaptive filtering to\nsuppress irrelevant or incorrect information, 3) dual-modal matching score by\nadding query-video similarity and query-narration similarity, and 4)\nhard-negative loss to learn discriminative features from multiple perspectives\nusing the two similarities from different views. Experimental results\ndemonstrate that NarVid achieves state-of-the-art performance on various\nbenchmark datasets.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "vision-language"
+  ]
+}

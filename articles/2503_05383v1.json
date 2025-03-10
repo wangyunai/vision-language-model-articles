@@ -1,0 +1,21 @@
+{
+  "id": "2503_05383v1",
+  "title": "VLMs Play StarCraft II: A Benchmark and Multimodal Decision Method",
+  "url": "http://arxiv.org/abs/2503.05383v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05383v1",
+  "authors": [
+    "Weiyu Ma",
+    "Yuqian Fu",
+    "Zecheng Zhang",
+    "Guohao Li"
+  ],
+  "date": "2025-03-09",
+  "summary": "We introduce VLM-Attention, a multimodal StarCraft II environment that aligns\nartificial agent perception with the human gameplay experience. Traditional\nframeworks such as SMAC rely on abstract state representations that diverge\nsignificantly from human perception, limiting the ecological validity of agent\nbehavior. Our environment addresses this limitation by incorporating RGB visual\ninputs and natural language observations that more closely simulate human\ncognitive processes during gameplay. The VLM-Attention framework consists of\nthree integrated components: (1) a vision-language model enhanced with\nspecialized self-attention mechanisms for strategic unit targeting and\nbattlefield assessment, (2) a retrieval-augmented generation system that\nleverages domain-specific StarCraft II knowledge to inform tactical decisions,\nand (3) a dynamic role-based task distribution system that enables coordinated\nmulti-agent behavior. Our experimental evaluation across 21 custom scenarios\ndemonstrates that VLM-based agents powered by foundation models (specifically\nQwen-VL and GPT-4o) can execute complex tactical maneuvers without explicit\ntraining, achieving comparable performance to traditional MARL methods that\nrequire substantial training iterations. This work establishes a foundation for\ndeveloping human-aligned StarCraft II agents and advances the broader research\nagenda of multimodal game AI. Our implementation is available at\nhttps://github.com/camel-ai/VLM-Play-StarCraft2.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "VLM",
+    "multimodal",
+    "vision-language"
+  ]
+}

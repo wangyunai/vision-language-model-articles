@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_RL_VLM_F__Reinforcement_Learning_from_Vision_Langu",
+  "title": "RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback",
+  "url": "https://paperswithcode.com/paper/rl-vlm-f-reinforcement-learning-from-vision",
+  "authors": [],
+  "date": "2025-03-21",
+  "summary": "Reward engineering has long been a challenge in Reinforcement Learning (RL) research, as it often requires extensive human effort and iterative processes of trial-and-error to design effective reward functions.",
+  "source": "Papers With Code",
+  "keywords": [
+    "VLM"
+  ],
+  "code_url": null
+}

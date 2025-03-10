@@ -1,0 +1,14 @@
+{
+  "id": "paperswithcode_X__2__VLM__All_In_One_Pre_trained_Model_For_Vision",
+  "title": "X$^2$-VLM: All-In-One Pre-trained Model For Vision-Language Tasks",
+  "url": "https://paperswithcode.com/paper/x-2-vlm-all-in-one-pre-trained-model-for",
+  "authors": [],
+  "date": "2025-03-17",
+  "summary": "Vision language pre-training aims to learn alignments between vision and language from a large amount of data.",
+  "source": "Papers With Code",
+  "keywords": [
+    "VLM",
+    "vision-language"
+  ],
+  "code_url": null
+}

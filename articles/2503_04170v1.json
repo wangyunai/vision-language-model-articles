@@ -1,0 +1,25 @@
+{
+  "id": "2503_04170v1",
+  "title": "Towards Intelligent Transportation with Pedestrians and Vehicles\n  In-the-Loop: A Surveillance Video-Assisted Federated Digital Twin Framework",
+  "url": "http://arxiv.org/abs/2503.04170v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04170v1",
+  "authors": [
+    "Xiaolong Li",
+    "Jianhao Wei",
+    "Haidong Wang",
+    "Li Dong",
+    "Ruoyang Chen",
+    "Changyan Yi",
+    "Jun Cai",
+    "Dusit Niyato",
+    "Xuemin",
+    "Shen"
+  ],
+  "date": "2025-03-06",
+  "summary": "In intelligent transportation systems (ITSs), incorporating pedestrians and\nvehicles in-the-loop is crucial for developing realistic and safe traffic\nmanagement solutions. However, there is falls short of simulating complex\nreal-world ITS scenarios, primarily due to the lack of a digital twin\nimplementation framework for characterizing interactions between pedestrians\nand vehicles at different locations in different traffic environments. In this\narticle, we propose a surveillance video assisted federated digital twin\n(SV-FDT) framework to empower ITSs with pedestrians and vehicles in-the-loop.\nSpecifically, SVFDT builds comprehensive pedestrian-vehicle interaction models\nby leveraging multi-source traffic surveillance videos. Its architecture\nconsists of three layers: (i) the end layer, which collects traffic\nsurveillance videos from multiple sources; (ii) the edge layer, responsible for\nsemantic segmentation-based visual understanding, twin agent-based interaction\nmodeling, and local digital twin system (LDTS) creation in local regions; and\n(iii) the cloud layer, which integrates LDTSs across different regions to\nconstruct a global DT model in realtime. We analyze key design requirements and\nchallenges and present core guidelines for SVFDT's system implementation. A\ntestbed evaluation demonstrates its effectiveness in optimizing traffic\nmanagement. Comparisons with traditional terminal-server frameworks highlight\nSV-FDT's advantages in mirroring delays, recognition accuracy, and subjective\nevaluation. Finally, we identify some open challenges and discuss future\nresearch directions.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "visual understanding"
+  ]
+}

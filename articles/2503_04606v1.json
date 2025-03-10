@@ -1,0 +1,23 @@
+{
+  "id": "2503_04606v1",
+  "title": "The Best of Both Worlds: Integrating Language Models and Diffusion\n  Models for Video Generation",
+  "url": "http://arxiv.org/abs/2503.04606v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.04606v1",
+  "authors": [
+    "Aoxiong Yin",
+    "Kai Shen",
+    "Yichong Leng",
+    "Xu Tan",
+    "Xinyu Zhou",
+    "Juncheng Li",
+    "Siliang Tang"
+  ],
+  "date": "2025-03-06",
+  "summary": "Recent advancements in text-to-video (T2V) generation have been driven by two\ncompeting paradigms: autoregressive language models and diffusion models.\nHowever, each paradigm has intrinsic limitations: language models struggle with\nvisual quality and error accumulation, while diffusion models lack semantic\nunderstanding and causal modeling. In this work, we propose LanDiff, a hybrid\nframework that synergizes the strengths of both paradigms through\ncoarse-to-fine generation. Our architecture introduces three key innovations:\n(1) a semantic tokenizer that compresses 3D visual features into compact 1D\ndiscrete representations through efficient semantic compression, achieving a\n$\\sim$14,000$\\times$ compression ratio; (2) a language model that generates\nsemantic tokens with high-level semantic relationships; (3) a streaming\ndiffusion model that refines coarse semantics into high-fidelity videos.\nExperiments show that LanDiff, a 5B model, achieves a score of 85.43 on the\nVBench T2V benchmark, surpassing the state-of-the-art open-source models\nHunyuan Video (13B) and other commercial models such as Sora, Keling, and\nHailuo. Furthermore, our model also achieves state-of-the-art performance in\nlong video generation, surpassing other open-source models in this field. Our\ndemo can be viewed at https://landiff.github.io/.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "text-to-video",
+    "Sora"
+  ]
+}

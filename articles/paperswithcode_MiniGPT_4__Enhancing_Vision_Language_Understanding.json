@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_MiniGPT_4__Enhancing_Vision_Language_Understanding",
+  "title": "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+  "url": "https://paperswithcode.com/paper/minigpt-4-enhancing-vision-language",
+  "authors": [],
+  "date": "2025-03-01",
+  "summary": "Our work, for the first time, uncovers that properly aligning the visual features with an advanced large language model can possess numerous advanced multi-modal abilities demonstrated by GPT-4, such as detailed image description generation and website creation from hand-drawn drafts.",
+  "source": "Papers With Code",
+  "keywords": [
+    "vision-language"
+  ],
+  "code_url": null
+}

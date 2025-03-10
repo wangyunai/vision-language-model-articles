@@ -1,0 +1,13 @@
+{
+  "id": "paperswithcode_VILA__Learning_Image_Aesthetics_from_User_Comments",
+  "title": "VILA: Learning Image Aesthetics from User Comments with Vision-Language Pretraining",
+  "url": "https://paperswithcode.com/paper/vila-learning-image-aesthetics-from-user",
+  "authors": [],
+  "date": "2025-03-02",
+  "summary": "Our results show that our pretrained aesthetic vision-language model outperforms prior works on image aesthetic captioning over the AVA-Captions dataset, and it has powerful zero-shot capability for aesthetic tasks such as zero-shot style classification and zero-shot IAA, surpassing many supervised baselines.",
+  "source": "Papers With Code",
+  "keywords": [
+    "vision-language"
+  ],
+  "code_url": null
+}

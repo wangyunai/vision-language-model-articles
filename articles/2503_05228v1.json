@@ -1,0 +1,24 @@
+{
+  "id": "2503_05228v1",
+  "title": "RecipeGen: A Benchmark for Real-World Recipe Image Generation",
+  "url": "http://arxiv.org/abs/2503.05228v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05228v1",
+  "authors": [
+    "Ruoxuan Zhang",
+    "Hongxia Xie",
+    "Yi Yao",
+    "Jian-Yu Jiang-Lin",
+    "Bin Wen",
+    "Ling Lo",
+    "Hong-Han Shuai",
+    "Yung-Hui Li",
+    "Wen-Huang Cheng"
+  ],
+  "date": "2025-03-18",
+  "summary": "Recipe image generation is an important challenge in food computing, with\napplications from culinary education to interactive recipe platforms. However,\nthere is currently no real-world dataset that comprehensively connects recipe\ngoals, sequential steps, and corresponding images. To address this, we\nintroduce RecipeGen, the first real-world goal-step-image benchmark for recipe\ngeneration, featuring diverse ingredients, varied recipe steps, multiple\ncooking styles, and a broad collection of food categories. Data is in\nhttps://github.com/zhangdaxia22/RecipeGen.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "image generation"
+  ]
+}

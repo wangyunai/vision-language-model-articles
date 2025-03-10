@@ -1,0 +1,21 @@
+{
+  "id": "2503_05231v1",
+  "title": "Kaiwu: A Multimodal Manipulation Dataset and Framework for Robot\n  Learning and Human-Robot Interaction",
+  "url": "http://arxiv.org/abs/2503.05231v1",
+  "pdf_url": "http://arxiv.org/pdf/2503.05231v1",
+  "authors": [
+    "Shuo Jiang",
+    "Haonan Li",
+    "Ruochen Ren",
+    "Yanmin Zhou",
+    "Zhipeng Wang",
+    "Bin He"
+  ],
+  "date": "2025-03-17",
+  "summary": "Cutting-edge robot learning techniques including foundation models and\nimitation learning from humans all pose huge demands on large-scale and\nhigh-quality datasets which constitute one of the bottleneck in the general\nintelligent robot fields. This paper presents the Kaiwu multimodal dataset to\naddress the missing real-world synchronized multimodal data problems in the\nsophisticated assembling scenario,especially with dynamics information and its\nfine-grained labelling. The dataset first provides an integration of\nhuman,environment and robot data collection framework with 20 subjects and 30\ninteraction objects resulting in totally 11,664 instances of integrated\nactions. For each of the demonstration,hand motions,operation pressures,sounds\nof the assembling process,multi-view videos, high-precision motion capture\ninformation,eye gaze with first-person videos,electromyography signals are all\nrecorded. Fine-grained multi-level annotation based on absolute timestamp,and\nsemantic segmentation labelling are performed. Kaiwu dataset aims to facilitate\nrobot learning,dexterous manipulation,human intention investigation and\nhuman-robot collaboration research.",
+  "source": "arXiv",
+  "categories": [],
+  "keywords": [
+    "multimodal"
+  ]
+}
